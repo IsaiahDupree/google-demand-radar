@@ -1,0 +1,306 @@
+{
+  "source_text": "SocialMediaWaterMarkRemover\n\n## README\n\n# Watermark Remover - Subscription SaaS\n\nA modern, subscription-based watermark removal service built with Next.js 14, Supabase, and Stripe. Remove watermarks from social media images with AI-powered processing.\n\n## Features\n\n- 🔐 **Authentication** - Secure user authentication with Supabase (email/password and OAuth)\n- 💳 **Subscriptions** - Stripe-powered subscription management\n- 🎨 **Modern UI** - Beautiful, responsive design with Tailwind CSS\n- ⚡ **Fast Processing** - Quick watermark removal (placeholder for AI integration)\n- 🔒 **Secure** - Row-level security with Supabase\n- 📊 **Dashboard** - User dashboard to track watermark removal jobs\n\n## Tech Stack\n\n- **Framework**: Next.js 14 (App Router)\n- **Authentication**: Supabase Auth\n- **Database**: Supabase (PostgreSQL)\n- **Payments**: Stripe\n- **Styling**: Tailwind CSS\n- **Icons**: Lucide React\n- **Language**: TypeScript\n\n## Getting Started\n\n### Prerequisites\n\n- Node.js 18+ and npm\n- Supabase account\n- Stripe account\n\n### 1. Clone and Install\n\n```bash\ncd SocialMediaWaterMarkRemover\nnpm install\n```\n\n### 2. Set Up Supabase\n\n1. Create a new project at [supabase.com](https://supabase.com)\n2. Go to Project Settings > API to get your credentials\n3. Run the SQL schema in `supabase/schema.sql` in the Supabase SQL Editor\n\n### 3. Set Up Stripe\n\n1. Create a Stripe account at [stripe.com](https://stripe.com)\n2. Get your API keys from the Stripe Dashboard\n3. Create products and prices in Stripe Dashboard:\n   - Go to Products → Add Product\n   - Create at least one subscription product with a recurring price\n4. Set up webhook endpoint:\n   - Go to Developers → Webhooks\n   - Add endpoint: `https://your-domain.com/api/webhooks`\n   - Select events: `product.*`, `price.*`, `customer.subscription.*`, `checkout.session.completed`\n5. Copy the webhook signing secret\n\n### 4. Configure Environment Variables\n\nCopy `.env.local.example` to `.env.local`:\n\n```bash\ncp .env.local.example .env.local\n```\n\nFill in your credentials:\n\n```env\n# Supabase\nNEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url\nNEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key\nSUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key\n\n# Stripe\nNEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key\nSTRIPE_SECRET_KEY=your_stripe_secret_key\nSTRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret\n\n# Site URL\nNEXT_PUBLIC_SITE_URL=http://localhost:3000\n```\n\n### 5. Run Development Server\n\n```bash\nnpm run dev\n```\n\nOpen [http://localhost:3000](http://localhost:3000) in your browser.\n\n## Project Structure\n\n```\n├── app/\n│   ├── api/\n│   │   ├── create-checkout-session/  # Stripe checkout\n│   │   ├── create-portal-session/    # Stripe customer portal\n│   │   └── webhooks/                 # Stripe webhooks\n│   ├── auth/\n│   │   └── callback/                 # OAuth callback\n│   ├── account/                      # Account settings page\n│   ├── dashboard/                    # User dashboard\n│   ├── pricing/                      # Pricing page\n│   ├── signin/                       # Sign in page\n│   ├── signup/                       # Sign up page\n│   ├── globals.css                   # Global styles\n│   ├── layout.tsx                    # Root layout\n│   └── page.tsx                      # Home page\n├── components/                       # Reusable components (future)\n├── supabase/\n│   └── schema.sql                    # Database schema\n├── types/\n│   ├── stripe.ts                     # Stripe type definitions\n│   └── supabase.ts                   # Supabase type definitions\n├── utils/\n│   ├── stripe/                       # Stripe utilities\n│   └── supabase/                     # Supabase clients\n└── package.json\n```\n\n## Key Features Implementation\n\n### Authentication\n\n- Email/password authentication\n- Google OAuth (configurable in Supabase)\n- Protected routes with middleware\n- Automatic user profile creation\n\n### Subscription Management\n\n- Multiple pricing tiers\n- Stripe Checkout integration\n- Customer portal for subscription management\n- Automa",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Watermark Remover",
+    "one_liner": "A subscription-based service to remove watermarks from social media images using AI.",
+    "core_promise": "Effortless removal of watermarks from social media images for personal or professional use.",
+    "domain": "photo editing",
+    "buyers": [
+      {
+        "persona": "social media managers",
+        "awareness_level": "problem_aware",
+        "pain": "They need to post images on social media without watermarks but don't have time for manual editing.",
+        "candidate_phrases": [
+          "remove watermark from photo",
+          "how to remove watermark from image",
+          "app to remove watermark from pictures",
+          "quickly remove image watermark",
+          "delete watermark on social media pic"
+        ]
+      },
+      {
+        "persona": "freelance designers",
+        "awareness_level": "problem_aware",
+        "pain": "Clients demand images without watermarks, and they need a reliable tool to deliver edited images quickly.",
+        "candidate_phrases": [
+          "watermark removal tool",
+          "best watermark remover software",
+          "software to remove watermark",
+          "online tool for removing watermarks",
+          "quick watermark removal app"
+        ]
+      },
+      {
+        "persona": "casual social media users",
+        "awareness_level": "solution_aware",
+        "pain": "They want to share photos on their personal accounts or in group chats without unsightly watermarks.",
+        "candidate_phrases": [
+          "free watermark remover",
+          "easy watermark remover",
+          "app to remove watermark from videos",
+          "remove watermark without losing quality",
+          "simple watermark removal online"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 2,
+      "advantage": 1,
+      "rationale": "Watermark removal has a moderately pressing need for social media managers and designers who might face this issue regularly, but casual users might only occasionally. Building the MVP requires integrating several technologies, which raises the complexity. Buyers can potentially be reached through targeted advertising, but retention is harder to justify as users may not need frequent or long-term use, making it hard to sell as a subscription. No specific advantage for the founder is mentioned, leading to a low advantage score."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "remove watermark from photo",
+      "volume": 22200,
+      "cpc": 1.6,
+      "competition": 0.4,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to remove watermark from image",
+      "volume": 1300,
+      "cpc": 2.36,
+      "competition": 0.67,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "app to remove watermark from pictures",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "quickly remove image watermark",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "delete watermark on social media pic",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "watermark removal tool",
+      "volume": 320,
+      "cpc": 2.01,
+      "competition": 0.3,
+      "source": "dataforseo",
+      "buyer": "freelance designers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best watermark remover software",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance designers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "software to remove watermark",
+      "volume": 70,
+      "cpc": 5.14,
+      "competition": 0.66,
+      "source": "dataforseo",
+      "buyer": "freelance designers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "online tool for removing watermarks",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance designers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "quick watermark removal app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance designers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "free watermark remover",
+      "volume": 27100,
+      "cpc": 1.47,
+      "competition": 0.24,
+      "source": "dataforseo",
+      "buyer": "casual social media users",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy watermark remover",
+      "volume": 20,
+      "cpc": 1.49,
+      "competition": 0.33,
+      "source": "dataforseo",
+      "buyer": "casual social media users",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "app to remove watermark from videos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "casual social media users",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "remove watermark without losing quality",
+      "volume": 10,
+      "cpc": 1.38,
+      "competition": 0.25,
+      "source": "dataforseo",
+      "buyer": "casual social media users",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "simple watermark removal online",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "casual social media users",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "free watermark remover",
+      "volume": 27100,
+      "cpc": 1.47,
+      "competition": 0.24,
+      "source": "dataforseo",
+      "buyer": "casual social media users",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "remove watermark from photo",
+      "volume": 22200,
+      "cpc": 1.6,
+      "competition": 0.4,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to remove watermark from image",
+      "volume": 1300,
+      "cpc": 2.36,
+      "competition": 0.67,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "watermark removal tool",
+      "volume": 320,
+      "cpc": 2.01,
+      "competition": 0.3,
+      "source": "dataforseo",
+      "buyer": "freelance designers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "software to remove watermark",
+      "volume": 70,
+      "cpc": 5.14,
+      "competition": 0.66,
+      "source": "dataforseo",
+      "buyer": "freelance designers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy watermark remover",
+      "volume": 20,
+      "cpc": 1.49,
+      "competition": 0.33,
+      "source": "dataforseo",
+      "buyer": "casual social media users",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best watermark remover software",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance designers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "remove watermark without losing quality",
+      "volume": 10,
+      "cpc": 1.38,
+      "competition": 0.25,
+      "source": "dataforseo",
+      "buyer": "casual social media users",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 5,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 2.5700000000000003,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 1,
+    "retention_potential": 2,
+    "total": 18.57
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "social media managers",
+        "anchor_phrase": "remove watermark from photo",
+        "offer_copy": "For social media managers who need to post images efficiently but struggle with time-consuming edits, we provide an AI-powered watermark remover so they can prepare images quickly without manual hassle.",
+        "landing_page_headline": "Effortless Watermark Removal for Faster Posting"
+      },
+      {
+        "buyer": "freelance designers",
+        "anchor_phrase": "watermark removal tool",
+        "offer_copy": "For freelance designers who need to deliver watermark-free images reliably but lack a dependable tool, we offer an AI-driven watermark remover so they can satisfy client demands without wasting valuable editing time.",
+        "landing_page_headline": "Reliable Watermark Removal for Freelancers"
+      },
+      {
+        "buyer": "casual social media users",
+        "anchor_phrase": "free watermark remover",
+        "offer_copy": "For casual social media users who want to share photos without the distraction of watermarks, we offer an easy-to-use watermark remover so they can enjoy cleaner images without technical hassle.",
+        "landing_page_headline": "Share Cleaner Photos with Easy Watermark Removal"
+      }
+    ],
+    "next_action": "Develop a landing page focused on the 'remove watermark from photo' phrase targeted at social media managers and begin running limited Google Ads with a $100 budget to assess click-through-rate and conversion potential.",
+    "reasoning": "The concept has significant search interest ('free watermark remover', 'remove watermark from photo'), but risk lies in the low willingness to pay and retention potential scores, indicating users expect cheap or free solutions. Buyer urgency is moderate, suggesting some interest in a quick solution, but the low retention implies users may not see ongoing value. The current focus should be on capturing social media managers, a group likely seeking efficiency and willing to pay for tools that save time."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/SocialMediaWaterMarkRemover"
+  }
+}

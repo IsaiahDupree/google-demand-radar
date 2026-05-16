@@ -1,0 +1,428 @@
+{
+  "slug": "ev-battery-types",
+  "source_concept": "EV Battery Types",
+  "generated_at": "2026-05-16T17:15:58.985Z",
+  "cross_vertical_insight": "Across the verticals, the need for specialized, cutting-edge information on battery technologies is significant, with stakeholders seeking to understand both current capabilities and future potential. There's a consistent need to align technology evaluation with strategic goals, whether it's improving product offerings or making informed investment decisions.",
+  "verticals": [
+    {
+      "name": "large auto manufacturers",
+      "icp": "Large auto manufacturers with annual revenues over $1B, including roles such as R&D managers and product development teams responsible for integrating new battery technologies into production lines.",
+      "rationale": "They require detailed insights on EV battery technologies to make informed decisions about new models and ensure competitiveness in the EV market.",
+      "phrases": [
+        {
+          "phrase": "ev battery technology research",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best battery technology for electric vehicles",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "ev battery types for large manufacturers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "compare ev battery technologies for auto industry",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy ev battery market analysis",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "solid-state battery impact on ev production",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "electric vehicle battery trends 2023",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "purchase ev battery insights for automakers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 1.10810534993878,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "ev battery technology research",
+      "top_volume": 10,
+      "pmf_score": 2.2648632099632677,
+      "pmf_breakdown": {
+        "demand_n": 0.22162106998775602,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "solar energy storage companies",
+      "icp": "Companies developing energy storage solutions for solar systems, typically with $10M-$50M revenue, CTOs and product developers who integrate battery tech.",
+      "rationale": "These companies explore advanced battery technologies to optimize storage solutions, improve efficiency, and maintain cost-effectiveness in solar applications.",
+      "phrases": [
+        {
+          "phrase": "ev battery types for solar storage",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "compare batteries for solar energy",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best battery for solar storage 2023",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "purchase ev battery report for solar",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "ev battery energy density comparison",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "emerging solar battery technologies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "capacity trends in solar storage batteries",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy solar battery technology insight",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 1.10810534993878,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "ev battery energy density comparison",
+      "top_volume": 10,
+      "pmf_score": 2.2648632099632677,
+      "pmf_breakdown": {
+        "demand_n": 0.22162106998775602,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "green energy investment funds",
+      "icp": "Investment funds specializing in green energy, managing portfolios between $100M-$1B, with investment analysts evaluating technology and market trends.",
+      "rationale": "Investors require thorough analyses of current and emerging EV battery technologies to correctly assess and select lucrative opportunities.",
+      "phrases": [
+        {
+          "phrase": "ev battery technology market analysis",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "investment opportunities in ev batteries",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy ev battery research report",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "compare ev battery types for investment",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "future of ev battery technology",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "solid-state battery investment prospects",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "ev battery companies to watch",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "purchase comprehensive ev battery analysis",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0.8280004035947847,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "future of ev battery technology",
+      "top_volume": 10,
+      "pmf_score": 2.0968002421568706,
+      "pmf_breakdown": {
+        "demand_n": 0.16560008071895693,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "aerospace technology firms",
+      "icp": "Aerospace firms focusing on battery-powered systems with engineering teams seeking data on battery adaptation for aerospace applications.",
+      "rationale": "They need insights into how existing EV battery technologies can be applied or modified for use in aerospace to improve efficiency and safety.",
+      "phrases": [
+        {
+          "phrase": "ev battery applications in aerospace",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy aerospace battery technology report",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "solid-state batteries for spacecraft",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best ev batteries for drones",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "purchase battery research for aerospace use",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "energy solutions for electric aircraft",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "battery technology trends in aerospace",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "compare ev batteries for aviation",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "ev battery applications in aerospace",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "autonomous vehicle startups",
+      "icp": "Startups focused on developing autonomous vehicles, often backed by venture capital and led by innovation-oriented CTOs exploring cutting-edge technologies.",
+      "rationale": "They need advanced battery insights to sustain longer operation durations and improve safety profiles for their autonomous systems.",
+      "phrases": [
+        {
+          "phrase": "advanced ev batteries for autonomous vehicles",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best battery technology for self-driving cars",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "purchase battery insights for autonomous systems",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "electric vehicle battery trends for self-driving",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "battery technology comparison for av",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "ev battery impact on autonomous driving",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "investment in ev batteries for ai vehicles",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy battery tech report for autonomous cars",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "advanced ev batteries for autonomous vehicles",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    }
+  ]
+}

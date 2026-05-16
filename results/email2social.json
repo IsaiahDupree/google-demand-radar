@@ -1,0 +1,306 @@
+{
+  "source_text": "Email2Social\n\n## README\n\n# Social Links Search API Client\n\nA comprehensive, production-ready Node.js client for the [RapidAPI Social Links Search API](https://rapidapi.com/belchiorarkad-FqvHs2EDOtP/api/social-links-search). Search for social media profile links across multiple platforms including Facebook, TikTok, Instagram, Snapchat, Twitter, LinkedIn, YouTube, Pinterest, and GitHub.\n\n## ✨ Features\n\n- 🚀 **Simple & Intuitive API** - Clean, promise-based interface\n- ⚡ **Built-in Rate Limiting** - Automatic request throttling based on your API tier\n- 🔄 **Automatic Retries** - Exponential backoff for failed requests\n- 📊 **Request Statistics** - Track API usage and performance\n- 🎯 **Type Safety** - Comprehensive JSDoc annotations for IDE autocompletion\n- 🔍 **Network Filtering** - Search specific social networks or all at once\n- 🛡️ **Error Handling** - Detailed error messages and recovery strategies\n- 📦 **Zero Dependencies** - Only requires `node-fetch` for HTTP requests\n\n## 📋 Table of Contents\n\n- [Installation](#installation)\n- [Quick Start](#quick-start)\n- [API Reference](#api-reference)\n- [Rate Limiting](#rate-limiting)\n- [Pricing Tiers](#pricing-tiers)\n- [Error Handling](#error-handling)\n- [Advanced Usage](#advanced-usage)\n- [Examples](#examples)\n- [Testing](#testing)\n- [Contributing](#contributing)\n- [License](#license)\n\n## 🚀 Installation\n\n```bash\nnpm install node-fetch\n```\n\nThen copy `social-links-search.js` to your project directory.\n\n## 🔑 Getting Your API Key\n\n1. Sign up at [RapidAPI](https://rapidapi.com/)\n2. Subscribe to the [Social Links Search API](https://rapidapi.com/belchiorarkad-FqvHs2EDOtP/api/social-links-search)\n3. Copy your API key from the API dashboard\n4. Store it securely in environment variables (never commit API keys!)\n\n## ⚡ Quick Start\n\n```javascript\nimport SocialLinksSearchClient from './social-links-search.js';\n\n// Initialize the client\nconst client = new SocialLinksSearchClient({\n  apiKey: process.env.RAPIDAPI_KEY,\n  requestsPerSecond: 1 // BASIC tier rate limit\n});\n\n// Search for social links\nconst results = await client.search({\n  query: \"John Smith\"\n});\n\nconsole.log(results);\n```\n\n## 📚 API Reference\n\n### Constructor\n\n#### `new SocialLinksSearchClient(config)`\n\nCreates a new instance of the API client.\n\n**Parameters:**\n\n| Parameter | Type | Required | Default | Description |\n|-----------|------|----------|---------|-------------|\n| `config.apiKey` | `string` | ✅ Yes | - | Your RapidAPI key |\n| `config.apiHost` | `string` | ❌ No | `'social-links-search.p.rapidapi.com'` | API host |\n| `config.requestsPerSecond` | `number` | ❌ No | `1` | Max requests per second (rate limit) |\n| `config.maxRetries` | `number` | ❌ No | `3` | Maximum retry attempts |\n| `config.retryDelay` | `number` | ❌ No | `1000` | Initial retry delay (ms) |\n| `config.enableRateLimiting` | `boolean` | ❌ No | `true` | Enable/disable rate limiting |\n\n**Example:**\n\n```javascript\nconst client = new SocialLinksSearchClient({\n  apiKey: process.env.RAPIDAPI_KEY,\n  requestsPerSecond: 5, // PRO tier\n  maxRetries: 3,\n  retryDelay: 1000\n});\n```\n\n---\n\n### Methods\n\n#### `search(params)`\n\nSearch for social media profile links.\n\n**Parameters:**\n\n| Parameter | Type | Required | Description |\n|-----------|------|----------|-------------|\n| `params.query` | `string` | ✅ Yes | Search query (name, email, username, etc.) |\n| `params.socialNetworks` | `string\\|string[]` | ❌ No | Specific networks to search (comma-separated string or array) |\n\n**Returns:** `Promise<Object>` - Search results with social links\n\n**Example:**\n\n```javascript\n// Search all networks\nconst results = await client.search({\n  query: \"example@email.com\"\n});\n\n// Search specific networks (array)\nconst results = await client.search({\n  query: \"John Smith\",\n  socialNetworks: [\"facebook\", \"linkedin\", \"twitter\"]\n});\n\n// Search specific networks (string)\nconst results = await client.search({\n  query: \"John Smith\",\n  socialNetworks: \"facebook,linkedin,twitter\"\n});\n```\n\n**Response Structure:**\n\n```javascript\n{\n\nDescription: Comprehensive API clients for Social Links Search and Perplexity AI - Lead enrichment, company research, and B2B intelligence\nKeywords: social-media, social-search, profile-search, rapidapi, api-client, rate-limiting, facebook, linkedin, twitter, instagram, tiktok, github, perplexity, ai, lead-enrichment, company-research, b2b, intelligence",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Email2Social",
+    "one_liner": "Search and retrieve social media profile links from various platforms using email addresses.",
+    "core_promise": "Effortlessly find and aggregate social media profiles linked to a specific email address or identity.",
+    "domain": "social media search tools",
+    "buyers": [
+      {
+        "persona": "salespeople and lead generation teams",
+        "awareness_level": "problem_aware",
+        "pain": "Difficulty in finding and verifying potential clients' social media profiles for outreach.",
+        "candidate_phrases": [
+          "find social media profiles by email",
+          "social media profile search tool",
+          "how to find linkedin from email",
+          "lead generation social media search",
+          "verify email social media profiles"
+        ]
+      },
+      {
+        "persona": "Human Resources professionals",
+        "awareness_level": "solution_aware",
+        "pain": "Need to verify candidate backgrounds and social media presence quickly.",
+        "candidate_phrases": [
+          "find candidate social media profiles",
+          "employment social media background check",
+          "how to verify social media of candidates",
+          "social media screening tool",
+          "hr find social profiles by email"
+        ]
+      },
+      {
+        "persona": "investigators and background check services",
+        "awareness_level": "product_aware",
+        "pain": "Need comprehensive tools to gather personal data across social networks for investigations or checks.",
+        "candidate_phrases": [
+          "social media investigation tool",
+          "background check social media profiles",
+          "email to social media profile search",
+          "comprehensive social media search",
+          "find social links from email"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 3,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "The idea addresses a fairly urgent need for sales and HR purposes, but the urgency isn't critical or widespread. The MVP is moderately complex, as it exists within existing frameworks, but handling diverse network integrations and scaling could raise complexity. The distribution has potential via targeted ads and SEO due to clear keywords, though retention may vary based on whether users regularly need such searches. Advantage is low due to no mentioned unique data access or partnerships, leaving competition potential high."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "find social media profiles by email",
+      "volume": 90,
+      "cpc": 3.81,
+      "competition": 0.37,
+      "source": "dataforseo",
+      "buyer": "salespeople and lead generation teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media profile search tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "salespeople and lead generation teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to find linkedin from email",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "salespeople and lead generation teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "lead generation social media search",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "salespeople and lead generation teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "verify email social media profiles",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "salespeople and lead generation teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "find candidate social media profiles",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Human Resources professionals",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "employment social media background check",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Human Resources professionals",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to verify social media of candidates",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Human Resources professionals",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media screening tool",
+      "volume": 50,
+      "cpc": 6.75,
+      "competition": 0.14,
+      "source": "dataforseo",
+      "buyer": "Human Resources professionals",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "hr find social profiles by email",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Human Resources professionals",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media investigation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "investigators and background check services",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "background check social media profiles",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "investigators and background check services",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "email to social media profile search",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "investigators and background check services",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "comprehensive social media search",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "investigators and background check services",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "find social links from email",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "investigators and background check services",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "find social media profiles by email",
+      "volume": 90,
+      "cpc": 3.81,
+      "competition": 0.37,
+      "source": "dataforseo",
+      "buyer": "salespeople and lead generation teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media screening tool",
+      "volume": 50,
+      "cpc": 6.75,
+      "competition": 0.14,
+      "source": "dataforseo",
+      "buyer": "Human Resources professionals",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media profile search tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "salespeople and lead generation teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to find linkedin from email",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "salespeople and lead generation teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "lead generation social media search",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "salespeople and lead generation teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "verify email social media profiles",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "salespeople and lead generation teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "find candidate social media profiles",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Human Resources professionals",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "employment social media background check",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Human Resources professionals",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 2.286900254693319,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 3.375,
+    "mvp_ease": 3,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 20.661900254693318
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "salespeople and lead generation teams",
+        "anchor_phrase": "find social media profiles by email",
+        "offer_copy": "For sales teams who need to find potential clients' social media profiles but struggle with time-consuming searches, we offer a tool that matches emails to social profiles effortlessly so they can make data-driven outreach without manual work.",
+        "landing_page_headline": "Find Social Media Profiles Instantly With Email"
+      },
+      {
+        "buyer": "Human Resources professionals",
+        "anchor_phrase": "social media screening tool",
+        "offer_copy": "For HR teams who conduct background checks and need to verify candidate social media presence quickly, we provide a screening tool that pulls profiles with just an email so they can ensure compliance without tedious manual checks.",
+        "landing_page_headline": "Screen Candidate Social Media Profiles Quickly"
+      },
+      {
+        "buyer": "investigators and background check services",
+        "anchor_phrase": "find social media profiles by email",
+        "offer_copy": "For investigators who must gather comprehensive social media data but face incomplete searches, we offer an email-powered tool that uncovers broad social networks so investigations are thorough without missing key profiles.",
+        "landing_page_headline": "Uncover Full Social Profiles with Email Search"
+      }
+    ],
+    "next_action": "Ship 3 landing pages for the top personas and spend $100 on Google Search ads targeting 'find social media profiles by email' and 'social media screening tool'.",
+    "reasoning": "The demand signals for this concept are lukewarm, with moderate interest and competition but the potential for specific target audiences. The risk lies in standing out among existing tools and demonstrating unique value. By focusing on specific buyer needs and proving the tool's efficacy through ads, the founder can validate demand and iteratively improve the offer."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/Email2Social"
+  }
+}

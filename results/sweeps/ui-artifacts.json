@@ -1,0 +1,308 @@
+{
+  "slug": "ui-artifacts",
+  "source_concept": "UI Artifacts Showcase",
+  "generated_at": "2026-05-16T17:25:49.537Z",
+  "cross_vertical_insight": "Across these verticals, the common pain point is the need for reliable, pre-built UI components to accelerate development cycles and ensure consistent, high-quality design. Speed of implementation and ease of integration are frequent buying triggers, especially for small teams or those under time constraints. This highlights a prevalent demand for tools that streamline design and development processes efficiently.",
+  "verticals": [
+    {
+      "name": "small web design agencies",
+      "icp": "Small web design agencies with 5-15 employees, focusing on custom client websites. Often juggling multiple projects with tight deadlines.",
+      "rationale": "They frequently need diverse UI components to quickly deliver tailor-made websites for clients.",
+      "phrases": [
+        {
+          "phrase": "ui component library for web designers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best ui showcases for design agencies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "get ui components with code",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "live ui component preview",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "material design components for agencies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "ui component library for web designers",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "freelance mobile app developers",
+      "icp": "Independent developers working on client-based mobile apps, often juggling multiple frameworks like React Native and iOS development.",
+      "rationale": "Freelancers benefit from pre-built components that can accelerate project timelines and offer diverse design solutions.",
+      "phrases": [
+        {
+          "phrase": "ui patterns for mobile app development",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "ios ui component showcase",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "react native component library purchase",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best mobile ui libraries",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy ui patterns for freelancers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "ui patterns for mobile app development",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "early-stage saas startups",
+      "icp": "Tech startups in the seed or early funding stages, focusing on deploying MVPs and quickly iterating on design.",
+      "rationale": "Startups need to build fast and lean, requiring reliable UI components that can be easily integrated and customized.",
+      "phrases": [
+        {
+          "phrase": "ui components for startup saas",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best react ui kits for startups",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy ui library for mvp",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "interactive component showcase for saas",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "ui design solutions for early-stage startups",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "ui components for startup saas",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "e-commerce platform developers",
+      "icp": "Developers working within dedicated teams to build or maintain e-commerce platforms, needing scalable UI solutions.",
+      "rationale": "E-commerce platforms require seamless, user-friendly UI components to optimize the shopping experience.",
+      "phrases": [
+        {
+          "phrase": "ui elements for e-commerce developers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "purchase ui kits for online stores",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "e-commerce component libraries",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "responsive ui solutions for retail sites",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best ui libraries for shopping websites",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "ui elements for e-commerce developers",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "internal tool developers in tech companies",
+      "icp": "Developers creating internal tools within mid-to-large tech companies, aiming for quick deployment and effective user interfaces.",
+      "rationale": "These developers often seek out-of-the-box solutions that allow for customization to meet specific internal needs and reduce development time.",
+      "phrases": [
+        {
+          "phrase": "buy ui components for internal corporate tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best ui libraries for enterprise solutions",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "reuse ui components for internal apps",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "interactive ui components for corporate use",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "customizable ui tools for enterprise developers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "buy ui components for internal corporate tools",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

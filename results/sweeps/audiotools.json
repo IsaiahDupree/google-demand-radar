@@ -1,0 +1,308 @@
+{
+  "slug": "audiotools",
+  "source_concept": "YouTube Stem Extractor",
+  "generated_at": "2026-05-16T16:44:50.729Z",
+  "cross_vertical_insight": "Across these verticals, there's a shared need for affordable, user-friendly tools to break down audio tracks for creative re-use, commonly sourced from platforms like YouTube due to its extensive and accessible library. The main purchase trigger is the requirement for high-quality, customizable music solutions that can be rapidly implemented into creative workflows.",
+  "verticals": [
+    {
+      "name": "indie film sound designers",
+      "icp": "Independent film sound designers working on limited budgets, typically in small teams or as freelancers, creating soundscapes for under $500k budget projects.",
+      "rationale": "These individuals often need to manipulate film soundtracks for creative effect but lack tools to easily extract stems from YouTube clips that inspire or are used as references.",
+      "phrases": [
+        {
+          "phrase": "audio stem extraction for film",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "demucs for soundtrack editing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to isolate audio tracks for film",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best tools for film sound design",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "film soundtrack stem separation tool",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "audio stem extraction for film",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "karaoke app developers",
+      "icp": "Small to mid-sized tech companies developing karaoke apps, driven by the need for high-quality instrumental tracks from user-selected songs.",
+      "rationale": "They need cost-effective solutions to provide instrumental versions of popular songs for their apps, often sourced from YouTube due to its vast library.",
+      "phrases": [
+        {
+          "phrase": "instrumental track extraction for karaoke",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "youtube audio download for karaoke apps",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best audio separation software for apps",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "demucs for karaoke app development",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to make karaoke tracks from youtube",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "instrumental track extraction for karaoke",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "language learning software providers",
+      "icp": "Companies creating language learning applications that incorporate music to teach language through song lyrics, usually startups or scale-ups with diverse media needs.",
+      "rationale": "They require tools to isolate vocals or instrumental tracks to integrate music-focused language exercises, particularly sourcing popular YouTube content.",
+      "phrases": [
+        {
+          "phrase": "extract vocals from songs for language learning",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "audio processing tools for e-learning",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "vocal track separation for language applications",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "youtube music stems for education software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to use demucs in language apps",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "extract vocals from songs for language learning",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "small recording studios",
+      "icp": "Small recording studios serving indie musicians and bands, often providing services such as mixing, mastering, and experimenting with remixing tracks.",
+      "rationale": "These studios need flexible solutions to remaster and remix tracks, occasionally extracting YouTube audio to recreate or enhance existing works.",
+      "phrases": [
+        {
+          "phrase": "audio extraction tool for recording studio",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to separate tracks from youtube",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best demucs alternatives for studios",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "purchase youtube audio separation software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "separate instrument tracks for mixing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "audio extraction tool for recording studio",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "fitness studio music curators",
+      "icp": "Fitness centers or independent curators selecting music for workouts, requiring remixes and personalized music playlists tailored for specific classes.",
+      "rationale": "They frequently remix or customize tracks to keep playlists fresh and engaging, often relying on YouTube as a music source due to its diverse range.",
+      "phrases": [
+        {
+          "phrase": "music remix software for fitness classes",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to extract vocals for remix",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "demucs review for music curation",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best remix tools for gym playlists",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "custom music tracks for fitness studios",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "music remix software for fitness classes",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    }
+  ]
+}

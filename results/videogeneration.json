@@ -1,0 +1,306 @@
+{
+  "source_text": "VideoGeneration\n\n## CLAUDE.md\n\n# Tinker Town Tots — Episode Factory\n\nThis repo builds a programmable kids' educational cartoon factory. Input: `(engineering concept + life lesson + age band)`. Output: a safe, reviewable 2D animated short for YouTube, targeting ages 0–7.\n\n## Working layout\n| Path | Status |\n|---|---|\n| `tinker/` | Active TypeScript workspace (Next.js + Remotion + Zod) |\n| `legacy/` | Pre-pivot tweetsim UGC ad pipeline (Python). Preserved but inactive — do not edit unless explicitly asked. |\n| `.env` | Shared env file. TS code reads `tinker/.env.local`; legacy Python reads this. |\n\n## Project framing\n- **Show:** \"Tinker Town Tots\" — tiny builders solving everyday engineering problems (wobbly wagon, tippy tower) with cute characters. Engineering ideas reframed as life lessons.\n- **Audiences:** three tracks per IP — parent-co-view (0–2), preschool stories (3–5), simple-build (6–7). Do not collapse 0–7 into one audience.\n- **Distribution:** YouTube only for v1. Every video: `madeForKids: true`, comments disabled, AI-disclosure flag set, separate playlists per age track.\n- **Compliance:** COPPA + YouTube Kids policy apply to every output.\n\n## Architecture rules\n- **JSON-driven and reusable.** Everything flows through schemas: `EpisodeSpec → Script → Scene → Shot → Assets → Render`. Never build single-episode flows.\n- **Schemas first, render last.** Zod validates at every layer boundary.\n- **Human approval gate before publish.** Nothing publishes without an explicit dashboard approval.\n- **Preflight live spend.** Before any OpenAI/ElevenLabs/YouTube call that costs money, show the cost math in a table and confirm.\n\n## MVP1 goal\n`POST /api/episodes/create-and-render` with `{show_id, age_band, engineering_concept, life_lesson, duration_target_seconds}` returns one ~45s Remotion 2D cartoon, gated for human approval at a Next.js dashboard.\n\n## Build order\nschema → script-gen → QA → scene/shot-gen → Remotion render → ElevenLabs voice → ffmpeg compose → approval dashboard → variant exports →",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Tinker Town Tots Episode Factory",
+    "one_liner": "A platform to generate customized educational cartoons for kids aged 0-7 based on engineering concepts and life lessons.",
+    "core_promise": "Create customizable educational cartoons that convey engineering concepts and life lessons for children, tailored to specific age groups.",
+    "domain": "children's educational content",
+    "buyers": [
+      {
+        "persona": "educators seeking personalized learning content",
+        "awareness_level": "problem_aware",
+        "pain": "Struggle to find educational content that combines STEM subjects with engaging storytelling tailored to different age groups.",
+        "candidate_phrases": [
+          "personalized educational cartoons for kids",
+          "custom STEM cartoons for children",
+          "age-specific animated learning videos",
+          "kids engineering cartoon maker",
+          "educational video platform for teachers"
+        ]
+      },
+      {
+        "persona": "parents looking for quality kids' educational content",
+        "awareness_level": "problem_aware",
+        "pain": "Hard to find engaging and age-appropriate animated content that is both educational and entertaining for their children.",
+        "candidate_phrases": [
+          "best educational cartoons for toddlers",
+          "fun learning videos for preschoolers",
+          "engineering videos for kids",
+          "age-appropriate educational content",
+          "kids animation with life lessons"
+        ]
+      },
+      {
+        "persona": "content creators wanting to expand their educational portfolio",
+        "awareness_level": "solution_aware",
+        "pain": "Need a tool to quickly generate high-quality educational videos on demand without the full effort of traditional animation.",
+        "candidate_phrases": [
+          "create animated educational videos",
+          "easy cartoon video maker for kids",
+          "automated kids video production",
+          "educational video creation tool",
+          "fast cartoon generator for YouTube"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 1,
+      "rationale": "The urgency is moderate as the demand for educational content is significant, especially with the rise in homeschooling and digital learning. However, creating cartoons consumes resources and expertise, affecting MVP ease. Distribution fit is high due to YouTube's existing infrastructure. Retention could be moderate if new content can be regularly produced. There seems to be no distinct competitive advantage or notable existing assets or audience mentioned that would give the idea a unique edge."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "personalized educational cartoons for kids",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "educators seeking personalized learning content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "custom stem cartoons for children",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "educators seeking personalized learning content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "age-specific animated learning videos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "educators seeking personalized learning content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "kids engineering cartoon maker",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "educators seeking personalized learning content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "educational video platform for teachers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "educators seeking personalized learning content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best educational cartoons for toddlers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "parents looking for quality kids' educational content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "fun learning videos for preschoolers",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "parents looking for quality kids' educational content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "engineering videos for kids",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "parents looking for quality kids' educational content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "age-appropriate educational content",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "parents looking for quality kids' educational content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "kids animation with life lessons",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "parents looking for quality kids' educational content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "create animated educational videos",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "content creators wanting to expand their educational portfolio",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy cartoon video maker for kids",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators wanting to expand their educational portfolio",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated kids video production",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators wanting to expand their educational portfolio",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "educational video creation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators wanting to expand their educational portfolio",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "fast cartoon generator for youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators wanting to expand their educational portfolio",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "fun learning videos for preschoolers",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "parents looking for quality kids' educational content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "create animated educational videos",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "content creators wanting to expand their educational portfolio",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "personalized educational cartoons for kids",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "educators seeking personalized learning content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "custom stem cartoons for children",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "educators seeking personalized learning content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "age-specific animated learning videos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "educators seeking personalized learning content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "kids engineering cartoon maker",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "educators seeking personalized learning content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "educational video platform for teachers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "educators seeking personalized learning content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best educational cartoons for toddlers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "parents looking for quality kids' educational content",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 1.406921995101518,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 1,
+    "retention_potential": 3,
+    "total": 15.906921995101518
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "educators seeking personalized learning content",
+        "anchor_phrase": "educational video platform for teachers",
+        "offer_copy": "For educators who want engaging STEM and life lessons but struggle to find tailored content, we offer a video platform that creates customized cartoon episodes so they can engage young learners without settling for generic animations.",
+        "landing_page_headline": "Tailored STEM Cartoons for Young Learners"
+      },
+      {
+        "buyer": "parents looking for quality kids' educational content",
+        "anchor_phrase": "fun learning videos for preschoolers",
+        "offer_copy": "For parents seeking engaging and educational cartoons for their pre-schoolers, we provide a custom episode builder that blends engineering concepts with fun storytelling so their kids can learn while being entertained without screen time guilt.",
+        "landing_page_headline": "Fun, Educational Cartoons for Your Preschooler"
+      },
+      {
+        "buyer": "content creators wanting to expand their educational portfolio",
+        "anchor_phrase": "create animated educational videos",
+        "offer_copy": "For content creators who need to expand their educational portfolio but are short on time, we offer a platform that simplifies the creation of animated educational videos, allowing them to produce high-quality content without the hassle of traditional animation.",
+        "landing_page_headline": "Effortless Educational Video Creation"
+      }
+    ],
+    "next_action": "Conduct interviews with 10 educators and parents to validate the most compelling value propositions. Pay particular attention to their reactions to personalized content creation as a key feature.",
+    "reasoning": "The verdict 'Educate Later' reflects limited search demand and willingness to pay, suggesting the concept doesn’t resonate strongly enough with potential buyers yet. While distribution through relevant channels could reach interested parties, the lack of demand signals like actual searches indicates risk in building the product without further validation. Interviews will help refine the offer and understand true pain points and motivations behind content personalization and engagement."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/VideoGeneration"
+  }
+}

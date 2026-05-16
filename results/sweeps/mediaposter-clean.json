@@ -1,0 +1,348 @@
+{
+  "slug": "mediaposter-clean",
+  "source_concept": "MediaPoster",
+  "generated_at": "2026-05-16T17:18:40.249Z",
+  "cross_vertical_insight": "Across these verticals, users need to produce engaging visual content frequently and efficiently—for marketing, client engagement, or educational purposes. The common pain points are the time and skill required for video editing and distribution, which is why automation appeals to them.",
+  "verticals": [
+    {
+      "name": "real estate agents and agencies",
+      "icp": "Small to medium-sized real estate agencies and individual agents wanting to leverage video tours for property marketing on platforms like Instagram and YouTube.",
+      "rationale": "Property videos are a critical marketing tool, and automation can help agents efficiently turn iPhone recordings into polished tours.",
+      "phrases": [
+        {
+          "phrase": "how to create real estate video tours with phone",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "real estate video tour software",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "automate real estate instagram posts",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best video editing tool for real estate agents",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "real estate social media automation software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy video post tool for real estate",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 1.10810534993878,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "real estate video tour software",
+      "top_volume": 10,
+      "pmf_score": 3.0648632099632684,
+      "pmf_breakdown": {
+        "demand_n": 0.22162106998775602,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "solo fitness coaches and trainers",
+      "icp": "Independent fitness coaches and trainers who use social media for client engagement and marketing, typically growing their audience to 5k-20k followers.",
+      "rationale": "Fitness coaches rely heavily on engaging video content to attract clients and demonstrate workout techniques, making automated video processing essential.",
+      "phrases": [
+        {
+          "phrase": "how to automate fitness video uploads",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best apps for fitness video editing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "ai social media tool for fitness trainers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "fitness video content creation software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy ai video editing app for fitness",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "fitness instagram video automation tool",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "how to automate fitness video uploads",
+      "top_volume": 0,
+      "pmf_score": 2.4000000000000004,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "wedding videographers",
+      "icp": "Independent wedding videographers and small shops with 2-5 employees, focusing on quick turnaround of highlight reels for clients.",
+      "rationale": "Streamlining wedding footage into engaging highlights is vital to meeting client expectations quickly and achieving high referral rates.",
+      "phrases": [
+        {
+          "phrase": "edit wedding videos easily",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best video editing app for wedding highlights",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "automated wedding video software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "wedding video highlights tool",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy wedding video editing software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "ai tool for creating wedding videos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "edit wedding videos easily",
+      "top_volume": 0,
+      "pmf_score": 2.4000000000000004,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "healthcare educators and consultants",
+      "icp": "Healthcare consultants and educational platforms aiming to disseminate content on health topics, reaching audiences via social media like YouTube and Facebook.",
+      "rationale": "Healthcare educators need to produce high-quality, informative video content efficiently in order to educate and engage an audience.",
+      "phrases": [
+        {
+          "phrase": "how to produce healthcare education videos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "video tools for health educators",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "healthcare video content creation software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best ai software for medical video production",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy medical video editing tool",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automate healthcare social media posts",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "how to produce healthcare education videos",
+      "top_volume": 0,
+      "pmf_score": 2.4000000000000004,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "restaurant marketers",
+      "icp": "Marketing managers for mid-sized restaurants aiming to attract more customers through engaging visual content on social media platforms like Instagram and TikTok.",
+      "rationale": "Restaurants benefit from mouth-watering visual content to attract diners, and automation helps maintain a consistent social media presence.",
+      "phrases": [
+        {
+          "phrase": "how to make restaurant promo videos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "video editing apps for restaurants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "social media automation for restaurants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best tools for restaurant instagram videos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy video editing software for restaurants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "restaurant marketing video tool",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "how to make restaurant promo videos",
+      "top_volume": 0,
+      "pmf_score": 2.4000000000000004,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.8
+      }
+    }
+  ]
+}

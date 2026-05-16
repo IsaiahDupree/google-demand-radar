@@ -1,0 +1,306 @@
+{
+  "source_text": "UI Artifacts\n\n## README\n\n# 🎨 UI Artifacts Showcase\n\nA comprehensive, designer-friendly system for browsing, interacting with, and implementing UI components. Features scraped components, mobile patterns, and production-ready React components inspired by Material Design, iOS, and React Native.\n\n## ✨ Features\n\n### 🌐 Web Components Library\n- **Scraped Components**: From Kibo UI, AI SDK, ElevenLabs\n- **Live Previews**: 4 components with working React recreations\n- **Screenshot + Code**: View original, interact with live version, copy code\n- **Search & Filter**: Find components fast\n\n### 📱 Mobile Pattern Library\n- **30+ Patterns**: Cataloged mobile UI patterns\n- **7 Live Recreations**: Interactive React components\n- **Psychology Notes**: Why patterns work\n- **Use Cases**: When to use each pattern\n\n### 🎨 Component Showcase (NEW!)\n- **7 Production-Ready Components**: Material Design, iOS, React Native inspired\n- **Interactive Demos**: Click, type, drag - everything works\n- **One-Click Code Copy**: TypeScript + Tailwind CSS\n- **Search & Categories**: Buttons, Forms, Cards, Navigation, Data Display, Feedback\n\n## 🚀 Quick Access\n\n**Start here**: http://localhost:3000\n\n### Pages\n1. **Web Components** - http://localhost:3000 (Scraped components with live previews)\n2. **Mobile Patterns** - http://localhost:3000/mobile-patterns (30+ mobile UI patterns)\n3. **Component Showcase** - http://localhost:3000/component-showcase ⭐ NEW! (Interactive demos)\n\n### What to Try\n- **Color Picker**: Home → Click \"Color Picker\" → Live Preview tab → Move sliders\n- **Material Button**: Component Showcase → Click any button component → View Code\n- **Mental Health Check-in**: Mobile Patterns → Search \"mental\" → Live Code tab\n\n---\n\n## 🏗️ Project Structure\n\n```\nui-artifacts-showcase/\n├── scraper/              # Python web scraper\n│   ├── scraper.py        # Main scraping logic\n│   └── requirements.txt  # Python dependencies\n├── data/                 # Scraped data and screenshots\n│   ├── components/       # Component data by website\n│   ├── screenshots/      # Component screenshots\n│   └── index.json        # Master index\n├── app/                  # Next.js frontend\n├── components/           # React components\n└── public/               # Static assets\n```\n\n## 🚀 Getting Started\n\n### Prerequisites\n\n- Node.js 18+ and npm\n- Python 3.8+\n\n### Installation\n\n1. **Install Python dependencies:**\n\n```bash\ncd scraper\npip install -r requirements.txt\nplaywright install chromium\ncd ..\n```\n\n2. **Install Node.js dependencies:**\n\n```bash\nnpm install\n```\n\n### Usage\n\n1. **Run the component scraper:**\n\n```bash\nnpm run scrape\n```\n\nThis scrapes actual UI components (not tweets!) from component documentation pages.\n\n2. **Copy data to public directory:**\n\n```bash\nnpm run copy:data\n```\n\n3. **Start the development server:**\n\n```bash\nnpm run dev\n```\n\nOpen [http://localhost:3000](http://localhost:3000) to view the showcase.\n\n4. **Verify all components are loading:**\n\nVisit [http://localhost:3000/verify](http://localhost:3000/verify) to check image status.\n\n**Note:** The scraper now captures real UI components from documentation pages:\n- Kibo UI: 10 components (Gantt, Kanban, Editor, Color Picker, etc.)\n- AI SDK: 3 components (Message, Thread, Chat)\n- ElevenLabs: 6 components (Button, Input, Card, Modal, etc.)\n- Blocks & ReUI: 2 components\n\nSee [COMPONENTS.md](COMPONENTS.md) for the full list.\n\n## 🎨 Scraped Websites\n\n- [Kibo UI](https://www.kibo-ui.com)\n- [AI SDK Elements](https://ai-sdk.dev/elements/overview)\n- [ElevenLabs UI](https://ui.elevenlabs.io/docs)\n- [Blocks](https://blocks.so)\n- [ReUI](https://reui.io)\n\n## 📝 Data Format\n\nEach scraped website has the following structure:\n\n```json\n{\n  \"name\": \"Website Name\",\n  \"url\": \"https://example.com\",\n  \"slug\": \"website_name\",\n  \"screenshot\": \"screenshots/website_name/full_page.png\",\n  \"components\": [\n    {\n      \"id\": \"unique_id\",\n      \"name\": \"Component Name\",\n      \"screenshot\": \"screenshots/website_name/component.png\",\n      \"description\": \"Component descrip\n\nDescription: UI Components Library Showcase",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "UI Artifacts Showcase",
+    "one_liner": "A system for exploring and implementing UI components with live previews and code copying.",
+    "core_promise": "Designers and developers can quickly find, preview, and implement UI components for web and mobile applications.",
+    "domain": "UI design and development",
+    "buyers": [
+      {
+        "persona": "UI/UX designers looking for inspiration",
+        "awareness_level": "problem_aware",
+        "pain": "Struggle to find inspiration or specific UI patterns for upcoming projects.",
+        "candidate_phrases": [
+          "ui pattern library",
+          "mobile ui inspiration",
+          "material design components",
+          "find ui components",
+          "ios design patterns"
+        ]
+      },
+      {
+        "persona": "Frontend developers seeking ready-to-use components",
+        "awareness_level": "solution_aware",
+        "pain": "Need to speed up the development process by using existing components and patterns.",
+        "candidate_phrases": [
+          "ready to use react components",
+          "production ready ui components",
+          "react component library",
+          "tailwind css components",
+          "material design react components"
+        ]
+      },
+      {
+        "persona": "Product managers needing to validate design choices",
+        "awareness_level": "problem_aware",
+        "pain": "Need to validate design options and ensure UI consistency across platforms.",
+        "candidate_phrases": [
+          "cross-platform ui patterns",
+          "ui consistency tools",
+          "design validation tools",
+          "compare ui patterns",
+          "ui design showcase"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 3,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "There is moderate urgency for designers and developers who constantly need UI components for efficiency and inspiration, though not life-critical. An MVP could be developed with a simple frontend integrating existing libraries and templates. Given the online nature of the tools, distribution through Google and social media can be potent. Retention is average since the need for new UI components recurs but isn't high frequency. There's no clear stated competitive advantage, such as proprietary components or exclusive partnerships, which lowers the edge score."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "ui pattern library",
+      "volume": 30,
+      "cpc": 3.54,
+      "competition": 0.14,
+      "source": "dataforseo",
+      "buyer": "UI/UX designers looking for inspiration",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "mobile ui inspiration",
+      "volume": 40,
+      "cpc": 5.65,
+      "competition": 0.18,
+      "source": "dataforseo",
+      "buyer": "UI/UX designers looking for inspiration",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "material design components",
+      "volume": 110,
+      "cpc": 0,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "UI/UX designers looking for inspiration",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "find ui components",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "UI/UX designers looking for inspiration",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ios design patterns",
+      "volume": 40,
+      "cpc": 0,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "UI/UX designers looking for inspiration",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ready to use react components",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Frontend developers seeking ready-to-use components",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "production ready ui components",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Frontend developers seeking ready-to-use components",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "react component library",
+      "volume": 1600,
+      "cpc": 7.52,
+      "competition": 0.09,
+      "source": "dataforseo",
+      "buyer": "Frontend developers seeking ready-to-use components",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tailwind css components",
+      "volume": 390,
+      "cpc": 0,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "Frontend developers seeking ready-to-use components",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "material design react components",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Frontend developers seeking ready-to-use components",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "cross-platform ui patterns",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Product managers needing to validate design choices",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ui consistency tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Product managers needing to validate design choices",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "design validation tools",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Product managers needing to validate design choices",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "compare ui patterns",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Product managers needing to validate design choices",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ui design showcase",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "Product managers needing to validate design choices",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "react component library",
+      "volume": 1600,
+      "cpc": 7.52,
+      "competition": 0.09,
+      "source": "dataforseo",
+      "buyer": "Frontend developers seeking ready-to-use components",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tailwind css components",
+      "volume": 390,
+      "cpc": 0,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "Frontend developers seeking ready-to-use components",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "material design components",
+      "volume": 110,
+      "cpc": 0,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "UI/UX designers looking for inspiration",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "mobile ui inspiration",
+      "volume": 40,
+      "cpc": 5.65,
+      "competition": 0.18,
+      "source": "dataforseo",
+      "buyer": "UI/UX designers looking for inspiration",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ios design patterns",
+      "volume": 40,
+      "cpc": 0,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "UI/UX designers looking for inspiration",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ui pattern library",
+      "volume": 30,
+      "cpc": 3.54,
+      "competition": 0.14,
+      "source": "dataforseo",
+      "buyer": "UI/UX designers looking for inspiration",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ready to use react components",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Frontend developers seeking ready-to-use components",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "material design react components",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Frontend developers seeking ready-to-use components",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 3.5525333117440496,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 3.76,
+    "mvp_ease": 3,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 22.312533311744048
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "Frontend developers seeking ready-to-use components",
+        "anchor_phrase": "react component library",
+        "offer_copy": "For frontend developers who need to speed up development but struggle to find reliable components, we provide a comprehensive React component library so they can quickly implement and customize their UI without starting from scratch.",
+        "landing_page_headline": "Instantly Implement with Our React Component Library"
+      },
+      {
+        "buyer": "UI/UX designers looking for inspiration",
+        "anchor_phrase": "material design components",
+        "offer_copy": "For UI/UX designers who need fresh inspiration but struggle to find cohesive component sets, we offer an extensive showcase of material design components so they can visualize and adapt ideas without the hassle of manual searches.",
+        "landing_page_headline": "Your Source for Stunning Material Design Inspiration"
+      },
+      {
+        "buyer": "Product managers needing to validate design choices",
+        "anchor_phrase": "ui pattern library",
+        "offer_copy": "For product managers who need to validate design choices but lack a central resource, we provide a UI pattern library so they can ensure UI consistency and make informed decisions without relying solely on designer judgment.",
+        "landing_page_headline": "Validate Designs with Our UI Pattern Library"
+      }
+    ],
+    "next_action": "Create targeted landing pages for each buyer persona centered on the top anchor phrases and begin a small ad spend campaign using these phrases to track engagement and interest.",
+    "reasoning": "The analysis indicates moderate demand, especially from frontend developers, but with varying urgency levels across personas. Testing purchasing intent through highly targeted landing pages and campaigns for specific phrases like 'react component library' can validate interest. The risk lies in whether the platform can deliver significant advantages over existing solutions, which current scores suggest is a concern. Real-world engagement tracking is crucial to refine the positioning and address competitive weaknesses."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/UI Artifacts"
+  }
+}

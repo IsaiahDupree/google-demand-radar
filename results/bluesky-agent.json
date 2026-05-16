@@ -1,0 +1,243 @@
+{
+  "source_text": "Bluesky Agent\n\n## README\n\n# Bluesky Agent\n\nA flexible, automated Bluesky bot that analyzes posts and generates contextual comments.\n\n## Features\n- Automated commenting on timeline posts\n- CLI options for filtering by keyword, author, age, and type\n- Template-based comments with variables\n- Scheduling support (cron)\n- Duplicate prevention and logging\n- Home feed post processing\n- Text content analysis\n- Media (images/videos) download and analysis with GPT-4o\n- Intelligent, contextual comment generation\n- Configurable settings via environment variables\n\n## Prerequisites\n\n- Node.js (v16 or later)\n- npm or yarn\n- OpenAI API key\n- Bluesky account\n\n## Installation\n\n1. Clone the repository:\n   ```\n   git clone <repository-url>\n   cd bluesky-auto-commenter\n   ```\n\n2. Install dependencies:\n   ```\n   npm install\n   ```\n\n3. Create a `.env` file based on the `.env.example` template:\n   ```\n   cp .env.example .env\n   ```\n\n4. Edit the `.env` file and add your Bluesky credentials and OpenAI API key.\n\n## Configuration\n\nEdit the `.env` file to configure the bot:\n\n```\n# Bluesky credentials\nBLUESKY_USERNAME=your_username\nBLUESKY_PASSWORD=your_password\n\n# OpenAI API key\nOPENAI_API_KEY=your_openai_api_key\n\n# Bot settings\nCOMMENT_DELAY_MS=30000         # Delay between processing posts (ms)\nMAX_POSTS_TO_PROCESS=10        # Maximum number of posts to process\n```\n\n## Usage\n\nRun the bot:\n\n```\nnpm start\n```\n\nThe bot will:\n1. Open a browser window and log in to Bluesky\n2. Navigate to your home feed\n3. Process posts, analyzing text and media content\n4. Generate and post contextual comments\n5. Close automatically after processing the configured number of posts\n\n## Project Structure\n\n```\nbluesky-auto-commenter/\n├── src/\n│   ├── services/\n│   │   └── openai.js          # OpenAI API integration\n│   ├── utils/\n│   │   ├── helpers.js         # General utility functions\n│   │   ├── logger.js          # Logging utility\n│   │   └── media-processor.js # Media download and processing\n│   └── bluesky.js             # Main Bluesky automation logic\n├── downloads/                  # Directory for downloaded media\n├── .env                        # Environment variables (create from .env.example)\n├── .env.example                # Example environment variables\n├── .gitignore                  # Git ignore rules\n├── index.js                    # Application entry point\n├── package.json                # Node.js dependencies and scripts\n└── README.md                   # Project documentation\n```\n\n## Customization\n\n- Adjust the comment generation by modifying the prompt in the `createCommentPrompt` method in `bluesky.js`\n- Change the media analysis parameters in the `analyzeMedia` method in `openai.js`\n- Modify the Puppeteer settings in the `initialize` method of `bluesky.js` for different browser behavior\n\n## Notes\n\n- The bot uses a visible browser window by default. For headless operation, set `headless: true` in the `puppeteer.launch` options.\n- Media downloads are stored in the `downloads` directory and are not automatically cleaned up.\n- Be mindful of API rate limits for both Bluesky and OpenAI.\n\n## License\n\n[MIT License](LICENSE)\n\nDescription: Automated Bluesky bot that analyzes posts and generates contextual comments",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Bluesky Agent",
+    "one_liner": "An automated bot for generating smart comments on Bluesky posts.",
+    "core_promise": "Streamline your engagement on Bluesky by automating personalized and relevant commenting on posts.",
+    "domain": "social media automation",
+    "buyers": [
+      {
+        "persona": "content creators on Bluesky",
+        "awareness_level": "problem_aware",
+        "pain": "Struggling to engage consistently with their audience on Bluesky due to time constraints.",
+        "candidate_phrases": [
+          "how to automate comments on bluesky",
+          "bluesky engagement tool",
+          "increase bluesky interactions",
+          "automated bluesky replies",
+          "social media automation tools for bluesky"
+        ]
+      },
+      {
+        "persona": "social media managers",
+        "awareness_level": "solution_aware",
+        "pain": "Clients expecting constant interaction on Bluesky without dedicated resources.",
+        "candidate_phrases": [
+          "bluesky bot for comments",
+          "automate bluesky posts",
+          "bluesky social media management",
+          "tools for managing bluesky accounts",
+          "social media bot for bluesky"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 3,
+      "distribution_fit": 4,
+      "retention_potential": 2,
+      "advantage": 2,
+      "rationale": "Buyer urgency is moderate as automating interactions on Bluesky can save time but isn’t a critical pain. MVP ease is average, requiring integration with Bluesky and OpenAI, but leveraging existing Node.js and API capabilities. Distribution fit is good due to the clear niche; social media tools can often be marketed effectively through targeted ads. Retention potential is low as users might not need long-term subscriptions if initial account setup works well. Advantage is low, as no specific leverage or unique asset is noted in the description."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "how to automate comments on bluesky",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on Bluesky",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluesky engagement tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on Bluesky",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "increase bluesky interactions",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on Bluesky",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated bluesky replies",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on Bluesky",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media automation tools for bluesky",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on Bluesky",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluesky bot for comments",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate bluesky posts",
+      "volume": 30,
+      "cpc": 2.71,
+      "competition": 0.1,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluesky social media management",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools for managing bluesky accounts",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media bot for bluesky",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "automate bluesky posts",
+      "volume": 30,
+      "cpc": 2.71,
+      "competition": 0.1,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to automate comments on bluesky",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on Bluesky",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluesky engagement tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on Bluesky",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "increase bluesky interactions",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on Bluesky",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated bluesky replies",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on Bluesky",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media automation tools for bluesky",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on Bluesky",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluesky bot for comments",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluesky social media management",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 1.5868998267261993,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.355,
+    "mvp_ease": 3,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 2,
+    "total": 16.9418998267262
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "content creators on Bluesky",
+        "anchor_phrase": "increase bluesky interactions",
+        "offer_copy": "For content creators on Bluesky who want to increase interactions but struggle with time constraints, we provide an automated commenting tool so they can maintain audience engagement without constantly monitoring their feed.",
+        "landing_page_headline": "Boost Your Bluesky Interactions Instantly with Automation"
+      },
+      {
+        "buyer": "social media managers",
+        "anchor_phrase": "automate bluesky posts",
+        "offer_copy": "For social media managers who need to automate Bluesky posts but lack the resources, our bot generates smart comments so your clients' accounts stay active without extra manpower.",
+        "landing_page_headline": "Automate Your Bluesky Posts and Comments Easily"
+      }
+    ],
+    "next_action": "Run a $50 test campaign targeting 'automate bluesky posts' to gauge interest and measure CPC effectiveness on Google Ads.",
+    "reasoning": "The demand signals are weak, particularly in direct bofu (bottom of funnel) interest, which makes launching a full product risky. The highest demand phrase, 'automate bluesky posts,' is still niche with low competition, suggesting awareness is limited. The idea has traction mainly due to social media managers potentially needing automation but uncertain willingness to pay. The immediate goal should be to validate if there's even basic interest through low-cost ads before investing heavily in product development."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/Bluesky Agent"
+  }
+}

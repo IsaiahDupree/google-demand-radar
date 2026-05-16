@@ -1,0 +1,243 @@
+{
+  "source_text": "SocialMediaAnalysisResearch\n\n## README\n\n# Instagram Bio Link Analysis Tool\n\nA comprehensive solution for automating the analysis of Instagram profile bio links to identify profiles that link to specific target domains, particularly through link aggregators like Linktree, GetAllMyLinks, and similar services.\n\n## Overview\n\nThis tool automates the process of:\n\n1. 📱 **Scraping Instagram profile URLs** using Phantombuster\n2. 🔗 **Extracting bio links** from each Instagram profile\n3. 🌐 **Analyzing link aggregators** (Linktree, GetAllMyLinks, etc.) \n4. 🔍 **Identifying profiles** that link to your specific target domain\n5. 📊 **Storing results** in Google Sheets or CSV\n\n## Requirements\n\n- Python 3.8+\n- Phantombuster account\n- OpenAI API key\n- Perplexity API key\n- Firecrawl API key\n- (Optional) Google Sheets API credentials\n\n## Installation\n\n1. Clone this repository:\n   ```\n   git clone https://github.com/yourusername/instagram-bio-link-analysis.git\n   cd instagram-bio-link-analysis\n   ```\n\n2. Install required dependencies:\n   ```\n   pip install -r requirements.txt\n   ```\n\n3. Set up your environment variables by creating a `.env` file based on the example:\n   ```\n   cp .env.example .env\n   ```\n\n   Edit the `.env` file with your API keys and configuration.\n\n## Usage\n\n### 1. Setting Up Phantombuster\n\n1. Create a Phantombuster account at [phantombuster.com](https://phantombuster.com)\n2. Set up the \"Instagram Profile Scraper\" agent\n3. Configure the agent with your target Instagram profiles or hashtags\n4. Get your agent ID from the URL of your agent (e.g., `https://phantombuster.com/4802/agent/12345` - the ID is `12345`)\n5. Add your Phantombuster API key and agent ID to the `.env` file\n\n### 2. Running the Analysis\n\n```bash\npython main.py\n```\n\nThe script will:\n- Retrieve the latest results from your Phantombuster agent\n- Analyze each Instagram profile's bio link\n- Follow any link aggregators to extract all destination URLs\n- Check if any destination URLs match your target domain\n- Store matching profiles in Google Sheets or a local CSV file\n\n### 3. Viewing Results\n\nResults will be available in:\n- Google Sheets (if configured)\n- A local CSV file (`instagram_matches.csv`) as a fallback\n\n## Customization\n\n### Target Domain\n\nSet your target domain in the `.env` file:\n\n```\nTARGET_DOMAIN=example.com\n```\n\nThis will match any URL containing this domain or subdomain.\n\n### Output Configuration\n\nFor Google Sheets output:\n1. Set up a Google Cloud project and enable the Google Sheets API\n2. Create a service account and download the credentials JSON file\n3. Share your Google Sheet with the service account email\n4. Configure the `.env` file with the path to your credentials file and your spreadsheet ID\n\n## Make.com Integration\n\nThis tool can be integrated with Make.com (Integromat) to create a fully automated workflow:\n\n1. Set up a Make.com scenario triggered on a schedule\n2. Add an HTTP module to trigger the Phantombuster agent\n3. Add a Python module to run the analysis script\n4. (Optional) Add notification modules to alert you of new matches\n\nSee `make_integration.md` for detailed Make.com setup instructions.\n\n## Advanced Usage\n\n### Rate Limiting and Proxies\n\nFor large-scale scraping, consider:\n\n1. Using Phantombuster's built-in proxy rotation\n2. Setting up your own proxy server and configuring it in the script\n3. Implementing rate limiting in your Make.com scenario\n\n### Error Handling\n\nThe tool includes robust error handling and logging:\n\n- All events are logged to `instagram_analysis.log`\n- Failed runs will fallback to CSV output if Google Sheets is unavailable\n\n## Maintainers\n\n- Your Name (@yourgithub)\n\n## License\n\nMIT License",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Instagram Bio Link Analysis Tool",
+    "one_liner": "A tool to automate the identification of Instagram profiles linking to specified domains through bio links.",
+    "core_promise": "Efficiently identify Instagram profiles linking to your specific domain.",
+    "domain": "social media analysis",
+    "buyers": [
+      {
+        "persona": "social media marketers targeting niche domains",
+        "awareness_level": "solution_aware",
+        "pain": "Manually checking Instagram profiles for links to specific domains is time-consuming.",
+        "candidate_phrases": [
+          "instagram bio link checker",
+          "find instagram bio links to domain",
+          "automate checking instagram bio links",
+          "instagram linktree analysis",
+          "track instagram bio links"
+        ]
+      },
+      {
+        "persona": "SEO specialists monitoring competitor backlinks",
+        "awareness_level": "problem_aware",
+        "pain": "Noticed that competitors gain traffic from Instagram bio links, but unsure how to track and analyze these efficiently.",
+        "candidate_phrases": [
+          "how to track instagram backlinks",
+          "instagram bio link analysis tool",
+          "check links in instagram profiles",
+          "instagram profile link scraper",
+          "see all links from instagram bios"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 2,
+      "advantage": 2,
+      "rationale": "The urgency is moderate as marketers and SEO specialists may be actively looking for tools to simplify their work, but it's not an immediate necessity for most. MVP ease is low due to the need for technical integration with APIs and scraping tools. Distribution via SEO and social media marketing channels is viable given specific search intent. Retention potential is modest unless the tool becomes integral to long-term monitoring strategies. There is no clear advantage mentioned, suggesting the founder could only have a marginal edge without additional differentiation."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "instagram bio link checker",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media marketers targeting niche domains",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "find instagram bio links to domain",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media marketers targeting niche domains",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate checking instagram bio links",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media marketers targeting niche domains",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "instagram linktree analysis",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media marketers targeting niche domains",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "track instagram bio links",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media marketers targeting niche domains",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to track instagram backlinks",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists monitoring competitor backlinks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "instagram bio link analysis tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists monitoring competitor backlinks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "check links in instagram profiles",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists monitoring competitor backlinks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "instagram profile link scraper",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists monitoring competitor backlinks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "see all links from instagram bios",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists monitoring competitor backlinks",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "instagram bio link checker",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media marketers targeting niche domains",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "find instagram bio links to domain",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media marketers targeting niche domains",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate checking instagram bio links",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media marketers targeting niche domains",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "instagram linktree analysis",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media marketers targeting niche domains",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "track instagram bio links",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media marketers targeting niche domains",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to track instagram backlinks",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists monitoring competitor backlinks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "instagram bio link analysis tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists monitoring competitor backlinks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "check links in instagram profiles",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists monitoring competitor backlinks",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 0,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 2,
+    "total": 14.5
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "social media marketers targeting niche domains",
+        "anchor_phrase": "instagram bio link checker",
+        "offer_copy": "For social media marketers who need to find profiles linking to niche domains but waste hours manually checking profiles, we automate this so they quickly identify valuable bios without tedious searching.",
+        "landing_page_headline": "Automate Your Instagram Bio Link Checks"
+      },
+      {
+        "buyer": "SEO specialists monitoring competitor backlinks",
+        "anchor_phrase": "how to track instagram backlinks",
+        "offer_copy": "For SEO specialists who spotted competitors gaining traffic from Instagram bios but lack efficient tools, we provide an analysis tool so they can track competitor links without manual effort.",
+        "landing_page_headline": "Track Instagram Backlinks Effortlessly"
+      }
+    ],
+    "next_action": "Conduct 10 customer interviews with social media marketers and SEO specialists to drill down into their workflows and confirm if they would pay for such a solution before investing in development.",
+    "reasoning": "The demand signals show zero search interest, suggesting a significant gap between the idea and market needs. There is some urgency from potential buyers, meaning if such a tool existed, they could find it useful. However, without existing search terms, it is risky to jump into development. Verifying interest via direct conversations is crucial to ensure the actual pain points align with what the solution offers."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/SocialMediaAnalysisResearch"
+  }
+}

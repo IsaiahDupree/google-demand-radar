@@ -1,0 +1,153 @@
+{
+  "source_text": "annual-story-weaver\n\n## README\n\n# Welcome to your Lovable project\n\n## Project info\n\n**URL**: https://lovable.dev/projects/5b434043-e133-4e30-ae8d-d421dd164043\n\n## How can I edit this code?\n\nThere are several ways of editing your application.\n\n**Use Lovable**\n\nSimply visit the [Lovable Project](https://lovable.dev/projects/5b434043-e133-4e30-ae8d-d421dd164043) and start prompting.\n\nChanges made via Lovable will be committed automatically to this repo.\n\n**Use your preferred IDE**\n\nIf you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.\n\nThe only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)\n\nFollow these steps:\n\n```sh\n# Step 1: Clone the repository using the project's Git URL.\ngit clone <YOUR_GIT_URL>\n\n# Step 2: Navigate to the project directory.\ncd <YOUR_PROJECT_NAME>\n\n# Step 3: Install the necessary dependencies.\nnpm i\n\n# Step 4: Start the development server with auto-reloading and an instant preview.\nnpm run dev\n```\n\n**Edit a file directly in GitHub**\n\n- Navigate to the desired file(s).\n- Click the \"Edit\" button (pencil icon) at the top right of the file view.\n- Make your changes and commit the changes.\n\n**Use GitHub Codespaces**\n\n- Navigate to the main page of your repository.\n- Click on the \"Code\" button (green button) near the top right.\n- Select the \"Codespaces\" tab.\n- Click on \"New codespace\" to launch a new Codespace environment.\n- Edit files directly within the Codespace and commit and push your changes once you're done.\n\n## What technologies are used for this project?\n\nThis project is built with:\n\n- Vite\n- TypeScript\n- React\n- shadcn-ui\n- Tailwind CSS\n\n## How can I deploy this project?\n\nSimply open [Lovable](https://lovable.dev/projects/5b434043-e133-4e30-ae8d-d421dd164043) and click on Share -> Publish.\n\n## Can I connect a custom domain to my Lovable project?\n\nYes it is!\n\nTo connect a domain, navigate to Project > Settings > Domains and click Connect Domain.\n\nRead more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)\n\n\nStack: TypeScript",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Annual Story Weaver",
+    "one_liner": "A tool to help users craft and share their personal annual stories.",
+    "core_promise": "Create and share a compelling personal story by the end of the year to reflect on your journey and achievements.",
+    "domain": "personal storytelling",
+    "buyers": [
+      {
+        "persona": "individuals documenting their year-in-review",
+        "awareness_level": "problem_aware",
+        "pain": "They struggle with summarizing and sharing their annual achievements and stories creatively.",
+        "candidate_phrases": [
+          "how to write a year in review",
+          "personal annual story ideas",
+          "documenting my year",
+          "creative ways to summarize a year",
+          "how to share my year story"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 2,
+      "mvp_ease": 3,
+      "distribution_fit": 3,
+      "retention_potential": 3,
+      "advantage": 1,
+      "rationale": "The idea taps into the niche practice of reflecting on and sharing one's year-in-review, common during year-end seasons. While there's moderate interest, urgency is low because it's not a constant need. MVP can be simple to test - a web tool to compile stories using templates. Distribution can be done through social media and SEO around year-end content. Retention is moderate since it might become a yearly habit for some users. Without any clear unique edge or existing audience mentioned, the advantage score remains low."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "how to write a year in review",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "individuals documenting their year-in-review",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "personal annual story ideas",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "individuals documenting their year-in-review",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "documenting my year",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "individuals documenting their year-in-review",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "creative ways to summarize a year",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "individuals documenting their year-in-review",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to share my year story",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "individuals documenting their year-in-review",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "how to write a year in review",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "individuals documenting their year-in-review",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "personal annual story ideas",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "individuals documenting their year-in-review",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "documenting my year",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "individuals documenting their year-in-review",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "creative ways to summarize a year",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "individuals documenting their year-in-review",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to share my year story",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "individuals documenting their year-in-review",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 1.10810534993878,
+    "buyer_urgency": 2,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 3,
+    "distribution_fit": 3,
+    "advantage": 1,
+    "retention_potential": 3,
+    "total": 14.60810534993878
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "individuals documenting their year-in-review",
+        "anchor_phrase": "how to write a year in review",
+        "offer_copy": "For individuals documenting their year-in-review who want to reflect meaningfully on their achievements but struggle to summarize creatively, we provide guided storytelling templates and prompts so they capture their personal journey without feeling overwhelmed.",
+        "landing_page_headline": "Simplify Your Year in Review with Guided Templates"
+      }
+    ],
+    "next_action": "Conduct qualitative interviews with 5-10 potential users to deeply understand their pain points and willingness to pay for storytelling tools, and adjust the offering accordingly.",
+    "reasoning": "The search phrases indicate very low demand, with almost no interest or competition. The highest-interest term itself has a low interest score of 10/100, suggesting very limited search volume. This is a niche pain point with low buyer urgency and willingness to pay, and the advantage score indicates there's little to differentiate this idea in the market. The next sensible step for the founder is to gain qualitative insights to either pivot the offering to a stronger pain point or validate that the current pain is significant enough to pursue further."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/annual-story-weaver"
+  }
+}

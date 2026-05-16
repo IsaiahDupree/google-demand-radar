@@ -1,0 +1,306 @@
+{
+  "source_text": "CalculatorCreatorApp\n\n## README\n\n# Calculator Creator App\n\n> AI-powered platform for creating, hosting, and sharing engineering calculators\n\n## 🎯 Vision\n\nA mobile-first platform where users describe calculators in natural language, AI generates validated calculator specs, and creators earn revenue share from tutoring subscriptions.\n\n## ✨ Key Features\n\n- **AI-Powered Creation**: Describe a calculator in text or upload a photo, AI generates a validated calculator\n- **Physics Vetting**: Automated validation of formulas, units, and dimensional consistency\n- **Marketplace**: Browse trending calculators by category, search, and discover\n- **Tutoring Layer**: $10/month subscription for AI-powered step-by-step tutoring\n- **Revenue Share**: Creators earn 30% of tutoring revenue based on usage\n- **Gamification**: XP, badges, levels, and leaderboards\n- **Social Sharing**: Share calculators to LinkedIn and other platforms\n- **AI Agent Access**: Expose calculators as API endpoints for AI agents\n\n## 🏗️ Architecture\n\n- **Frontend**: Expo (React Native) - iOS, Android, Web\n- **Backend**: Next.js 14 (App Router) - API routes, serverless\n- **Database**: Supabase (PostgreSQL + Auth + Storage)\n- **AI**: LangGraph orchestration + OpenAI GPT-4\n- **Payments**: Stripe subscriptions\n- **Monorepo**: Turborepo + pnpm workspaces\n\n## 📁 Project Structure\n\n```\ncalculator-creator-app/\n├── apps/\n│   ├── mobile/          # Expo app\n│   └── web/             # Next.js web (optional)\n├── packages/\n│   ├── shared/          # Shared types & utils\n│   ├── calculator-spec/ # CalculatorSpec schema\n│   └── calculator-evaluator/ # Safe math evaluator\n└── services/\n    ├── api/             # Next.js API\n    └── ai-orchestrator/ # LangGraph service\n```\n\n## 🚀 Quick Start\n\nSee [QUICK_START.md](./QUICK_START.md) for setup instructions.\n\n```bash\n# Install dependencies\npnpm install\n\n# Start development servers\npnpm dev\n```\n\n## 📖 Documentation\n\n- **[PROJECT_PLAN.md](./PROJECT_PLAN.md)** - Comprehensive development plan\n- **[QUICK_START.md](./QUICK_START.md)** - Setup and getting started guide\n- **[TESTING_GUIDE.md](./TESTING_GUIDE.md)** - Quick testing reference\n- **[docs/TESTING_SETUP.md](./docs/TESTING_SETUP.md)** - Complete testing setup & architecture\n- **[docs/TESTING_KNOWLEDGE_BASE.md](./docs/TESTING_KNOWLEDGE_BASE.md)** - Testing concepts & best practices\n\n## 🗺️ Development Roadmap\n\n### Phase 1: Foundation (Weeks 1-2)\n- Monorepo setup\n- Database schema\n- Auth system\n- Basic API routes\n\n### Phase 2: Calculator Core (Weeks 3-4)\n- CalculatorSpec schema\n- Safe evaluator\n- Calculator renderer\n- Basic CRUD\n\n### Phase 3: AI Integration (Weeks 5-6)\n- LangGraph setup\n- Prompt parsing\n- Spec generation\n- Validation\n\n### Phase 4: Marketplace (Weeks 7-8)\n- Browse/trending UI\n- Search\n- Categories & tags\n- Ranking algorithm\n\n### Phase 5: Monetization (Weeks 9-10)\n- Stripe integration\n- Subscriptions\n- Revenue share\n- Earnings dashboard\n\n### Phase 6: Tutoring (Weeks 11-12)\n- AI tutoring chat\n- Session tracking\n- Attribution\n\n### Phase 7: Gamification (Weeks 13-14)\n- XP system\n- Badges\n- Leaderboards\n\n### Phase 8: Launch (Weeks 15-16)\n- Polish\n- Testing\n- Launch\n\n## 💰 Business Model\n\n- **Free Tier**: 2 hosted calculators\n- **Pro Tier**: $10/month - Unlimited calculators + AI tutoring\n- **Business Tier**: $39/month - Advanced features + API access\n- **Revenue Share**: 30% to creators based on tutoring engagement\n- **Hosting Fee**: $35 one-time per calculator\n\n## 🛠️ Tech Stack\n\n| Layer | Technology |\n|-------|-----------|\n| Frontend | Expo SDK 51, React Native, TypeScript |\n| Backend | Next.js 14, TypeScript |\n| Database | Supabase (PostgreSQL) |\n| Auth | NextAuth.js + Supabase Auth |\n| AI | LangGraph, OpenAI GPT-4 |\n| Payments | Stripe |\n| Math | mathjs (safe evaluation) |\n| Testing | Vitest, fast-check (property-based) |\n\n## 📊 Key Metrics\n\n- DAU/MAU\n- Calculator creation rate\n- Subscription conversion rate\n- MRR (Monthly Recurring Revenue)\n- Revenue share payouts\n\n## 🤝 Contributing\n\nThis is a private project\n\nDescription: AI-powered platform for creating, hosting, and sharing engineering calculators",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Calculator Creator App",
+    "one_liner": "AI-powered platform for creating, hosting, and sharing engineering calculators.",
+    "core_promise": "Efficient creation and monetization of custom engineering calculators using AI.",
+    "domain": "engineering tools",
+    "buyers": [
+      {
+        "persona": "engineering professors wanting to create custom calculators",
+        "awareness_level": "problem_aware",
+        "pain": "Difficulty in creating and sharing custom calculators for complex equations.",
+        "candidate_phrases": [
+          "how to create online calculator",
+          "custom calculator for engineering problems",
+          "share engineering calculator online",
+          "build calculator for students",
+          "online calculator creation tool"
+        ]
+      },
+      {
+        "persona": "engineering students needing help with calculations",
+        "awareness_level": "problem_aware",
+        "pain": "Struggling to solve complex engineering problems and seeking step-by-step solutions.",
+        "candidate_phrases": [
+          "help with engineering calculations",
+          "step by step engineering calculator",
+          "online tutor for engineering",
+          "engineering problem solver",
+          "ai tutor for engineering problems"
+        ]
+      },
+      {
+        "persona": "freelance engineers looking to monetize expertise",
+        "awareness_level": "solution_aware",
+        "pain": "Looking for ways to generate passive income from engineering expertise.",
+        "candidate_phrases": [
+          "monetize engineering calculators",
+          "earn from technical calculators",
+          "sell online calculators",
+          "revenue from calculator sharing",
+          "engineering tools revenue sharing"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "There's moderate urgency among professors and students dealing with engineering calculations, but the pain is not acute. Building the MVP would be complex due to AI integration and robust spec validation. Distribution can leverage technical communities and educational sectors, but the fit is not perfect for generalized ad targeting. Retention is potentially high through subscriptions and revenue-sharing models, but the edge is minimal without a clear advantage such as existing partnerships with educational institutions."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "how to create online calculator",
+      "volume": 20,
+      "cpc": 12.5,
+      "competition": 0.22,
+      "source": "dataforseo",
+      "buyer": "engineering professors wanting to create custom calculators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "custom calculator for engineering problems",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "engineering professors wanting to create custom calculators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "share engineering calculator online",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "engineering professors wanting to create custom calculators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "build calculator for students",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "engineering professors wanting to create custom calculators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "online calculator creation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "engineering professors wanting to create custom calculators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "help with engineering calculations",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "engineering students needing help with calculations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "step by step engineering calculator",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "engineering students needing help with calculations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "online tutor for engineering",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "engineering students needing help with calculations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "engineering problem solver",
+      "volume": 260,
+      "cpc": 3.36,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "engineering students needing help with calculations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai tutor for engineering problems",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "engineering students needing help with calculations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "monetize engineering calculators",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance engineers looking to monetize expertise",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "earn from technical calculators",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance engineers looking to monetize expertise",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "sell online calculators",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance engineers looking to monetize expertise",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "revenue from calculator sharing",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance engineers looking to monetize expertise",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "engineering tools revenue sharing",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance engineers looking to monetize expertise",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "engineering problem solver",
+      "volume": 260,
+      "cpc": 3.36,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "engineering students needing help with calculations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to create online calculator",
+      "volume": 20,
+      "cpc": 12.5,
+      "competition": 0.22,
+      "source": "dataforseo",
+      "buyer": "engineering professors wanting to create custom calculators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "custom calculator for engineering problems",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "engineering professors wanting to create custom calculators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "share engineering calculator online",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "engineering professors wanting to create custom calculators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "build calculator for students",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "engineering professors wanting to create custom calculators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "online calculator creation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "engineering professors wanting to create custom calculators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "help with engineering calculations",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "engineering students needing help with calculations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "step by step engineering calculator",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "engineering students needing help with calculations",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 2.6055729142205895,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 20.605572914220588
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "engineering professors wanting to create custom calculators",
+        "anchor_phrase": "how to create online calculator",
+        "offer_copy": "For engineering professors who want to efficiently create and share custom calculators for complex equations but find the process cumbersome, we provide an intuitive platform that simplifies creation and hosting so they can focus on teaching without technical hassles.",
+        "landing_page_headline": "Effortless Tool for Crafting Engineering Calculators"
+      },
+      {
+        "buyer": "engineering students needing help with calculations",
+        "anchor_phrase": "engineering problem solver",
+        "offer_copy": "For engineering students who struggle with complex engineering problems and need clarity, we offer AI-powered calculators that provide step-by-step solutions so they understand the process without getting overwhelmed.",
+        "landing_page_headline": "AI Calculators: Your Problem-Solving Partner"
+      },
+      {
+        "buyer": "freelance engineers looking to monetize expertise",
+        "anchor_phrase": "engineering problem solver",
+        "offer_copy": "For freelance engineers who want to monetize their problem-solving expertise but lack a platform, we offer a user-friendly app to create and sell custom engineering calculators so they earn passive income from their skills.",
+        "landing_page_headline": "Monetize Your Engineering Expertise Effortlessly"
+      }
+    ],
+    "next_action": "Develop a landing page for \"engineering problem solver\" and test targeted ads on Google focusing on engineering students and freelance engineers.",
+    "reasoning": "The current demand indicators show some interest, particularly among engineering students, but typically not among professors or freelancers, indicating an educational gap rather than immediate market demand. Although there is significant willingness to pay, the challenge lies in articulating the value proposition concisely and effectively. By focusing initial efforts on a more engaged group like engineering students, the startup can refine messaging and validate the concept before scaling to other personas."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/CalculatorCreatorApp"
+  }
+}

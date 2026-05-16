@@ -1,0 +1,308 @@
+{
+  "slug": "kawaii-coffee-timer",
+  "source_concept": "Kawaii Coffee Timer",
+  "generated_at": "2026-05-16T17:17:24.935Z",
+  "cross_vertical_insight": "Across these verticals, the common thread is the demand for unique, aesthetically pleasing coffee tools that offer a distinct personal or brand identity. Buyers are motivated by the desire to enhance their coffee-making rituals with items that match their aesthetic or brand appeal. There's a shared interest in standing out, whether for personal satisfaction or brand differentiation.",
+  "verticals": [
+    {
+      "name": "aesthetic-focused online coffee gear shops",
+      "icp": "Small to midsize online retailers specializing in coffee gear, $100k-$500k revenue, owned by design-forward individuals looking to offer unique products.",
+      "rationale": "These shops seek unique and visually appealing products to differentiate their offerings in a crowded market.",
+      "phrases": [
+        {
+          "phrase": "wholesale kawaii coffee timer",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "unique coffee timers for shop",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "cute coffee gear suppliers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "kawaii themed cafe accessories",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "popular coffee gadgets 2023",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "wholesale kawaii coffee timer",
+      "top_volume": 0,
+      "pmf_score": 1.2000000000000002,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.4,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "college students living in dorms",
+      "icp": "College students living on campus, aged 18-24, who enjoy making coffee and are drawn to unique and cute gadgets that fit within their limited dorm space.",
+      "rationale": "Students often seek affordable and aesthetically pleasing items to personalize their limited living spaces.",
+      "phrases": [
+        {
+          "phrase": "cute coffee timer for dorm",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best coffee gadgets for college students",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "unique dorm room coffee accessories",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "kawaii timer app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "cute kawaii gadgets for students",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "cute coffee timer for dorm",
+      "top_volume": 0,
+      "pmf_score": 1.2000000000000002,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.4,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "young urban professionals",
+      "icp": "Young professionals aged 25-35 living in urban areas, earning $40k-$70k annually, who enjoy specialty coffee at home and have an interest in stylish and functional kitchen gadgets.",
+      "rationale": "These individuals appreciate the ritual of coffee making and seek stylish tools that enhance this experience.",
+      "phrases": [
+        {
+          "phrase": "stylish coffee timer app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "kawaii coffee brewing tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best coffee gadgets for young professionals",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "ios coffee timer app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "cute kitchen tools for coffee",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "stylish coffee timer app",
+      "top_volume": 0,
+      "pmf_score": 1.2000000000000002,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.4,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "independent coffee shops",
+      "icp": "Independent coffee shops, $50k-$250k revenue, owner-operated with a strong emphasis on brand differentiation and customer experience.",
+      "rationale": "These shops look for unique tools to enhance their customer interaction and align with their aesthetic branding.",
+      "phrases": [
+        {
+          "phrase": "kawaii coffee timer for cafe",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "unique cafe coffee accessories",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "cute cafe gadgets",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "branded coffee timers wholesale",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "aesthetic tools for coffee shop",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "kawaii coffee timer for cafe",
+      "top_volume": 0,
+      "pmf_score": 1.2000000000000002,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.4,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "lifestyle and home decor influencers",
+      "icp": "Influencers with 10k-50k followers on social media platforms focused on lifestyle and home decor, who frequently review and showcase unique home products.",
+      "rationale": "Influencers actively seek out distinctive and photogenic products to recommend to their followers.",
+      "phrases": [
+        {
+          "phrase": "kawaii coffee timer review",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best unique kitchen gadgets 2023",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "cute aesthetic kitchen tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "kawaii product recommendations",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to create aesthetic kitchen setup",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "kawaii coffee timer review",
+      "top_volume": 0,
+      "pmf_score": 1.2000000000000002,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.4,
+        "retention_n": 0.4
+      }
+    }
+  ]
+}

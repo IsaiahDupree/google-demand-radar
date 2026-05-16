@@ -1,0 +1,306 @@
+{
+  "source_text": "agent-comms\n\n## README\n\n# @isaac/agent-comms\n\nAI agent Google Calendar and Gmail integration. Gives AI agents their own calendar presence and email capabilities for planning work sessions, sending progress updates, and coordinating with users.\n\n## Features\n\n- **Google Calendar Integration**: Create, update, and list calendar blocks for work sessions\n- **Gmail Integration**: Send emails, read inbox, search messages\n- **Daily Planning**: Auto-generate daily work plans using Claude API based on business goals and recent activity\n- **Progress Reporting**: Update calendar blocks and email users on session completion\n- **MCP Server Support**: Expose all features as MCP tools for Claude Code and Windsurf\n\n## Installation\n\n```bash\nnpm install\nnpm run build\n```\n\n## Configuration\n\n### Environment Variables\n\nCopy `.env.example` to `.env` and fill in the required values:\n\n```bash\n# Google OAuth2 Credentials\nGOOGLE_CLIENT_ID=your-client-id.apps.googleusercontent.com\nGOOGLE_CLIENT_SECRET=your-client-secret\nGOOGLE_REFRESH_TOKEN=your-refresh-token\n\n# Agent Email Configuration\nAGENT_EMAIL=agent@yourdomain.com\n\n# User Email Configuration\nUSER_CC_EMAIL=you@yourdomain.com\n\n# Google Calendar Configuration\nCALENDAR_ID=primary\n\n# Business Goals Configuration (optional)\nBUSINESS_GOALS_PATH=/path/to/business-goals.md\n\n# Anthropic API Key (for daily planning)\nANTHROPIC_API_KEY=sk-ant-...\n```\n\n### OAuth2 Setup\n\nSee [docs/OAUTH_SETUP.md](docs/OAUTH_SETUP.md) for detailed instructions on obtaining Google OAuth2 credentials.\n\n## Usage\n\n### CLI Commands\n\n```bash\n# Generate and schedule a daily plan\nnode dist/cli.js plan\n\n# Check today's scheduled blocks\nnode dist/cli.js status\n\n# Report session completion\nnode dist/cli.js report <eventId> \"Session summary\"\n```\n\n### MCP Servers\n\n#### Google Calendar MCP Server\n\nStart the server:\n\n```bash\nnpm run start:gcal\n```\n\n**Claude Desktop Configuration** (`claude_desktop_config.json`):\n\n```json\n{\n  \"mcpServers\": {\n    \"agent-calendar\": {\n      \"command\": \"node\",\n      \"args\": [\n        \"/Users/isaiahdupree/Documents/Software/agent-comms/dist/gcal-mcp.js\"\n      ],\n      \"env\": {\n        \"GOOGLE_CLIENT_ID\": \"your-client-id\",\n        \"GOOGLE_CLIENT_SECRET\": \"your-client-secret\",\n        \"GOOGLE_REFRESH_TOKEN\": \"your-refresh-token\",\n        \"AGENT_EMAIL\": \"agent@yourdomain.com\",\n        \"USER_CC_EMAIL\": \"you@yourdomain.com\",\n        \"CALENDAR_ID\": \"primary\"\n      }\n    }\n  }\n}\n```\n\n**Windsurf Configuration** (`mcp_config.json`):\n\n```json\n{\n  \"mcpServers\": {\n    \"agent-calendar\": {\n      \"command\": \"node\",\n      \"args\": [\n        \"/Users/isaiahdupree/Documents/Software/agent-comms/dist/gcal-mcp.js\"\n      ],\n      \"env\": {\n        \"GOOGLE_CLIENT_ID\": \"your-client-id\",\n        \"GOOGLE_CLIENT_SECRET\": \"your-client-secret\",\n        \"GOOGLE_REFRESH_TOKEN\": \"your-refresh-token\",\n        \"AGENT_EMAIL\": \"agent@yourdomain.com\",\n        \"USER_CC_EMAIL\": \"you@yourdomain.com\",\n        \"CALENDAR_ID\": \"primary\"\n      }\n    }\n  }\n}\n```\n\n**Available Tools:**\n- `gcal_create_block`: Create a calendar block for a work session\n- `gcal_update_block`: Update an existing calendar block\n- `gcal_list_blocks`: List calendar blocks after a specified time\n- `gcal_append_progress`: Append a progress note to a calendar block\n- `gcal_create_daily_plan`: Auto-generate and schedule a daily plan\n\n#### Gmail MCP Server\n\nStart the server:\n\n```bash\nnpm run start:gmail\n```\n\n**Claude Desktop Configuration** (`claude_desktop_config.json`):\n\n```json\n{\n  \"mcpServers\": {\n    \"agent-gmail\": {\n      \"command\": \"node\",\n      \"args\": [\n        \"/Users/isaiahdupree/Documents/Software/agent-comms/dist/gmail-mcp.js\"\n      ],\n      \"env\": {\n        \"GOOGLE_CLIENT_ID\": \"your-client-id\",\n        \"GOOGLE_CLIENT_SECRET\": \"your-client-secret\",\n        \"GOOGLE_REFRESH_TOKEN\": \"your-refresh-token\",\n        \"AGENT_EMAIL\": \"agent@yourdomain.com\",\n        \"USER_CC_EMAIL\": \"you@yourdomain.com\"\n      }\n    }\n  }\n}\n```\n\n**Available Tools:**\n- `gmail_send`: Send an email (auto CC-s USER_CC_EMAIL)\n- `gmail_read_\n\nStack: TypeScript",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Agent-Comms",
+    "one_liner": "AI agent integration for Google Calendar and Gmail to automate business communications.",
+    "core_promise": "Streamline business communication through AI-driven calendar and email management.",
+    "domain": "business productivity tools",
+    "buyers": [
+      {
+        "persona": "small business owners",
+        "awareness_level": "problem_aware",
+        "pain": "Struggle to manage calendar schedules and email communication efficiently.",
+        "candidate_phrases": [
+          "google calendar automation for business",
+          "automate email updates",
+          "use ai for scheduling",
+          "manage business emails with ai",
+          "calendar and email integration tool"
+        ]
+      },
+      {
+        "persona": "self-employed professionals",
+        "awareness_level": "problem_aware",
+        "pain": "Manual scheduling and communication takes time away from core work functions.",
+        "candidate_phrases": [
+          "automate scheduling with google calendar",
+          "email management solution for freelancers",
+          "ai productivity tools for self-employed",
+          "calendar management for consultants",
+          "gmail calendar automation"
+        ]
+      },
+      {
+        "persona": "productivity-focused tech enthusiasts",
+        "awareness_level": "solution_aware",
+        "pain": "Desire for advanced tools that enhance productivity and automate routine tasks.",
+        "candidate_phrases": [
+          "ai tools for productivity",
+          "gmail and google calendar ai integration",
+          "best ai agent for scheduling",
+          "automate gmail with ai",
+          "google calendar ai solution"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "The urgency is moderate as these buyers might have existing workflows but seek improvement. MVP ease is challenging due to integration with Google services and required features. Distribution can leverage SEO and targeted ads effectively. Retention potential is good if the tool proves valuable, but buyer churn may be an issue without compelling differentiation. The advantage is limited without a clear unique mechanism or existing audience mentioned."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "google calendar automation for business",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate email updates",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "use ai for scheduling",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "manage business emails with ai",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "calendar and email integration tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate scheduling with google calendar",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "self-employed professionals",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "email management solution for freelancers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "self-employed professionals",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai productivity tools for self-employed",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "self-employed professionals",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "calendar management for consultants",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "self-employed professionals",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "gmail calendar automation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "self-employed professionals",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai tools for productivity",
+      "volume": 880,
+      "cpc": 19.75,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "productivity-focused tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "gmail and google calendar ai integration",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "productivity-focused tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best ai agent for scheduling",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "productivity-focused tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate gmail with ai",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "productivity-focused tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "google calendar ai solution",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "productivity-focused tech enthusiasts",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "ai tools for productivity",
+      "volume": 880,
+      "cpc": 19.75,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "productivity-focused tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "google calendar automation for business",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate email updates",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "use ai for scheduling",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "manage business emails with ai",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "calendar and email integration tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate scheduling with google calendar",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "self-employed professionals",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "email management solution for freelancers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "self-employed professionals",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 3.1336340326381213,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 22.13363403263812
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "productivity-focused tech enthusiasts",
+        "anchor_phrase": "ai tools for productivity",
+        "offer_copy": "For tech enthusiasts who want to boost productivity but feel bogged down by repetitive tasks, we integrate AI into your Google Calendar and Gmail so you streamline communications without manual intervention.",
+        "landing_page_headline": "Enhance Productivity with AI-Powered Tools"
+      },
+      {
+        "buyer": "small business owners",
+        "anchor_phrase": "manage business emails with ai",
+        "offer_copy": "For small business owners who want efficient email management but struggle to stay organized, we use AI to automate your Google Calendar and Gmail, ensuring you maintain control without the hassle of manual updates.",
+        "landing_page_headline": "Automate Your Business Emails with AI"
+      },
+      {
+        "buyer": "self-employed professionals",
+        "anchor_phrase": "automate scheduling with google calendar",
+        "offer_copy": "For professionals who want to focus on their core work but waste time on scheduling, we automate Google Calendar and Gmail management using AI so you save time without missing key appointments.",
+        "landing_page_headline": "AI-Driven Scheduling for Self-Employed Pros"
+      }
+    ],
+    "next_action": "Create a landing page for each buyer persona using the specified headline, launch a $150 total budget AdWords campaign targeting the selected anchor phrases, and measure engagement and conversion rates.",
+    "reasoning": "The data suggests moderate demand and buyer urgency, with strong willingness to pay for a product that solves pains related to business communication management. However, the interest scores for specific phrases in some buyer segments are low, posing a risk to reaching potential customers. Additionally, while the concept aligns well with distribution channels, the challenge lies in MVP development due to the advantage and retention potential scores. Testing these offers through targeted AdWords campaigns will validate demand and improve understanding of which buyer group resonates most with the solution."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/agent-comms"
+  }
+}

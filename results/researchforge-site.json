@@ -1,0 +1,306 @@
+{
+  "source_text": "researchforge-site\n\nScholarForge calculators, articles, simulations, and videos site (Next.js 15)\n\n## README\n\nThis is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).\n\n## Getting Started\n\nFirst, run the development server:\n\n```bash\nnpm run dev\n# or\nyarn dev\n# or\npnpm dev\n# or\nbun dev\n```\n\nOpen [http://localhost:3000](http://localhost:3000) with your browser to see the result.\n\nYou can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.\n\nThis project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.\n\n## Learn More\n\nTo learn more about Next.js, take a look at the following resources:\n\n- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.\n- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.\n\nYou can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!\n\n## Deploy on Vercel\n\nThe easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.\n\nCheck out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.\n\n\nStack: TypeScript",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "ScholarForge",
+    "one_liner": "An online platform providing calculators, articles, simulations, and videos for academic research purposes.",
+    "core_promise": "Empower scholars and researchers with easy-to-use tools and resources to enhance their academic projects and workflows.",
+    "domain": "academic research tools",
+    "buyers": [
+      {
+        "persona": "graduate students struggling with data analysis",
+        "awareness_level": "problem_aware",
+        "pain": "Need tools to assist with complex data calculations and simulations for their theses and dissertations.",
+        "candidate_phrases": [
+          "data analysis tools for graduate students",
+          "academic simulation tools",
+          "easy data calculator for research",
+          "thesis data tools",
+          "research calculations help"
+        ]
+      },
+      {
+        "persona": "university professors needing teaching resources",
+        "awareness_level": "solution_aware",
+        "pain": "Need engaging and accurate resources to enhance their lectures and support student learning.",
+        "candidate_phrases": [
+          "teaching resources for university lectures",
+          "academic calculators for classrooms",
+          "simulation videos for education",
+          "interactive learning tools for higher education",
+          "resource hub for university teachers"
+        ]
+      },
+      {
+        "persona": "independent researchers requiring robust academic tools",
+        "awareness_level": "solution_aware",
+        "pain": "Struggling to find comprehensive tools that aid in conducting thorough research projects.",
+        "candidate_phrases": [
+          "research tools for independent researchers",
+          "free academic resources online",
+          "comprehensive research simulations",
+          "online calculators for research",
+          "resources for independent study"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 2,
+      "mvp_ease": 1,
+      "distribution_fit": 3,
+      "retention_potential": 3,
+      "advantage": 1,
+      "rationale": "The urgency for academic tools is moderate as researchers and educators may seek out these resources periodically or seasonally rather than consistently. Building such a complex platform requires robust functions like simulations and calculators, making an MVP challenging. Distribution may face hurdles as reaching researchers directly through Google or social media isn't straightforward. Retention potential is moderate given the educational nature but not necessarily sticky. The description provided lacks any specific existing advantages like proprietary data or a unique audience, leading to a low advantage score."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "data analysis tools for graduate students",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "graduate students struggling with data analysis",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "academic simulation tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "graduate students struggling with data analysis",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy data calculator for research",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "graduate students struggling with data analysis",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "thesis data tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "graduate students struggling with data analysis",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "research calculations help",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "graduate students struggling with data analysis",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "teaching resources for university lectures",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "university professors needing teaching resources",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "academic calculators for classrooms",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "university professors needing teaching resources",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "simulation videos for education",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "university professors needing teaching resources",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "interactive learning tools for higher education",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "university professors needing teaching resources",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "resource hub for university teachers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "university professors needing teaching resources",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "research tools for independent researchers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent researchers requiring robust academic tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "free academic resources online",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent researchers requiring robust academic tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "comprehensive research simulations",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent researchers requiring robust academic tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "online calculators for research",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent researchers requiring robust academic tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "resources for independent study",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent researchers requiring robust academic tools",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "free academic resources online",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent researchers requiring robust academic tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "data analysis tools for graduate students",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "graduate students struggling with data analysis",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "academic simulation tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "graduate students struggling with data analysis",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy data calculator for research",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "graduate students struggling with data analysis",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "thesis data tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "graduate students struggling with data analysis",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "research calculations help",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "graduate students struggling with data analysis",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "teaching resources for university lectures",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "university professors needing teaching resources",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "academic calculators for classrooms",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "university professors needing teaching resources",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 1.10810534993878,
+    "buyer_urgency": 2,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 1,
+    "distribution_fit": 3,
+    "advantage": 1,
+    "retention_potential": 3,
+    "total": 12.60810534993878
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "graduate students struggling with data analysis",
+        "anchor_phrase": "easy data calculator for research",
+        "offer_copy": "For graduate students who need tools to complete their theses and dissertations but struggle with complex calculations, we offer an easy data calculator to simplify research without the need for expensive software.",
+        "landing_page_headline": "Simplify Your Research with Our Easy Data Calculator"
+      },
+      {
+        "buyer": "university professors needing teaching resources",
+        "anchor_phrase": "teaching resources for university lectures",
+        "offer_copy": "For university professors seeking engaging and accurate teaching resources but frustrated by limited existing options, we provide comprehensive resources to enhance lectures and support effective student learning.",
+        "landing_page_headline": "Enhance Lectures with Comprehensive Teaching Resources"
+      },
+      {
+        "buyer": "independent researchers requiring robust academic tools",
+        "anchor_phrase": "free academic resources online",
+        "offer_copy": "For independent researchers conducting rigorous projects but facing limited tool accessibility, we offer free online academic resources to aid thorough research without high costs or barriers.",
+        "landing_page_headline": "Access Free & Robust Academic Resources Online"
+      }
+    ],
+    "next_action": "Survey graduate students and university professors to understand their specific needs, preferences, and the urgency for new academic tools. Use insights to refine the value proposition and test interest through targeted landing pages.",
+    "reasoning": "The low search demand, willingness to pay, and advantage scores indicate a lack of strong market signals for immediate user acquisition and monetization. While there is some fit with distribution, the overall low urgency suggests the offering may not be pressing or sufficiently differentiated. To validate and refine the concept, it's crucial to directly engage with potential users to gain deeper insights into their pain points and tool requirements."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/researchforge-site"
+  }
+}

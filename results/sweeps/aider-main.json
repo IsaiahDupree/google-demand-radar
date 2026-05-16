@@ -1,0 +1,308 @@
+{
+  "slug": "aider-main",
+  "source_concept": "Aider AI Coding Assistant",
+  "generated_at": "2026-05-16T16:44:18.144Z",
+  "cross_vertical_insight": "Across these verticals, a common pain point is the need to improve coding efficiency and quality, whether due to resource constraints or managing large codebases. Each vertical has a unique context but shares the overarching goal of leveraging AI to enhance productivity and maintain high coding standards. The search phrases reflect a mixture of practical purchase intent and general interest in improving coding workflows.",
+  "verticals": [
+    {
+      "name": "freelance software developers",
+      "icp": "Independent developers handling multiple projects for various clients, typically working alone or with minimal collaboration.",
+      "rationale": "Freelancers need to maximize productivity and minimize errors to compete with larger teams and manage multiple projects efficiently.",
+      "phrases": [
+        {
+          "phrase": "ai coding tool for freelance developers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best ai assistant for coding",
+          "volume": 90,
+          "cpc": 22.39,
+          "competition": 0.7,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "coding productivity tools for freelancers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "how to code faster as a freelancer",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy ai coding assistant",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 2.0845395579600163,
+      "bofu_density": 0,
+      "max_cpc": 22.39,
+      "top_phrase": "best ai assistant for coding",
+      "top_volume": 90,
+      "pmf_score": 4.75072373477601,
+      "pmf_breakdown": {
+        "demand_n": 0.41690791159200324,
+        "bofu_n": 0,
+        "cpc_n": 1,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "small web development agencies",
+      "icp": "Agencies with 5-15 developers working on multiple client projects, focusing on quick turnarounds and quality code delivery.",
+      "rationale": "These agencies need efficient coding tools to meet tight client deadlines and maintain code quality across projects.",
+      "phrases": [
+        {
+          "phrase": "ai coding assistant for web developers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best ai tool for web development",
+          "volume": 30,
+          "cpc": 14.15,
+          "competition": 0.49,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to automate coding tasks",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy ai coding assistant for web agencies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "coding efficiency tools for developers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 1.5868998267261993,
+      "bofu_density": 0,
+      "max_cpc": 14.15,
+      "top_phrase": "best ai tool for web development",
+      "top_volume": 30,
+      "pmf_score": 4.452139896035719,
+      "pmf_breakdown": {
+        "demand_n": 0.3173799653452399,
+        "bofu_n": 0,
+        "cpc_n": 1,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "large enterprise development teams",
+      "icp": "Corporations with 50+ developers, focusing on maintaining large-scale software systems with high code quality and efficiency.",
+      "rationale": "Enterprises benefit from AI assistance to manage and streamline large codebases and complex development projects.",
+      "phrases": [
+        {
+          "phrase": "enterprise ai coding solutions",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best ai coding assistant for large teams",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "automate code review process",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "ai tools for enterprise developers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "coding standards automation tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0.8280004035947847,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "automate code review process",
+      "top_volume": 10,
+      "pmf_score": 2.496800242156871,
+      "pmf_breakdown": {
+        "demand_n": 0.16560008071895693,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "early-stage tech startups",
+      "icp": "Startups with 2-10 engineers, limited funding, and the need to rapidly develop and iterate on their product.",
+      "rationale": "Startups often face resource constraints and need tools to stretch the capabilities of their small developer teams.",
+      "phrases": [
+        {
+          "phrase": "ai coding assistant for startups",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "tools to improve coding efficiency",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best coding assistant for tech startups",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "ai code writing tool for startups",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to speed up coding in startups",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "ai coding assistant for startups",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "university computer science departments",
+      "icp": "Departments with faculty focused on teaching software development courses, responsible for keeping up with the latest coding technologies.",
+      "rationale": "Universities need tools to help students learn modern coding practices and improve educational outcomes with AI assistance.",
+      "phrases": [
+        {
+          "phrase": "ai coding tools for education",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best ai coding assistant for students",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to teach coding with ai",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "education discounts on ai coding tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "ai code editing assistant for classes",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "ai coding tools for education",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    }
+  ]
+}

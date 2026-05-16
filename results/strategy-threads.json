@@ -1,0 +1,365 @@
+{
+  "source_text": "Strategy Threads API\n\nA queryable database of business strategy patterns (go-to-market, growth loops, pricing, positioning, retention) exposed as an API for autonomous agents and AI orchestrators to call when planning multi-step business workflows.\n\nImagine: a marketing agent calls /strategies/lookup?goal=launch+SaaS+B2B and gets back a structured plan with KPIs, channels, content cadence, and a step-by-step playbook.\n\nSold to: AI agent builders, automation platforms, AI-native SaaS companies, agent frameworks.\n\nThe core bet: as more business workflows are run by autonomous agents, those agents will need structured strategy context, not just unstructured prose.\n",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Strategy Threads API",
+    "one_liner": "An API providing structured business strategy patterns for AI agents.",
+    "core_promise": "Autonomous business agents generate and execute strategic business plans efficiently and effectively.",
+    "domain": "AI and business strategy",
+    "buyers": [
+      {
+        "persona": "AI agent builders",
+        "awareness_level": "solution_aware",
+        "pain": "Need for consistent, structured strategic guidance for autonomous agents developing business strategy.",
+        "candidate_phrases": [
+          "strategy api for ai agents",
+          "structured strategy data for ai",
+          "api for business strategy patterns",
+          "business strategy database api",
+          "autonomous agent strategy api"
+        ]
+      },
+      {
+        "persona": "automation platform developers",
+        "awareness_level": "problem_aware",
+        "pain": "Struggling to implement dynamic, effective strategic workflows in automation platforms.",
+        "candidate_phrases": [
+          "business workflow api",
+          "strategy planning for automation",
+          "automated business strategy",
+          "dynamic strategic workflows for automation",
+          "api for business process automation"
+        ]
+      },
+      {
+        "persona": "AI-native SaaS companies",
+        "awareness_level": "product_aware",
+        "pain": "Seeking to enhance AI capabilities by integrating strategic business planning directly into their SaaS offerings.",
+        "candidate_phrases": [
+          "integrate strategy api into saas",
+          "business planning api for saas",
+          "enhance ai with business strategy",
+          "saas products with strategic capabilities",
+          "embed strategy patterns into saas"
+        ]
+      },
+      {
+        "persona": "agent framework developers",
+        "awareness_level": "solution_aware",
+        "pain": "Need to equip agent frameworks with ready-made business strategy patterns to remain competitive.",
+        "candidate_phrases": [
+          "agent frameworks with strategy api",
+          "strategy tools for agent development",
+          "api business strategies for ai frameworks",
+          "integrating strategy in agent frameworks",
+          "frameworks for ai strategy execution"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 4,
+      "advantage": 2,
+      "rationale": "The buyer urgency is moderate as AI builders are actively seeking structured solutions, but it's not a pressing need for all sectors. Developing an MVP will require significant data compilation and structuring, hence not very easy. The distribution fit is good due to niche but searchable terminology used by tech-savvy developers. Retention is potentially high if the API proves effective, making it a tool integral to ongoing AI development. However, there's no noted advantage or edge over competitors, so this scores low for advantage."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "strategy api for ai agents",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "AI agent builders",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "structured strategy data for ai",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "AI agent builders",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "api for business strategy patterns",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "AI agent builders",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "business strategy database api",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "AI agent builders",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "autonomous agent strategy api",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "AI agent builders",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "business workflow api",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "automation platform developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "strategy planning for automation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "automation platform developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated business strategy",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "automation platform developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "dynamic strategic workflows for automation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "automation platform developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "api for business process automation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "automation platform developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "integrate strategy api into saas",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "AI-native SaaS companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "business planning api for saas",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "AI-native SaaS companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "enhance ai with business strategy",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "AI-native SaaS companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "saas products with strategic capabilities",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "AI-native SaaS companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "embed strategy patterns into saas",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "AI-native SaaS companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "agent frameworks with strategy api",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "agent framework developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "strategy tools for agent development",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "agent framework developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "api business strategies for ai frameworks",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "agent framework developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "integrating strategy in agent frameworks",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "agent framework developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "frameworks for ai strategy execution",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "agent framework developers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "strategy api for ai agents",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "AI agent builders",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "structured strategy data for ai",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "AI agent builders",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "api for business strategy patterns",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "AI agent builders",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "business strategy database api",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "AI agent builders",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "autonomous agent strategy api",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "AI agent builders",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "business workflow api",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "automation platform developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "strategy planning for automation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "automation platform developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated business strategy",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "automation platform developers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 0,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 4,
+    "total": 16.5
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "AI agent builders",
+        "anchor_phrase": "business strategy database api",
+        "offer_copy": "For AI agent builders who want consistent, structured strategic guidance but lack a reliable source, we provide a business strategy database API so they can integrate proven strategies into their AI agents without the complexity of developing this from scratch.",
+        "landing_page_headline": "Integrate Proven Strategies with Our API"
+      },
+      {
+        "buyer": "automation platform developers",
+        "anchor_phrase": "business workflow api",
+        "offer_copy": "For automation platform developers who need to implement dynamic and effective strategic workflows, we offer a business workflow API so they can enhance their platforms with strategic automation without struggling with custom solutions.",
+        "landing_page_headline": "Enhance Workflows with Our Strategy API"
+      },
+      {
+        "buyer": "AI-native SaaS companies",
+        "anchor_phrase": "automated business strategy",
+        "offer_copy": "For AI-native SaaS companies looking to enhance AI capabilities with strategic business planning, we provide automated business strategy integration so they can empower their software with strategic insight without extensive development time.",
+        "landing_page_headline": "Power Your SaaS with Strategic Planning"
+      },
+      {
+        "buyer": "agent framework developers",
+        "anchor_phrase": "api for business strategy patterns",
+        "offer_copy": "For agent framework developers needing ready-made business strategy patterns, we offer an API for business strategy patterns so they can keep their frameworks competitive with efficient strategy integration without sourcing independently.",
+        "landing_page_headline": "Stay Competitive with Our Strategy Patterns API"
+      }
+    ],
+    "next_action": "Interview 5 potential users in each buyer persona group to uncover specific pains, desired outcomes, and language they use around strategic business APIs.",
+    "reasoning": "The assigned verdict is 'Educate Later' due to the extremely low search demand across all phrases related to the API concept. While there is moderate buyer urgency, the lack of search activity indicates a need for market education. The risk lies in the need for founders to validate demand through qualitative research since the quantitative demand signals are practically nonexistent. Engaging directly with potential users can help refine value propositions and uncover latent demand which is not visible in search data alone."
+  }
+}

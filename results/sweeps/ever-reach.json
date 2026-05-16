@@ -1,0 +1,308 @@
+{
+  "slug": "ever-reach",
+  "source_concept": "EverReach",
+  "generated_at": "2026-05-16T17:16:11.988Z",
+  "cross_vertical_insight": "Across these verticals, the common pain points are maintaining personal connections and ensuring timely follow-ups in network-driven fields. These buyers tend to work independently or in small teams, requiring tools that consolidate various channels of communication into a cohesive system to optimize relationship management.",
+  "verticals": [
+    {
+      "name": "real estate agents",
+      "icp": "Individual real estate agents or small teams handling multiple clients and properties, constantly networking to generate leads and maintain relationships.",
+      "rationale": "Real estate agents rely heavily on personal networks for leads, needing organized reminders to maintain and nurture these relationships.",
+      "phrases": [
+        {
+          "phrase": "real estate crm software",
+          "volume": 3600,
+          "cpc": 46.64,
+          "competition": 0.09,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "personal crm for real estate agents",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to manage client follow-ups real estate",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best crm for managing real estate leads",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy personal crm for realtors",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 4.104501281327328,
+      "bofu_density": 0.2,
+      "max_cpc": 46.64,
+      "top_phrase": "real estate crm software",
+      "top_volume": 3600,
+      "pmf_score": 6.662700768796396,
+      "pmf_breakdown": {
+        "demand_n": 0.8209002562654655,
+        "bofu_n": 0.2,
+        "cpc_n": 1,
+        "urgency_n": 0.7,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "nonprofit fundraising managers",
+      "icp": "Individuals or small teams in nonprofits managing donor relations and engagement, tasked with efficiently maintaining donor communications and follow-ups.",
+      "rationale": "Fundraising managers need to keep detailed records of donor interactions to personalize follow-ups and optimize fundraising efforts.",
+      "phrases": [
+        {
+          "phrase": "crm for fundraising",
+          "volume": 390,
+          "cpc": 49.11,
+          "competition": 0.39,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best donor management software",
+          "volume": 140,
+          "cpc": 74.99,
+          "competition": 0.16,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "personal crm for nonprofit fundraising",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy nonprofit crm for small teams",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to manage donor relationships",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0.18,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 3.156655075822771,
+      "bofu_density": 0.2,
+      "max_cpc": 74.99,
+      "top_phrase": "crm for fundraising",
+      "top_volume": 390,
+      "pmf_score": 6.0939930454936615,
+      "pmf_breakdown": {
+        "demand_n": 0.6313310151645541,
+        "bofu_n": 0.2,
+        "cpc_n": 1,
+        "urgency_n": 0.7,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "independent financial advisors",
+      "icp": "Solo financial advisors or small firms, managing both existing clients and prospecting new clients in competitive markets.",
+      "rationale": "Financial advisors need to maintain personal connections with clients and prospects, ensuring timely follow-ups and personalized service.",
+      "phrases": [
+        {
+          "phrase": "crm for financial advisors",
+          "volume": 320,
+          "cpc": 60.31,
+          "competition": 0.12,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "personal crm for small financial firms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best tools for financial advisor client management",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy financial advisor crm",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to keep track of client interactions finance",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 2.9866681832471853,
+      "bofu_density": 0.2,
+      "max_cpc": 60.31,
+      "top_phrase": "crm for financial advisors",
+      "top_volume": 320,
+      "pmf_score": 5.992000909948311,
+      "pmf_breakdown": {
+        "demand_n": 0.5973336366494371,
+        "bofu_n": 0.2,
+        "cpc_n": 1,
+        "urgency_n": 0.7,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "executive headhunters",
+      "icp": "Boutique executive search consultants managing complex networks of candidates and clients, needing to keep track of detailed interactions for placement opportunities.",
+      "rationale": "Headhunters need to remember specifics about a multitude of candidates and clients to make successful placements, requiring efficient reminder systems.",
+      "phrases": [
+        {
+          "phrase": "crm for executive recruiters",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "personal crm for headhunters",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best crm for recruitment agencies",
+          "volume": 40,
+          "cpc": 83.67,
+          "competition": 0.05,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to manage contacts for headhunting",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "crm that creates follow-up reminders recruiters",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 1.716100415718311,
+      "bofu_density": 0,
+      "max_cpc": 83.67,
+      "top_phrase": "best crm for recruitment agencies",
+      "top_volume": 40,
+      "pmf_score": 4.729660249430986,
+      "pmf_breakdown": {
+        "demand_n": 0.3432200831436622,
+        "bofu_n": 0,
+        "cpc_n": 1,
+        "urgency_n": 0.7,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "freelance graphic designers",
+      "icp": "Solo freelance graphic designers managing 10-30 clients and projects at a time, often engaging in direct outreach for potential gigs.",
+      "rationale": "Freelancers frequently juggle multiple client relationships, requiring constant follow-ups and reminders to maintain and expand their network.",
+      "phrases": [
+        {
+          "phrase": "personal crm for freelancers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to track freelance clients",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best crm for graphic designers",
+          "volume": 20,
+          "cpc": 51.83,
+          "competition": 0.39,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "freelance client management tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy crm for creatives",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 1.406921995101518,
+      "bofu_density": 0,
+      "max_cpc": 51.83,
+      "top_phrase": "best crm for graphic designers",
+      "top_volume": 20,
+      "pmf_score": 4.544153197060911,
+      "pmf_breakdown": {
+        "demand_n": 0.2813843990203036,
+        "bofu_n": 0,
+        "cpc_n": 1,
+        "urgency_n": 0.7,
+        "retention_n": 0.8
+      }
+    }
+  ]
+}

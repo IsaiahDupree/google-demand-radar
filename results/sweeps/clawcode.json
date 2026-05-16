@@ -1,0 +1,388 @@
+{
+  "slug": "clawcode",
+  "source_concept": "ClawCode",
+  "generated_at": "2026-05-16T17:13:25.524Z",
+  "cross_vertical_insight": "The common theme across these verticals is the need to streamline repetitive tasks and enhance community engagement using automation within Discord. These groups often face the challenge of efficiently managing large or active communities, which can be addressed by leveraging a powerful AI-based Discord tool. The purchase intent is strong where automation directly impacts operational efficiency and community satisfaction.",
+  "verticals": [
+    {
+      "name": "esports teams and organizations",
+      "icp": "Medium to large esports teams, 10-50 members, needing to coordinate events and manage large community interactions on Discord.",
+      "rationale": "Managing player schedules, coordinating with fans, and executing repetitive community tasks can be streamlined by AI automation within Discord.",
+      "phrases": [
+        {
+          "phrase": "discord bot for esports team",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automate discord tasks for gaming community",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best ai assistant for discord",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "esports discord bot setup",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "discord management tools for esports",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy ai-driven discord moderator",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to automate event reminders on discord",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "discord bot for esports team",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "online educational courses",
+      "icp": "Online course providers with active learning communities on Discord, 500-2,000 members, needing to streamline administrative processes and enhance student interaction.",
+      "rationale": "Automating routine administrative tasks could greatly benefit these communities by freeing up time for course creation and interaction improvement.",
+      "phrases": [
+        {
+          "phrase": "discord bot for managing online course",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "ai assistant for education discord channels",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best discord bot for online classes",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "automating student engagement on discord",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "compare discord bots for education",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "education discord bot pricing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "set up classroom bot discord",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "discord bot for managing online course",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "software development teams",
+      "icp": "Remote software development teams, 5-20 developers, using Discord for project management and needing automation for project task updates and integrations.",
+      "rationale": "These teams can leverage multi-channel bots to automate status updates and streamline notifications across project tools.",
+      "phrases": [
+        {
+          "phrase": "discord bot for software team collaboration",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automate software dev updates on discord",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best project management bot discord",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "integrate github with discord bot",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "ai discord bot for software development",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "discord workflow automation tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to automate dev tasks in discord",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "discord bot for software team collaboration",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "content creator communities",
+      "icp": "Communities built around content creators with 1,000-10,000 members on Discord, focused on enhancing fan engagement and content distribution automation.",
+      "rationale": "Creators can automate interaction and content distribution tasks to maintain high engagement without manual effort.",
+      "phrases": [
+        {
+          "phrase": "discord bot for content creators",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automate discord engagement for influencers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "top discord bots for fan interaction",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "automated content posting in discord",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "discord ai assistant for creators",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "manage large discord community easily",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best discord tool for fan management",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "discord bot for content creators",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "crypto and blockchain communities",
+      "icp": "Crypto investor groups and blockchain project teams using Discord, 200-1,000 members, focusing on real-time updates and community engagement.",
+      "rationale": "Automating alerts, managing community queries, and executing commands can enhance community management and project transparency.",
+      "phrases": [
+        {
+          "phrase": "discord bot for crypto community",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automate crypto alerts on discord",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best discord bot for blockchain projects",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "setup ai assistant for discord crypto servers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "compare discord bots for crypto",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "discord automation for blockchain groups",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to manage crypto discord efficiently",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "discord bot for crypto community",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    }
+  ]
+}

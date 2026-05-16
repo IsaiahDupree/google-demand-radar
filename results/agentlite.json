@@ -1,0 +1,243 @@
+{
+  "source_text": "agentlite\n\n## README\n\n# AgentLite — Agent Orchestration Platform on Vercel\n\nAgent orchestration platform providing health checks, agent lifecycle management, task queuing, and real-time monitoring capabilities.\n\n## Architecture\n\n```\n┌─────────────────────────────────────────┐\n│  Frontend Dashboard (Next.js)            │\n│  - Real-time agent status monitoring     │\n│  - Task management UI                    │\n│  - Metrics visualization                 │\n└────────────────┬────────────────────────┘\n                 │\n┌────────────────▼────────────────────────┐\n│  Next.js API Routes (/api/*)             │\n│  - Agents (CRUD)                         │\n│  - Tasks (queue, process, status)        │\n│  - Metrics & Logs                        │\n│  - Health & Ecosystem status             │\n│  - Cron jobs (process-results)           │\n└────────────────┬────────────────────────┘\n                 │\n┌────────────────▼────────────────────────┐\n│  Supabase Backend (PostgreSQL)           │\n│  - agents, tasks, execution_logs         │\n│  - agent_states, performance_metrics     │\n│  - safari_command_queue (daemon events)  │\n└─────────────────────────────────────────┘\n```\n\n## Quick Start\n\n### Prerequisites\n- Node.js 18+\n- npm or yarn\n- Supabase project (free tier works)\n\n### Local Development\n\n```bash\n# Clone and install dependencies\ngit clone <repo>\ncd agentlite\nnpm install\n\n# Create .env.local with Supabase credentials\ncat > .env.local << EOF\nSUPABASE_URL=https://your-project.supabase.co\nSUPABASE_SERVICE_ROLE_KEY=your-service-role-key\nNEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co\nCRON_SECRET=your-secret-here\nEOF\n\n# Start development server\nnpm run dev\n# Open http://localhost:3000\n```\n\n### Environment Variables\n\nRequired:\n- `SUPABASE_URL` - Supabase project URL\n- `SUPABASE_SERVICE_ROLE_KEY` - Service role key (for server-side operations)\n\nOptional:\n- `NEXT_PUBLIC_SUPABASE_URL` - Public Supabase URL\n- `CRON_SECRET` - Secret for cron job authentication\n- `API_KEY` - Default API key for endpoints\n- `JWT_SECRET` - JWT signing secret\n\n## API Endpoints\n\n### Health & Status\n- `GET /api/health` - Service health check with Supabase connectivity\n- `GET /api/ecosystem` - Full ecosystem snapshot from Supabase\n\n### Agents (CRUD)\n- `POST /api/agents` - Create agent\n- `GET /api/agents` - List agents (with pagination & filtering)\n- `GET /api/agents/:id` - Get agent details\n- `PUT /api/agents/:id` - Update agent\n- `DELETE /api/agents/:id` - Delete agent (hard or soft delete)\n\n### Tasks (Queue)\n- `POST /api/tasks` - Create and enqueue task\n- `GET /api/tasks` - List tasks (with stats)\n- `GET /api/tasks/:id` - Get task status and results\n- `PUT /api/tasks/:id` - Update task status or retry\n- `DELETE /api/tasks/:id` - Cancel task\n\n### Monitoring\n- `GET /api/metrics` - Query performance metrics\n- `GET /api/recent` - Recent booking results\n\n### Cron Jobs (Vercel)\n- `POST /api/cron/orchestrate` - 15-minute decision loop\n- `POST /api/cron/process-results` - 5-minute result processor\n\n## Authentication\n\nAPI endpoints support multiple auth methods:\n\n```bash\n# API Key\ncurl -H \"x-api-key: your-api-key\" http://localhost:3000/api/agents\n\n# Bearer Token (JWT)\ncurl -H \"Authorization: Bearer token\" http://localhost:3000/api/agents\n```\n\n## Database Schema\n\n### Core Tables\n- `agents` - Agent registry with status and config\n- `tasks` - Task queue with priority and retry logic\n- `execution_logs` - Audit trail of all executions\n- `agent_states` - State persistence for recovery\n- `performance_metrics` - Time-series metrics\n\n### External Integration\n- `safari_command_queue` - Daemon command results\n- `agent_bookings` - Scheduled actions from decision engine\n\n## Deployment\n\n### Deploy to Vercel\n\n```bash\n# Install Vercel CLI (if not already installed)\nnpm i -g vercel\n\n# Deploy\nvercel --prod\n\n# Set environment variables in Vercel dashboard\n# Settings > Environment Variables\n```\n\n### Cron Jobs\n\nAgentLite includes two cron jobs configured in `vercel.json`:\n\n1. **Orchestration** (`/api/cron/orchestrate`\n\nStack: TypeScript",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "AgentLite",
+    "one_liner": "An agent orchestration platform for managing health checks, task queuing, and real-time monitoring.",
+    "core_promise": "Efficient and reliable management of agent lifecycles and tasks with real-time insights.",
+    "domain": "developer tooling",
+    "buyers": [
+      {
+        "persona": "devops engineers managing microservices",
+        "awareness_level": "solution_aware",
+        "pain": "Managing health checks and lifecycle of numerous microservices across environments.",
+        "candidate_phrases": [
+          "microservices health check tool",
+          "agent lifecycle management platform",
+          "devops task orchestration",
+          "real-time monitoring for microservices",
+          "best microservices dashboard"
+        ]
+      },
+      {
+        "persona": "startup CTOs handling tech infrastructure",
+        "awareness_level": "problem_aware",
+        "pain": "Ensuring reliable task execution and monitoring across a growing tech stack.",
+        "candidate_phrases": [
+          "orchestrate tasks in startup",
+          "real-time agent monitoring tools",
+          "how to manage microservice agents",
+          "tech stack task management tool",
+          "monitor startup infrastructure"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 3,
+      "distribution_fit": 3,
+      "retention_potential": 4,
+      "advantage": 1,
+      "rationale": "The buyer urgency is moderate as the need for efficient agent management and monitoring increases with scale but is not immediately critical for all. Building an MVP involving microservice management and dashboards could be moderately complex. There is a reasonable distribution fit through SEO and dev community channels. Retention potential is high given the ongoing need for tool utilization, but there's no clear mention of an existing edge or differentiation in the idea, impacting the advantage score."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "microservices health check tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers managing microservices",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "agent lifecycle management platform",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers managing microservices",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "devops task orchestration",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers managing microservices",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "real-time monitoring for microservices",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers managing microservices",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best microservices dashboard",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers managing microservices",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "orchestrate tasks in startup",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "startup CTOs handling tech infrastructure",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "real-time agent monitoring tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "startup CTOs handling tech infrastructure",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to manage microservice agents",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "startup CTOs handling tech infrastructure",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tech stack task management tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "startup CTOs handling tech infrastructure",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "monitor startup infrastructure",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "startup CTOs handling tech infrastructure",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "microservices health check tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers managing microservices",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "agent lifecycle management platform",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers managing microservices",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "devops task orchestration",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers managing microservices",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "real-time monitoring for microservices",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers managing microservices",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best microservices dashboard",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers managing microservices",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "orchestrate tasks in startup",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "startup CTOs handling tech infrastructure",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "real-time agent monitoring tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "startup CTOs handling tech infrastructure",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to manage microservice agents",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "startup CTOs handling tech infrastructure",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 0,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 3,
+    "distribution_fit": 3,
+    "advantage": 1,
+    "retention_potential": 4,
+    "total": 15.5
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "devops engineers managing microservices",
+        "anchor_phrase": "real-time monitoring for microservices",
+        "offer_copy": "For DevOps engineers who need continuous insights but struggle with managing microservices' health, we provide a real-time monitoring tool that offers effective orchestration so they can swiftly manage service health without constant manual checks.",
+        "landing_page_headline": "Real-time Monitoring for Microservices Made Easy"
+      },
+      {
+        "buyer": "startup CTOs handling tech infrastructure",
+        "anchor_phrase": "real-time agent monitoring tools",
+        "offer_copy": "For startup CTOs who require agile tech management but are overwhelmed by their growing infrastructure, we offer real-time agent monitoring tools that ensure reliable task execution so they can focus on scaling without infrastructure bottlenecks.",
+        "landing_page_headline": "Efficient Real-Time Agent Monitoring for Growing Teams"
+      }
+    ],
+    "next_action": "Engage in direct conversations with DevOps engineers and startup CTOs to surface real-world monitoring and task management challenges they face.",
+    "reasoning": "The keyword data indicates a lack of existing search demand, with a score of 0.0/5 indicating no meaningful search volume for the phrases of interest. This suggests that the market might not yet be aware of the specific problem this tool solves or lacks awareness of the solution itself. The 'Educate Later' verdict emphasizes the need for educating the market about the problem and solution. Before investing in product development, the founder should gather deeper insights into the specific needs and pain points by talking directly to the target users."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/agentlite"
+  }
+}

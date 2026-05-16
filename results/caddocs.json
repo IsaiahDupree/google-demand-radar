@@ -1,0 +1,306 @@
+{
+  "source_text": "CADDocs\n\n## README\n\n# CAD Documentation Builder with AI Suggestions\n\nA single-file tool that scans directories for CAD files and generates rich documentation with AI-suggested metadata including pricing, materials, print parameters, and selling points.\n\n## Features\n\n- **AI-Powered Suggestions**: Uses OpenAI Structured Outputs for reliable metadata generation\n- **Mesh Analysis**: Optional trimesh integration for bounding box, volume, and watertight analysis\n- **Comprehensive Documentation**: Generates per-file pages with YAML frontmatter\n- **MkDocs Integration**: Optional site generation for beautiful browsable catalogs\n- **Human-in-the-Loop**: AI suggests, you approve/edit before saving\n- **Resumable**: Skip already-documented files (use `--force` to re-process)\n\n## Quick Start\n\n1. **Install dependencies**:\n   ```bash\n   pip install -r requirements.txt\n   ```\n\n2. **Set up OpenAI API** (optional but recommended):\n   ```bash\n   # Windows PowerShell\n   $env:OPENAI_API_KEY=\"sk-your-key-here\"\n   \n   # Mac/Linux\n   export OPENAI_API_KEY=\"sk-your-key-here\"\n   ```\n\n3. **Run on a CAD folder**:\n   ```bash\n   python cad_doc_builder_ai.py ./my_cad_project\n   ```\n\n4. **Generate a browsable site** (optional):\n   ```bash\n   python cad_doc_builder_ai.py ./my_cad_project --mkdocs --site-name \"My CAD Catalog\"\n   mkdocs serve  # Preview at http://127.0.0.1:8000\n   ```\n\n## Usage Examples\n\n### Basic Documentation\n```bash\n# Document all CAD files in a folder\npython cad_doc_builder_ai.py ./my_project\n\n# Re-process already documented files\npython cad_doc_builder_ai.py ./my_project --force\n\n# Disable AI suggestions (manual input only)\npython cad_doc_builder_ai.py ./my_project --no-ai\n```\n\n### MkDocs Site Generation\n```bash\n# Generate docs + MkDocs site with Material theme\npython cad_doc_builder_ai.py ./my_project --mkdocs --site-name \"My 3D Models\"\n\n# Use basic MkDocs theme instead of Material\npython cad_doc_builder_ai.py ./my_project --mkdocs --no-material\n\n# Serve locally for preview\nmkdocs serve\n\n# Deploy to GitHub Pages\nmkdocs gh-deploy --force\n```\n\n## Supported File Types\n\n- **3D Models**: `.stl`, `.obj`, `.3mf`, `.amf`, `.blend`\n- **CAD Files**: `.step`, `.stp`, `.iges`, `.igs`, `.fcstd`\n- **SolidWorks**: `.sldprt`, `.sldasm`\n- **Fusion 360**: `.f3d`, `.f3z`\n- **2D CAD**: `.dwg`, `.dxf`\n\n## What Gets Generated\n\n### File Structure\n```\nyour_project/\n├── cad_manifest.json          # Master metadata database\n├── README.md                  # Top-level index with table\n├── docs/\n│   ├── index.md              # MkDocs landing page (if --mkdocs)\n│   └── files/\n│       ├── part1.md          # Individual file documentation\n│       ├── bracket.md\n│       └── assembly.md\n└── mkdocs.yml                # Site configuration (if --mkdocs)\n```\n\n### Per-File Documentation\nEach CAD file gets a Markdown page with:\n- **YAML frontmatter** (title, file path, SHA256, tags, materials, pricing)\n- **Structured sections**: What is it? What's it for? Who wants it? Why does it matter?\n- **Business metadata**: Selling points, pricing tiers\n- **Print parameters**: Layer height, infill, temps, supports, ratings\n- **File verification**: SHA256 hash for integrity\n\n### AI Suggestions Include\n- **Title & Description**: Based on filename and context\n- **Target Audience**: Who would use this part\n- **Value Proposition**: Why it matters\n- **Materials**: PLA/PETG/ABS recommendations\n- **Print Settings**: Layer height, infill, temperatures\n- **Pricing**: Base price + tiered options\n- **Selling Points**: Key benefits and features\n\n## Command Line Options\n\n```\nusage: cad_doc_builder_ai.py [-h] [--force] [--no-index] [--no-ai] \n                              [--license LICENSE] [--mkdocs] [--no-material]\n                              [--site-name SITE_NAME] folder\n\npositional arguments:\n  folder                Root folder to scan\n\noptional arguments:\n  -h, --help            show this help message and exit\n  --force               Re-prompt even if manifest has an entry\n  --no-index            Skip writing top-l",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "CADDocs",
+    "one_liner": "AI-powered tool for generating comprehensive documentation from CAD files.",
+    "core_promise": "Effortlessly create detailed, AI-enhanced documentation for CAD files, complete with vital metadata and business insights.",
+    "domain": "CAD documentation",
+    "buyers": [
+      {
+        "persona": "industrial designers needing organized documentation",
+        "awareness_level": "solution_aware",
+        "pain": "Struggling to efficiently document and organize large numbers of CAD files with necessary metadata.",
+        "candidate_phrases": [
+          "document cad files",
+          "cad file documentation tool",
+          "generate cad file metadata",
+          "cad documentation automation",
+          "organize cad files with metadata"
+        ]
+      },
+      {
+        "persona": "product engineers in manufacturing",
+        "awareness_level": "problem_aware",
+        "pain": "Spending too much time documenting CAD files and ensuring all necessary manufacturing details are captured.",
+        "candidate_phrases": [
+          "how to document cad files",
+          "automate cad documentation",
+          "metadata for cad files",
+          "cad model documentation tool",
+          "add metadata to cad files"
+        ]
+      },
+      {
+        "persona": "3D printing service providers",
+        "awareness_level": "solution_aware",
+        "pain": "Needing to provide comprehensive print parameters and pricing for customer CAD submissions quickly.",
+        "candidate_phrases": [
+          "generate documentation for 3d print files",
+          "document 3d print parameters",
+          "cad file pricing and metadata",
+          "3d print documentation tool",
+          "automate 3d print file descriptions"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "Buyers experience moderate urgency in organizing and documenting CAD files due to time constraints in their workflows. Building a usable MVP is not trivial, requiring integration with AI services and potentially complex file formats. Distribution could fit well with targeted ads, but organic SEO and outreach might be less effective. Retention is fair, with potential for repeat use in ongoing design and manufacturing projects. Without mention of proprietary technology or pre-existing audience leverage, the competitive advantage appears limited."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "document cad files",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "industrial designers needing organized documentation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "cad file documentation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "industrial designers needing organized documentation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "generate cad file metadata",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "industrial designers needing organized documentation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "cad documentation automation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "industrial designers needing organized documentation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "organize cad files with metadata",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "industrial designers needing organized documentation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to document cad files",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "product engineers in manufacturing",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate cad documentation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "product engineers in manufacturing",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "metadata for cad files",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "product engineers in manufacturing",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "cad model documentation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "product engineers in manufacturing",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "add metadata to cad files",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "product engineers in manufacturing",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "generate documentation for 3d print files",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "3D printing service providers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "document 3d print parameters",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "3D printing service providers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "cad file pricing and metadata",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "3D printing service providers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "3d print documentation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "3D printing service providers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate 3d print file descriptions",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "3D printing service providers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "document cad files",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "industrial designers needing organized documentation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "cad file documentation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "industrial designers needing organized documentation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "generate cad file metadata",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "industrial designers needing organized documentation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "cad documentation automation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "industrial designers needing organized documentation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "organize cad files with metadata",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "industrial designers needing organized documentation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to document cad files",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "product engineers in manufacturing",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate cad documentation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "product engineers in manufacturing",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "metadata for cad files",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "product engineers in manufacturing",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 0,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 14.5
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "industrial designers needing organized documentation",
+        "anchor_phrase": "cad documentation automation",
+        "offer_copy": "For industrial designers who need organized documentation but struggle with manual processes, we offer AI-powered CAD documentation automation so they can quickly generate detailed documents with metadata, without the headache of manual entry.",
+        "landing_page_headline": "Automate Your CAD Documentation Effortlessly"
+      },
+      {
+        "buyer": "product engineers in manufacturing",
+        "anchor_phrase": "automate cad documentation",
+        "offer_copy": "For product engineers who spend too much time on documentation, we automate CAD documentation with AI, so they capture all necessary manufacturing details without wasting precious hours on manual tasks.",
+        "landing_page_headline": "Streamline CAD Documentation for Engineers"
+      },
+      {
+        "buyer": "3D printing service providers",
+        "anchor_phrase": "metadata for cad files",
+        "offer_copy": "For 3D printing service providers who need to quickly provide print parameters, we generate comprehensive metadata for CAD files, so they can meet customer expectations swiftly without sifting through files.",
+        "landing_page_headline": "Generate CAD Metadata Fast for 3D Printing"
+      }
+    ],
+    "next_action": "Validate demand by conducting interviews with at least 10 industrial designers and product engineers to understand their current documentation processes and frustrations.",
+    "reasoning": "The concept lacks search demand, indicating a risky market entry due to potential obscurity of need. The identified buyer personas experience problems that hint at latent demand, but low willingness to pay and low MVP ease suggest significant hurdles in converting awareness into sales. Validation with the target audience will illuminate their specific needs and pain points better, helping to refine the offer or pivot the approach if necessary."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/CADDocs"
+  }
+}

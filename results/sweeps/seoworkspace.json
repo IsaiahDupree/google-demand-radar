@@ -1,0 +1,416 @@
+{
+  "slug": "seoworkspace",
+  "source_concept": "SEO Workspace",
+  "generated_at": "2026-05-16T17:24:07.000Z",
+  "cross_vertical_insight": "Across these verticals, there is a shared pain around the need for integrated SEO and content analytics tools that simplify complex tasks like managing diverse content types and maximizing visibility through SEO. Buyers are often looking for ways to streamline their workflows, particularly in managing video and written content together, indicating a need for solutions that unify different aspects of digital marketing strategies.",
+  "verticals": [
+    {
+      "name": "real estate marketing agencies",
+      "icp": "Boutique real estate marketing agencies with 5-20 employees focusing on property listings and market trends optimization.",
+      "rationale": "These agencies need to optimize website SEO to attract home buyers and improve video engagement for virtual tours, making analytics and streamlined content management vital.",
+      "phrases": [
+        {
+          "phrase": "real estate seo tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best youtube analytics for real estate tours",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "content management software for real estate marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "real estate seo and video marketing solutions",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy seo workspace for real estate",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "youtube channel analytics for property listings",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "real estate seo tools",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "health and wellness influencers",
+      "icp": "Individual health and wellness influencers with active YouTube channels and blogs, looking to maximize reach and affiliate revenue.",
+      "rationale": "Influencers need tools for optimizing their YouTube presence and SEO for their content to increase visibility and monetization opportunities.",
+      "phrases": [
+        {
+          "phrase": "best seo tools for health blogs",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "youtube channel analytics for wellness content",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to increase youtube affiliate revenue",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "content management for health influencers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "seo workspace pricing for influencers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy seo content tools for wellness",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "best seo tools for health blogs",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "e-commerce fashion stores",
+      "icp": "Online fashion stores, small to medium-sized, seeking to enhance search visibility and expand through video marketing like YouTube hauls.",
+      "rationale": "These stores require integrated tools for SEO dashboard and performance analytics on YouTube to drive traffic and sales.",
+      "phrases": [
+        {
+          "phrase": "seo tools for e-commerce fashion",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "youtube analytics for online fashion retailers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best content management software for fashion e-commerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy seo workspace for fashion store",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to optimize online store seo",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "youtube seo strategies for clothing brands",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "seo tools for e-commerce fashion",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "saas product marketing teams",
+      "icp": "Mid-sized SaaS companies, 50-100 employees, focusing on inbound marketing and growth through channel diversification including YouTube.",
+      "rationale": "They integrate varied content strategies and require robust analytics both for blog and video content to refine approaches and enhance SEO efforts.",
+      "phrases": [
+        {
+          "phrase": "seo management tools for saas",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy youtube analytics software for saas",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best seo and content distribution platform",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "saas seo workspace solution",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "content optimization tools for saas marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "saas content management system pricing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "seo management tools for saas",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "travel blogging networks",
+      "icp": "Network of professional travel bloggers, often collaborating, focusing on SEO-focused blogging and travel-related video content.",
+      "rationale": "They need to manage extensive content libraries across blog and video formats efficiently to maximize SEO impact and audience engagement.",
+      "phrases": [
+        {
+          "phrase": "seo tools for travel blogging",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to manage youtube content for travel videos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best content management software for travel blogs",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy youtube analytics for travel bloggers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "travel blog seo strategies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "content tools for travel influencer marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "seo tools for travel blogging",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "niche tech reviewers",
+      "icp": "Technology reviewers on YouTube with a dedicated following and blog integration, focusing on complex SEO needed for tech keywords.",
+      "rationale": "Creating content with high keyword competition necessitates advanced SEO tools and video analytics to maintain their competitive edge and optimize monetization through detailed channel analysis.",
+      "phrases": [
+        {
+          "phrase": "tech video seo optimization",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "youtube analytics for tech reviewers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy seo tools for tech blogs",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "content management systems for tech influencers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "seo workspace for tech niche",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to optimize tech blog for seo",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "tech video seo optimization",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

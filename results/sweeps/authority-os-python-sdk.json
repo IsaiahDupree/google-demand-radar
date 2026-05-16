@@ -1,0 +1,404 @@
+{
+  "slug": "authority-os-python-sdk",
+  "source_concept": "Authority OS Python SDK",
+  "generated_at": "2026-05-16T16:45:11.367Z",
+  "cross_vertical_insight": "Across the verticals, there is a common need to enhance SEO capabilities quickly and efficiently, whether for internal use or client offerings. The primary buying trigger is the complexity and time savings that a reliable SDK like Authority OS can offer. Anti-patterns include organizations that prefer in-house development or use non-technical solutions.",
+  "verticals": [
+    {
+      "name": "freelance seo software developers",
+      "icp": "Individual software developers working on freelance SEO tools or plugins, typically handling several small projects simultaneously.",
+      "rationale": "These developers need quick integration options to enhance their SEO tools' functionality without building from scratch.",
+      "phrases": [
+        {
+          "phrase": "python sdk for seo tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "integrate seo audit into python application",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best seo sdk for python",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "authority os api client python",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to automate seo audits in python",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "entity visibility system sdk",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "top seo optimization sdks",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "python library for seo audits",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "python sdk for seo tools",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "mid-sized digital marketing agencies",
+      "icp": "Agencies with 10-50 employees, serving multiple clients across various industries, looking to automate SEO processes.",
+      "rationale": "These agencies require reliable and scalable tools to provide comprehensive SEO services to their clients efficiently.",
+      "phrases": [
+        {
+          "phrase": "seo optimization sdk for marketing agencies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "python sdk for digital marketing automation",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automate client seo audits python",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "authority os for marketing agencies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "tools to automate seo processes in python",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "compare seo sdks for agencies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "top seo automation tools for agencies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "seo optimization sdk for marketing agencies",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "saas platforms with seo features",
+      "icp": "Small to medium-sized SaaS companies, often bootstrapped and focused on providing SEO features as part of their solutions.",
+      "rationale": "These platforms need to integrate robust SEO capabilities into their product offerings without extensive development overhead.",
+      "phrases": [
+        {
+          "phrase": "integrate authority os into saas product",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "python library for saas seo features",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best seo sdks for saas",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "add seo audits to saas platform",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "python sdk for saas development",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "authority os python sdk pricing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "top python sdks for saas products",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "optimize saas seo features quickly",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "integrate authority os into saas product",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "e-commerce platforms",
+      "icp": "Established e-commerce platforms aiming to enhance their SEO capabilities to improve product visibility and attract more customers.",
+      "rationale": "SEO is crucial for e-commerce success, and these platforms are looking for efficient ways to optimize their digital presence.",
+      "phrases": [
+        {
+          "phrase": "best seo sdk for e-commerce platforms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "authority os integration for ecommerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "python seo audit toolkit for online stores",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "enhance product visibility seo tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "compare e-commerce seo sdks",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to automate seo for e-commerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "seo optimization tools for online retail",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "best seo sdk for e-commerce platforms",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "technical seo consultants",
+      "icp": "Independent SEO consultants with a technical background offering specialized optimization services to different businesses.",
+      "rationale": "They need advanced tools to perform comprehensive SEO audits efficiently as part of their consulting services.",
+      "phrases": [
+        {
+          "phrase": "python sdk for seo consultants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "tools for technical seo audits",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "integrate authority os in consulting services",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best technical seo software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "automate client visibility audits",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "seo auditing tools for consultants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "python library for seo optimization",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "python sdk for seo consultants",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

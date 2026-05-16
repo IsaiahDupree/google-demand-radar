@@ -1,0 +1,306 @@
+{
+  "source_text": "AudioTools\n\n## README\n\n# Audio Tools - YouTube Stem Extractor\n\nDownload audio from YouTube videos and extract stems using Meta's latest Demucs v4 model.\n\n## Features\n\n- Download audio from YouTube videos\n- Extract 4 stems using Meta's Demucs v4:\n  - **Drums**\n  - **Bass**\n  - **Vocals**\n  - **Other** (instruments)\n\n## Installation\n\n1. Install Python dependencies:\n```bash\npip install -r requirements.txt\n```\n\n2. Make sure you have FFmpeg installed (required by yt-dlp):\n   - Windows: Download from [ffmpeg.org](https://ffmpeg.org/download.html) and add to PATH\n   - macOS: `brew install ffmpeg`\n   - Linux: `sudo apt-get install ffmpeg`\n\n## Usage\n\n### Quick Start\n\nRun the main script with a YouTube URL:\n\n```bash\npython main.py https://www.youtube.com/watch?v=VIDEO_ID\n```\n\n**If you get 403 errors**, use browser cookies (recommended):\n\n```bash\n# Use Chrome cookies (log in to YouTube in Chrome first)\npython main.py --cookies-from-browser chrome https://www.youtube.com/watch?v=VIDEO_ID\n\n# Or set once and run\nset YT_COOKIES_BROWSER=chrome\npython main.py https://www.youtube.com/watch?v=VIDEO_ID\n```\n\nOr use a cookies file (export with a browser extension like \"Get cookies.txt LOCALLY\"):\n\n```bash\npython main.py --cookies path/to/cookies.txt https://www.youtube.com/watch?v=VIDEO_ID\n```\n\n### Individual Scripts\n\n**Download audio only:**\n```bash\npython download_audio.py <youtube_url>\npython download_audio.py --cookies-from-browser chrome <youtube_url>\n```\n\n**Extract stems from existing audio:**\n```bash\npython extract_stems.py <audio_file.wav>\n```\n\n### Advanced Options\n\nExtract stems with different Demucs models:\n```bash\npython extract_stems.py audio.wav -m htdemucs_ft\n```\n\nAvailable models:\n- `htdemucs` (default) - Hybrid Transformer Demucs\n- `htdemucs_ft` - Fine-tuned version\n- `mdx_extra` - MDX Extra model\n\n## Output Structure\n\n```\noutput/\n├── downloads/\n│   └── video_title.wav\n└── stems/\n    ├── video_title_drums.wav\n    ├── video_title_bass.wav\n    ├── video_title_vocals.wav\n    └── video_title_other.wav\n```\n\n## Requirements\n\n- Python 3.8+\n- FFmpeg\n- PyTorch (will be installed via requirements.txt)\n- CUDA (optional, for GPU acceleration)\n\n## Troubleshooting\n\n### YouTube Download (403 Forbidden) – Best approach\n\nThe downloader **tries several methods automatically** (browser cookies, then different YouTube player clients). To get the best success rate:\n\n1. **Use browser cookies** (most reliable):\n   - Log in to YouTube in Chrome (or Firefox/Edge).\n   - Run: `python main.py --cookies-from-browser chrome \"URL\"`\n   - Or set `YT_COOKIES_BROWSER=chrome` and run as usual.\n   - *Tip:* For YouTube, export cookies from a **private/incognito** window where you’re logged in, then close that window before using yt-dlp, so cookies don’t rotate.\n\n2. **Use a cookies file** (Netscape format):\n   - Export with an extension like “Get cookies.txt LOCALLY” (Chrome) or “cookies.txt” (Firefox).\n   - Run: `python main.py --cookies path/to/cookies.txt \"URL\"` or set `YT_COOKIES_FILE=path/to/cookies.txt`.\n\n3. **Update yt-dlp** (fixes change often):\n   ```bash\n   pip install -U yt-dlp\n   ```\n\n4. **Fallbacks** if the above still fail:\n   - Use a **direct stream URL** (e.g. from browser dev tools) if you have one; the tool supports `googlevideo.com` URLs.\n   - Download manually: `yt-dlp -f bestaudio -x --audio-format wav -o \"audio.%(ext)s\" \"URL\"`, then `python extract_stems.py audio.wav`.\n   - The video may be age-restricted, region-restricted, or require login.\n\n### Testing Stem Extraction\n\nTo test stem extraction with an existing audio file:\n```bash\npython test_stem_extraction.py your_audio.wav\n```\n\n## Notes\n\n- First run will download the Demucs model (~1.5GB)\n- Processing time depends on audio length and hardware\n- GPU acceleration significantly speeds up stem extraction\n- If YouTube download fails, you can manually download audio and use `extract_stems.py` directly",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "YouTube Stem Extractor",
+    "one_liner": "Download audio from YouTube and extract stems using Demucs.",
+    "core_promise": "Isolate individual instrument tracks from any YouTube video for remixing or analysis.",
+    "domain": "audio processing",
+    "buyers": [
+      {
+        "persona": "amateur musicians and producers",
+        "awareness_level": "problem_aware",
+        "pain": "Want to learn or remix songs but can't isolate instrument tracks from YouTube audio.",
+        "candidate_phrases": [
+          "how to separate vocals from song",
+          "extract stems from youtube",
+          "youtube audio split drums vocals",
+          "music stem isolator free",
+          "youtube to stem converter"
+        ]
+      },
+      {
+        "persona": "music educators and teachers",
+        "awareness_level": "problem_aware",
+        "pain": "Need isolated tracks for teaching song components to students.",
+        "candidate_phrases": [
+          "separate song tracks for teaching",
+          "isolate bass track from youtube",
+          "how to get drum track from song",
+          "stem separation for music education",
+          "music teaching tools youtube stems"
+        ]
+      },
+      {
+        "persona": "DJs and remix artists",
+        "awareness_level": "solution_aware",
+        "pain": "Looking for tools to create new mixes but struggle to separate audio tracks cleanly.",
+        "candidate_phrases": [
+          "best tool to extract stems",
+          "remix youtube audio separate tracks",
+          "dj tools for song stems",
+          "separate soundtracks from video",
+          "youtube song extractor for remixing"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 3,
+      "distribution_fit": 4,
+      "retention_potential": 2,
+      "advantage": 2,
+      "rationale": "The tool addresses specific needs like remixing and educational use, giving it a moderate urgency. An MVP is feasible with existing tech like FFmpeg and Demucs, but requires some setup knowledge, hence a moderate score. Distribution can be effective through SEO and forum engagement, as these users actively search for solutions online. Retention might be low as users may only need it intermittently unless new features or updates are consistently provided. The competitive edge is limited without clear differentiators like exclusive models or ease of use advantages."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "how to separate vocals from song",
+      "volume": 480,
+      "cpc": 2.01,
+      "competition": 0.43,
+      "source": "dataforseo",
+      "buyer": "amateur musicians and producers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "extract stems from youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "amateur musicians and producers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube audio split drums vocals",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "amateur musicians and producers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "music stem isolator free",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "amateur musicians and producers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube to stem converter",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "amateur musicians and producers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "separate song tracks for teaching",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "music educators and teachers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "isolate bass track from youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "music educators and teachers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to get drum track from song",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "music educators and teachers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "stem separation for music education",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "music educators and teachers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "music teaching tools youtube stems",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "music educators and teachers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best tool to extract stems",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "DJs and remix artists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "remix youtube audio separate tracks",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "DJs and remix artists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "dj tools for song stems",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "DJs and remix artists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "separate soundtracks from video",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "DJs and remix artists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube song extractor for remixing",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "DJs and remix artists",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "how to separate vocals from song",
+      "volume": 480,
+      "cpc": 2.01,
+      "competition": 0.43,
+      "source": "dataforseo",
+      "buyer": "amateur musicians and producers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "extract stems from youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "amateur musicians and producers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube audio split drums vocals",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "amateur musicians and producers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "music stem isolator free",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "amateur musicians and producers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube to stem converter",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "amateur musicians and producers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "separate song tracks for teaching",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "music educators and teachers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "isolate bass track from youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "music educators and teachers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to get drum track from song",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "music educators and teachers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 2.85396599265553,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.005,
+    "mvp_ease": 3,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 2,
+    "total": 17.85896599265553
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "amateur musicians and producers",
+        "anchor_phrase": "how to separate vocals from song",
+        "offer_copy": "For amateur musicians and producers who want to remix their favorite songs but struggle to separate vocals and instruments, we provide a YouTube video to individual audio tracks converter so they can remix seamlessly without losing the quality of the sound.",
+        "landing_page_headline": "Easy Vocal and Instrument Separation for Remixing"
+      },
+      {
+        "buyer": "music educators and teachers",
+        "anchor_phrase": "separate song tracks for teaching",
+        "offer_copy": "For music educators needing isolated instrumental tracks to teach students song components effectively, we offer a YouTube audio separating tool that delivers clean, isolated tracks without the need for expensive software.",
+        "landing_page_headline": "Isolate Song Components for Effective Teaching"
+      },
+      {
+        "buyer": "DJs and remix artists",
+        "anchor_phrase": "youtube to stem converter",
+        "offer_copy": "For DJs and remix artists who need high-quality stems from YouTube to create new mixes, our YouTube-to-stem converter offers precise separation of tracks so you can remix effortlessly without technical hassle.",
+        "landing_page_headline": "Convert YouTube Audio into Professional Stems"
+      }
+    ],
+    "next_action": "Run a small targeted ad campaign using Google Search ads to validate demand for the top-performing keyword from each buyer persona.",
+    "reasoning": "The verdict 'Educate Later' is due to moderate search demand and buyer urgency, but critically low willingness to pay. While there is interest in the capability to separate song tracks, the competition and interest metrics suggest limited real demand or spending intention. The risk lies in focusing on a market that may enjoy free solutions more than a paid service, necessitating a validation step to pinpoint whether or not users will pay for this functionality."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/AudioTools"
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "slug": "socialmediaanalysisresearch",
+  "source_concept": "Instagram Bio Link Analysis Tool",
+  "generated_at": "2026-05-16T17:24:21.460Z",
+  "cross_vertical_insight": "Across these verticals, the common pain point is the need for automation in identifying and tracking Instagram bio links to save time and improve strategic efforts, whether that's for influencer partnerships, brand development, or competitive analysis. The primary trigger for buying is the desire to maintain a competitive edge in social media marketing and branding.",
+  "verticals": [
+    {
+      "name": "e-commerce startups",
+      "icp": "New or small e-commerce businesses, 1-10 employees, looking to build brand awareness and track influencer partnerships through Instagram.",
+      "rationale": "These startups often rely heavily on Instagram for brand exposure and partnerships, needing tools to track influencer engagements efficiently.",
+      "phrases": [
+        {
+          "phrase": "find instagram profiles linking to my online store",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "ecommerce instagram bio link tracking",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to track instagram influencer links",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best instagram link analysis tools for ecommerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "track competitor instagram links",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy instagram profile tracker for store",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "find instagram profiles linking to my online store",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "digital marketing agencies",
+      "icp": "Agencies with 5-50 employees offering social media marketing services, particularly those specializing in influencer marketing.",
+      "rationale": "Agencies need to track and evaluate the effectiveness of influencer campaigns and see which profiles drive traffic to client sites.",
+      "phrases": [
+        {
+          "phrase": "track client mentions instagram bio",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "instagram bio link analysis for agencies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "social media profile link tracker",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "identify instagram profiles linking to client site",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "compare instagram link analysis tools for agency",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "track client mentions instagram bio",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "personal branding consultants",
+      "icp": "Individuals or small teams helping clients grow personal brands, often working solo or with one assistant.",
+      "rationale": "They need to monitor how clients are being referenced and linked across social media for brand management.",
+      "phrases": [
+        {
+          "phrase": "automate instagram bio link tracking",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "track personal brand mentions on instagram",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best instagram tools for personal brand consultants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "monitor client brand on instagram",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy instagram link monitoring software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "automate instagram bio link tracking",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "affiliate marketers",
+      "icp": "Individuals or small teams focused on promoting and earning through affiliate links, heavily using Instagram as a platform.",
+      "rationale": "They require tools to track which influencers or partners are linking back to their affiliate URLs on Instagram.",
+      "phrases": [
+        {
+          "phrase": "track affiliate links instagram bio",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "instagram bio link analysis for affiliate marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best tools for monitoring instagram bios",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy software to track instagram links",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to identify instagram influneces linking to affiliate products",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "track affiliate links instagram bio",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "competitor analysis for SaaS companies",
+      "icp": "Mid-sized SaaS companies with dedicated marketing teams, focused on understanding competitor marketing strategies and traffic sources.",
+      "rationale": "These companies need to understand how competitors use Instagram to drive traffic and which profiles are mentioning them.",
+      "phrases": [
+        {
+          "phrase": "monitor competitor links on instagram",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "saas instagram link analysis tool",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best instagram bio analysis for saas",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "automate finding instagram profiles linking to competitors",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "compare instagram tracking software for saas companies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "monitor competitor links on instagram",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "source_text": "Austender\n\n## README\n\n# Government Construction Opportunities Tracker\n\n## Project Overview\n\nThis platform provides an automated system for tracking government construction opportunities from various sources:\n\n- **Austender** (primary focus) - Australian Government tenders\n- **ANI** (Australian National Infrastructure)\n- **ICN** (Industry Capability Network)\n- **SAM** (System for Award Management - US Government)\n\nThe system uses AI-powered analysis (OpenAI, Perplexity, and Firecrawl) to extract and understand detailed information from opportunity documents and provides a modern web interface for searching, filtering, and analyzing opportunities.\n\n## Key Features\n\n- **Automated Data Collection**: Regular scraping of government websites for new opportunities\n- **Advanced Search & Filtering**: Filter by source, category, location, value range, and dates\n- **Detailed Information**: Access market timing, capital value, scope, source links, and more\n- **Email Notifications**: Automated alerts about new relevant opportunities\n- **Data Analysis**: AI-powered document analysis with OpenAI, Perplexity, and Firecrawl\n- **Interactive Dashboard**: Visual statistics and opportunity metrics\n- **Responsive Design**: Mobile-friendly interface that works across all devices\n\n## Project Structure\n\n- `scrapers/` - Web scraping modules for different opportunity sources\n- `database/` - Database models and connection logic\n- `api/` - FastAPI endpoints for the web application\n- `frontend/` - React-based web interface\n- `utils/` - Utility functions including AI document analysis\n- `config/` - Configuration files and environment settings\n- `scripts/` - Automation and maintenance scripts\n- `tests/` - Unit and integration tests\n- `logs/` - Application logs\n\n## Requirements\n\n- Python 3.10+\n- Node.js 16+\n- npm or yarn\n- Docker and Docker Compose (optional for containerized deployment)\n- OpenAI API key (for document analysis)\n- Perplexity API key (for research capabilities)\n- Firecrawl API key (for web crawling)\n- SMTP server (for email notifications)\n\n## Setup Instructions\n\n### Option 1: Automated Setup\n\n1. Clone the repository:\n\n   ```bash\n   git clone <repository-url>\n   cd Austender\n   ```\n\n2. Create a `.env` file based on `.env.example` and add your API keys\n\n3. Run the setup script:\n\n   ```bash\n   python setup.py\n   ```\n\n### Option 2: Manual Setup\n\n1. Clone the repository:\n\n   ```bash\n   git clone <repository-url>\n   cd Austender\n   ```\n\n2. Install Python dependencies:\n\n   ```bash\n   pip install -r requirements.txt\n   ```\n\n3. Install frontend dependencies:\n\n   ```bash\n   cd frontend\n   npm install\n   cd ..\n   ```\n\n4. Create a `.env` file based on `.env.example` and add your API keys:\n\n   ```bash\n   cp .env.example .env\n   # Edit .env with your API keys and configuration\n   ```\n\n5. Initialize the database:\n\n   ```bash\n   python main.py --init-db\n   ```\n\n### Option 3: Docker Deployment\n\n1. Clone the repository and create `.env` file as above\n\n2. Build and start containers:\n\n   ```bash\n   docker-compose up -d\n   ```\n\n## Running the Application\n\n### Development Mode\n\n1. Start the backend API server:\n\n   ```bash\n   python main.py --api-only\n   ```\n\n2. Start the scheduler (in a new terminal):\n\n   ```bash\n   python main.py --scheduler-only\n   ```\n\n3. Start the frontend development server (in a new terminal):\n\n   ```bash\n   cd frontend\n   npm start\n   ```\n\n4. Access the application at [http://localhost:3000](http://localhost:3000)\n\n### Production Mode\n\nUse the deployment script:\n\n```bash\npython scripts/deploy.py\n```\n\nOr with Docker:\n\n```bash\ndocker-compose up -d\n```\n\n## Running Tests\n\nExecute the test suite:\n\n```bash\npytest\n```\n\nOr run specific tests:\n\n```bash\npytest tests/test_austender_scraper.py\npytest tests/test_document_analyzer.py\n```\n\n## Manual Operations\n\n### Run Scraper On-Demand\n\n```bash\npython main.py --run-scraper\n```\n\n### Initialize Database\n\n```bash\npython main.py --init-db\n```\n\n## API Documentation\n\nWhen the API server is running, API documentation is available at:",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Austender",
+    "one_liner": "A platform that tracks government construction opportunities for the Australian market using various data sources.",
+    "core_promise": "Easily find and act on construction opportunities in government tenders.",
+    "domain": "government tenders tracking",
+    "buyers": [
+      {
+        "persona": "small to medium construction businesses in Australia",
+        "awareness_level": "solution_aware",
+        "pain": "Missing out on potential projects from government contracts due to lack of awareness or late discovery.",
+        "candidate_phrases": [
+          "australian government construction tenders",
+          "government construction contracts australia",
+          "austender opportunities",
+          "construction tender alerts australia",
+          "find government construction projects"
+        ]
+      },
+      {
+        "persona": "bid management consultants specializing in government contracts",
+        "awareness_level": "solution_aware",
+        "pain": "Managing a large volume of tender information manually is time-consuming and error-prone.",
+        "candidate_phrases": [
+          "government tender management software",
+          "automated tender tracking",
+          "construction bid management australia",
+          "government contract analysis tools",
+          "government tender notification service"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 4,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 4,
+      "advantage": 2,
+      "rationale": "Buyer urgency is moderately high as construction companies and consultants seek new business opportunities; many actively look for tools to streamline their access to tenders. MVP ease is low due to the technical complexity of integrating multiple data sources and the AI analysis component. Distribution fit is moderate; reaching construction firms and consultants requires targeted online advertising but is feasible. Retention potential is good, relying on ongoing project availability and regular updates. No explicit advantage is mentioned in the description; without a clear differentiation like existing customer relations or proprietary data, the edge is limited."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "australian government construction tenders",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small to medium construction businesses in Australia",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "government construction contracts australia",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small to medium construction businesses in Australia",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "austender opportunities",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small to medium construction businesses in Australia",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "construction tender alerts australia",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small to medium construction businesses in Australia",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "find government construction projects",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small to medium construction businesses in Australia",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "government tender management software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "bid management consultants specializing in government contracts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated tender tracking",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "bid management consultants specializing in government contracts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "construction bid management australia",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "bid management consultants specializing in government contracts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "government contract analysis tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "bid management consultants specializing in government contracts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "government tender notification service",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "bid management consultants specializing in government contracts",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "australian government construction tenders",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small to medium construction businesses in Australia",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "government construction contracts australia",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small to medium construction businesses in Australia",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "austender opportunities",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small to medium construction businesses in Australia",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "construction tender alerts australia",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small to medium construction businesses in Australia",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "find government construction projects",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small to medium construction businesses in Australia",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "government tender management software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "bid management consultants specializing in government contracts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated tender tracking",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "bid management consultants specializing in government contracts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "construction bid management australia",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "bid management consultants specializing in government contracts",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 0,
+    "buyer_urgency": 4,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 2,
+    "retention_potential": 4,
+    "total": 16.5
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "small to medium construction businesses in Australia",
+        "anchor_phrase": "australian government construction tenders",
+        "offer_copy": "For small to medium construction businesses in Australia who want more government projects but miss opportunities, we provide real-time tender tracking so they can bid on current contracts without missing deadlines.",
+        "landing_page_headline": "Stay Ahead with Australian Government Construction Tenders Alerts"
+      },
+      {
+        "buyer": "bid management consultants specializing in government contracts",
+        "anchor_phrase": "government tender management software",
+        "offer_copy": "For bid management consultants who handle government contracts but struggle with manual processes, we offer automated tender tracking software so they can manage large volumes efficiently without errors.",
+        "landing_page_headline": "Simplify with Government Tender Management Software"
+      }
+    ],
+    "next_action": "Conduct customer interviews with 5 construction businesses to validate the pain of missing tenders and the specific features that could drive adoption of your platform.",
+    "reasoning": "The verdict is 'Educate Later' primarily due to the exceedingly low search demand across all relevant keywords, indicating a lack of active searching by potential users. However, the high buyer urgency and solid retention potential suggest latent needs. The business risk is centered around whether the platform can effectively raise awareness and educate the market to generate interest. Thus, initial steps should focus on deeply understanding the user's pain and validating product-market fit via qualitative interviews rather than diving straight into product development or marketing spend."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/Austender"
+  }
+}

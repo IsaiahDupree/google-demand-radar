@@ -1,0 +1,388 @@
+{
+  "slug": "annual-story-weaver",
+  "source_concept": "Annual Story Weaver",
+  "generated_at": "2026-05-16T16:44:40.376Z",
+  "cross_vertical_insight": "The common thread across these verticals is the use of storytelling as a tool for engagement, reflection, or education. Each has a need to craft narratives that compel, whether for personal growth, educational purposes, or community engagement. Anti-pattern: Generic writing aids not focused on narrative crafting or reflection don't address their unique needs.",
+  "verticals": [
+    {
+      "name": "independent authors and bloggers",
+      "icp": "Freelance writers or bloggers, often creating content independently, focusing on crafting personal stories or thematic pieces to engage their audience and grow their personal brand.",
+      "rationale": "These individuals routinely create narratives and would benefit from a tool to enhance their storytelling, particularly for year-end reflective pieces that engage their audience.",
+      "phrases": [
+        {
+          "phrase": "tools for personal story writing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best software for blogging",
+          "volume": 50,
+          "cpc": 8.96,
+          "competition": 0.41,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to write a year in review blog post",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy story crafting software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "software for writing personal stories",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "blog content planning tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "software to help write annual stories",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 1.8169588422282223,
+      "bofu_density": 0,
+      "max_cpc": 8.96,
+      "top_phrase": "best software for blogging",
+      "top_volume": 50,
+      "pmf_score": 3.8341753053369336,
+      "pmf_breakdown": {
+        "demand_n": 0.36339176844564447,
+        "bofu_n": 0,
+        "cpc_n": 0.8960000000000001,
+        "urgency_n": 0.4,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "personal development coaches",
+      "icp": "Independent personal development coaches, often working with clients to develop self-awareness and reflection through structured exercises and personal storytelling.",
+      "rationale": "Coaches use reflective storytelling as a tool for personal growth and would value a structured way to guide their clients in crafting annual narratives.",
+      "phrases": [
+        {
+          "phrase": "personal reflection tools for coaches",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best storytelling tools for coaches",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to help clients write personal narratives",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "story crafting software for personal development",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "annual reflection tool for coaching clients",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy storytelling tools for coaching",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "narrative therapy tools",
+          "volume": 30,
+          "cpc": 1.48,
+          "competition": 0.04,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 1.8996998632462747,
+      "bofu_density": 0.14285714285714285,
+      "max_cpc": 1.48,
+      "top_phrase": "narrative therapy tools",
+      "top_volume": 30,
+      "pmf_score": 3.1189627750906217,
+      "pmf_breakdown": {
+        "demand_n": 0.37993997264925494,
+        "bofu_n": 0.14285714285714285,
+        "cpc_n": 0.148,
+        "urgency_n": 0.4,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "family historians",
+      "icp": "Individuals engaged in documenting family stories and histories, often creating narratives for personal or family use to preserve legacy and pass down to future generations.",
+      "rationale": "These enthusiasts strive to weave detailed personal and familial narratives, making a tool that aids in story weaving invaluable.",
+      "phrases": [
+        {
+          "phrase": "family history documentation tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "create family story online",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to write family history stories",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "software for writing family histories",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "tools for documenting family legacy",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy family storytelling software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "online platforms for family story sharing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "family history documentation tools",
+      "top_volume": 0,
+      "pmf_score": 1.4000000000000001,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.4,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "elementary educators",
+      "icp": "Teachers in elementary schools who use storytelling as part of their curriculum to enhance student engagement and creative writing skills.",
+      "rationale": "Educators integrate storytelling into education to boost student engagement, and tools that help craft stories for class can be a valuable resource.",
+      "phrases": [
+        {
+          "phrase": "storytelling software for classrooms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best educational tools for storytelling",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to teach storytelling to kids",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy digital storytelling tools for schools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "story writing software for teachers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "classroom storytelling software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "top storytelling tools for educators",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "storytelling software for classrooms",
+      "top_volume": 0,
+      "pmf_score": 1.4000000000000001,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.4,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "nonprofit organizations for underrepresented communities",
+      "icp": "Nonprofits focused on amplifying voices of underrepresented communities through personal storytelling projects, often seeking ways to empower individuals to share their journeys and experiences.",
+      "rationale": "Such nonprofits often engage in projects that aim to capture and share personal stories to inspire and educate others, making such a tool particularly relevant.",
+      "phrases": [
+        {
+          "phrase": "storytelling tools for community projects",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best tools for nonprofit storytelling",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to create community stories",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy community storytelling software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "online platforms for community stories",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "digital storytelling tools for nonprofits",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "narrative empowerment tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "storytelling tools for community projects",
+      "top_volume": 0,
+      "pmf_score": 1.4000000000000001,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.4,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "slug": "researchforge-site",
+  "source_concept": "ScholarForge",
+  "generated_at": "2026-05-16T17:21:01.943Z",
+  "cross_vertical_insight": "Across these verticals, the shared pain involves a need for affordable, reliable, and specialized tools to improve research accuracy and educational effectiveness. Common triggers for buying include curriculum updates, new research projects, or a need to integrate more technology into existing solutions. Anti-patterns include overly generalized content that doesn't meet niche needs without modification.",
+  "verticals": [
+    {
+      "name": "education technology companies",
+      "icp": "EdTech companies with product teams focused on developing academic and learning tools, 50-200 employees.",
+      "rationale": "These companies require academic tools for integration into their platforms to enhance their educational offerings and stay competitive.",
+      "phrases": [
+        {
+          "phrase": "buy academic tools for edtech integration",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best calculators and simulations for learning platforms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "compare online research tools for education",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "top academic resources for product integration",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "educational technology trends 2024",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0.8280004035947847,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "educational technology trends 2024",
+      "top_volume": 10,
+      "pmf_score": 1.8968002421568708,
+      "pmf_breakdown": {
+        "demand_n": 0.16560008071895693,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.4,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "graduate business schools",
+      "icp": "20-50 business students per program, professors/lecturers managing multiple courses, usually within larger universities.",
+      "rationale": "Business schools need dynamic and practical calculators and simulations to help students apply theoretical knowledge effectively and for professors to enhance course delivery.",
+      "phrases": [
+        {
+          "phrase": "business strategy simulations for students",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy financial analysis calculators for universities",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best academic tools for mba programs",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to enhance mba curriculum with technology",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "simulation tools for business lectures",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "interactive teaching resources for business courses",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "business strategy simulations for students",
+      "top_volume": 0,
+      "pmf_score": 1.4000000000000001,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.4,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "scientific research institutes",
+      "icp": "Mid-sized research institutes with 50-200 researchers focusing on scientific innovation and publication.",
+      "rationale": "These institutes require specific calculators and simulations to conduct cutting-edge research and ensure data accuracy for publications.",
+      "phrases": [
+        {
+          "phrase": "buy data analysis tools for scientific research",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best research simulations for laboratories",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "scientific calculators for researchers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "tools for improving research accuracy",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "comparison of academic research platforms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "buy data analysis tools for scientific research",
+      "top_volume": 0,
+      "pmf_score": 1.4000000000000001,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.4,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "government policy research departments",
+      "icp": "Departments within governmental bodies with staff conducting economic, social, or health policy analysis, typically 10-50 specialists.",
+      "rationale": "These departments need reliable simulations and calculators to test policy outcomes and ensure well-informed decision-making.",
+      "phrases": [
+        {
+          "phrase": "policy analysis simulation tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best calculators for government research",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "tools for economic policy analysis",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "case studies of technology in policy research",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "top platforms for government research departments",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "policy analysis simulation tools",
+      "top_volume": 0,
+      "pmf_score": 1.4000000000000001,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.4,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "non-profit environmental research organizations",
+      "icp": "Small (5-20 people) teams conducting independent environmental research, often with limited budgets but high data needs.",
+      "rationale": "These organizations need affordable calculators and simulations to analyze environmental data and model potential environmental outcomes.",
+      "phrases": [
+        {
+          "phrase": "environmental data calculators for ngos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy simulation tools for environmental research",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "top platforms for environmental nonprofits",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to analyze environmental data effectively",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "affordable research tools for small teams",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "environmental data calculators for ngos",
+      "top_volume": 0,
+      "pmf_score": 1.4000000000000001,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.4,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "source_text": "researchlite\n\n## README\n\n# ResearchLite\n\nMarket research engine for the ACTP (Ad Creative Testing Pipeline) closed-loop growth system. Collects research data from multiple sources, generates creative blueprints from market research, and feeds insights to ContentLite for content generation.\n\n## Features\n\n- **Market Research Collection**: Ingest competitor content from Instagram hashtags and Meta Ad Library\n- **Creative Blueprint Generation**: Automatically extract creative patterns and structure from successful content\n- **REST API**: Query research items, search with filters, and retrieve blueprints\n- **Cron Jobs**: Automated data collection and blueprint extraction\n- **Supabase Integration**: Persistent storage with PostgreSQL\n- **Production Ready**: Deployed on Vercel with serverless functions\n\n## Quick Start\n\n### Prerequisites\n\n- Node.js 22.x\n- npm or yarn\n- Supabase account (shared project: `ivhfuhxorppptyuofbgq`)\n\n### Installation\n\n```bash\nnpm install\n```\n\n### Environment Setup\n\nCreate a `.env.local` file based on `.env.local.example`:\n\n```bash\ncp .env.local.example .env.local\n```\n\nConfigure the following variables:\n\n**Supabase** (already set, but verify):\n- `NEXT_PUBLIC_SUPABASE_URL`\n- `NEXT_PUBLIC_SUPABASE_ANON_KEY`\n- `SUPABASE_SERVICE_ROLE_KEY`\n\n**Authentication**:\n- `RESEARCHLITE_MASTER_KEY` - Master API key for accessing endpoints\n- `CRON_SECRET` - Secret for cron job execution\n\n**Data Sources** (optional for full features):\n- `IG_ACCESS_TOKEN` - Instagram Graph API token for hashtag research\n- `IG_BUSINESS_ACCOUNT_ID` - Your IG business account ID\n- `META_AD_LIBRARY_ACCESS_TOKEN` - Meta Ad Library access token\n- `OPENAI_API_KEY` - For enhanced blueprint analysis\n\n### Development\n\n```bash\nnpm run dev\n```\n\nVisit `http://localhost:3000` to see the homepage.\n\n### Build & Production\n\n```bash\nnpm run build\nnpm start\n```\n\n### Testing\n\n```bash\nnpm test\n```\n\n## API Endpoints\n\n### Health Check\n\n```\nGET /api/health\n```\n\nReturns service status and data counts.\n\n**Response:**\n```json\n{\n  \"status\": \"healthy\",\n  \"service\": \"researchlite\",\n  \"version\": \"0.1.0\",\n  \"market_items\": 42,\n  \"blueprints\": 10\n}\n```\n\n### Research Data\n\n#### List all research items\n\n```\nGET /api/research?limit=50&offset=0&sort_by=created_at&sort_order=desc\nAuthorization: Bearer YOUR_API_KEY\n```\n\n#### Get single research item\n\n```\nGET /api/research/{id}\nAuthorization: Bearer YOUR_API_KEY\n```\n\n#### Search research\n\n```\nGET /api/research/search?q=query&topic=video&source=ig_hashtag&limit=50&offset=0\nPOST /api/research/search\nAuthorization: Bearer YOUR_API_KEY\n\nBody:\n{\n  \"query\": \"fitness\",\n  \"topic\": \"video\",\n  \"source\": \"ig_hashtag\",\n  \"limit\": 50,\n  \"offset\": 0\n}\n```\n\n#### Get hashtag research\n\n```\nGET /api/research/hashtags?hashtag=fitness&limit=50\nAuthorization: Bearer YOUR_API_KEY\n```\n\n#### Get Ad Library research\n\n```\nGET /api/research/ad-library?keyword=fitness&advertiser=Nike&limit=50\nAuthorization: Bearer YOUR_API_KEY\n```\n\n### Blueprints\n\n#### List blueprints\n\n```\nGET /api/blueprints?format=video&content_type=video&limit=50\nAuthorization: Bearer YOUR_API_KEY\n```\n\n#### Generate blueprint from research\n\n```\nPOST /api/blueprints\nAuthorization: Bearer YOUR_API_KEY\n\nBody:\n{\n  \"market_item_id\": \"uuid-here\"\n}\n```\n\n#### Get blueprint by ID\n\n```\nGET /api/blueprints/{id}?format=json|markdown|text\nAuthorization: Bearer YOUR_API_KEY\n```\n\nExport formats:\n- `?format=json` - Full JSON blueprint (default)\n- `?format=markdown` - Markdown document\n- `?format=text` - Plain text\n\n### Cron Jobs\n\n#### Collect hashtag research\n\n```\nPOST /api/cron/collect-hashtags\nAuthorization: Bearer CRON_SECRET\n```\n\nScheduled: Every 6 hours\n\n#### Collect Ad Library research\n\n```\nPOST /api/cron/collect-ads\nAuthorization: Bearer CRON_SECRET\n```\n\nScheduled: Every 12 hours\n\n#### Extract blueprints\n\n```\nPOST /api/cron/extract-blueprints\nAuthorization: Bearer CRON_SECRET\n```\n\nScheduled: Every 4 hours\n\n## Authentication\n\nAll endpoints except `/api/health` require authentication via API key.\n\n**Two authentication methods:\n\nStack: TypeScript",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "ResearchLite",
+    "one_liner": "A market research engine that fetches content insights for ad creative development.",
+    "core_promise": "Streamlined extraction of creative patterns from competitor content to enhance ad strategies.",
+    "domain": "market research",
+    "buyers": [
+      {
+        "persona": "digital marketing agencies",
+        "awareness_level": "solution_aware",
+        "pain": "Need to continually optimize ad creatives based on competitor strategies but find manual research too time-consuming.",
+        "candidate_phrases": [
+          "ad creative research tool",
+          "how to analyze competitor ads",
+          "market research tools for advertising",
+          "best tools for ad research",
+          "competitor ad analysis software"
+        ]
+      },
+      {
+        "persona": "in-house marketing teams",
+        "awareness_level": "problem_aware",
+        "pain": "Struggling to keep up with ad performance benchmarks and optimize creatives effectively.",
+        "candidate_phrases": [
+          "how to improve ad performance",
+          "ad performance benchmarking tools",
+          "optimize social media ads",
+          "content strategy for social media",
+          "how to analyze market content"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "The urgency is moderate as optimizing ad creatives can significantly impact ROI, but it's not an immediate pain for all potential users. MVP is complex due to integration requirements and data processing. Distribution fit is moderate; reaching marketers through online channels (SEO, ads) is feasible. Retention potential is decent if the tool provides ongoing insights. The advantage is low without a specific edge mentioned like unique data sources or known industry partnerships."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "ad creative research tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to analyze competitor ads",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "market research tools for advertising",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best tools for ad research",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "competitor ad analysis software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to improve ad performance",
+      "volume": 10,
+      "cpc": 7.68,
+      "competition": 0.19,
+      "source": "dataforseo",
+      "buyer": "in-house marketing teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ad performance benchmarking tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "in-house marketing teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "optimize social media ads",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "in-house marketing teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content strategy for social media",
+      "volume": 480,
+      "cpc": 8.19,
+      "competition": 0.09,
+      "source": "dataforseo",
+      "buyer": "in-house marketing teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to analyze market content",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "in-house marketing teams",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "content strategy for social media",
+      "volume": 480,
+      "cpc": 8.19,
+      "competition": 0.09,
+      "source": "dataforseo",
+      "buyer": "in-house marketing teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to improve ad performance",
+      "volume": 10,
+      "cpc": 7.68,
+      "competition": 0.19,
+      "source": "dataforseo",
+      "buyer": "in-house marketing teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ad creative research tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to analyze competitor ads",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "market research tools for advertising",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best tools for ad research",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "competitor ad analysis software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ad performance benchmarking tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "in-house marketing teams",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 2.8634748842024216,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 4.095,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 19.95847488420242
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "digital marketing agencies",
+        "anchor_phrase": "ad creative research tool",
+        "offer_copy": "For digital marketing agencies who need to continually optimize ad creatives based on competitor strategies but find manual research too time-consuming, we offer an ad creative research tool that automates competitor analysis so they enhance ad strategies without the manual labor.",
+        "landing_page_headline": "Automate Your Ad Creative Research"
+      },
+      {
+        "buyer": "in-house marketing teams",
+        "anchor_phrase": "content strategy for social media",
+        "offer_copy": "For in-house marketing teams who want to optimize their ad performance but struggle to keep up with benchmarks, we provide content insights from competitors so they improve their social media strategy without falling behind industry standards.",
+        "landing_page_headline": "Boost Your Social Media Content Strategy"
+      }
+    ],
+    "next_action": "Interview 5 digital marketing agencies and 5 in-house marketing teams to understand their current tools and workflows, focusing on pain points in ad research and content strategy.",
+    "reasoning": "The verdict 'Educate Later' suggests that while there is some interest and willingness to pay, the demand signals are weak, particularly in search volume. The lack of searches for phrases directly related to the core concept indicates a need for market education and validation before heavy investment. Focusing on interviews will uncover real pain points and refine the product positioning to better resonate with these buyers and identify more precise demand signals."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/researchlite"
+  }
+}

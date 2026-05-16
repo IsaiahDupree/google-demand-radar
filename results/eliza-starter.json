@@ -1,0 +1,306 @@
+{
+  "source_text": "eliza-starter\n\n## README\n\n# Eliza\r\n\r\n## Edit the character files\r\n\r\nOpen `src/character.ts` to modify the default character. Uncomment and edit.\r\n\r\n### Custom characters\r\n\r\nTo load custom characters instead:\r\n- Use `pnpm start --characters=\"path/to/your/character.json\"`\r\n- Multiple character files can be loaded simultaneously\r\n\r\n### Add clients\r\n```\r\n# in character.ts\r\nclients: [Clients.TWITTER, Clients.DISCORD],\r\n\r\n# in character.json\r\nclients: [\"twitter\", \"discord\"]\r\n```\r\n\r\n## Duplicate the .env.example template\r\n\r\n```bash\r\ncp .env.example .env\r\n```\r\n\r\n\\* Fill out the .env file with your own values.\r\n\r\n### Add login credentials and keys to .env\r\n```\r\nDISCORD_APPLICATION_ID=\"discord-application-id\"\r\nDISCORD_API_TOKEN=\"discord-api-token\"\r\n...\r\nOPENROUTER_API_KEY=\"sk-xx-xx-xxx\"\r\n...\r\nTWITTER_USERNAME=\"username\"\r\nTWITTER_PASSWORD=\"password\"\r\nTWITTER_EMAIL=\"your@email.com\"\r\n```\r\n\r\n## Install dependencies and start your agent\r\n\r\n```bash\r\npnpm i && pnpm start\r\n```\r\nNote: this requires node to be at least version 22 when you install packages and run the agent.\r\n\r\n## Run with Docker\r\n\r\n### Build and run Docker Compose (For x86_64 architecture)\r\n\r\n#### Edit the docker-compose.yaml file with your environment variables\r\n\r\n```yaml\r\nservices:\r\n    eliza:\r\n        environment:\r\n            - OPENROUTER_API_KEY=blahdeeblahblahblah\r\n```\r\n\r\n#### Run the image\r\n\r\n```bash\r\ndocker compose up\r\n```\r\n\r\n### Build the image with Mac M-Series or aarch64\r\n\r\nMake sure docker is running.\r\n\r\n```bash\r\n# The --load flag ensures the built image is available locally\r\ndocker buildx build --platform linux/amd64 -t eliza-starter:v1 --load .\r\n```\r\n\r\n#### Edit the docker-compose-image.yaml file with your environment variables\r\n\r\n```yaml\r\nservices:\r\n    eliza:\r\n        environment:\r\n            - OPENROUTER_API_KEY=blahdeeblahblahblah\r\n```\r\n\r\n#### Run the image\r\n\r\n```bash\r\ndocker compose -f docker-compose-image.yaml up\r\n```\r\n\r\n# Deploy with Railway\r\n\r\n[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/template/aW47_j)",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Eliza Starter",
+    "one_liner": "An AI-driven chatbot framework customizable for platforms like Twitter and Discord.",
+    "core_promise": "Quickly deployable, customizable chatbot agents for social platforms.",
+    "domain": "AI chatbot framework",
+    "buyers": [
+      {
+        "persona": "developers building social media chatbots",
+        "awareness_level": "solution_aware",
+        "pain": "Needs to deploy a chatbot but struggles with setup and customization across platforms like Twitter and Discord.",
+        "candidate_phrases": [
+          "custom discord bot",
+          "twitter chatbot api",
+          "how to make a discord bot",
+          "chatbot framework open source",
+          "multi platform chatbot"
+        ]
+      },
+      {
+        "persona": "tech-savvy community managers",
+        "awareness_level": "problem_aware",
+        "pain": "Manages multiple platforms and needs a consistent bot presence to automate interactions.",
+        "candidate_phrases": [
+          "automate discord and twitter",
+          "social media bot deployment",
+          "chatbot for community managers",
+          "discord and twitter bot setup",
+          "how to use chatbot for online community"
+        ]
+      },
+      {
+        "persona": "small business owners managing social engagement",
+        "awareness_level": "problem_aware",
+        "pain": "Struggles to maintain active engagement with customers on Twitter and Discord.",
+        "candidate_phrases": [
+          "twitter customer service bot",
+          "discord bot for small business",
+          "automate customer engagement on social media",
+          "small business chatbot tools",
+          "improve social media response time"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "The idea taps into a real pain and provides a useful solution for developers, but the setup complexity and technical barrier might limit initial demand. Distribution via search and ad channels is plausible but competitive. Retention potential exists through continued bot usage on social platforms; however, customization complexity poses initial hurdles. The concept doesn't articulate a strong advantage, such as unique technology or market positioning, which may limit competitive edge."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "custom discord bot",
+      "volume": 320,
+      "cpc": 4.37,
+      "competition": 0.13,
+      "source": "dataforseo",
+      "buyer": "developers building social media chatbots",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "twitter chatbot api",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "developers building social media chatbots",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to make a discord bot",
+      "volume": 4400,
+      "cpc": 5.28,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "developers building social media chatbots",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "chatbot framework open source",
+      "volume": 40,
+      "cpc": 0,
+      "competition": 0.04,
+      "source": "dataforseo",
+      "buyer": "developers building social media chatbots",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "multi platform chatbot",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "developers building social media chatbots",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate discord and twitter",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy community managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media bot deployment",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy community managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "chatbot for community managers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy community managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "discord and twitter bot setup",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy community managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to use chatbot for online community",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy community managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "twitter customer service bot",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners managing social engagement",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "discord bot for small business",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners managing social engagement",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate customer engagement on social media",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners managing social engagement",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "small business chatbot tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners managing social engagement",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "improve social media response time",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners managing social engagement",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "how to make a discord bot",
+      "volume": 4400,
+      "cpc": 5.28,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "developers building social media chatbots",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "custom discord bot",
+      "volume": 320,
+      "cpc": 4.37,
+      "competition": 0.13,
+      "source": "dataforseo",
+      "buyer": "developers building social media chatbots",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "chatbot framework open source",
+      "volume": 40,
+      "cpc": 0,
+      "competition": 0.04,
+      "source": "dataforseo",
+      "buyer": "developers building social media chatbots",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "twitter chatbot api",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "developers building social media chatbots",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "multi platform chatbot",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "developers building social media chatbots",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate discord and twitter",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy community managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media bot deployment",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy community managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "chatbot for community managers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy community managers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 3.9152324221192663,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 2.64,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 19.555232422119268
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "developers building social media chatbots",
+        "anchor_phrase": "how to make a discord bot",
+        "offer_copy": "For developers who need to deploy a chatbot but struggle with setup and customization across platforms like Twitter and Discord, we offer an AI-driven chatbot framework that allows quick and customizable deployment, so they can effectively manage their projects without getting stuck on technical complexities.",
+        "landing_page_headline": "Build Your Custom Discord Bot Effortlessly"
+      },
+      {
+        "buyer": "tech-savvy community managers",
+        "anchor_phrase": "automate discord and twitter",
+        "offer_copy": "For tech-savvy community managers who manage multiple platforms and need a consistent bot presence to automate interactions, we provide a streamlined framework that integrates your AI chatbots across Discord and Twitter, ensuring seamless automation without the hassle of juggling different systems.",
+        "landing_page_headline": "Automate Discord and Twitter Seamlessly"
+      },
+      {
+        "buyer": "small business owners managing social engagement",
+        "anchor_phrase": "chatbot for community managers",
+        "offer_copy": "For small business owners who struggle to maintain active engagement with customers on Twitter and Discord, we offer a customizable AI chatbot solution that keeps your brand connected and responsive, enhancing customer interaction without consuming valuable time and resources.",
+        "landing_page_headline": "Boost Your Social Engagement with AI Bots"
+      }
+    ],
+    "next_action": "Conduct interviews with 5-10 potential customers from each persona to validate their specific needs and test responses to the proposed offers.",
+    "reasoning": "The concept has moderate search demand, with developers showing the most clear interest in specific functionalities like creating Discord bots. Community managers look for automation but demand seems latent, requiring validation. Willingness to pay and competitive advantage appear low, indicating potential cost-sensitivity and strong existing alternatives. The verdict suggests further customer learning to refine whether the propositions effectively tackle their specific pains."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/eliza-starter"
+  }
+}

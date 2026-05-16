@@ -1,0 +1,273 @@
+{
+  "source_text": "kawaii-coffee-timer\n\nCreated by Rork\n\nStack: TypeScript",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Kawaii Coffee Timer",
+    "one_liner": "A cute, Japanese-style app for timing your coffee brewing process.",
+    "core_promise": "Help coffee enthusiasts perfect their brewing time with a visually appealing, kawaii-themed timer app.",
+    "domain": "coffee and brewing tools",
+    "buyers": [
+      {
+        "persona": "aesthetic-conscious home baristas",
+        "awareness_level": "solution_aware",
+        "pain": "They want a timer that matches their aesthetic sensibilities while brewing coffee at home.",
+        "candidate_phrases": [
+          "cute coffee timer",
+          "kawaii kitchen timer",
+          "aesthetic coffee timer app",
+          "japanese coffee timer app",
+          "kawaii timer",
+          "kawaii kitchen accessories",
+          "japanese style digital timer"
+        ]
+      },
+      {
+        "persona": "casual coffee drinkers looking for unique gadgets",
+        "awareness_level": "problem_aware",
+        "pain": "They find standard coffee timers boring and are looking for something unique and special to add to their coffee-making experience.",
+        "candidate_phrases": [
+          "fun coffee gadgets",
+          "unique kitchen timers",
+          "interesting coffee tools",
+          "quirky coffee accessories",
+          "fun coffee timer app",
+          "cool kitchen gadgets"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 2,
+      "mvp_ease": 4,
+      "distribution_fit": 4,
+      "retention_potential": 2,
+      "advantage": 1,
+      "rationale": "The urgency for aesthetic timers is low, mainly driven by personal enjoyment rather than necessity. Building a basic app with TypeScript is straightforward, as a timer function is not complex. The product can be marketed effectively on platforms popular with young, aesthetic-focused audiences. Retention is weak since a timer app is infrequently revised, and repeat use depends on continued coffee brewing habits. The idea lacks a clear competitive edge beyond the aesthetic appeal, which could be easily replicated."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "cute coffee timer",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "aesthetic-conscious home baristas",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "kawaii kitchen timer",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 1,
+      "source": "dataforseo",
+      "buyer": "aesthetic-conscious home baristas",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "aesthetic coffee timer app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "aesthetic-conscious home baristas",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "japanese coffee timer app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "aesthetic-conscious home baristas",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "kawaii timer",
+      "volume": 170,
+      "cpc": 0.03,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "aesthetic-conscious home baristas",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "kawaii kitchen accessories",
+      "volume": 10,
+      "cpc": 0.28,
+      "competition": 0.41,
+      "source": "dataforseo",
+      "buyer": "aesthetic-conscious home baristas",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "japanese style digital timer",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "aesthetic-conscious home baristas",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "fun coffee gadgets",
+      "volume": 10,
+      "cpc": 0.55,
+      "competition": 0.8,
+      "source": "dataforseo",
+      "buyer": "casual coffee drinkers looking for unique gadgets",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "unique kitchen timers",
+      "volume": 140,
+      "cpc": 0.31,
+      "competition": 1,
+      "source": "dataforseo",
+      "buyer": "casual coffee drinkers looking for unique gadgets",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "interesting coffee tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "casual coffee drinkers looking for unique gadgets",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "quirky coffee accessories",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "casual coffee drinkers looking for unique gadgets",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "fun coffee timer app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "casual coffee drinkers looking for unique gadgets",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "cool kitchen gadgets",
+      "volume": 2400,
+      "cpc": 0.6,
+      "competition": 0.98,
+      "source": "dataforseo",
+      "buyer": "casual coffee drinkers looking for unique gadgets",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "cool kitchen gadgets",
+      "volume": 2400,
+      "cpc": 0.6,
+      "competition": 0.98,
+      "source": "dataforseo",
+      "buyer": "casual coffee drinkers looking for unique gadgets",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "kawaii timer",
+      "volume": 170,
+      "cpc": 0.03,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "aesthetic-conscious home baristas",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "unique kitchen timers",
+      "volume": 140,
+      "cpc": 0.31,
+      "competition": 1,
+      "source": "dataforseo",
+      "buyer": "casual coffee drinkers looking for unique gadgets",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "kawaii kitchen timer",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 1,
+      "source": "dataforseo",
+      "buyer": "aesthetic-conscious home baristas",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "kawaii kitchen accessories",
+      "volume": 10,
+      "cpc": 0.28,
+      "competition": 0.41,
+      "source": "dataforseo",
+      "buyer": "aesthetic-conscious home baristas",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "fun coffee gadgets",
+      "volume": 10,
+      "cpc": 0.55,
+      "competition": 0.8,
+      "source": "dataforseo",
+      "buyer": "casual coffee drinkers looking for unique gadgets",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "cute coffee timer",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "aesthetic-conscious home baristas",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "aesthetic coffee timer app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "aesthetic-conscious home baristas",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 3.656455930893178,
+    "buyer_urgency": 2,
+    "willingness_to_pay": 0.3,
+    "mvp_ease": 4,
+    "distribution_fit": 4,
+    "advantage": 1,
+    "retention_potential": 2,
+    "total": 16.956455930893178
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "aesthetic-conscious home baristas",
+        "anchor_phrase": "kawaii timer",
+        "offer_copy": "For aesthetic-conscious home baristas who enjoy a cute brewing experience but worry about boring timers, we offer a kawaii-style coffee timer app so they can enjoy a visually delightful timer without compromising on their brewing precision.",
+        "landing_page_headline": "Make Coffee Brewing Adorably Precise with Kawaii Timer"
+      },
+      {
+        "buyer": "casual coffee drinkers looking for unique gadgets",
+        "anchor_phrase": "cool kitchen gadgets",
+        "offer_copy": "For casual coffee drinkers seeking to add uniqueness to their kitchen but find standard gadgets dull, we present a kawaii coffee timer app so they can enjoy a unique and fun coffee-brewing experience without boring accessories.",
+        "landing_page_headline": "Add a Touch of Cute to Your Coffee Routine"
+      }
+    ],
+    "next_action": "Build a basic prototype of the kawaii coffee timer app and test it with 10 potential users from aesthetic-conscious home barista groups to gather qualitative feedback.",
+    "reasoning": "The verdict 'Educate Later' suggests limited immediate market demand, especially given the low buyer urgency and willingness to pay. While aesthetic-conscious home baristas show some specific interest, the general market's urgency and search intent are tepid. The main risks involve underdeveloped buyer willingness to pay and low comparative market advantage. Testing with an engaged niche will validate desirability and inform necessary adjustments before scaling."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/kawaii-coffee-timer"
+  }
+}

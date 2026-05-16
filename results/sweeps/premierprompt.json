@@ -1,0 +1,308 @@
+{
+  "slug": "premierprompt",
+  "source_concept": "PremierPrompt",
+  "generated_at": "2026-05-16T17:20:19.019Z",
+  "cross_vertical_insight": "Across all verticals, there is a common need for efficient analysis and documentation of video content to improve workflow and ensure detailed reporting. This is particularly important for long-format and high-volume video projects where manual review is time-prohibitive, prompting demand for automation tools.",
+  "verticals": [
+    {
+      "name": "video production agencies specializing in corporate videos",
+      "icp": "Small to medium video production agencies (5-20 employees) focusing on corporate video projects like training videos, product demos, and executive presentations.",
+      "rationale": "These agencies deal with lengthy video content that requires detailed analysis and reporting to clients, making efficient reporting essential.",
+      "phrases": [
+        {
+          "phrase": "premiere pro plugin for video report",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to generate video analysis report",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best plugins for corporate video analysis",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy plugin for video report generation",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "video report generator for corporate projects",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "premiere pro plugin for video report",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "post-production freelancers handling feature films",
+      "icp": "Freelancers who offer post-production services for independent feature films, usually operating solo or with a small team.",
+      "rationale": "Feature films often require in-depth frame-by-frame analysis to prepare for final edits, making report generation a time-consuming task that can be automated.",
+      "phrases": [
+        {
+          "phrase": "premiere pro plugin for film analysis",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automate film analysis reports",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "plugin to generate markdown reports for films",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to analyze feature film footage efficiently",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy film analysis plugin for premiere pro",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "premiere pro plugin for film analysis",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "documentary filmmakers",
+      "icp": "Independent documentary filmmakers managing multiple projects who need to provide detailed editor’s notes and insights during editing.",
+      "rationale": "Documentary editing involves dealing with extensive footage that requires notes and observations, a process that can be streamlined with automated reports.",
+      "phrases": [
+        {
+          "phrase": "premiere pro markdown report plugin",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "documentary video analysis tool",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best plugins for analyzing documentary footage",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to create report from documentary video",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "plugin to automate documentary video insights",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "premiere pro markdown report plugin",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "educational content creators",
+      "icp": "Small teams or solo creators producing educational videos for platforms like YouTube or MOOCs, focusing on efficiency in video content review processes.",
+      "rationale": "These creators need to document educational content effectively to ensure accuracy and improve instructional materials efficiently.",
+      "phrases": [
+        {
+          "phrase": "video analysis plugin for premiere pro",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "educational video report tool",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best way to annotate educational videos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to create video transcripts and analysis",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy plugin for creating educational video insights",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "video analysis plugin for premiere pro",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "marketing agencies creating promotional content",
+      "icp": "Marketing agencies with 10-50 employees, managing video content for social media and advertisements, requiring thorough video performance reviews.",
+      "rationale": "Agencies regularly create promotional videos that need detailed review and documentation to optimize future content strategies.",
+      "phrases": [
+        {
+          "phrase": "best plugin for promotional video analysis",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "premiere pro plugin for marketing videos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automate video report for social media content",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to generate analysis report for ads",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy plugin for video marketing insights",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "best plugin for promotional video analysis",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

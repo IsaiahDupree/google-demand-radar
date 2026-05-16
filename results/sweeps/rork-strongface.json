@@ -1,0 +1,348 @@
+{
+  "slug": "rork-strongface",
+  "source_concept": "Rork App Builder",
+  "generated_at": "2026-05-16T17:22:00.757Z",
+  "cross_vertical_insight": "Each vertical is driven by the need to enhance customer or client engagement through specialized app features, without investing in full development teams. Buyers prioritize cost-effectiveness and ease of use.",
+  "verticals": [
+    {
+      "name": "real estate agents needing client engagement apps",
+      "icp": "Individual real estate agents or small teams, earning $150k-$500k, focused on improving client interactions and listings access through mobile apps.",
+      "rationale": "Mobile apps can enhance client services and showcase property listings efficiently, which could help agents stand out in competitive markets.",
+      "phrases": [
+        {
+          "phrase": "real estate app builder",
+          "volume": 30,
+          "cpc": 32.74,
+          "competition": 0.04,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best app features for realtors",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to create real estate app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "affordable mobile app for real estate",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "realtor client management app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "tools for property listing apps",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 1.8996998632462747,
+      "bofu_density": 0.16666666666666666,
+      "max_cpc": 32.74,
+      "top_phrase": "real estate app builder",
+      "top_volume": 30,
+      "pmf_score": 4.856486584614431,
+      "pmf_breakdown": {
+        "demand_n": 0.37993997264925494,
+        "bofu_n": 0.16666666666666666,
+        "cpc_n": 1,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "independent fitness trainers creating branded apps",
+      "icp": "Fitness trainers managing their own client base, earning $50k-$100k annually, looking to expand reach and engage clients through personalized apps.",
+      "rationale": "Fitness trainers want to engage clients on mobile apps to provide personalized workouts, track progress, and schedule sessions, without needing full-fledged development teams.",
+      "phrases": [
+        {
+          "phrase": "create fitness app cheap",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "fitness app builder for trainers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "custom fitness app features",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to make a fitness app",
+          "volume": 170,
+          "cpc": 16.1,
+          "competition": 0.28,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "affordable fitness app platform",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best app builder for personal trainers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 2.0584243713461343,
+      "bofu_density": 0,
+      "max_cpc": 16.1,
+      "top_phrase": "how to make a fitness app",
+      "top_volume": 170,
+      "pmf_score": 4.535054622807681,
+      "pmf_breakdown": {
+        "demand_n": 0.41168487426922684,
+        "bofu_n": 0,
+        "cpc_n": 1,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "event organizers creating event-specific apps",
+      "icp": "Small to medium-sized event planning companies with 2-10 employees, organizing multiple events annually, needing streamlined ways to inform and engage event attendees.",
+      "rationale": "Apps can help organizers keep attendees informed with schedules, announcements, and networking tools.",
+      "phrases": [
+        {
+          "phrase": "build event app quickly",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best event app platforms 2024",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to make an event app",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0.86,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "affordable event planning app creation",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "features for interactive event apps",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "custom app for events",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0.8280004035947847,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "how to make an event app",
+      "top_volume": 10,
+      "pmf_score": 2.2968002421568707,
+      "pmf_breakdown": {
+        "demand_n": 0.16560008071895693,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "boutique retail stores needing e-commerce apps",
+      "icp": "Boutique retail stores with 1-5 locations, $500k-$2M revenue, looking to complement in-store sales with a mobile shopping experience.",
+      "rationale": "These stores need to capture more market share through mobile apps that provide ease of shopping, promotions, and updates to their customers.",
+      "phrases": [
+        {
+          "phrase": "retail app builder for small stores",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "e-commerce app for boutique shop",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "create shopping app for my store",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best app builder for small retail",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "features of retail shopping app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to launch a store app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "retail app builder for small stores",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "independent content creators building community apps",
+      "icp": "Solo content creators and streamers with 10k+ followers, looking to grow community engagement through a dedicated app.",
+      "rationale": "They want to provide unique content and community spaces to their followers with a branded app without needing advanced coding skills.",
+      "phrases": [
+        {
+          "phrase": "app builder for content creators",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to make an app for followers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "tools for building community app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best app platform for creators",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "create community app for fans",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "high engagement app features",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "app builder for content creators",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

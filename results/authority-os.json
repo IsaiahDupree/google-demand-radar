@@ -1,0 +1,243 @@
+{
+  "source_text": "authority-os\n\nMulti-tenant entity visibility OS — SEO, GEO, AEO, and social platform optimization for agencies\n\n## README\n\nThis is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).\n\n## Getting Started\n\nFirst, run the development server:\n\n```bash\nnpm run dev\n# or\nyarn dev\n# or\npnpm dev\n# or\nbun dev\n```\n\nOpen [http://localhost:3000](http://localhost:3000) with your browser to see the result.\n\nYou can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.\n\nThis project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.\n\n## Learn More\n\nTo learn more about Next.js, take a look at the following resources:\n\n- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.\n- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.\n\nYou can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!\n\n## Deploy on Vercel\n\nThe easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.\n\nCheck out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.\n\n\nStack: TypeScript",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Authority OS",
+    "one_liner": "A multi-tenant platform for optimizing visibility across SEO, GEO, AEO, and social platforms.",
+    "core_promise": "Consolidate and enhance online visibility management for agencies across multiple platforms.",
+    "domain": "digital marketing agency tools",
+    "buyers": [
+      {
+        "persona": "digital marketing agency owners",
+        "awareness_level": "product_aware",
+        "pain": "Managing visibility across multiple clients on various platforms is time-consuming and complex.",
+        "candidate_phrases": [
+          "best seo tools for agencies",
+          "multi-client seo platform",
+          "social media management for agencies",
+          "geo targeting tools for marketing",
+          "aeo tools for agencies"
+        ]
+      },
+      {
+        "persona": "SEO specialists",
+        "awareness_level": "solution_aware",
+        "pain": "Need efficient tools to manage SEO and platform performance for multiple clients.",
+        "candidate_phrases": [
+          "tools to manage multiple clients seo",
+          "seo platform for agencies",
+          "multi tenant seo software",
+          "best multi platform seo tools",
+          "top agency seo tools"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 4,
+      "advantage": 2,
+      "rationale": "The product addresses a significant pain for digital marketing agencies, though the urgency depends on agency growth pace. Building a tool for integrating multiple optimization platforms may have moderate complexity due to specific feature set needs. Agencies regularly search for specialized tools, suggesting a good fit for online distribution. The potential for retention is high if the platform actually simplifies client account management, but no edge or unique advantage is stated, warranting a lower score in that area."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "best seo tools for agencies",
+      "volume": 1000,
+      "cpc": 28.84,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "digital marketing agency owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "multi-client seo platform",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agency owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media management for agencies",
+      "volume": 1900,
+      "cpc": 18.35,
+      "competition": 0.11,
+      "source": "dataforseo",
+      "buyer": "digital marketing agency owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "geo targeting tools for marketing",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agency owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "aeo tools for agencies",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agency owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools to manage multiple clients seo",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo platform for agencies",
+      "volume": 590,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "multi tenant seo software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best multi platform seo tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "top agency seo tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "social media management for agencies",
+      "volume": 1900,
+      "cpc": 18.35,
+      "competition": 0.11,
+      "source": "dataforseo",
+      "buyer": "digital marketing agency owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best seo tools for agencies",
+      "volume": 1000,
+      "cpc": 28.84,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "digital marketing agency owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo platform for agencies",
+      "volume": 590,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "multi-client seo platform",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agency owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "geo targeting tools for marketing",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agency owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "aeo tools for agencies",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agency owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools to manage multiple clients seo",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "multi tenant seo software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 3.769914786216584,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 4,
+    "total": 23.76991478621658
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "digital marketing agency owners",
+        "anchor_phrase": "social media management for agencies",
+        "offer_copy": "For digital marketing agency owners who need to enhance client visibility but find managing multiple platforms cumbersome, we offer an integrated solution that streamlines social media and SEO tasks across clients so you can save time and boost performance without juggling separate tools.",
+        "landing_page_headline": "Streamline Social & SEO for Your Agency"
+      },
+      {
+        "buyer": "SEO specialists",
+        "anchor_phrase": "best seo tools for agencies",
+        "offer_copy": "For SEO specialists who want optimized tools for managing client SEO but struggle with efficiency, we offer a robust platform that consolidates SEO management to enhance client performance without the need for multiple disconnected tools.",
+        "landing_page_headline": "Optimize Your SEO Management Pane"
+      }
+    ],
+    "next_action": "Ship 2 landing pages targeting 'social media management for agencies' and 'best seo tools for agencies'. Allocate $100 for Google Search ads to test traffic and conversion.",
+    "reasoning": "The verdict to test first arises from several key factors: reasonable search demand indicates there's room to capture interest; buyer urgency and willingness to pay suggest potential for conversion if the solution truly alleviates pain points. However, the lower scores in MVP ease and competitive advantage imply risk in execution complexity and differentiation. Testing demand with focused landing pages can validate real interest before deeper product investment."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/authority-os"
+  }
+}

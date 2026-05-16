@@ -1,0 +1,308 @@
+{
+  "slug": "calculatorcreatorapp",
+  "source_concept": "Calculator Creator App",
+  "generated_at": "2026-05-16T17:12:26.392Z",
+  "cross_vertical_insight": "Across these verticals, the common pain point is the need for precise, efficient, and bespoke engineering calculations tailored to their specific domain challenges. Buying triggers often relate to scaling the complexity of projects and improving the precision of engineering outcomes, making AI-driven calculator creation an attractive proposition.",
+  "verticals": [
+    {
+      "name": "civil engineering consultancy firms",
+      "icp": "Mid-sized civil engineering consultancy firms, $2-10M revenue, providing specialized engineering solutions to construction and infrastructure companies.",
+      "rationale": "These firms handle complex calculations for infrastructure projects and could benefit from creating custom calculators to improve efficiency and accuracy.",
+      "phrases": [
+        {
+          "phrase": "civil engineering calculator app",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "create custom engineering calculators",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "engineering calculation tools for consultants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "engineering calculator software",
+          "volume": 210,
+          "cpc": 7.89,
+          "competition": 0.02,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to create engineering calculators",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 2.5150273450402985,
+      "bofu_density": 0.2,
+      "max_cpc": 7.89,
+      "top_phrase": "engineering calculator software",
+      "top_volume": 210,
+      "pmf_score": 4.992516407024178,
+      "pmf_breakdown": {
+        "demand_n": 0.5030054690080596,
+        "bofu_n": 0.2,
+        "cpc_n": 0.7889999999999999,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "chemical process engineers in manufacturing",
+      "icp": "Process engineers in manufacturing companies, typically at companies with $50-200M revenue, focusing on optimizing chemical processes and improving safety protocols.",
+      "rationale": "These engineers require precise calculations for chemical reactions and process optimizations, benefiting from custom calculators tailored to specific processes.",
+      "phrases": [
+        {
+          "phrase": "chemical process calculation tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "engineering calculators for chemical engineers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best engineering calculator for chemical industry",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "custom chemical reaction calculators",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "process optimization calculator",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "chemical process calculation tools",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "mechanical engineering design firms",
+      "icp": "Small to mid-sized mechanical engineering design firms with $1-5M in revenue, creating custom mechanical parts and assemblies for various industries.",
+      "rationale": "They often require precise calculations for stress analysis, material properties, and load management, benefiting from custom calculators to enhance design accuracy.",
+      "phrases": [
+        {
+          "phrase": "mechanical design calculator app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "engineering calculators for mechanical design",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "custom mechanical part calculators",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "create engineering calculators for design",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best software for mechanical engineering calculations",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "mechanical design calculator app",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "aerospace engineering researchers",
+      "icp": "Research teams in aerospace engineering at universities or private R&D centers, focusing on aerodynamics, materials science, and system integration.",
+      "rationale": "Research teams require precise measurement tools for aerodynamics and fluid dynamics, making custom calculators highly valuable for their experimental validation work.",
+      "phrases": [
+        {
+          "phrase": "aerospace engineering calculation tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "custom aerodynamic calculators",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "fluid dynamics calculator software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best aerodynamic calculation apps",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to build aerospace calculators",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "aerospace engineering calculation tools",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "renewable energy project developers",
+      "icp": "Small to medium renewable energy companies ($5-50M revenue) developing wind, solar, and hydroelectric projects, focused on optimizing energy output and efficiency.",
+      "rationale": "These developers need precise calculations for energy output predictions and system scaling, benefiting from custom calculators tailored to specific project needs.",
+      "phrases": [
+        {
+          "phrase": "renewable energy calculator software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "engineering calculators for solar projects",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "custom wind energy calculators",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "energy output calculation tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "renewable energy project calculation apps",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "renewable energy calculator software",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

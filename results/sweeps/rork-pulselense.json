@@ -1,0 +1,308 @@
+{
+  "slug": "rork-pulselense",
+  "source_concept": "PulseLense",
+  "generated_at": "2026-05-16T17:21:46.770Z",
+  "cross_vertical_insight": "Across these verticals, the common pain point is a lack of understanding of website visitor behaviors which impacts user engagement and conversions. The buying triggers often revolve around the need to boost revenue by adapting real-time data-driven strategies. However, a critical differentiator is the nature of what they consider an 'engagement'—for some it’s direct sales, for others, it's leads or course registrations.",
+  "verticals": [
+    {
+      "name": "independent real estate agents",
+      "icp": "Solo real estate agents or small teams handling multiple property listings, typically earning between $50k-$150k annually, needing to optimize online property engagement.",
+      "rationale": "Real estate agents often lose potential clients because they're unable to interpret online behaviors on their listings.",
+      "phrases": [
+        {
+          "phrase": "real-time analytics for real estate website",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best tool for tracking property listing views",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to monitor website traffic for real estate",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "real estate agent website visitor tracking",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "increase engagement on property listings",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "real-time analytics for real estate website",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "small-scale fashion e-commerce",
+      "icp": "Fashion e-commerce businesses with 1-10 employees and $50k-$500k in annual sales, focused on increasing online conversion rates and customer engagement.",
+      "rationale": "These businesses need to understand customer interaction on their websites to boost sales and brand engagement.",
+      "phrases": [
+        {
+          "phrase": "ecommerce analytics for fashion brands",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "track website traffic for small fashion store",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best tools to improve fashion ecommerce site",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "optimize fashion website visitor experience",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy real-time visitor insights tool for fashion",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "ecommerce analytics for fashion brands",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "online fitness coaches",
+      "icp": "Independent fitness coaches offering programs and courses online, often earning $30k-$100k annually, aiming to increase student engagement and course completion rates.",
+      "rationale": "Online coaches need to track how potential clients interact with their course offering pages to improve conversion and retention.",
+      "phrases": [
+        {
+          "phrase": "website analytics for fitness programs",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "track visitor engagement for online courses",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "improve fitness site conversion",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "real-time tracking for fitness coach website",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "optimize online course engagement fitness",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "website analytics for fitness programs",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "local tourism boards",
+      "icp": "Tourism promotion boards in towns or cities with annual budgets of $100k-$500k, aiming to increase visitor numbers by optimizing online presence.",
+      "rationale": "Tourism boards could boost visits by understanding and reacting to tourist browsing behaviors in real-time.",
+      "phrases": [
+        {
+          "phrase": "tourism website analytics tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "optimize visitor engagement tourism website",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "real-time website tracking for tourism boards",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to increase tourism website traffic",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "track international website visitors tourism",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "tourism website analytics tools",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "B2B SaaS companies",
+      "icp": "Small to mid-sized B2B SaaS companies with 10-50 employees, focusing on optimizing lead capture and engagement on their websites.",
+      "rationale": "Understanding website traffic patterns can help these companies tailor their offerings and improve lead acquisition strategies.",
+      "phrases": [
+        {
+          "phrase": "b2b saas real-time website insights",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "improve saas website engagement strategies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best tools for saas traffic analysis",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "real-time tracking b2b software companies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "saas website visitor behavior tool",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "b2b saas real-time website insights",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    }
+  ]
+}

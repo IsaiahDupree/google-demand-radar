@@ -1,0 +1,308 @@
+{
+  "slug": "authority-os",
+  "source_concept": "Authority OS",
+  "generated_at": "2026-05-16T16:45:34.575Z",
+  "cross_vertical_insight": "Common across these verticals is the need for tools that can handle multi-platform visibility and optimize client content efficiently, due to typically limited resources and the necessity to maximize visibility strategically. They seek solutions to streamline operations, improve visibility metrics, and ultimately enhance ROI for their specific industries.",
+  "verticals": [
+    {
+      "name": "small boutique marketing agencies",
+      "icp": "Boutique digital agencies with 5-10 employees, managing 10-20 client accounts primarily focused on niche markets or specific industries.",
+      "rationale": "These agencies need to manage visibility across numerous platforms but lack the resources for specialized teams, making a consolidated platform essential.",
+      "phrases": [
+        {
+          "phrase": "seo tools for boutique marketing agencies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best digital visibility software for small agencies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "manage social seo aeo for agency clients",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to optimize client visibility in small agency",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy seo management software for agency",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "seo tools for boutique marketing agencies",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "real estate marketing firms",
+      "icp": "Marketing firms specializing in real estate, often with teams of 5-15, working on 20-50 property accounts.",
+      "rationale": "They require strong geolocation optimization and platform consistency to effectively promote properties across search engines and real estate platforms.",
+      "phrases": [
+        {
+          "phrase": "real estate seo platforms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "geo optimization tools for real estate",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to manage real estate visibility online",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best marketing software for real estate agencies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "purchase aeo tools for real estate",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "real estate seo platforms",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "e-commerce growth consultancies",
+      "icp": "Consultancies focused on scaling e-commerce brands, typically 5-20 people specializing in data-driven visibility and market expansion strategies.",
+      "rationale": "They need to enhance e-commerce platform visibility through SEO, AEO, and social channels efficiently.",
+      "phrases": [
+        {
+          "phrase": "seo tools for e-commerce consultants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "optimize e-commerce visibility for clients",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best multi-platform marketing software for e-commerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "e-commerce geo optimization software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to boost store visibility on multiple channels",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "seo tools for e-commerce consultants",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "healthcare digital marketing agencies",
+      "icp": "Agencies with 10-30 employees specializing in healthcare, focusing on increasing patient engagement and visibility of healthcare providers.",
+      "rationale": "They need to optimize for local search and maintain consistent online presence across platforms, critical in healthcare for patient trust and recruitment.",
+      "phrases": [
+        {
+          "phrase": "digital visibility tools for healthcare marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "healthcare agency seo platforms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "optimize healthcare visibility across platforms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best seo tools for healthcare agencies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to improve patient engagement through seo",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "digital visibility tools for healthcare marketing",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "travel and tourism marketing firms",
+      "icp": "Marketing firms that specialize in promoting travel destinations, often small to mid-sized, handling multiple destination accounts.",
+      "rationale": "These firms need comprehensive tools to ensure destination content is visible and optimized across diverse online platforms and regions.",
+      "phrases": [
+        {
+          "phrase": "travel seo and geo optimization tool",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "marketing software for tourism agencies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to enhance travel destination visibility online",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best tools for travel marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "purchase seo software for tourism industry",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "travel seo and geo optimization tool",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    }
+  ]
+}

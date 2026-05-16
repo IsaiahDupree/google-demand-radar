@@ -1,0 +1,306 @@
+{
+  "source_text": "CoffeeTimer\n\n## README\n\n# Welcome to your Rork app\r\n\r\n## Project info\r\n\r\nThis is a native cross-platform mobile app created with [Rork](https://rork.com)\r\n\r\n**Platform**: Native iOS & Android app, exportable to web\r\n**Framework**: Expo Router + React Native\r\n\r\n## How can I edit this code?\r\n\r\nThere are several ways of editing your native mobile application.\r\n\r\n### **Use Rork**\r\n\r\nSimply visit [rork.com](https://rork.com) and prompt to build your app with AI.\r\n\r\nChanges made via Rork will be committed automatically to this GitHub repo.\r\n\r\nWhenever you make a change in your local code editor and push it to GitHub, it will be also reflected in Rork.\r\n\r\n### **Use your preferred code editor**\r\n\r\nIf you want to work locally using your own code editor, you can clone this repo and push changes. Pushed changes will also be reflected in Rork.\r\n\r\nIf you are new to coding and unsure which editor to use, we recommend Cursor. If you're familiar with terminals, try Claude Code.\r\n\r\nThe only requirement is having Node.js & Bun installed - [install Node.js with nvm](https://github.com/nvm-sh/nvm) and [install Bun](https://bun.sh/docs/installation)\r\n\r\nFollow these steps:\r\n\r\n```bash\r\n# Step 1: Clone the repository using the project's Git URL.\r\ngit clone <YOUR_GIT_URL>\r\n\r\n# Step 2: Navigate to the project directory.\r\ncd <YOUR_PROJECT_NAME>\r\n\r\n# Step 3: Install the necessary dependencies.\r\nbun i\r\n\r\n# Step 4: Start the instant web preview of your Rork app in your browser, with auto-reloading of your changes\r\nbun run start-web\r\n\r\n# Step 5: Start iOS preview\r\n# Option A (recommended):\r\nbun run start  # then press \"i\" in the terminal to open iOS Simulator\r\n# Option B (if supported by your environment):\r\nbun run start -- --ios\r\n```\r\n\r\n### **Edit a file directly in GitHub**\r\n\r\n- Navigate to the desired file(s).\r\n- Click the \"Edit\" button (pencil icon) at the top right of the file view.\r\n- Make your changes and commit the changes.\r\n\r\n## What technologies are used for this project?\r\n\r\nThis project is built with the most popular native mobile cross-platform technical stack:\r\n\r\n- **React Native** - Cross-platform native mobile development framework created by Meta and used for Instagram, Airbnb, and lots of top apps in the App Store\r\n- **Expo** - Extension of React Native + platform used by Discord, Shopify, Coinbase, Telsa, Starlink, Eightsleep, and more\r\n- **Expo Router** - File-based routing system for React Native with support for web, server functions and SSR\r\n- **TypeScript** - Type-safe JavaScript\r\n- **React Query** - Server state management\r\n- **Lucide React Native** - Beautiful icons\r\n\r\n## How can I test my app?\r\n\r\n### **On your phone (Recommended)**\r\n\r\n1. **iOS**: Download the [Rork app from the App Store](https://apps.apple.com/app/rork) or [Expo Go](https://apps.apple.com/app/expo-go/id982107779)\r\n2. **Android**: Download the [Expo Go app from Google Play](https://play.google.com/store/apps/details?id=host.exp.exponent)\r\n3. Run `bun run start` and scan the QR code from your development server\r\n\r\n### **In your browser**\r\n\r\nRun `bun start-web` to test in a web browser. Note: The browser preview is great for quick testing, but some native features may not be available.\r\n\r\n### **iOS Simulator / Android Emulator**\r\n\r\nYou can test Rork apps in Expo Go or Rork iOS app. You don't need XCode or Android Studio for most features.\r\n\r\n**When do you need Custom Development Builds?**\r\n\r\n- Native authentication (Face ID, Touch ID, Apple Sign In)\r\n- In-app purchases and subscriptions\r\n- Push notifications\r\n- Custom native modules\r\n\r\nLearn more: [Expo Custom Development Builds Guide](https://docs.expo.dev/develop/development-builds/introduction/)\r\n\r\nIf you have XCode (iOS) or Android Studio installed:\r\n\r\n```bash\r\n# iOS Simulator\r\nbun run start -- --ios\r\n\r\n# Android Emulator\r\nbun run start -- --android\r\n```\r\n\r\n## How can I deploy this project?\r\n\r\n### **Publish to App Store (iOS)**\r\n\r\n1. **Install EAS CLI**:\r\n\r\n   ```bash\r\n   bun i -g @expo/eas-cli\r\n   ```\r\n\r\n2. **Configure your project**:",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "CoffeeTimer",
+    "one_liner": "A cross-platform app to precisely time your coffee brewing process.",
+    "core_promise": "Enjoy consistently perfect coffee with accurate brew timing.",
+    "domain": "coffee brewing tools",
+    "buyers": [
+      {
+        "persona": "home coffee enthusiasts",
+        "awareness_level": "product_aware",
+        "pain": "Struggling to consistently brew coffee with the right balance and taste.",
+        "candidate_phrases": [
+          "coffee brewing timer app",
+          "best app for timing coffee",
+          "coffee brew timer",
+          "french press timer app",
+          "aeropress timer app"
+        ]
+      },
+      {
+        "persona": "baristas and coffee shop owners",
+        "awareness_level": "solution_aware",
+        "pain": "Need tools to ensure consistent coffee quality for customers.",
+        "candidate_phrases": [
+          "coffee shop timer app",
+          "app for timing coffee brewing",
+          "aeropress timing tool",
+          "french press timer",
+          "coffee brewing precision app"
+        ]
+      },
+      {
+        "persona": "gadget-loving coffee drinkers",
+        "awareness_level": "problem_aware",
+        "pain": "Desire to use technology to enhance their coffee experience but unsure what tools are best.",
+        "candidate_phrases": [
+          "improve coffee brewing",
+          "high tech coffee tools",
+          "precision coffee brewing",
+          "how to brew perfect coffee",
+          "tools for better coffee"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 4,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "There is a moderate urgency among coffee enthusiasts and professionals for tools that enhance coffee brewing precision. Creating a basic timer app is relatively easy, but competition from existing apps means differentiation is important. Distribution through SEO and coffee-related digital communities could be effective. Retention depends on how integral the app becomes in daily routine brewing processes. Without specified distinct features or unique expertise, the competitive advantage is minimal."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "coffee brewing timer app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home coffee enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best app for timing coffee",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home coffee enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "coffee brew timer",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.14,
+      "source": "dataforseo",
+      "buyer": "home coffee enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "french press timer app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home coffee enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "aeropress timer app",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home coffee enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "coffee shop timer app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "baristas and coffee shop owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "app for timing coffee brewing",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "baristas and coffee shop owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "aeropress timing tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "baristas and coffee shop owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "french press timer",
+      "volume": 170,
+      "cpc": 1.22,
+      "competition": 0.44,
+      "source": "dataforseo",
+      "buyer": "baristas and coffee shop owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "coffee brewing precision app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "baristas and coffee shop owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "improve coffee brewing",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "gadget-loving coffee drinkers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "high tech coffee tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "gadget-loving coffee drinkers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "precision coffee brewing",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "gadget-loving coffee drinkers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to brew perfect coffee",
+      "volume": 30,
+      "cpc": 0.42,
+      "competition": 0.45,
+      "source": "dataforseo",
+      "buyer": "gadget-loving coffee drinkers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools for better coffee",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "gadget-loving coffee drinkers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "french press timer",
+      "volume": 170,
+      "cpc": 1.22,
+      "competition": 0.44,
+      "source": "dataforseo",
+      "buyer": "baristas and coffee shop owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to brew perfect coffee",
+      "volume": 30,
+      "cpc": 0.42,
+      "competition": 0.45,
+      "source": "dataforseo",
+      "buyer": "gadget-loving coffee drinkers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "coffee brew timer",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.14,
+      "source": "dataforseo",
+      "buyer": "home coffee enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "aeropress timer app",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home coffee enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "coffee brewing timer app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home coffee enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best app for timing coffee",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home coffee enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "french press timer app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home coffee enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "coffee shop timer app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "baristas and coffee shop owners",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 2.494576405086721,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 0.61,
+    "mvp_ease": 4,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 19.10457640508672
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "home coffee enthusiasts",
+        "anchor_phrase": "coffee brew timer",
+        "offer_copy": "For home coffee enthusiasts who want consistent flavor but can't achieve it with guesswork, we offer a precise coffee brew timer so they enjoy perfect coffee every day without needing professional skills.",
+        "landing_page_headline": "Consistently Perfect Coffee with Our Brew Timer"
+      },
+      {
+        "buyer": "baristas and coffee shop owners",
+        "anchor_phrase": "french press timer",
+        "offer_copy": "For baristas and coffee shop owners who need to ensure high-quality coffee for customers but lack the right tools, we offer a specialized French press timer, so they deliver excellent taste every time without complicating their workflow.",
+        "landing_page_headline": "French Press Timer: Quality You Can Count On"
+      },
+      {
+        "buyer": "gadget-loving coffee drinkers",
+        "anchor_phrase": "how to brew perfect coffee",
+        "offer_copy": "For gadget-loving coffee drinkers who want to use technology to brew perfect coffee but don't know where to start, we introduce a tech-savvy guide combined with a brew timer app to elevate their coffee game effortlessly.",
+        "landing_page_headline": "Brew Perfect Coffee with Tech Guidance"
+      }
+    ],
+    "next_action": "Conduct user interviews with 10 potential customers across all personas to validate pain points and willingness to pay for a coffee brewing timer app.",
+    "reasoning": "The demand signals suggest moderate interest with a clearer preference among baristas for tools like a 'french press timer'. The challenge lies in monetization, as willingness to pay is notably low. Testing assumptions through user interviews can assess true pain depth and possibly pivot or narrow the scope further, ensuring the product addresses a genuine unmet need."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/CoffeeTimer"
+  }
+}

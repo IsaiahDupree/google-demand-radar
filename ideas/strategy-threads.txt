@@ -1,0 +1,9 @@
+Strategy Threads API
+
+A queryable database of business strategy patterns (go-to-market, growth loops, pricing, positioning, retention) exposed as an API for autonomous agents and AI orchestrators to call when planning multi-step business workflows.
+
+Imagine: a marketing agent calls /strategies/lookup?goal=launch+SaaS+B2B and gets back a structured plan with KPIs, channels, content cadence, and a step-by-step playbook.
+
+Sold to: AI agent builders, automation platforms, AI-native SaaS companies, agent frameworks.
+
+The core bet: as more business workflows are run by autonomous agents, those agents will need structured strategy context, not just unstructured prose.

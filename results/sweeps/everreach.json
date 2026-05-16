@@ -1,0 +1,324 @@
+{
+  "slug": "everreach",
+  "source_concept": "EverReach",
+  "generated_at": "2026-05-16T17:16:24.798Z",
+  "cross_vertical_insight": "Across these verticals, the common thread is a reliance on personal relationships to drive business success, with a clear need to track and nurture these connections without the support of larger organizational systems. Many search for industry-specific CRMs, highlighting the desire for tailored solutions rather than generic tools.",
+  "verticals": [
+    {
+      "name": "independent financial advisors",
+      "icp": "Solo financial advisors or small advisory firms with 1-3 employees, handling a diverse client base and relying on personal relationships for client retention and referral.",
+      "rationale": "Independent financial advisors need to remember intricate details about their clients to provide personalized advice and maintain strong relationships.",
+      "phrases": [
+        {
+          "phrase": "crm for financial advisors",
+          "volume": 320,
+          "cpc": 60.31,
+          "competition": 0.12,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to manage client relationships in finance",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best personal crm for financial planners",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "crm for small financial firms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "personal crm for independent advisors",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to nurture client relationships in finance",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 2.9866681832471853,
+      "bofu_density": 0.16666666666666666,
+      "max_cpc": 60.31,
+      "top_phrase": "crm for financial advisors",
+      "top_volume": 320,
+      "pmf_score": 5.708667576614978,
+      "pmf_breakdown": {
+        "demand_n": 0.5973336366494371,
+        "bofu_n": 0.16666666666666666,
+        "cpc_n": 1,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "real estate agents",
+      "icp": "Individual real estate agents or small teams in competitive markets, focused on maintaining personal connections with leads and past clients.",
+      "rationale": "Real estate agents thrive on personal connections and need systems to track and nurture leads and past clients to generate business consistently.",
+      "phrases": [
+        {
+          "phrase": "personal crm for realtors",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "top crm for real estate agents",
+          "volume": 90,
+          "cpc": 64.65,
+          "competition": 0.35,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to manage real estate client contacts",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "crm for individual realtors",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "real estate lead management tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best crm for real estate agents 2023",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 2.0845395579600163,
+      "bofu_density": 0,
+      "max_cpc": 64.65,
+      "top_phrase": "top crm for real estate agents",
+      "top_volume": 90,
+      "pmf_score": 4.75072373477601,
+      "pmf_breakdown": {
+        "demand_n": 0.41690791159200324,
+        "bofu_n": 0,
+        "cpc_n": 1,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "startup founders",
+      "icp": "Founders of early-stage startups who must cultivate a wide network of investors, partners, and early customers, often with limited administrative support.",
+      "rationale": "Startup founders build businesses on the strength of their networks; keeping track of touchpoints with various stakeholders is crucial but challenging.",
+      "phrases": [
+        {
+          "phrase": "personal crm for startup founders",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how startup founders manage networking",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best crm for small startups",
+          "volume": 10,
+          "cpc": 107.7,
+          "competition": 0.57,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "network management tools for entrepreneurs",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "crm for startup networking",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 1.10810534993878,
+      "bofu_density": 0,
+      "max_cpc": 107.7,
+      "top_phrase": "best crm for small startups",
+      "top_volume": 10,
+      "pmf_score": 4.1648632099632685,
+      "pmf_breakdown": {
+        "demand_n": 0.22162106998775602,
+        "bofu_n": 0,
+        "cpc_n": 1,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "solo HR consultants",
+      "icp": "Self-employed HR consultants working with small to medium businesses, balancing multiple client relationships.",
+      "rationale": "HR consultants need to maintain client relationships and track communication history across numerous engagements without a corporate CRM's infrastructure.",
+      "phrases": [
+        {
+          "phrase": "crm for hr consultants",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0.09,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how hr consultants manage client relationships",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "personal client management for hr professionals",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "crm solutions for hr consulting",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "client relationship tips for hr consultants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 1.406921995101518,
+      "bofu_density": 0.2,
+      "max_cpc": 0,
+      "top_phrase": "crm for hr consultants",
+      "top_volume": 10,
+      "pmf_score": 3.344153197060911,
+      "pmf_breakdown": {
+        "demand_n": 0.2813843990203036,
+        "bofu_n": 0.2,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "freelance marketing consultants",
+      "icp": "Independent marketing consultants juggling multiple clients and projects, reliant on strong client relationships for referrals and ongoing work.",
+      "rationale": "Freelance marketers often manage numerous client relationships simultaneously, requiring organized communication and follow-up systems.",
+      "phrases": [
+        {
+          "phrase": "crm for marketing consultants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best personal crm for freelancers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to manage client communications as a freelance marketer",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "tools for managing client relationships in marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "client management software for consultants",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0.12,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 1.406921995101518,
+      "bofu_density": 0.2,
+      "max_cpc": 0,
+      "top_phrase": "client management software for consultants",
+      "top_volume": 10,
+      "pmf_score": 3.344153197060911,
+      "pmf_breakdown": {
+        "demand_n": 0.2813843990203036,
+        "bofu_n": 0.2,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    }
+  ]
+}

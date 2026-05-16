@@ -1,0 +1,243 @@
+{
+  "source_text": "HomeAssistant_Integrations\n\n## README\n\n# Home Assistant Chromecast Caster (YouTube + SoundCloud)\n\nCast YouTube videos and SoundCloud tracks to a Google Chromecast from Home Assistant. This repo provides:\n\n- Scripts for YouTube and SoundCloud casting with clear status notifications\n- Helpers (text + dropdown) to paste links and choose the target device\n- A ready-to-paste Lovelace card\n- YAML snippets to include in `configuration.yaml`\n\nWorks via:\n- YouTube: `media_player.play_media` with the YouTube app\n- SoundCloud: `media_extractor.play_media` to resolve the stream\n\n---\n\n## Requirements\n\n- Home Assistant with the Google Cast integration (to discover your Chromecast devices)\n- For SoundCloud: enable `media_extractor:` in `configuration.yaml` (see below). `ffmpeg:` is recommended and included in HA OS.\n\n---\n\n## Option 1 — UI-only setup (no file editing)\n\n1) Create Helpers (UI)\n- Text helper: Settings → Devices & services → Helpers → Create helper → Text\n  - Name: \"YouTube URL to Cast\"\n  - Entity: `input_text.youtube_url_to_cast`\n  - Max length: ≤ 255\n- Text helper (optional, for SoundCloud): Name: \"SoundCloud URL to Cast\"\n  - Entity: `input_text.soundcloud_url_to_cast`\n- Dropdown helper: Create helper → Dropdown\n  - Name: \"Cast Target\"\n  - Options: add your Chromecast `media_player.*` entity_ids (e.g., `media_player.living_room_chromecast`)\n  - Entity: `input_select.cast_target`\n\n2) Add Scripts (UI)\n- Settings → Automations & scenes → Scripts → + Create script → ⋮ → Edit in YAML\n- Create these two scripts (paste the body only, no wrapper key at the top):\n\nYouTube script body:\n```yaml\nalias: Cast YouTube from input\nmode: restart\nsequence:\n  - variables:\n      url: \"{{ states('input_text.youtube_url_to_cast') | trim }}\"\n      # Safe extractor: get first 11-char ID from common YouTube URL shapes\n      video_id: >-\n        {{ (url\n            | regex_findall('(?:youtu\\\\.be/|[?&]v=|/shorts/|/live/|/embed/)([A-Za-z0-9_-]{11})')\n            | first\n            | default('', true))\n           or (url if url|length == 11 else '') }}\n      target_entity: \"{{ states('input_select.cast_target') }}\"\n      valid_target: \"{{ target_entity is string and target_entity.startswith('media_player.') }}\"\n      valid_id: \"{{ video_id|length == 11 }}\"\n\n  - service: persistent_notification.create\n    data:\n      notification_id: youtube_cast_status\n      title: \"YouTube Cast: starting…\"\n      message: >-\n        URL: {{ url }}\n        Parsed ID: {{ video_id if valid_id else '—' }}\n        Target: {{ target_entity if valid_target else '—' }}\n\n  - choose:\n      - conditions: \"{{ valid_id and valid_target }}\"\n        sequence:\n          - service: media_player.play_media\n            target:\n              entity_id: \"{{ target_entity }}\"\n            data:\n              media_content_type: cast\n              media_content_id: >\n                {{ {'app_name':'youtube','media_id': video_id} | tojson }}\n          - service: persistent_notification.create\n            data:\n              notification_id: youtube_cast_status\n              title: \"YouTube Cast: sent ✅\"\n              message: \"Sent {{ video_id }} to {{ state_attr(target_entity, 'friendly_name') or target_entity }}.\"\n          - service: logbook.log\n            data:\n              name: YouTube Caster\n              message: \"Casting {{ video_id }} to {{ state_attr(target_entity, 'friendly_name') or target_entity }}\"\n              entity_id: \"{{ target_entity }}\"\n\n      - conditions: \"{{ not valid_id }}\"\n        sequence:\n          - service: persistent_notification.create\n            data:\n              notification_id: youtube_cast_status\n              title: \"YouTube Cast: failed ❌\"\n              message: >-\n                Could not parse a YouTube video ID from:\n                {{ url }}\n                Tip: paste a normal YouTube link or just the 11-char ID (e.g., dQw4w9WgXcQ).\n\n      - conditions: \"{{ not valid_target }}\"\n        sequence:\n          - service: persistent_notification.create\n            data:\n              notifica",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Home Assistant Chromecast Caster",
+    "one_liner": "Cast YouTube videos and SoundCloud tracks to Chromecast using Home Assistant.",
+    "core_promise": "Effortlessly stream YouTube and SoundCloud media to your Chromecast devices through Home Assistant.",
+    "domain": "smart home automation",
+    "buyers": [
+      {
+        "persona": "home automation enthusiasts using Home Assistant",
+        "awareness_level": "solution_aware",
+        "pain": "They want to integrate media streaming into their Home Assistant setup but struggle with complex configurations.",
+        "candidate_phrases": [
+          "home assistant chromecast integration",
+          "cast youtube home assistant",
+          "stream soundcloud to chromecast home assistant",
+          "youtube soundcloud chromecast home assistant",
+          "home assistant media player setup"
+        ]
+      },
+      {
+        "persona": "tech-savvy smart home users who are familiar with Home Assistant but not yet using media features",
+        "awareness_level": "problem_aware",
+        "pain": "They find it difficult to stream media easily through their existing smart home setup.",
+        "candidate_phrases": [
+          "how to stream youtube on smart home",
+          "easy smart home media streaming",
+          "integrate chromecast with home assistant",
+          "home assistant cast youtube",
+          "smart home soundcloud player"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 3,
+      "distribution_fit": 3,
+      "retention_potential": 3,
+      "advantage": 1,
+      "rationale": "The interest in smart home automation is growing, and those users likely seek solutions to integrate media streaming. Buyers are proactive but not desperate, hence moderate urgency. The MVP involves some technical setup but builds on existing Home Assistant infrastructure, so it's moderately easy to create. Distribution via forums and communities is feasible but not trivial, given the niche audience. Retention is moderately high due to ongoing use of Home Assistant. No clear advantage is indicated in the idea, so competitiveness will rely on implementation quality."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "home assistant chromecast integration",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home automation enthusiasts using Home Assistant",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "cast youtube home assistant",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home automation enthusiasts using Home Assistant",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "stream soundcloud to chromecast home assistant",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home automation enthusiasts using Home Assistant",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube soundcloud chromecast home assistant",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home automation enthusiasts using Home Assistant",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "home assistant media player setup",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home automation enthusiasts using Home Assistant",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to stream youtube on smart home",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy smart home users who are familiar with Home Assistant but not yet using media features",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy smart home media streaming",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy smart home users who are familiar with Home Assistant but not yet using media features",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "integrate chromecast with home assistant",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy smart home users who are familiar with Home Assistant but not yet using media features",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "home assistant cast youtube",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy smart home users who are familiar with Home Assistant but not yet using media features",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "smart home soundcloud player",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy smart home users who are familiar with Home Assistant but not yet using media features",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "home assistant chromecast integration",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home automation enthusiasts using Home Assistant",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "home assistant cast youtube",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy smart home users who are familiar with Home Assistant but not yet using media features",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "cast youtube home assistant",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home automation enthusiasts using Home Assistant",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "stream soundcloud to chromecast home assistant",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home automation enthusiasts using Home Assistant",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube soundcloud chromecast home assistant",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home automation enthusiasts using Home Assistant",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "home assistant media player setup",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "home automation enthusiasts using Home Assistant",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to stream youtube on smart home",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy smart home users who are familiar with Home Assistant but not yet using media features",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy smart home media streaming",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy smart home users who are familiar with Home Assistant but not yet using media features",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 1.406921995101518,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 3,
+    "distribution_fit": 3,
+    "advantage": 1,
+    "retention_potential": 3,
+    "total": 15.906921995101518
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "home automation enthusiasts using Home Assistant",
+        "anchor_phrase": "home assistant chromecast integration",
+        "offer_copy": "For home automation enthusiasts using Home Assistant who want to integrate media streaming but struggle with complex configurations, we provide a seamless Chromecast casting tool so they can enjoy their favorite YouTube and SoundCloud tracks without dealing with technical headaches.",
+        "landing_page_headline": "Effortless Chromecast Streaming for Home Assistant Users"
+      },
+      {
+        "buyer": "tech-savvy smart home users who are familiar with Home Assistant but not yet using media features",
+        "anchor_phrase": "home assistant cast youtube",
+        "offer_copy": "For tech-savvy smart home users who find streaming media through their existing setup difficult, we offer a simple solution to cast YouTube from Home Assistant so they can enjoy seamless playback without technical hassle.",
+        "landing_page_headline": "Stream YouTube Effortlessly with Home Assistant"
+      }
+    ],
+    "next_action": "Engage with 3-5 online smart home automation communities and forums to validate interest and pain points in media streaming integration. Gather qualitative insights from discussions or small surveys.",
+    "reasoning": "The overall search demand for this idea is low, indicating limited organic traffic. While the buyer urgency is moderate, signalling some intent to solve this problem, the willingness to pay is low because the niche is highly DIY-oriented and technical. MVP ease and distribution fit scores suggest that it’s feasible to build and distribute in communities. However, the lack of competitive advantage and retention potential poses significant growth risks. Therefore, further engagement with relevant communities is advisable to refine the problem-solution fit and understand where users truly struggle with media integration."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/HomeAssistant_Integrations"
+  }
+}

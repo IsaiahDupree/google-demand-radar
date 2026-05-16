@@ -1,0 +1,306 @@
+{
+  "source_text": "CRM\n\n## README\n\n# ValidReach CRM\r\n\r\nCustom outreach platform for ValidReach: Twenty CRM + a custom Next.js app, both\r\npeers on Supabase. See [docs/PRD.md](./docs/PRD.md) for full requirements and\r\n[docs/BRIEF.md](./docs/BRIEF.md) for the original brief.\r\n\r\n## Layout\r\n\r\n```\r\n.\r\n├── app/             Next.js custom app (review queue, drafting, landing pages)\r\n├── twenty-stack/    docker-compose for Twenty CRM (pinned release)\r\n├── supabase/        Local Supabase project (migrations, seed, config)\r\n├── scripts/         One-shot scripts: lead importer, ops utilities\r\n├── docs/            BRIEF.md, PRD.md, architectural notes\r\n└── .github/         CI workflows\r\n```\r\n\r\n## Local prerequisites\r\n\r\n- Docker Desktop (running)\r\n- Node 20+ (current: v24)\r\n- Supabase CLI (`npm i -g supabase` or `scoop install supabase`)\r\n- Git\r\n\r\n## Quickstart\r\n\r\n```bash\r\n# 1. Bring up Supabase (Postgres + Studio + Auth on localhost)\r\ncd supabase && supabase start\r\n\r\n# 2. Bring up Twenty CRM in its own Docker stack\r\ncd ../twenty-stack && docker compose up -d\r\n\r\n# 3. Apply our app schema and seed\r\ncd ../supabase && supabase db reset    # or `supabase migration up`\r\n\r\n# 4. Import the ValidReach lead CSVs\r\ncd ../scripts && npm run import:leads\r\n\r\n# 5. Run the custom app\r\ncd ../app && npm install && npm run dev\r\n```\r\n\r\nService URLs (defaults):\r\n\r\n| Service          | URL                       |\r\n|------------------|---------------------------|\r\n| Custom app       | http://localhost:3000     |\r\n| Twenty CRM UI    | http://localhost:3001     |\r\n| Supabase Studio  | http://localhost:54323    |\r\n| Supabase Postgres| localhost:54322           |\r\n\r\n## Status\r\n\r\n- [x] Phase 0 — foundation (in progress)\r\n- [ ] Phase 1 — lead ingestion\r\n- [ ] Phase 2 — brand context + Gmail style profile\r\n- [ ] Phase 3 — drafting + review queue\r\n- [ ] Phase 4 — feedback loop\r\n- [ ] Phase 5 — Resend send + tracking\r\n- [ ] Phase 6 — enrichment\r\n- [ ] Phase 7 — landing pages\r\n- [ ] Phase 8 — deploy + post-deploy tests\r\n\r\nSee [docs/PRD.md §8](./docs/PRD.md#8-phased-delivery-plan) for the full plan.",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "ValidReach CRM",
+    "one_liner": "A custom outreach platform combining Twenty CRM with a Next.js frontend for personalized lead management.",
+    "core_promise": "Simplify and streamline lead management and outreach through a tailored CRM setup.",
+    "domain": "CRM",
+    "buyers": [
+      {
+        "persona": "small business owners looking for CRM solutions",
+        "awareness_level": "problem_aware",
+        "pain": "Struggling to manage increasing volumes of leads and customer interactions efficiently.",
+        "candidate_phrases": [
+          "simple crm for small business",
+          "affordable crm solutions",
+          "best crm for startups",
+          "easy crm to manage leads",
+          "crm for lead management"
+        ]
+      },
+      {
+        "persona": "companies using Supabase seeking integrated solutions",
+        "awareness_level": "solution_aware",
+        "pain": "Need a CRM that seamlessly integrates with existing Supabase projects and offers customization.",
+        "candidate_phrases": [
+          "crm with supabase integration",
+          "custom crm build with supabase",
+          "supabase crm solution",
+          "integrate crm with supabase",
+          "crm for supabase projects"
+        ]
+      },
+      {
+        "persona": "tech-savvy entrepreneurs needing custom CRM features",
+        "awareness_level": "solution_aware",
+        "pain": "Standard CRM platforms lack the customization needed for specific business processes.",
+        "candidate_phrases": [
+          "customizable crm software",
+          "crm with custom features",
+          "build your own crm",
+          "flexible crm solutions",
+          "crm for custom workflows"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 4,
+      "advantage": 2,
+      "rationale": "Buyer urgency is moderate; while CRM needs are important, they aren't always immediately pressing unless there is acute pain from lead mismanagement. MVP ease is low due to the technical complexity of integrating many components. Distribution fit is average; reaching target buyers via Google is feasible but competitive. Retention potential is high due to CRM's ingrained nature in business processes, leading to sticky usage. However, there's limited evidence of an unfair advantage; no clear existing audience or exclusive technology is mentioned, so advantage scores are low."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "simple crm for small business",
+      "volume": 390,
+      "cpc": 68.57,
+      "competition": 0.29,
+      "source": "dataforseo",
+      "buyer": "small business owners looking for CRM solutions",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "affordable crm solutions",
+      "volume": 30,
+      "cpc": 38.09,
+      "competition": 0.29,
+      "source": "dataforseo",
+      "buyer": "small business owners looking for CRM solutions",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best crm for startups",
+      "volume": 720,
+      "cpc": 71.9,
+      "competition": 0.11,
+      "source": "dataforseo",
+      "buyer": "small business owners looking for CRM solutions",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy crm to manage leads",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners looking for CRM solutions",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "crm for lead management",
+      "volume": 880,
+      "cpc": 58.69,
+      "competition": 0.05,
+      "source": "dataforseo",
+      "buyer": "small business owners looking for CRM solutions",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "crm with supabase integration",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "companies using Supabase seeking integrated solutions",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "custom crm build with supabase",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "companies using Supabase seeking integrated solutions",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "supabase crm solution",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "companies using Supabase seeking integrated solutions",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "integrate crm with supabase",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "companies using Supabase seeking integrated solutions",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "crm for supabase projects",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "companies using Supabase seeking integrated solutions",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "customizable crm software",
+      "volume": 590,
+      "cpc": 55.98,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "tech-savvy entrepreneurs needing custom CRM features",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "crm with custom features",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy entrepreneurs needing custom CRM features",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "build your own crm",
+      "volume": 210,
+      "cpc": 61.1,
+      "competition": 0.3,
+      "source": "dataforseo",
+      "buyer": "tech-savvy entrepreneurs needing custom CRM features",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "flexible crm solutions",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy entrepreneurs needing custom CRM features",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "crm for custom workflows",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy entrepreneurs needing custom CRM features",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "crm for lead management",
+      "volume": 880,
+      "cpc": 58.69,
+      "competition": 0.05,
+      "source": "dataforseo",
+      "buyer": "small business owners looking for CRM solutions",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best crm for startups",
+      "volume": 720,
+      "cpc": 71.9,
+      "competition": 0.11,
+      "source": "dataforseo",
+      "buyer": "small business owners looking for CRM solutions",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "customizable crm software",
+      "volume": 590,
+      "cpc": 55.98,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "tech-savvy entrepreneurs needing custom CRM features",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "simple crm for small business",
+      "volume": 390,
+      "cpc": 68.57,
+      "competition": 0.29,
+      "source": "dataforseo",
+      "buyer": "small business owners looking for CRM solutions",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "build your own crm",
+      "volume": 210,
+      "cpc": 61.1,
+      "competition": 0.3,
+      "source": "dataforseo",
+      "buyer": "tech-savvy entrepreneurs needing custom CRM features",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "affordable crm solutions",
+      "volume": 30,
+      "cpc": 38.09,
+      "competition": 0.29,
+      "source": "dataforseo",
+      "buyer": "small business owners looking for CRM solutions",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy crm to manage leads",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners looking for CRM solutions",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "crm with supabase integration",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "companies using Supabase seeking integrated solutions",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 3.6664986837670144,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 2,
+    "retention_potential": 4,
+    "total": 22.666498683767013
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "small business owners looking for CRM solutions",
+        "anchor_phrase": "crm for lead management",
+        "offer_copy": "For small business owners who want to streamline lead management but are overwhelmed by complex CRM tools, we provide a simple solution that organizes and prioritizes leads efficiently so they can focus on closing deals without getting lost in clunky interfaces.",
+        "landing_page_headline": "Streamlined CRM for Effortless Lead Management"
+      },
+      {
+        "buyer": "companies using Supabase seeking integrated solutions",
+        "anchor_phrase": "crm with supabase integration",
+        "offer_copy": "For companies using Supabase who need a seamless CRM integration but struggle with compatibility issues, we offer a tailored CRM platform that directly integrates with Supabase so they can maintain a cohesive tech ecosystem without technical headaches.",
+        "landing_page_headline": "Seamless CRM Integration for Supabase Projects"
+      },
+      {
+        "buyer": "tech-savvy entrepreneurs needing custom CRM features",
+        "anchor_phrase": "customizable crm software",
+        "offer_copy": "For tech-savvy entrepreneurs who need custom CRM features but find off-the-shelf solutions too rigid, we offer a customizable platform that adapts to specific business processes, ensuring unique workflow needs are met without unnecessary compromises.",
+        "landing_page_headline": "Customizable CRM for Unique Business Needs"
+      }
+    ],
+    "next_action": "Ship 3 landing pages targeting 'crm for lead management', 'crm with supabase integration', and 'customizable crm software'. Allocate $150 to each for Google Ads testing.",
+    "reasoning": "The demand signals show a decent level of interest across all personas, especially in areas targeting lead management and customization. The willingness to pay is strong, indicating these buyers are likely prepared to invest in solutions that meet their needs. However, there is a notable risk in MVP ease and competitive advantages as the market already offers many existing solutions. The primary risk lies in developing a platform distinct enough to capture attention and fine-tuning integration capabilities with specific technologies like Supabase. Testing landing pages will validate interest and help iterate on messaging."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/CRM"
+  }
+}

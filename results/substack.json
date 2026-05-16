@@ -1,0 +1,243 @@
+{
+  "source_text": "SubStack\n\n## README\n\n# substack-automation\n\nA Node + Puppeteer automation for **Substack** — scrape every dashboard surface (posts, notes, subscribers, analytics, publications, profiles, leaderboard, recommendations, chat) and run every meaningful action (engage, publish notes/posts, manage subscribers, configure settings) at scale, all behind a queued REST API.\n\n## What / Why / How\n\n- **What.** A `SubstackBot` class wraps a stealth Puppeteer page that's authenticated against substack.com via a persisted browser profile. It exposes scraper + action methods, a `p-queue`-backed job queue, a cron scheduler, prebuilt growth workflows, an Express API, and a SQLite store.\n- **Why.** Substack has no public API. Doing engagement + scraping by hand caps at one operator. Putting the bot behind a REST + queue lets multiple processes drive growth, distribution, and reporting without re-implementing browser auth each time.\n- **How.** Stealth Chrome boots once with `data/browser-profile/`, the bot ensures login, and an `APIInterceptor` listens for relevant XHRs to capture undocumented endpoints. Scrapers/actions run as queued jobs; SQLite (`data/substack.db`) holds state; the Express API in `src/api/server.js` exposes routes. Notifications go to Telegram.\n\n## Quickstart\n\n```bash\nnpm install\n\n# Create a .env file (see Environment variables below)\n\nnpm start            # Run the bot once (interactive on first login)\nnpm run dev          # nodemon-watched bot\nnpm run api          # REST API on $API_PORT (default 3000)\nnpm run api:dev      # nodemon-watched API\nnpm run test         # Dry-run walkthrough; sends screenshots to Telegram\nnode tests/unit.js   # Pure-fn unit tests (no browser, no network)\n```\n\nThe first interactive `npm start` will drive Substack login in the persistent profile (`data/browser-profile/`); subsequent runs reuse the session.\n\n## Scripts\n\n| Command | What it does |\n|---------|--------------|\n| `npm start` | `node src/index.js` — `SubstackBot` one-shot. |\n| `npm run dev` | `nodemon src/index.js` — watch mode. |\n| `npm run api` | `node src/api/server.js` — Express API. |\n| `npm run api:dev` | `nodemon src/api/server.js` — watch mode. |\n| `npm run test` | `node tests/dryRunTests.js` — full dry-run flow walk. |\n| `npm run test:dry` | Forces `DRY_RUN=true`. |\n| `node tests/unit.js` | Pure-fn unit tests; safe for CI. |\n\n## Environment variables\n\n`.env` is loaded via `dotenv` at startup. There is no checked-in `.env.example` — populate from this table:\n\n| Var | Default | Purpose |\n|-----|---------|---------|\n| `SUBSTACK_EMAIL` | — | Login email. |\n| `SUBSTACK_PASSWORD` | — | Login password. |\n| `SUBSTACK_SUBDOMAIN` | — | Computes `https://${subdomain}.substack.com`. |\n| `HEADLESS` | `true` | Set `false` to see the browser. |\n| `SLOW_MO` | `0` | Puppeteer slow-mo (ms). |\n| `USER_DATA_DIR` | `./data/browser-profile` | Persistent Chrome profile. |\n| `API_PORT` | `3000` | Express port. |\n| `API_KEY` | — | Optional bearer token. |\n| `ACTION_DELAY_MS` | `2000` | Per-action throttle. |\n| `MAX_CONCURRENT` | `3` | Queue concurrency. |\n| `DATA_DIR` / `SCREENSHOTS_DIR` / `EXPORTS_DIR` | `./data*` | Path overrides. |\n| `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID` | hardcoded fallback in `tests/dryRunTests.js` | Notifications. |\n| `DRY_RUN` | unset | `true` ⇒ no real writes. |\n\n## Repo layout\n\n```\nsrc/\n  index.js                 SubstackBot class (top-level)\n  config/index.js          .env → typed config\n  auth/login.js            ensureLoggedIn(page)\n  browser/\n    launch.js              stealth Puppeteer\n    dryRun.js              flips actions to no-op + records screenshots\n    interceptor.js         passive XHR capture\n    fingerprint.js         anti-detection\n    proxy.js               proxy plumbing\n    resilience.js          retry / backoff\n  scraper/                 per-surface scrapers (posts, notes, subscribers,\n                           analytics, publications, recommendations,\n                           profile, chat)\n  actions/                 write\n\nDescription: Comprehensive Substack automation - scrape all data and perform all actions at scale",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Substack Automation Bot",
+    "one_liner": "Automate Substack operations by scraping data and performing actions through a REST API.",
+    "core_promise": "Scale engagement and data management on Substack without manual browser interactions.",
+    "domain": "Substack automation",
+    "buyers": [
+      {
+        "persona": "digital publication managers",
+        "awareness_level": "solution_aware",
+        "pain": "Manual management of Substack publications is time-consuming and limits scalability.",
+        "candidate_phrases": [
+          "substack api",
+          "automate substack posts",
+          "substack bot",
+          "substack data scraper",
+          "substack automation tool"
+        ]
+      },
+      {
+        "persona": "growth-focused newsletter editors",
+        "awareness_level": "problem_aware",
+        "pain": "Scaling newsletter engagement and distribution manually is inefficient.",
+        "candidate_phrases": [
+          "how to grow substack",
+          "substack engagement tool",
+          "scale substack newsletter",
+          "improve substack subscriber management",
+          "increase substack readership"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "Buyer urgency is moderate because manual operations in Substack can be tedious, especially for publications that are trying to scale quickly. However, the MVP ease is low due to the technical complexity involved in building such an automation tool, especially without a public API from Substack. The distribution fit is high since digital publishers and growth-focused editors actively look for scalable solutions online. Retention potential is moderate because once set up, users are likely to continue using the tool for ongoing operations. There's no clear advantage mentioned in terms of proprietary technology or strong market foothold, suggesting a lower score in the advantage dimension."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "substack api",
+      "volume": 720,
+      "cpc": 0,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "digital publication managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate substack posts",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital publication managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "substack bot",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.09,
+      "source": "dataforseo",
+      "buyer": "digital publication managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "substack data scraper",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital publication managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "substack automation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital publication managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to grow substack",
+      "volume": 90,
+      "cpc": 0.11,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "growth-focused newsletter editors",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "substack engagement tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "growth-focused newsletter editors",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "scale substack newsletter",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "growth-focused newsletter editors",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "improve substack subscriber management",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "growth-focused newsletter editors",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "increase substack readership",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "growth-focused newsletter editors",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "substack api",
+      "volume": 720,
+      "cpc": 0,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "digital publication managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to grow substack",
+      "volume": 90,
+      "cpc": 0.11,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "growth-focused newsletter editors",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "substack bot",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.09,
+      "source": "dataforseo",
+      "buyer": "digital publication managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate substack posts",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital publication managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "substack data scraper",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital publication managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "substack automation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital publication managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "substack engagement tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "growth-focused newsletter editors",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "scale substack newsletter",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "growth-focused newsletter editors",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 3.1010389164303236,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 0.05499999999999999,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 17.156038916430322
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "digital publication managers",
+        "anchor_phrase": "substack api",
+        "offer_copy": "For digital publication managers who want to manage multiple Substack publications efficiently but struggle with time-consuming operations, we provide an API-driven automation solution that scales engagement and data management without the need for manual browser interactions.",
+        "landing_page_headline": "Effortlessly Scale Your Substack with Our API Automation"
+      },
+      {
+        "buyer": "growth-focused newsletter editors",
+        "anchor_phrase": "how to grow substack",
+        "offer_copy": "For growth-focused newsletter editors who want to boost newsletter engagement and distribution but find manual efforts limiting, we offer an automation tool that increases reach and interaction while maintaining time and resource efficiency.",
+        "landing_page_headline": "Grow Your Substack with Efficient Automation Tools"
+      }
+    ],
+    "next_action": "Conduct interviews with 5 digital publication managers to understand their pain points and validate interest in a Substack API solution.",
+    "reasoning": "The demand signals suggest some level of interest, particularly among digital publication managers familiar with APIs, as 'substack api' shows the highest interest. However, the low willingness to pay and mvp_ease scores highlight significant risks. There's a need to validate the pain and solution alignment further, especially given that willingness to pay is critically low. Understanding the specifics of what managers want from an API and how much they'll pay is crucial for moving forward."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/SubStack"
+  }
+}

@@ -1,0 +1,7 @@
+EverReach — Personal CRM for Founders, Creators, and Networkers
+
+A lightweight personal CRM that captures contacts from anywhere (screenshots, voice memos, calendar invites, LinkedIn DMs, emails) and uses AI to generate follow-up reminders with full context — what you talked about, when you last met, what to say next.
+
+Target: solo operators who meet 20+ new people per month and lose track of who to follow up with. Founders raising rounds, creators with sponsor pipelines, salespeople managing informal contact networks.
+
+Differentiator from existing personal CRMs (Dex, Clay, Folk, Monica): AI-drafted follow-ups grounded in your own saved notes, not generic templates. Treats screenshots and voice memos as first-class inputs, not afterthoughts.

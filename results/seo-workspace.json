@@ -1,0 +1,243 @@
+{
+  "source_text": "seo-workspace\n\nSEO/GEO/AEO monorepo workspace — Authority OS, ChannelPulse, pipeline SDKs\n\n## README\n\n# SEO Workspace\n\nMonorepo for all SEO/GEO/AEO apps. Each app is an independent git repo (submodule) — push/pull them separately.\n\n## Apps\n\n| App | Port | Repo |\n|-----|------|------|\n| authority-os | 3200 | [IsaiahDupree/authority-os](https://github.com/IsaiahDupree/authority-os) |\n| channelpulse | 3201 | [IsaiahDupree/channelpulse](https://github.com/IsaiahDupree/channelpulse) |\n| pipeline | 8100 | [IsaiahDupree/seo-pipeline](https://github.com/IsaiahDupree/seo-pipeline) |\n\n## Packages\n\n| Package | Repo |\n|---------|------|\n| authority-os-typescript-sdk | [IsaiahDupree/authority-os-typescript-sdk](https://github.com/IsaiahDupree/authority-os-typescript-sdk) |\n| authority-os-python-sdk | [IsaiahDupree/authority-os-python-sdk](https://github.com/IsaiahDupree/authority-os-python-sdk) |\n\n## Start everything\n\n```bash\nbash dev.sh\n# or with Turborepo:\npnpm install && pnpm dev\n```\n\n## Clone fresh (includes all submodules)\n\n```bash\ngit clone --recurse-submodules https://github.com/IsaiahDupree/seo-workspace\n```\n\n## Push changes to an individual app\n\n```bash\ncd apps/channelpulse\ngit add -A && git commit -m \"your message\"\ngit push   # → github.com/IsaiahDupree/channelpulse\n```\n\n## Pull latest from all submodules\n\n```bash\ngit submodule update --remote --merge\n```\n\n\nStack: TypeScript",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "SEO Workspace",
+    "one_liner": "A unified monorepo setup for managing multiple SEO, GEO, and AEO applications.",
+    "core_promise": "Streamlined development and deployment of SEO/GEO/AEO apps through a monorepo system.",
+    "domain": "developer tools for SEO",
+    "buyers": [
+      {
+        "persona": "SEO tool developers looking to streamline their workflow",
+        "awareness_level": "solution_aware",
+        "pain": "Difficulty managing multiple repositories for different SEO tools and the complexity of keeping them synchronized.",
+        "candidate_phrases": [
+          "seo monorepo setup",
+          "manage multiple seo repos",
+          "seo development monorepo",
+          "streamline seo app development",
+          "seo app deployment solution"
+        ]
+      },
+      {
+        "persona": "Tech-savvy SEO consultants needing custom tool setups",
+        "awareness_level": "problem_aware",
+        "pain": "Challenges in integrating and managing custom SEO tools for client projects, requiring technical efficiencies.",
+        "candidate_phrases": [
+          "custom seo tool integration",
+          "manage seo tool suite",
+          "seo platform integration",
+          "optimize seo tool development",
+          "efficient seo tool deployment"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 4,
+      "distribution_fit": 3,
+      "retention_potential": 3,
+      "advantage": 3,
+      "rationale": "The SEO workspace idea targets a niche but potentially high-value market of developers and consultants in the SEO field. Buyer urgency is moderate as efficient tool management is important but not immediately critical. Developing a monorepo setup may be technically straightforward, hence the high MVP ease. Distribution could leverage SEO communities, although not mass-market. Retention hinges on continuous usage and updates of tools, and the developer appears to have domain expertise, given the extensive GitHub activity, suggesting some advantage."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "seo monorepo setup",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO tool developers looking to streamline their workflow",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "manage multiple seo repos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO tool developers looking to streamline their workflow",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo development monorepo",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO tool developers looking to streamline their workflow",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "streamline seo app development",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO tool developers looking to streamline their workflow",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo app deployment solution",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO tool developers looking to streamline their workflow",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "custom seo tool integration",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Tech-savvy SEO consultants needing custom tool setups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "manage seo tool suite",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Tech-savvy SEO consultants needing custom tool setups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo platform integration",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Tech-savvy SEO consultants needing custom tool setups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "optimize seo tool development",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Tech-savvy SEO consultants needing custom tool setups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "efficient seo tool deployment",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Tech-savvy SEO consultants needing custom tool setups",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "seo monorepo setup",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO tool developers looking to streamline their workflow",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "manage multiple seo repos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO tool developers looking to streamline their workflow",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo development monorepo",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO tool developers looking to streamline their workflow",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "streamline seo app development",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO tool developers looking to streamline their workflow",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo app deployment solution",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO tool developers looking to streamline their workflow",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "custom seo tool integration",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Tech-savvy SEO consultants needing custom tool setups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "manage seo tool suite",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Tech-savvy SEO consultants needing custom tool setups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo platform integration",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Tech-savvy SEO consultants needing custom tool setups",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 0,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 4,
+    "distribution_fit": 3,
+    "advantage": 3,
+    "retention_potential": 3,
+    "total": 17.5
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "SEO tool developers looking to streamline their workflow",
+        "anchor_phrase": "seo app deployment solution",
+        "offer_copy": "For SEO tool developers who want efficient app deployment but find managing multiple repositories overwhelming, we offer a monorepo setup so they can streamline operations without complex integrations.",
+        "landing_page_headline": "Simplify Your SEO App Deployment Today"
+      },
+      {
+        "buyer": "Tech-savvy SEO consultants needing custom tool setups",
+        "anchor_phrase": "custom seo tool integration",
+        "offer_copy": "For tech-savvy SEO consultants who need to integrate custom tools easily yet face challenges with complex setups, we provide an all-in-one monorepo system enabling seamless integration and management without added complexity.",
+        "landing_page_headline": "Hassle-Free Custom SEO Tool Integration"
+      }
+    ],
+    "next_action": "Conduct 5 in-depth interviews with both SEO tool developers and tech-savvy SEO consultants to validate pain points and interest in a monorepo solution.",
+    "reasoning": "The verdict is 'Educate Later' because the search demand for this concept is virtually non-existent, indicating that people aren't actively searching for solutions like a monorepo setup for SEO. While there is some buyer urgency, it appears to be a latent need rather than one currently expressed through search behavior. The risk lies in investing time and resources into a product that no one knows they need yet. By focusing on interviews first, the founder can better understand if education and awareness campaigns could stimulate demand or if the idea should pivot before significant investment."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/seo-workspace"
+  }
+}

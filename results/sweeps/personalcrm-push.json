@@ -1,0 +1,308 @@
+{
+  "slug": "personalcrm-push",
+  "source_concept": "Rork Personal CRM",
+  "generated_at": "2026-05-16T17:19:50.603Z",
+  "cross_vertical_insight": "Across these verticals, the common pain is the need for tailored and timely relationship management, often associated with revenue generation or client satisfaction. Vertical-specific solutions (e.g., for real estate or law) highlight a blend of networking focus and administrative efficiency as top triggers for CRM adoption.",
+  "verticals": [
+    {
+      "name": "real estate agents",
+      "icp": "Independent or small team real estate agents, managing 50-100 active contacts, primarily reliant on networking for leads.",
+      "rationale": "Real estate agents constantly juggle multiple client relationships and leads, requiring systematic follow-up and personalized interaction with each potential client.",
+      "phrases": [
+        {
+          "phrase": "crm for real estate agents",
+          "volume": 1600,
+          "cpc": 43.78,
+          "competition": 0.2,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best crm for managing real estate leads",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to track client interactions in real estate",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "real estate crm with follow-up reminders",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "personal crm for real estate professionals",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 3.7298378065645075,
+      "bofu_density": 0.2,
+      "max_cpc": 43.78,
+      "top_phrase": "crm for real estate agents",
+      "top_volume": 1600,
+      "pmf_score": 6.237902683938705,
+      "pmf_breakdown": {
+        "demand_n": 0.7459675613129015,
+        "bofu_n": 0.2,
+        "cpc_n": 1,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "small law office solo practitioners",
+      "icp": "Solo practice attorneys managing client relations and case follow-ups, usually with a client base of around 25-50.",
+      "rationale": "Solo practitioners need to manage detailed client interactions and ensure timely follow-ups while minimizing administrative overload.",
+      "phrases": [
+        {
+          "phrase": "crm for solo law practitioners",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "client management software for lawyers",
+          "volume": 50,
+          "cpc": 0,
+          "competition": 0.03,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best crm for small law firms",
+          "volume": 20,
+          "cpc": 166.4,
+          "competition": 0.27,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "track legal client communications",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "personal crm for attorneys",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 2.21621069987756,
+      "bofu_density": 0.2,
+      "max_cpc": 166.4,
+      "top_phrase": "client management software for lawyers",
+      "top_volume": 50,
+      "pmf_score": 5.329726419926537,
+      "pmf_breakdown": {
+        "demand_n": 0.44324213997551204,
+        "bofu_n": 0.2,
+        "cpc_n": 1,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "freelance event planners",
+      "icp": "Independent event planners managing multiple clients and vendors, typically engaging with 30-50 contacts per event cycle.",
+      "rationale": "Event planners rely heavily on personal connections, requiring meticulous organization of client and vendor communications to ensure event success.",
+      "phrases": [
+        {
+          "phrase": "crm for event planners",
+          "volume": 30,
+          "cpc": 49.73,
+          "competition": 0.17,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best personal crm for freelancers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "manage client relationships as an event planner",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "personal crm software for organizing vendors",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "event planning crm application",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 1.8996998632462747,
+      "bofu_density": 0.2,
+      "max_cpc": 49.73,
+      "top_phrase": "crm for event planners",
+      "top_volume": 30,
+      "pmf_score": 5.139819917947765,
+      "pmf_breakdown": {
+        "demand_n": 0.37993997264925494,
+        "bofu_n": 0.2,
+        "cpc_n": 1,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "venture capital associates",
+      "icp": "Venture capital associates responsible for maintaining relationships with potential investors and portfolio founders, often in firms with less than 20 partners.",
+      "rationale": "VC associates need to strategically manage relationships with a broad range of startups and investors, using tools to personalize communication effectively.",
+      "phrases": [
+        {
+          "phrase": "crm for venture capitalists",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "personal crm for managing startup investors",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best crm for venture capital firms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "track investor interactions software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to organize startup contacts",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "crm for venture capitalists",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "digital marketing consultants",
+      "icp": "Independent or boutique marketing consultants handling 10 to 15 clients, needing to personalize outreach and follow-ups to maintain client satisfaction and renewals.",
+      "rationale": "Consultants need to manage client engagement and project timelines effectively for multiple client projects, with personalized communication being key to client retention.",
+      "phrases": [
+        {
+          "phrase": "personal crm for marketing consultants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best crm for freelance marketers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "client management tools for marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to keep track of marketing client interactions",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "personalized crm software for digital consultants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "personal crm for marketing consultants",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    }
+  ]
+}

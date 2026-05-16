@@ -1,0 +1,243 @@
+{
+  "source_text": "MCP\n\n## README\n\n# Calendar Event Organizer\n\nThis script automatically fetches your Google Calendar events, categorizes them using ChatGPT, and creates an organized Google Sheet with the categorized events.\n\n## Prerequisites\n\n1. Python 3.7 or higher\n2. OpenAI API key\n3. Google Cloud Project with Calendar and Sheets APIs enabled\n4. Google Cloud credentials\n\n## Setup\n\n1. Clone this repository:\n```bash\ngit clone <repository-url>\ncd calendar-event-organizer\n```\n\n2. Install dependencies:\n```bash\npip install -r requirements.txt\n```\n\n3. Set up environment variables:\nCreate a `.env` file in the project root with:\n```\nOPENAI_API_KEY=your_openai_api_key_here\n```\n\n4. Set up Google Cloud credentials:\n   - Go to Google Cloud Console\n   - Create a new project or select an existing one\n   - Enable Google Calendar API and Google Sheets API\n   - Create OAuth 2.0 credentials\n   - Download the credentials and save as `credentials.json` in the project root\n\n## Usage\n\nRun the script:\n```bash\npython calendar_automation.py\n```\n\nThe script will:\n1. Authenticate with Google (first time will open browser for authorization)\n2. Fetch your calendar events\n3. Use ChatGPT to categorize the events\n4. Create a new Google Sheet with the organized events\n5. Print the spreadsheet ID when complete\n\n## Features\n\n- Automatically categorizes events into:\n  - Professional (meetings, interviews, work-related)\n  - Personal (birthdays, anniversaries, personal appointments)\n  - Events/Entertainment (festivals, shows, entertainment)\n- Creates a well-organized Google Sheet with:\n  - Event Type\n  - Event Name\n  - Date and Time\n  - Duration\n  - Location/Link\n\n## Error Handling\n\nThe script includes error handling and will:\n- Print meaningful error messages\n- Save Google authentication tokens for future use\n- Validate API responses\n\n## Contributing\n\nFeel free to submit issues and enhancement requests!\n\nDescription: Script to call Sarah with meeting information using Vapi",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Calendar Event Organizer",
+    "one_liner": "A script that categorizes and organizes Google Calendar events into Google Sheets.",
+    "core_promise": "Effortlessly organized calendar events into a categorized Google Sheet.",
+    "domain": "productivity tools",
+    "buyers": [
+      {
+        "persona": "busy professionals managing multiple types of events",
+        "awareness_level": "problem_aware",
+        "pain": "Difficulty in keeping track of various types of calendar events and needing a clear view of schedules and event types for better time management.",
+        "candidate_phrases": [
+          "organize google calendar events",
+          "categorize calendar events automatically",
+          "google calendar to spreadsheet",
+          "calendar organization tool",
+          "automatically sort calendar events"
+        ]
+      },
+      {
+        "persona": "small business owners",
+        "awareness_level": "solution_aware",
+        "pain": "Need an efficient way to categorize and visualize business meetings and events for planning purposes.",
+        "candidate_phrases": [
+          "business calendar organization tool",
+          "automate calendar event categorization",
+          "calendar scheduling to spreadsheet",
+          "small business calendar management",
+          "sync google calendar with sheets"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 3,
+      "distribution_fit": 4,
+      "retention_potential": 2,
+      "advantage": 2,
+      "rationale": "Buyer urgency is moderate as professionals value organization but aren't desperate for a solution. MVP ease is medium due to the need for integrations and API setup. Distribution fit is good since the target audience can be reached online. Retention is low since once a calendar is organized, the need for the tool may diminish unless continuous updates are necessary. The advantage is minimal unless the creator has expertise in productivity tools or notable partnerships with Google services."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "organize google calendar events",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy professionals managing multiple types of events",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "categorize calendar events automatically",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy professionals managing multiple types of events",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "google calendar to spreadsheet",
+      "volume": 70,
+      "cpc": 3.39,
+      "competition": 0.05,
+      "source": "dataforseo",
+      "buyer": "busy professionals managing multiple types of events",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "calendar organization tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy professionals managing multiple types of events",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automatically sort calendar events",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy professionals managing multiple types of events",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "business calendar organization tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate calendar event categorization",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "calendar scheduling to spreadsheet",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "small business calendar management",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "sync google calendar with sheets",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.14,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "google calendar to spreadsheet",
+      "volume": 70,
+      "cpc": 3.39,
+      "competition": 0.05,
+      "source": "dataforseo",
+      "buyer": "busy professionals managing multiple types of events",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "sync google calendar with sheets",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.14,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "organize google calendar events",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy professionals managing multiple types of events",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "categorize calendar events automatically",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy professionals managing multiple types of events",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "calendar organization tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy professionals managing multiple types of events",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automatically sort calendar events",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy professionals managing multiple types of events",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "business calendar organization tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate calendar event categorization",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 2.030744492291235,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.695,
+    "mvp_ease": 3,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 2,
+    "total": 17.725744492291234
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "busy professionals managing multiple types of events",
+        "anchor_phrase": "google calendar to spreadsheet",
+        "offer_copy": "For busy professionals who want a clear view of their schedules but struggle with disorganized Google Calendar events, we provide an automatic event categorization script that organizes them into a Google Sheet so they can easily manage their time without manual entry tasks.",
+        "landing_page_headline": "Effortlessly Sync Google Calendar to Spreadsheets"
+      },
+      {
+        "buyer": "small business owners",
+        "anchor_phrase": "sync google calendar with sheets",
+        "offer_copy": "For small business owners who need to visualize and categorize business meetings efficiently but find it time-consuming, we automate the sync between Google Calendar and Google Sheets, enabling easy planning without the hassle of manual data entry.",
+        "landing_page_headline": "Automate Your Calendar to Spreadsheet Workflow"
+      }
+    ],
+    "next_action": "Create a Google Ads campaign targeting 'google calendar to spreadsheet' and test two landing pages with introductory offers to measure interest and conversion.",
+    "reasoning": "The verdict 'Educate Later' reflects the modest current demand for this solution, especially as it appears most people aren’t yet obsessing over this specific problem. The highest-interest query 'google calendar to spreadsheet' suggests some demand from busy professionals, but buyer urgency and willingness to pay are low. Building on SEO and targeted ads can test product-market fit and potential for future interest. The risk leans towards low demand and unclear ROI, but an educational campaign could enhance awareness and perceived value."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/MCP"
+  }
+}

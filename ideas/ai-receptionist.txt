@@ -1,0 +1,7 @@
+AI Receptionist for Local Service Businesses
+
+A 24/7 AI phone agent that answers calls, qualifies leads, books appointments, and handles after-hours inquiries for local service businesses (med spas, HVAC, dental offices, law firms, roofers). Built on top of Twilio + an LLM. Replaces or supplements a front-desk receptionist.
+
+Pricing idea: $99-$299/month, tiered by call volume.
+
+Why now: missed calls cost service businesses an estimated 20-40% of inbound revenue. Existing AI receptionists are generic; verticalizing for one industry at a time gives sharper messaging and tighter call scripts that convert better than a horizontal solution.

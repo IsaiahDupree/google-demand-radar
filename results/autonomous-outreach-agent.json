@@ -1,0 +1,243 @@
+{
+  "source_text": "autonomous-outreach-agent\n\n## README\n\n# Autonomous Outreach Agent\r\n\r\nAI-powered autonomous agent for Upwork proposal submission and LinkedIn prospecting. Scans jobs, scores them with a two-stage AI pipeline, generates cover letters, and submits proposals — all on autopilot.\r\n\r\n## Architecture\r\n\r\n```\r\nsrc/\r\n├── index.ts              # Entry point — Express server + cron scheduler\r\n├── app.ts                # Express app setup\r\n├── Agent/\r\n│   ├── index.ts          # Claude AI — cover letters, screening answers, prospect scoring\r\n│   ├── scorer.ts         # Two-stage scorer: deterministic pre-filter + Claude AI\r\n│   └── characters/       # Character config files (persona, ICP, portfolio)\r\n├── browser/\r\n│   ├── engine.ts         # Puppeteer/CDP connection management, Cloudflare handling\r\n│   └── upwork.ts         # Upwork browser automation (search, scrape, submit)\r\n├── client/\r\n│   ├── Upwork.ts         # Upwork orchestration: scan → score → approve → submit\r\n│   └── Chrome.ts         # Chrome/LinkedIn discovery cycle\r\n├── routes/\r\n│   └── api.ts            # REST endpoints (status, dry-run, submit, metrics)\r\n├── services/\r\n│   ├── cloud.ts          # Supabase persistence (proposals, outcomes, metrics)\r\n│   ├── telegram.ts       # Telegram approval flow + notifications\r\n│   └── obsidian.ts       # Obsidian vault logging\r\n├── config/\r\n│   └── logger.ts         # Winston logging with daily rotation\r\n└── secret/               # Environment variables\r\n```\r\n\r\n## How It Works\r\n\r\n### Pipeline\r\n\r\n1. **Scan** — Cron triggers every 3 hours. Puppeteer searches Upwork with 33 keywords + scrapes Best Matches feed\r\n2. **Dedup** — Skips jobs already in Supabase\r\n3. **Pre-filter** (Stage 1) — Deterministic scoring (0-100): hard excludes, budget floors, ICP keyword matching, proposal count ceiling\r\n4. **AI Score** (Stage 2) — Claude Haiku scores fit (0-10) with bid range and reasoning\r\n5. **Cover Letter** — Claude generates plain-text, human-sounding cover letter at queue time\r\n6. **Approval** — Jobs above `AUTO_SEND_MIN_SCORE` auto-submit. Others go to Telegram for approval (send / send with portfolio / skip)\r\n7. **Submit** — Puppeteer fills the Upwork proposal form (cover letter, bid, milestones, screening questions)\r\n8. **Track** — Connects balance, close rate, win/loss outcomes tracked in Supabase\r\n\r\n### Scoring\r\n\r\n**Stage 1 — Deterministic Pre-filter (no API calls):**\r\n\r\n| Check | Action |\r\n|-------|--------|\r\n| Hard excludes (WordPress, Shopify, etc.) | Instant drop |\r\n| Budget < $200 fixed or < $20/hr | Instant drop |\r\n| 50+ proposals | Instant drop |\r\n| No ICP strong keyword match | Instant drop |\r\n| Strong keywords (ai automation, web scraping, n8n...) | +20 each, cap 60 |\r\n| Weak keywords (api, typescript, docker...) | +8 each, cap 24 |\r\n| Budget $1K+ → +20, $500+ → +10 | Budget bonus |\r\n| Posted < 4h → +15, < 24h → +8 | Recency bonus |\r\n\r\n**Stage 2 — Claude AI Scoring (1-10):**\r\n- 9-10: Dream job (core skill + good budget + ideal client)\r\n- 7-8: Strong fit (most skills align, reasonable budget)\r\n- 5-6: Decent fit (some overlap, not sweet spot)\r\n- 3-4: Weak fit\r\n- 1-2: No fit\r\n\r\n### Smart Bidding\r\n\r\n- Fixed-price $1K+: bid $75 under client budget\r\n- Fixed-price $300-999: bid 5% under\r\n- Hourly: calculates rate from client's range\r\n\r\n## Setup\r\n\r\n### Prerequisites\r\n\r\n- Node.js 18+\r\n- Chrome with remote debugging enabled (`--remote-debugging-port=9222`)\r\n- Supabase project with `upwork_proposals` table\r\n- Telegram bot for approval notifications\r\n- Anthropic API key for Claude\r\n\r\n### Install\r\n\r\n```bash\r\nnpm install\r\n```\r\n\r\n### Environment Variables\r\n\r\nCreate `src/secret/index.ts` or `.env` with:\r\n\r\n```\r\nANTHROPIC_API_KEY=sk-ant-...\r\nSUPABASE_URL=https://your-project.supabase.co\r\nSUPABASE_KEY=your-anon-key\r\nTELEGRAM_BOT_TOKEN=your-bot-token\r\nTELEGRAM_CHAT_ID=your-chat-id\r\nPORT=4000\r\nBROWSER_MODE=puppeteer\r\nAUTO_SEND=true\r\nAUTO_SEND_MIN_SCORE=8\r\n```\r\n\r\n### Run\r\n\r\n```bash\r\n# Development\r\nnpm run dev\r\n\r\n# Production build\r\nnpm run build && npm start\r\n\r\n# Single scan cycle\r\nnpm run\n\nDescription: Autonomous outreach agent for Upwork proposals and Chrome/LinkedIn prospecting — Riona-style modular architecture powered by Claude AI.\nKeywords: automation, upwork, linkedin, claude-ai, outreach\n\n## CLAUDE.md\n\n# CLAUDE.md — Project Guide for Claude Code\r\n\r\n## Project Overview\r\n\r\nAutonomous Upwork outreach agent: scans jobs → AI scores → generates cover letters → submits proposals via Puppeteer. Runs 24/7 with 3-hour cron cycles.\r\n\r\n## Quick Reference\r\n\r\n```\r\nnpm run dev          # Start with ts-node\r\nnpm run build        # Compile + copy character files\r\nnpm test             # Run vitest (133 tests)\r\nnpm run test:watch   # Watch mode\r\nnpm run once         # Single scan cycle\r\nnpm run status       # Check agent status\r\n```\r\n\r\n## Architecture\r\n\r\n```\r\nsrc/index.ts           → Entry point, cron scheduler, keyword config\r\nsrc/Agent/index.ts     → Claude API: cover letters, screening answers\r\nsrc/Agent/scorer.ts    → Two-stage scoring: deterministic pre-filter + AI\r\nsrc/browser/upwork.ts  → Puppeteer CDP automation (search, scrape, submit)\r\nsrc/browser/engine.ts  → Browser connection, Cloudflare handling\r\nsrc/client/Upwork.ts   → Orchestration: scan → score → approve → submit\r\nsrc/routes/api.ts      → REST endpoints\r\nsrc/services/cloud.ts  → Supabase persistence (safeFetch with retry)\r\nsrc/services/telegram.ts → Approval flow + notifications\r\nsrc/services/research.ts → Perplexity Sonar API for job research\r\nmcp/perplexity/         → MCP server: 8 Perplexity tools (sonar, pro, reasoning, deep research, web search, structured, academic, job research)\r\n```\r\n\r\n## Key Patterns\r\n\r\n- **`fastType()`** — Use CDP `Input.insertText` for text entry, never `keyboard.type()` (Upwork pages are too heavy)\r\n- **`safeFetch()`** — All Supabase calls go through retry wrapper (2 retries, 10s timeout)\r\n- **`_browserBusy`** — Flag that pauses scan loop during proposal submission\r\n- **Tab cleanup** — Close stale tabs every 5 keywords and before each submission\r\n- **Vue reactivity** — Upwork uses Vue 2; use Puppeteer keyboard input, not nativeSetter for form fields\r\n- **Winning style** — Cover letters use bullets (•), numbered lists, emojis (✅🔗), and sign off with name\r\n\r\n## Testing\r\n\r\nTests are in `t",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Autonomous Outreach Agent",
+    "one_liner": "AI-powered agent for automatic Upwork and LinkedIn proposal submissions.",
+    "core_promise": "Automate and optimize your job proposal submissions to save time and increase job acquisition rates.",
+    "domain": "freelancer tools",
+    "buyers": [
+      {
+        "persona": "freelance developers seeking more job opportunities",
+        "awareness_level": "problem_aware",
+        "pain": "Struggles to keep up with the constant need to submit tailored proposals to secure freelance jobs on platforms like Upwork.",
+        "candidate_phrases": [
+          "how to automate upwork proposals",
+          "can't keep up with upwork applications",
+          "upwork proposal shortcuts",
+          "effortless upwork application process",
+          "how to get more freelance jobs easily"
+        ]
+      },
+      {
+        "persona": "small digital agencies",
+        "awareness_level": "solution_aware",
+        "pain": "Need an efficient process to handle high volumes of job proposals across multiple platforms without sacrificing quality.",
+        "candidate_phrases": [
+          "automated proposal submitting",
+          "upwork proposal automation tool",
+          "best tools for automating job proposals",
+          "increase proposal response rate tool",
+          "automated bidding tools for freelancers"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 4,
+      "advantage": 2,
+      "rationale": "The need to automate proposals is moderate as freelancers seek efficient ways to secure projects, but it's not an immediate pain point. Building an MVP might take time due to the integration with multiple platforms and AI scoring models. Reaching this audience via freelance communities and online ads is feasible. Retention seems promising since freelancers would benefit from ongoing service improvements. Lacks a clear strategic edge unless the founder has prior related tool development experience or domain-specific connections."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "how to automate upwork proposals",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance developers seeking more job opportunities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "can't keep up with upwork applications",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance developers seeking more job opportunities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "upwork proposal shortcuts",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance developers seeking more job opportunities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "effortless upwork application process",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance developers seeking more job opportunities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to get more freelance jobs easily",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance developers seeking more job opportunities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated proposal submitting",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "upwork proposal automation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best tools for automating job proposals",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "increase proposal response rate tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated bidding tools for freelancers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small digital agencies",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "how to automate upwork proposals",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance developers seeking more job opportunities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "can't keep up with upwork applications",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance developers seeking more job opportunities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "upwork proposal shortcuts",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance developers seeking more job opportunities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "effortless upwork application process",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance developers seeking more job opportunities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to get more freelance jobs easily",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance developers seeking more job opportunities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated proposal submitting",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "upwork proposal automation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best tools for automating job proposals",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small digital agencies",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 0,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 2,
+    "retention_potential": 4,
+    "total": 15.5
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "freelance developers seeking more job opportunities",
+        "anchor_phrase": "upwork proposal shortcuts",
+        "offer_copy": "For freelance developers who need more job opportunities but can't keep up with numerous proposals, we provide 'upwork proposal shortcuts' that automate and optimize your submissions, increasing success rates without extra effort.",
+        "landing_page_headline": "Streamline Your Upwork Proposals Instantly"
+      },
+      {
+        "buyer": "small digital agencies",
+        "anchor_phrase": "automated proposal submitting",
+        "offer_copy": "For small digital agencies overwhelmed by job proposals but needing consistent quality, we offer 'automated proposal submitting' tools that maintain high standards across platforms while saving time and reducing workload.",
+        "landing_page_headline": "Automate & Enhance Proposal Submissions"
+      }
+    ],
+    "next_action": "Run a small-scale survey or interviews with at least 10 freelancers and 5 agencies to validate their struggles and gauge interest in an automation solution.",
+    "reasoning": "The idea lacks clear search demand signals, as evidenced by the zero interest in keywords. This suggests a gap between existing buyer behavior and the proposed solution, indicating a need for further primary research to validate the problem and solution fit. The primary risk involves building a product with little market interest or urgency, highlighting the importance of understanding actual user needs and refining the approach based on real feedback."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/autonomous-outreach-agent"
+  }
+}

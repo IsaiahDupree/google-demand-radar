@@ -1,0 +1,388 @@
+{
+  "slug": "personcrm-mobile",
+  "source_concept": "PersonCRM_Mobile",
+  "generated_at": "2026-05-16T17:20:05.503Z",
+  "cross_vertical_insight": "Across these verticals, the shared pain point is the complexity of managing numerous personal and professional relationships. The common buying trigger is the need for organized follow-ups and relationship nurturing without the investment of large CRM systems. These buyers value specificity, customization, and an easy mobile interface to handle their unique sets of contacts effectively.",
+  "verticals": [
+    {
+      "name": "real estate agents",
+      "icp": "Real estate agents, typically part of small brokerages or independent, juggling multiple leads and client interactions, looking to exceed $100k in annual sales.",
+      "rationale": "Real estate agents rely heavily on maintaining connections and follow-ups with a vast network of potential buyers and sellers.",
+      "phrases": [
+        {
+          "phrase": "crm for real estate agents",
+          "volume": 1600,
+          "cpc": 43.78,
+          "competition": 0.2,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "real estate client tracking app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best apps for real estate follow-up",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "real estate crm mobile app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "track real estate leads app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "compare real estate crm software",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "apps for organizing real estate contacts",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 3.731279217040802,
+      "bofu_density": 0.14285714285714285,
+      "max_cpc": 43.78,
+      "top_phrase": "crm for real estate agents",
+      "top_volume": 1600,
+      "pmf_score": 5.895910387367338,
+      "pmf_breakdown": {
+        "demand_n": 0.7462558434081604,
+        "bofu_n": 0.14285714285714285,
+        "cpc_n": 1,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "job seekers",
+      "icp": "Recently unemployed or transitioning professionals actively seeking jobs, managing multiple potential interviews and networking contacts.",
+      "rationale": "Job seekers are often overwhelmed by tracking application timelines and networking outreach efforts, needing a systematic approach.",
+      "phrases": [
+        {
+          "phrase": "best crm for job seekers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "job application tracking app",
+          "volume": 90,
+          "cpc": 4.64,
+          "competition": 0.19,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "organize networking contacts for job hunting",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "app to manage job applications and follow-ups",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "professional networking apps for job seekers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "tracking job search progress app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to organize job search contacts",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 2.4023077393467567,
+      "bofu_density": 0.14285714285714285,
+      "max_cpc": 4.64,
+      "top_phrase": "job application tracking app",
+      "top_volume": 90,
+      "pmf_score": 4.294527500750911,
+      "pmf_breakdown": {
+        "demand_n": 0.48046154786935136,
+        "bofu_n": 0.14285714285714285,
+        "cpc_n": 0.46399999999999997,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "freelance consultants",
+      "icp": "Independent consultants, often solopreneurs, who handle all aspects of business development and client management themselves. Typically earning $75k-$150k annually.",
+      "rationale": "Freelance consultants regularly juggle multiple client relationships and potential clients, requiring organized follow-ups and reminders.",
+      "phrases": [
+        {
+          "phrase": "best mobile crm for freelancers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "crm app for consultants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "manage client relationships app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "keeping track of consulting clients app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "freelancer client management software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "top personal crm tools 2023",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to organize client contacts",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "best mobile crm for freelancers",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "small non-profits",
+      "icp": "Small non-profit organizations, typically under 20 employees, managing donor and volunteer relationships while operating on constrained resources.",
+      "rationale": "These organizations need to manage a varied set of personal relationships effectively to maximize donations and volunteer engagement.",
+      "phrases": [
+        {
+          "phrase": "crm app for non-profits",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "donor relationship management app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "mobile crm for small non-profits",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "organize volunteer contacts app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "track donations and engagements app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "compare non-profit crm software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to manage non-profit relationships",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "crm app for non-profits",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "sales coaches",
+      "icp": "Sales coaches or trainers who consult independently or for training firms, managing relationships with multiple sales reps and corporate clients.",
+      "rationale": "Sales coaches need to maintain detailed, organized relationships with numerous clients to ensure ongoing contracts and referrals.",
+      "phrases": [
+        {
+          "phrase": "personal crm for sales coaches",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "app to track coaching client progress",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "crm for managing sales coaching clients",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best crm software for sales trainers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "organize coaching contacts app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "crm reviews for sales consultants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to manage client relationships for coaches",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "personal crm for sales coaches",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

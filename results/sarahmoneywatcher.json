@@ -1,0 +1,243 @@
+{
+  "source_text": "SarahMoneyWatcher\n\n## README\n\n# SarahMoneyWatcher\n\nSyncs HoneyBook CRM data into a Supabase PostgreSQL database for custom analytics and reporting.\n\n## Prerequisites\n\n- Node.js 18+\n- A Supabase project ([supabase.com](https://supabase.com))\n- A HoneyBook account (Google OAuth)\n- Google Chrome installed (for first-time auth only)\n\n## First-Time Setup\n\n### 1. Install dependencies\n\n```bash\nnpm install\nnpx playwright install chromium\n```\n\n### 2. Create `.env`\n\n```bash\ncp .env.example .env   # or create manually\n```\n\nRequired variables:\n\n```env\nSUPABASE_URL=https://your-project.supabase.co\nSUPABASE_SERVICE_KEY=your-service-role-key\nHONEYBOOK_EMAIL=your@email.com\n```\n\nOptional variables:\n\n```env\nCALENDAR_MONTHS_BACK=6       # How far back to fetch calendar events (default: 6)\nCALENDAR_MONTHS_FORWARD=3    # How far forward to fetch calendar events (default: 3)\nSYNC_INTERVAL_HOURS=6        # How often the scheduled sync runs (default: 6)\n```\n\n### 3. Set up the database schema\n\nRun the SQL in `src/supabase-schema.sql` in the Supabase SQL editor, or connect directly:\n\n```bash\nnpm run setup-db\n```\n\n### 4. First sync (opens browser for Google OAuth)\n\n```bash\nnpm start\n```\n\nChrome will open. Complete the Google login for HoneyBook. After login, the auth token is saved to `.session/auth-token.json` and all future syncs run headlessly without a browser.\n\n## Commands\n\n| Command | Description |\n|---------|-------------|\n| `npm start` | Full sync (headless if token is valid, browser fallback if expired) |\n| `npm run dry-run` | Fetch all data but skip database writes |\n| `npm run status` | Show last sync times, record counts per table, recent errors |\n| `npm run report` | Top clients by payment value + monthly revenue chart |\n| `npm run schedule` | Run sync on a recurring interval (default: every 6 hours) |\n| `npm run refresh-token` | Force browser re-auth and save a fresh token |\n| `npm run backfill-payments -- 2024-01-01 2024-12-31` | Fetch payments for a date range |\n| `npm run setup-db` | Apply the database schema via pg driver |\n\n## How Authentication Works\n\n1. **Headless (fast):** Uses saved token from `.session/auth-token.json` to call `api.honeybook.com` directly — no browser needed.\n2. **Browser fallback:** When the token is expired or missing, Chrome opens automatically, performs Google OAuth, captures the new token, saves it, and continues headlessly.\n3. **Auto-refresh:** Token expiry is detected automatically — you never need to manually run `refresh-token` unless you want to force it.\n\n## Database Tables\n\n| Table | Contents |\n|-------|----------|\n| `honeybook_contacts` | Clients with tags, socials, lead source |\n| `honeybook_activity` | Recent activity feed |\n| `honeybook_calendar_events` | Calendar events via Google Calendar |\n| `honeybook_notes` | Project notes |\n| `honeybook_messages` | Unread messages |\n| `honeybook_automations` | Workflow automations |\n| `honeybook_tags` | Tag labels and colors |\n| `honeybook_notifications` | Web notifications |\n| `honeybook_payments` | Payment records |\n| `honeybook_invoices` | Invoice/file records |\n| `honeybook_projects` | Project/workspace records |\n| `honeybook_leads` | Leads from home widget |\n| `honeybook_tasks` | Tasks |\n| `honeybook_company` | Company snapshot |\n| `honeybook_user` | User profile snapshot |\n| `honeybook_sync_log` | Audit log of every sync run |\n\n## Views\n\n| View | Description |\n|------|-------------|\n| `honeybook_monthly_revenue` | Monthly totals: count, invoiced, paid, outstanding |\n\nQuery example:\n\n```sql\nSELECT * FROM honeybook_monthly_revenue LIMIT 12;\n```\n\n## Scheduled Sync\n\nTo keep data fresh automatically, run:\n\n```bash\nnpm run schedule\n```\n\nThis runs sync every `SYNC_INTERVAL_HOURS` hours (default 6). To run it as a background service, use a process manager like `pm2`:\n\n```bash\nnpm install -g pm2\npm2 start \"npm run schedule\" --name sarahmoneywatcher\npm2 save\n```\n\n## Historical Backfill\n\nPayments are fetched for the current month by default. To backfill historical data:\n\n```bash\n# Fetch all o",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "SarahMoneyWatcher",
+    "one_liner": "Syncs HoneyBook CRM data into a Supabase PostgreSQL database for custom analytics.",
+    "core_promise": "Effortless syncing and reporting of HoneyBook CRM data for tailored analytics using Supabase.",
+    "domain": "data integration and analytics",
+    "buyers": [
+      {
+        "persona": "freelancers using HoneyBook",
+        "awareness_level": "solution_aware",
+        "pain": "Need for advanced reporting and custom analytics on their business data from HoneyBook.",
+        "candidate_phrases": [
+          "honeybook analytics tool",
+          "export honeybook data",
+          "custom reports honeybook",
+          "honeybook data integration",
+          "honeybook to database"
+        ]
+      },
+      {
+        "persona": "small business owners using HoneyBook",
+        "awareness_level": "problem_aware",
+        "pain": "Limited reporting capabilities on HoneyBook for tracking payments and monitoring business performance.",
+        "candidate_phrases": [
+          "better reports in honeybook",
+          "analyze honeybook data",
+          "honeybook reporting limitations",
+          "improve honeybook reporting",
+          "advanced reporting for honeybook"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "Buyer urgency is moderate because detailed analytics isn't always critical, but is important for planning and decision-making. MVP ease is low due to need for integration complexity. The distribution fit is strong because the niche use case can be targeted well through search and community forums/blogs related to HoneyBook users. Retention potential is moderate since ongoing data sync is useful for regular reporting; however, switching or alternative solutions could affect stickiness. Without any stated edge in distribution or technical proprietary advantage, the advantage score remains low."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "honeybook analytics tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelancers using HoneyBook",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "export honeybook data",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelancers using HoneyBook",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "custom reports honeybook",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelancers using HoneyBook",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "honeybook data integration",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelancers using HoneyBook",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "honeybook to database",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelancers using HoneyBook",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "better reports in honeybook",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners using HoneyBook",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "analyze honeybook data",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners using HoneyBook",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "honeybook reporting limitations",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners using HoneyBook",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "improve honeybook reporting",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners using HoneyBook",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "advanced reporting for honeybook",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners using HoneyBook",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "honeybook analytics tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelancers using HoneyBook",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "export honeybook data",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelancers using HoneyBook",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "custom reports honeybook",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelancers using HoneyBook",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "honeybook data integration",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelancers using HoneyBook",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "honeybook to database",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelancers using HoneyBook",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "better reports in honeybook",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners using HoneyBook",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "analyze honeybook data",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners using HoneyBook",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "honeybook reporting limitations",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners using HoneyBook",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 0,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 15.5
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "freelancers using HoneyBook",
+        "anchor_phrase": "custom reports honeybook",
+        "offer_copy": "For freelancers using HoneyBook who want better insights but find custom reporting difficult, we sync your HoneyBook data with Supabase for advanced analytics, so you can see comprehensive reports without manual data exports.",
+        "landing_page_headline": "Unlock Custom Reports from HoneyBook Effortlessly"
+      },
+      {
+        "buyer": "small business owners using HoneyBook",
+        "anchor_phrase": "better reports in honeybook",
+        "offer_copy": "For small business owners struggling with limited reporting in HoneyBook, our integration connects your data to Supabase, giving you the power to monitor performance and track payments easily without tedious workarounds.",
+        "landing_page_headline": "Get Better HoneyBook Reports in Minutes"
+      }
+    ],
+    "next_action": "Test messaging on relevant online forums and groups frequented by HoneyBook users to gauge interest and gather feedback.",
+    "reasoning": "Despite having a reasonable strategic fit for distribution, the total search volume for key phrases related to HoneyBook data integrations is very low, suggesting minimal organic demand and need for very targeted outreach. There's moderate urgency among those who recognize their need for better analytics, but willingness to pay remains uncertain. Educating the market on the benefits of custom reporting and demonstrating value through direct engagement or partnerships could help increase interest."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/SarahMoneyWatcher"
+  }
+}

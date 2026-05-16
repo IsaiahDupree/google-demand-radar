@@ -1,0 +1,392 @@
+{
+  "slug": "seo",
+  "source_concept": "Authority OS",
+  "generated_at": "2026-05-16T17:23:52.712Z",
+  "cross_vertical_insight": "Across these verticals, there is a shared need for a unified solution that handles the complexity of managing diverse online presences across regions and platforms. The common buying triggers include the desire for enhanced search engine and social media visibility, regional targeting capabilities, and the consolidation of multiple optimization tools into a single platform. The anti-pattern is reliance on non-integrated, siloed tools, which these verticals are seeking to move beyond for efficiency and effectiveness.",
+  "verticals": [
+    {
+      "name": "automotive dealer group marketing teams",
+      "icp": "Marketing teams at large automotive dealer groups managing brand visibility and regional marketing strategies.",
+      "rationale": "Dealer groups require robust, integrated solutions for managing their web and social presence across multiple regions and dealerships.",
+      "phrases": [
+        {
+          "phrase": "seo tools for automotive dealer groups",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "digital marketing for car dealerships",
+          "volume": 70,
+          "cpc": 23.78,
+          "competition": 0.09,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best multi-dealer seo platform",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to optimize social media for auto dealers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "regional seo for car dealerships",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 2.286900254693319,
+      "bofu_density": 0.2,
+      "max_cpc": 23.78,
+      "top_phrase": "digital marketing for car dealerships",
+      "top_volume": 70,
+      "pmf_score": 5.372140152815992,
+      "pmf_breakdown": {
+        "demand_n": 0.4573800509386638,
+        "bofu_n": 0.2,
+        "cpc_n": 1,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "higher education institutions' marketing departments",
+      "icp": "Marketing departments at universities seeking to improve enrollment numbers by reaching potential students globally.",
+      "rationale": "Universities aim to optimize online visibility to attract a global student base, requiring strong SEO and social presence.",
+      "phrases": [
+        {
+          "phrase": "seo for universities",
+          "volume": 170,
+          "cpc": 0,
+          "competition": 0.07,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "digital marketing tools for higher education",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "integrated marketing platform for education sector",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to attract international students via seo",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "social media optimization for universities",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 2.6950051766649796,
+      "bofu_density": 0.2,
+      "max_cpc": 0,
+      "top_phrase": "seo for universities",
+      "top_volume": 170,
+      "pmf_score": 4.117003105998988,
+      "pmf_breakdown": {
+        "demand_n": 0.5390010353329959,
+        "bofu_n": 0.2,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "real estate marketing agencies",
+      "icp": "Agencies dedicated to boosting visibility for real estate listings and agencies, focusing on SEO, GEO, and social.",
+      "rationale": "Real estate agencies rely heavily on localized search optimization and social media to connect with potential buyers and renters.",
+      "phrases": [
+        {
+          "phrase": "best seo tools for real estate",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "real estate digital marketing tools",
+          "volume": 10,
+          "cpc": 5.04,
+          "competition": 0.04,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "geo optimization for real estate listings",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "real estate social media optimization",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to improve property visibility online",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "integrated marketing for real estate agencies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 1.406921995101518,
+      "bofu_density": 0.16666666666666666,
+      "max_cpc": 5.04,
+      "top_phrase": "real estate digital marketing tools",
+      "top_volume": 10,
+      "pmf_score": 4.016819863727577,
+      "pmf_breakdown": {
+        "demand_n": 0.2813843990203036,
+        "bofu_n": 0.16666666666666666,
+        "cpc_n": 0.504,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "franchise marketing agencies",
+      "icp": "Agencies specializing in marketing for franchises, managing multiple brands with unique online presence needs.",
+      "rationale": "Franchise agencies handle diverse client visibility across regions, making unified SEO, GEO, AEO, and social optimization crucial.",
+      "phrases": [
+        {
+          "phrase": "seo tool for franchise marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "platform to manage multiple franchise social media",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best software for regional seo",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "franchise marketing optimization tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "how to handle seo for franchises",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "geo optimization for franchises",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "seo tool for franchise marketing",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "e-commerce digital marketing agencies",
+      "icp": "Agencies focused on boosting e-commerce client visibility and sales across multiple digital platforms.",
+      "rationale": "E-commerce agencies need integrated tools to tackle search and social optimization, enhancing product visibility and driving conversion.",
+      "phrases": [
+        {
+          "phrase": "seo tools for e-commerce platforms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "digital marketing software for e-commerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "integrated seo and social for e-commerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best ecommerce-focused seo tool",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to get more traffic to e-commerce store",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "geo optimization for online stores",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "seo tools for e-commerce platforms",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "regional tourism boards' marketing departments",
+      "icp": "Marketing teams in regional tourism boards aiming to attract visitors through enhanced online presence.",
+      "rationale": "Tourism boards need comprehensive tools to ensure top visibility in search engines and on social media platforms across regions.",
+      "phrases": [
+        {
+          "phrase": "seo solutions for tourism boards",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "digital marketing tools for tourism industry",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to improve tourism board seo",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "social media optimization for tourism",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best geo optimization tools for tourism",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "seo solutions for tourism boards",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    }
+  ]
+}

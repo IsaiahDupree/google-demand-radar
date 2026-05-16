@@ -1,0 +1,306 @@
+{
+  "source_text": "RelevantSEOResearch\n\n## README\n\n# Social Media Trend Miner\n\nA production-ready social media trend mining system that combines lightweight platform collectors with a fast columnar database and a Flask API, designed for seamless n8n integration.\n\n## 🏗️ Architecture\n\n```\n┌─────────────┐    ┌──────────────┐    ┌─────────────┐    ┌─────────────┐\n│   n8n       │───▶│  Flask API   │───▶│ Collectors  │───▶│   Platforms │\n│ Workflows   │    │              │    │             │    │ (YT/Twitter)│\n└─────────────┘    └──────────────┘    └─────────────┘    └─────────────┘\n                            │                                       \n                            ▼                                       \n                   ┌─────────────┐    ┌──────────────┐             \n                   │   DuckDB    │◀───│  Scheduler   │             \n                   │ (Analytics) │    │ (APScheduler)│             \n                   └─────────────┘    └──────────────┘             \n```\n\n## 🚀 Features\n\n- **Fast Analytics**: DuckDB for 5-20× faster queries than SQLite\n- **Multi-Platform**: YouTube (official API) and Twitter (snscrape) collectors\n- **Scheduled Collection**: Daily automated data collection\n- **Priority Creators**: Flag important creators for faster processing\n- **n8n Ready**: JSON/CSV endpoints perfect for n8n HTTP Request nodes\n- **Deep Search**: On-demand comprehensive data collection\n- **Rate Limited**: Built-in API rate limiting and authentication\n\n## 📋 Prerequisites\n\n1. **Python 3.8+**\n2. **YouTube Data API v3 Key** (optional but recommended)\n3. **Redis** (for rate limiting and future Celery integration)\n\n## 🛠️ Installation\n\n1. **Clone and install dependencies:**\n```bash\ncd RelevantSEOResearch\npip install -r requirements.txt\n```\n\n2. **Configure environment:**\n```bash\ncp .env.example .env\n# Edit .env with your API keys and settings\n```\n\n3. **Start Redis** (Windows with WSL2 or Docker):\n```bash\n# Using Docker\ndocker run -d -p 6379:6379 redis:alpine\n\n# Or install Redis on WSL2\n```\n\n4. **Run the application:**\n```bash\npython app.py\n```\n\nThe API will be available at `http://localhost:5000` with Swagger docs at `http://localhost:5000/docs/`\n\n## 🔧 Configuration\n\n### Environment Variables (.env)\n\n```env\n# YouTube Data API v3 (get from Google Cloud Console)\nYOUTUBE_API_KEY=your_youtube_api_key_here\n\n# API Authentication (change this!)\nAPI_TOKEN=your_secure_api_token_here\n\n# Flask Configuration\nFLASK_ENV=development\nFLASK_DEBUG=True\n\n# Database\nDATABASE_PATH=./trend_data.db\n\n# Redis (for rate limiting)\nREDIS_URL=redis://localhost:6379/0\nRATELIMIT_STORAGE_URL=redis://localhost:6379/1\n```\n\n### Getting YouTube API Key\n\n1. Go to [Google Cloud Console](https://console.cloud.google.com/)\n2. Create a new project or select existing\n3. Enable YouTube Data API v3\n4. Create credentials (API Key)\n5. Add the key to your `.env` file\n\n## 📊 API Endpoints\n\n### Public Endpoints\n\n- `GET /trends/{platform}/{keyword}` - Get trending posts\n- `GET /creators/{platform}/{creator}` - Get creator posts\n- `GET /health` - Health check\n\n### Authenticated Endpoints (requires Bearer token)\n\n- `POST /deep` - Initiate deep search\n- `GET /deep/{task_id}` - Check deep search status\n- `POST /admin/config` - Add collection configuration\n- `POST /admin/collect` - Trigger manual collection\n\n### Query Parameters\n\n- `date` - Specific date (YYYY-MM-DD)\n- `limit` - Maximum results (default: 50)\n- `format` - Response format (`json` or `csv`)\n\n## 🔄 n8n Integration\n\n### Basic HTTP Request Node Setup\n\n1. **Get Daily Trends:**\n```\nMethod: GET\nURL: http://localhost:5000/trends/youtube/ai%20automation\nHeaders: \n  Authorization: Bearer your_api_token_here\n```\n\n2. **CSV Export for Spreadsheets:**\n```\nMethod: GET\nURL: http://localhost:5000/trends/youtube/ai%20automation?format=csv\nHeaders: \n  Authorization: Bearer your_api_token_here\n```\n\n3. **Deep Search Workflow:**\n```\nStep 1: POST /deep (initiate search)\nStep 2: Wait/Poll GET /deep/{task_id} until status='completed'\nStep 3: GET /trends/{platform}/{keyword} (get res",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Social Media Trend Miner",
+    "one_liner": "A system that mines social media trends with platform collectors, fast database, and a Flask API for n8n integration.",
+    "core_promise": "Effortless identification and analysis of emerging social media trends.",
+    "domain": "social media analytics",
+    "buyers": [
+      {
+        "persona": "data scientists at marketing agencies",
+        "awareness_level": "solution_aware",
+        "pain": "Struggling to efficiently aggregate and analyze social media trend data from multiple platforms.",
+        "candidate_phrases": [
+          "social media data analysis tools",
+          "automate social media trend analysis",
+          "social media trend data platform",
+          "integration with n8n social media",
+          "quick social media trend tracking"
+        ]
+      },
+      {
+        "persona": "content researchers for brands",
+        "awareness_level": "problem_aware",
+        "pain": "Difficulty keeping up with the latest trends to produce timely, relevant content.",
+        "candidate_phrases": [
+          "how to find trending topics on social media",
+          "tools for tracking social media trends",
+          "keep up with internet trends",
+          "social media trend monitoring tool",
+          "analyze social media for content ideas"
+        ]
+      },
+      {
+        "persona": "tech-savvy small business owners",
+        "awareness_level": "problem_aware",
+        "pain": "Not having resources to manually track real-time trends that could drive business decisions.",
+        "candidate_phrases": [
+          "best trend tracking apps for business",
+          "tools to track social media buzz",
+          "real time social media trend tracking",
+          "easy trend monitoring solutions",
+          "social media insights tools for small business"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "Buyer urgency is moderate; while trend analytics isn't a critical problem, it supports strategic decisions. MVP ease is low due to the complexity of integrating multiple APIs and databases. Distribution fit is good, as data tools are well-suited to SEO and targeted ads. Retention is moderate; ongoing trend monitoring is valuable but not essential for all businesses. The advantage score is low due to no clear proprietary edge or existing audience mentioned."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "social media data analysis tools",
+      "volume": 40,
+      "cpc": 0,
+      "competition": 0.11,
+      "source": "dataforseo",
+      "buyer": "data scientists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate social media trend analysis",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "data scientists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media trend data platform",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "data scientists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "integration with n8n social media",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "data scientists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "quick social media trend tracking",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "data scientists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to find trending topics on social media",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.46,
+      "source": "dataforseo",
+      "buyer": "content researchers for brands",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools for tracking social media trends",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content researchers for brands",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "keep up with internet trends",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content researchers for brands",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media trend monitoring tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content researchers for brands",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "analyze social media for content ideas",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content researchers for brands",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best trend tracking apps for business",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools to track social media buzz",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "real time social media trend tracking",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy trend monitoring solutions",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media insights tools for small business",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy small business owners",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "social media data analysis tools",
+      "volume": 40,
+      "cpc": 0,
+      "competition": 0.11,
+      "source": "dataforseo",
+      "buyer": "data scientists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to find trending topics on social media",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.46,
+      "source": "dataforseo",
+      "buyer": "content researchers for brands",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate social media trend analysis",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "data scientists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media trend data platform",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "data scientists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "integration with n8n social media",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "data scientists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "quick social media trend tracking",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "data scientists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools for tracking social media trends",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content researchers for brands",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "keep up with internet trends",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content researchers for brands",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 1.8169588422282223,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 17.316958842228225
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "data scientists at marketing agencies",
+        "anchor_phrase": "social media data analysis tools",
+        "offer_copy": "For data scientists at marketing agencies who seek comprehensive trend insights but struggle with diverse platform data, we offer an automated analysis tool that integrates social media data across channels, so they effortlessly gain actionable insights without manual data wrangling.",
+        "landing_page_headline": "Automate Your Social Media Data Analysis Effortlessly"
+      },
+      {
+        "buyer": "content researchers for brands",
+        "anchor_phrase": "how to find trending topics on social media",
+        "offer_copy": "For content researchers who need to stay ahead of trends but face overwhelm from constant changes, we provide a trend-finding engine that scans social platforms to deliver real-time, relevant insights without daily manual searches.",
+        "landing_page_headline": "Discover Trending Topics on Social Media Easily"
+      },
+      {
+        "buyer": "tech-savvy small business owners",
+        "anchor_phrase": "keep up with internet trends",
+        "offer_copy": "For tech-savvy small business owners aiming to leverage trends but lack resources for real-time tracking, we deliver a streamlined platform that highlights trending topics, enabling timely, informed decisions without intricate setup.",
+        "landing_page_headline": "Stay Updated with Key Internet Trends Effortlessly"
+      }
+    ],
+    "next_action": "Validate the concept with interviews: conduct at least 10 calls with potential buyers from each persona to understand their current solutions and unmet needs.",
+    "reasoning": "The verdict 'Educate Later' indicates moderate demand signals and an incomplete understanding of how to attract buyers. While buyer urgency is moderate, and the distribution fit is strong due to industry familiarity, search demand and willingness to pay are weak, suggesting insufficient immediate market pull. The primary risk is this demand limitation, so the key is further research into buyer-specific pain points and how current solutions fall short, which can enable more targeted marketing and development efforts."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/RelevantSEOResearch"
+  }
+}

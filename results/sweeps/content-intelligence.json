@@ -1,0 +1,316 @@
+{
+  "slug": "content-intelligence",
+  "source_concept": "Content Intelligence System",
+  "generated_at": "2026-05-16T17:13:54.293Z",
+  "cross_vertical_insight": "Across these verticals, the shared pain point is managing and analyzing vast amounts of content across multiple platforms — efficiency and the ability to derive strategic insights are critical. Many also operate in highly competitive or regulated environments, where precise communication and content strategy significantly impact success.",
+  "verticals": [
+    {
+      "name": "marketing consultants for ecommerce",
+      "icp": "Small marketing consulting firms specializing in ecommerce, typically 2-5 employees, handling content strategy for multiple online retail clients.",
+      "rationale": "These consultants need efficient systems to manage and analyze vast quantities of content across different ecommerce platforms to offer strategic advice to clients.",
+      "phrases": [
+        {
+          "phrase": "content analytics tool for ecommerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best content management system for marketing consultants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to manage ecommerce content strategy",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy content intelligence platform for ecommerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "content analysis software for retail businesses",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "ecommerce content strategy tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "content analytics tool for ecommerce",
+      "top_volume": 0,
+      "pmf_score": 2.4000000000000004,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "in-house marketing teams at mid-size consumer goods companies",
+      "icp": "Internal marketing teams within consumer goods companies, 50-200 employees, with dedicated resources for content marketing and strategy.",
+      "rationale": "These teams deal with large volumes of content and require sophisticated tools to manage and derive insights from content to remain competitive.",
+      "phrases": [
+        {
+          "phrase": "consumer goods content management systems",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "content analysis tools for marketing teams",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to improve content efficiency in marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best content strategy software for consumer goods",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "content intelligence platform pricing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "consumer goods content management systems",
+      "top_volume": 0,
+      "pmf_score": 2.4000000000000004,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "pr firms specializing in healthcare communication",
+      "icp": "Healthcare-focused PR agencies with 10-30 employees, dealing with multi-platform content dissemination and analysis for clients.",
+      "rationale": "These firms need precise content management and analysis tools to effectively manage client communications and stay compliant with industry regulations.",
+      "phrases": [
+        {
+          "phrase": "content analysis tools for healthcare pr",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "healthcare content management solutions",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best pr content tools for healthcare",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to manage healthcare communications effectively",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy content strategy software for healthcare",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "content analysis tools for healthcare pr",
+      "top_volume": 0,
+      "pmf_score": 2.4000000000000004,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "educational content creators for online courses",
+      "icp": "Small to medium-sized teams creating educational content for online platforms like Coursera or Udemy, typically 10-20 employees.",
+      "rationale": "These creators produce a large amount of content that needs to be managed and optimized for engagement across different learning platforms.",
+      "phrases": [
+        {
+          "phrase": "best content management tools for online courses",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "content analysis software for educational platforms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy online course content management system",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "optimize educational content for engagement",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "educational content strategy tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "best content management tools for online courses",
+      "top_volume": 0,
+      "pmf_score": 2.4000000000000004,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "content teams at fintech startups",
+      "icp": "Content and marketing teams within fintech startups, typically 5-15 employees, focused on producing educational and promotional content.",
+      "rationale": "Fintech startups often rely heavily on content for growth and customer education, necessitating tools that can handle and analyze their diverse content needs.",
+      "phrases": [
+        {
+          "phrase": "content intelligence tools for fintech",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "fintech content management system",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best tools for fintech content strategy",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy content analysis software for fintech",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to manage fintech content effectively",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "content intelligence tools for fintech",
+      "top_volume": 0,
+      "pmf_score": 2.4000000000000004,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.8
+      }
+    }
+  ]
+}

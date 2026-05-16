@@ -1,0 +1,243 @@
+{
+  "source_text": "AlgoResearch\n\n## CLAUDE.md\n\n# CLAUDE.md — AlgoResearch orientation\n\nFuture-Claude: read this before changing anything in `twitter_scoring/`\nor `TwitterAlgo/`. It explains what lives where and how callers depend\non it.\n\n## What this repo is\n\nA research monorepo for X (Twitter) algorithm modeling. Two packages\nthat matter, with a third in flux:\n\n| Package | Status | Role |\n|---|---|---|\n| `twitter_scoring/` | **stable, public** | Importable Python package. Generator + scorer + gate + simulator + calibration. Imported by StrategyThread via a bridge. |\n| `TwitterAlgo/` | stable, internal | Operator CLIs (`craft.py`, `bench.py`, `predict.py`, `validate.py`, `calibrate_from_strategythread.py`) and the `twitteralgo.db` SQLite store of historical posts/metrics. |\n| `<other dirs>` | misc research | Don't depend on these in package code. |\n\nThe user (Isaiah) treats `twitter_scoring/` as a published package —\nbreaking changes need to be reflected in `StrategyThread/` at the same\ntime. If you can't change both repos in lockstep, version the change\nbehind a kwarg.\n\n## Cross-repo dependencies\n\n```\nStrategyThread/\n  twitter_algo_bridge.py     ──imports──▶  AlgoResearch/twitter_scoring/twitter_scoring\n  tweet_workshop.py          ──calls───▶  bridge.craft()\n  tweet_publisher.py         ──calls───▶  twitter_scoring.gate_thread_tweet\n  tweet_analytics.py         ──exports──▶ JSONL → calibrate_from_strategythread.py\n\nAlgoResearch/TwitterAlgo/\n  craft.py / bench.py / predict.py / validate.py\n                             ──imports──▶  AlgoResearch/twitter_scoring/twitter_scoring\n                             ──reads───▶  twitteralgo.db (sibling)\n  calibrate_from_strategythread.py\n                             ──reads───▶  StrategyThread JSONL export\n                             ──writes──▶  AlgoResearch/TwitterAlgo/phoenix_weights.json\n                                          AlgoResearch/TwitterAlgo/engagement_model.json\n```\n\nBridge resolution (in `StrategyThread/twitter_algo_bridge.py`):\nalready-importable → `$AL",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "AlgoResearch",
+    "one_liner": "A research monorepo for Twitter algorithm modeling.",
+    "core_promise": "Gain insights and enhance strategies for leveraging the Twitter algorithm effectively.",
+    "domain": "social media algorithm research",
+    "buyers": [
+      {
+        "persona": "social media analysts",
+        "awareness_level": "solution_aware",
+        "pain": "Struggling to understand and predict the behavior of Twitter's algorithm for better content strategy.",
+        "candidate_phrases": [
+          "twitter algorithm analysis",
+          "twitter algorithm research tool",
+          "understanding twitter algorithm",
+          "predict twitter engagement",
+          "twitter algorithm insights"
+        ]
+      },
+      {
+        "persona": "social media managers",
+        "awareness_level": "problem_aware",
+        "pain": "Difficulty in optimizing content for visibility and engagement on Twitter without clear guidelines on algorithm functioning.",
+        "candidate_phrases": [
+          "how to increase twitter engagement",
+          "why is my twitter reach low",
+          "twitter visibility tips",
+          "improve twitter post performance",
+          "boost twitter engagement"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "Buyer urgency is moderate since social media analysts and managers are actively trying to optimize their strategies. MVP ease is low as building a research platform around Twitter's algorithm would likely require significant development and iterations. Distribution fit scores well because social media professionals are accessible through targeted online communities and SEO. Retention potential is moderate given the evolving nature of social media strategies necessitating ongoing insights. The advantage score is low as no specific edge (like proprietary data or unique insights) is mentioned for competing in this space."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "twitter algorithm analysis",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media analysts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "twitter algorithm research tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media analysts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "understanding twitter algorithm",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media analysts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "predict twitter engagement",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media analysts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "twitter algorithm insights",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media analysts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to increase twitter engagement",
+      "volume": 50,
+      "cpc": 3.27,
+      "competition": 0.13,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "why is my twitter reach low",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "twitter visibility tips",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "improve twitter post performance",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "boost twitter engagement",
+      "volume": 20,
+      "cpc": 7.6,
+      "competition": 0.16,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "how to increase twitter engagement",
+      "volume": 50,
+      "cpc": 3.27,
+      "competition": 0.13,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "boost twitter engagement",
+      "volume": 20,
+      "cpc": 7.6,
+      "competition": 0.16,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "twitter algorithm analysis",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media analysts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "understanding twitter algorithm",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media analysts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "why is my twitter reach low",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "twitter algorithm research tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media analysts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "predict twitter engagement",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media analysts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "twitter algorithm insights",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media analysts",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 2.1327202206607994,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 3.8,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 19.932720220660798
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "social media analysts",
+        "anchor_phrase": "twitter algorithm analysis",
+        "offer_copy": "For social media analysts who seek to gain insights but struggle to predict Twitter's algorithm behavior, we provide comprehensive algorithm analysis tools so they can refine strategies without guesswork.",
+        "landing_page_headline": "In-Depth Twitter Algorithm Analysis Tools"
+      },
+      {
+        "buyer": "social media managers",
+        "anchor_phrase": "how to increase twitter engagement",
+        "offer_copy": "For social media managers aiming to optimize visibility and engagement but facing uncertainty with Twitter's guidelines, we offer action-focused insights to increase engagement without complex expertise.",
+        "landing_page_headline": "Boost Your Twitter Engagement Effectively"
+      }
+    ],
+    "next_action": "Conduct interviews with 5 potential users in each buyer persona to validate their problems and desired solutions, and refine the offer messaging.",
+    "reasoning": "The demand signals show moderate urgency among social media managers seeking engagement boosts, while analysts exhibit niche interest in detailed algorithm analysis. However, current search volumes are low, indicating insufficient market validation. The most significant risk lies in the need to educate potential buyers and prove value through demonstration and trials before substantial investment. This validation through direct buyer feedback will guide product development and messaging to refine market fit."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/AlgoResearch"
+  }
+}

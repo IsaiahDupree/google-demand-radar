@@ -1,0 +1,316 @@
+{
+  "slug": "musicpromotion",
+  "source_concept": "Sheen Daily Video Generator",
+  "generated_at": "2026-05-16T17:18:54.732Z",
+  "cross_vertical_insight": "Across these verticals, there is a shared need for affordable, automated solutions that simplify and enhance daily content production for social media channels. The common trigger for purchase is the need to consistently produce visually engaging content to attract customers and followers without investing significant time or hiring additional staff.",
+  "verticals": [
+    {
+      "name": "local restaurants and cafes",
+      "icp": "Independently owned restaurants and cafes, $100k-$1M in annual revenue, looking to improve local visibility through engaging social media.",
+      "rationale": "These businesses need to differentiate in a crowded market and attract local customers, ideally by showcasing menu items and events through creative videos.",
+      "phrases": [
+        {
+          "phrase": "video marketing for restaurants",
+          "volume": 50,
+          "cpc": 7.44,
+          "competition": 0.05,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to create engaging cafe videos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best social media content tools for restaurants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "automated video clips for restaurant marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "social media promotions for local cafes",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 2.1327202206607994,
+      "bofu_density": 0.2,
+      "max_cpc": 7.44,
+      "top_phrase": "video marketing for restaurants",
+      "top_volume": 50,
+      "pmf_score": 4.695632132396479,
+      "pmf_breakdown": {
+        "demand_n": 0.42654404413215985,
+        "bofu_n": 0.2,
+        "cpc_n": 0.744,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "freelance fitness trainers",
+      "icp": "Freelance fitness trainers, often with a localized client base and personal brand-building needs, generating $50k-$250k annually.",
+      "rationale": "They leverage social media to build a personal brand and client base, requiring constant engaging content that stands out from competition.",
+      "phrases": [
+        {
+          "phrase": "video creation tools for fitness trainers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "fitness video maker software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to attract clients using social media videos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "social media marketing for personal trainers",
+          "volume": 110,
+          "cpc": 1.97,
+          "competition": 0.03,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best apps for creating gym workout videos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 2.1763484297970317,
+      "bofu_density": 0,
+      "max_cpc": 1.97,
+      "top_phrase": "social media marketing for personal trainers",
+      "top_volume": 110,
+      "pmf_score": 3.4013090578782186,
+      "pmf_breakdown": {
+        "demand_n": 0.43526968595940635,
+        "bofu_n": 0,
+        "cpc_n": 0.197,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "real estate agents",
+      "icp": "Individual or small-team real estate agents, $1-10M in annual sales, who handle their own marketing and social media presence.",
+      "rationale": "Real estate agents rely heavily on social media to showcase properties and maintain client relationships, which requires visually appealing content.",
+      "phrases": [
+        {
+          "phrase": "real estate social media video generator",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to make real estate marketing videos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best social media tools for realtors",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "video content ideas for real estate",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "automated real estate video production",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "real estate video content software pricing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "real estate social media video generator",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "e-commerce SMBs",
+      "icp": "Small to medium-sized e-commerce businesses, $500k-$5M in revenue, often run by small teams lacking dedicated media production personnel.",
+      "rationale": "These businesses need effective and visually engaging ways to display products online and drive social media engagement to boost sales.",
+      "phrases": [
+        {
+          "phrase": "automated video generator for e-commerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best video content tools for online shops",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to increase e-commerce engagement with video",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "video marketing tools for small businesses",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "social media marketing software for online stores",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "automated video generator for e-commerce",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "wedding photographers and videographers",
+      "icp": "Small photography and videography teams, $50k-$500k revenue, typically self-marketed via portfolios and social media showcases.",
+      "rationale": "They must constantly update their portfolio with high-quality video content to attract clients, necessitating efficient video production tools.",
+      "phrases": [
+        {
+          "phrase": "digital video creations for wedding portfolios",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "tools for wedding video editing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "social media video marketing for photographers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best software for wedding video clips",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to enhance videography business with social media",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "digital video creations for wedding portfolios",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

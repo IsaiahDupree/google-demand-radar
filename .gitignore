@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# Build outputs
+.next/
+out/
+dist/
+tsconfig.tsbuildinfo
+
+# Environment / secrets — defensive; the real creds live in
+# ~/Downloads/demand-radar-creds.json (outside the repo) but block any local
+# copies that ever land in-tree.
+.env
+.env.*
+*.pem
+*.key
+demand-radar-creds.json
+creds.json
+
+# Runtime caches — paid-for DataForSEO/OpenAI/Trends responses. Regeneratable
+# for ~$15; not committed because the JSON churns constantly and large files
+# slow down git operations. Flip this if you ever want to share cache state.
+cache/
+
+# Pre-rescore backups (operational, point-in-time snapshots, regeneratable).
+# Matches results/_pre-* AND results/sweeps/_pre-* etc.
+**/_pre-*/
+
+# Logs + OS noise
+*.log
+.DS_Store
+Thumbs.db
+ehthumbs.db
+.idea/
+.vscode/

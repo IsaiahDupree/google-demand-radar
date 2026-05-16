@@ -1,0 +1,243 @@
+{
+  "source_text": "YTDownloaderBasic\n\n## README\n\n# Multi-Platform Media Downloader\n\nA collection of modular downloaders for extracting media from various social media platforms and websites.\n\n## Platforms Supported\n\n- **YouTube** - Audio extraction from videos\n- **Instagram** - Photos and videos from posts\n- **TikTok** - Video downloads\n- **Twitter/X** - Media from tweets\n- **Websites** - Images, videos, and other content\n\n## Project Structure\n\n```text\n├── youtube_downloader.py          # Main YouTube audio downloader\n├── instagram/\n│   └── instagram_downloader.py    # Instagram media downloader\n├── tiktok/\n│   └── tiktok_downloader.py       # TikTok video downloader\n├── twitter/\n│   └── twitter_downloader.py      # Twitter media downloader\n├── websites/\n│   └── website_downloader.py      # General website content downloader\n├── requirements.txt               # All dependencies\n└── README.md                      # This file\n```\n\n## Installation\n\n1. Clone this repository\n2. Install dependencies:\n\n```bash\npip install -r requirements.txt\n```\n\nOr let each script install dependencies automatically with the `--install-deps` flag.\n\n## Usage\n\n### Enhanced YouTube Downloader\n\n#### Main Downloader (youtube_downloader.py)\n\n```bash\n# Download audio (default)\npython youtube_downloader.py https://www.youtube.com/watch?v=VIDEO_ID\n\n# Download video\npython youtube_downloader.py -t video https://www.youtube.com/watch?v=VIDEO_ID\n\n# Download MP3 audio\npython youtube_downloader.py -t audio -af mp3 https://www.youtube.com/watch?v=VIDEO_ID\n\n# Download 720p video\npython youtube_downloader.py -t video -q 720p https://www.youtube.com/watch?v=VIDEO_ID\n\n# Download playlist\npython youtube_downloader.py -p --playlist-folders https://www.youtube.com/playlist?list=PLAYLIST_ID\n\n# Fix 403/400 errors with Android client\npython youtube_downloader.py --android-client --cookies-from-browser chrome https://www.youtube.com/watch?v=VIDEO_ID\n\n# Debug mode\nset YTDLP_DEBUG=1\npython youtube_downloader.py https://www.youtube.com/watch?v=VIDEO_ID\n```\n\n#### Direct yt-dlp Wrapper (direct_ytdlp_downloader.py)\n\n```bash\n# Simple video download\npython direct_ytdlp_downloader.py https://www.youtube.com/watch?v=VIDEO_ID\n\n# Audio-only MP3\npython direct_ytdlp_downloader.py -t audio -af mp3 https://www.youtube.com/watch?v=VIDEO_ID\n\n# Update yt-dlp and download\npython direct_ytdlp_downloader.py -u https://www.youtube.com/watch?v=VIDEO_ID\n```\n\n### Instagram Downloader\n\n```bash\npython instagram/instagram_downloader.py https://www.instagram.com/p/POST_ID/\n```\n\n### TikTok Downloader\n\n```bash\npython tiktok/tiktok_downloader.py https://www.tiktok.com/@user/video/VIDEO_ID\n```\n\n### Twitter Downloader\n\n```bash\npython twitter/twitter_downloader.py https://twitter.com/user/status/TWEET_ID\n```\n\n### Website Content Downloader\n\n```bash\npython websites/website_downloader.py https://example.com\npython websites/website_downloader.py --no-images https://example.com  # Videos only\n```\n\n## Common Options\n\nAll downloaders support:\n\n- `-i, --input-file`: File containing URLs (one per line)\n- `-o, --output-dir`: Custom output directory\n- `--install-deps`: Install required dependencies\n\n## Requirements\n\n- Python 3.6+\n- yt-dlp (for video/audio downloads)\n- requests (for web scraping)\n- beautifulsoup4 (for HTML parsing)\n\n## Notes\n\n- YouTube downloads may occasionally fail due to anti-bot measures\n- Some platforms may require authentication for private content\n- Always respect platform terms of service and copyright laws",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Multi-Platform Media Downloader",
+    "one_liner": "A tool for downloading media from YouTube, Instagram, TikTok, Twitter, and various websites.",
+    "core_promise": "Download and save media content from major social platforms and websites easily.",
+    "domain": "media downloading",
+    "buyers": [
+      {
+        "persona": "social media managers",
+        "awareness_level": "solution_aware",
+        "pain": "Difficulty in saving and archiving content for brand management and analysis.",
+        "candidate_phrases": [
+          "download instagram video",
+          "youtube to mp3 converter",
+          "download twitter video",
+          "tiktok downloader app",
+          "social media downloader"
+        ]
+      },
+      {
+        "persona": "content creators",
+        "awareness_level": "problem_aware",
+        "pain": "Need to aggregate media for inspiration and content production but find it hard to store and manage unauthorized downloads.",
+        "candidate_phrases": [
+          "how to download video from youtube",
+          "instagram post downloader",
+          "best video downloader app",
+          "save tiktok without watermark",
+          "download videos from websites"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 3,
+      "distribution_fit": 4,
+      "retention_potential": 2,
+      "advantage": 1,
+      "rationale": "The demand for downloading media is moderate, often impelled by tactical or spontaneous needs rather than strategic demands, especially for social media managers and content creators. The technical foundation (Python scripts) is feasible but requires maintenance against platform updates. Distribution is enhanced via SEO/SEM, given clear existing demand language around 'download [platform] media'. However, retention potential is low due to opportunistic usage. No clear founder advantage is noted, indicating standard competition conditions."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "download instagram video",
+      "volume": 90500,
+      "cpc": 0.22,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube to mp3 converter",
+      "volume": 246000,
+      "cpc": 2.63,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "download twitter video",
+      "volume": 135000,
+      "cpc": 2.1,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tiktok downloader app",
+      "volume": 2900,
+      "cpc": 2.75,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media downloader",
+      "volume": 320,
+      "cpc": 2.44,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to download video from youtube",
+      "volume": 5400,
+      "cpc": 1.96,
+      "competition": 0.12,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "instagram post downloader",
+      "volume": 27100,
+      "cpc": 0.48,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best video downloader app",
+      "volume": 260,
+      "cpc": 2.42,
+      "competition": 0.28,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "save tiktok without watermark",
+      "volume": 5400,
+      "cpc": 2.62,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "download videos from websites",
+      "volume": 12100,
+      "cpc": 2.03,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "youtube to mp3 converter",
+      "volume": 246000,
+      "cpc": 2.63,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "download twitter video",
+      "volume": 135000,
+      "cpc": 2.1,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "download instagram video",
+      "volume": 90500,
+      "cpc": 0.22,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "instagram post downloader",
+      "volume": 27100,
+      "cpc": 0.48,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "download videos from websites",
+      "volume": 12100,
+      "cpc": 2.03,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to download video from youtube",
+      "volume": 5400,
+      "cpc": 1.96,
+      "competition": 0.12,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "save tiktok without watermark",
+      "volume": 5400,
+      "cpc": 2.62,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tiktok downloader app",
+      "volume": 2900,
+      "cpc": 2.75,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 5,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.375,
+    "mvp_ease": 3,
+    "distribution_fit": 4,
+    "advantage": 1,
+    "retention_potential": 2,
+    "total": 19.375
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "social media managers",
+        "anchor_phrase": "youtube to mp3 converter",
+        "offer_copy": "For social media managers who need to save and archive media content for analysis but struggle with platform restrictions, we provide a seamless multi-platform downloader so they can efficiently manage and store content without technical headaches.",
+        "landing_page_headline": "Effortlessly Convert YouTube to MP3 for Content Management"
+      },
+      {
+        "buyer": "content creators",
+        "anchor_phrase": "download instagram video",
+        "offer_copy": "For content creators who need to gather media for creative production but face challenges in storing unauthorized downloads, we offer a comprehensive downloader that aggregates content so they can keep their materials organized without risking platform limitations.",
+        "landing_page_headline": "Simplify Your Media Gathering—Download Instagram Videos Easily"
+      }
+    ],
+    "next_action": "Launch a landing page and run A/B tests using Google Ads targeting the keywords 'youtube to mp3 converter' and 'download instagram video'. Spend $100 to validate interest and conversion rates.",
+    "reasoning": "The decision to label the concept as Educate Later stems from mixed signals. While search demand is high, indicating potential interest, the low willingness to pay suggests that users typically look for free or low-cost solutions. This necessitates educating the market on why they might pay for a more robust platform. The risk lies in distribution and retention, as current solutions seem commoditized. Testing demand with paid ads will clarify if buyers can be converted."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/YTDownloaderBasic"
+  }
+}

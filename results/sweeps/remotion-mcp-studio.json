@@ -1,0 +1,356 @@
+{
+  "slug": "remotion-mcp-studio",
+  "source_concept": "Remotion MCP Studio",
+  "generated_at": "2026-05-16T17:20:48.431Z",
+  "cross_vertical_insight": "Across these diverse verticals, the common pain point is the need for efficient, scalable video production solutions to meet increasing demand for video content in marketing, training, and engagement. Users are looking for tools that can match the production speed with their rapid content cycles without sacrificing quality or consistency.",
+  "verticals": [
+    {
+      "name": "local e-commerce stores",
+      "icp": "Small to medium-sized e-commerce businesses with $1-10M revenue, who sell products online and handle digital marketing in-house or with a small team.",
+      "rationale": "These businesses need a steady stream of promotional videos for advertising and social media, but often lack the resources to produce content quickly and consistently.",
+      "phrases": [
+        {
+          "phrase": "programmatic video advertising for e-commerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "how to create video ads for online store",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "automated video creation for e-commerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best video generation software for product launches",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy video generation software for e-commerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "programmatic video tool for online store",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "video generation software pricing for e-commerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "programmatic video advertising for e-commerce",
+      "top_volume": 0,
+      "pmf_score": 2.2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "real estate agents",
+      "icp": "Individual real estate agents or small boutique agencies with 5-10 agents, focused on residential sales and rentals in competitive urban markets.",
+      "rationale": "Real estate professionals frequently require polished video tours and promotional videos for listings, often needing quick turnaround times to stay competitive.",
+      "phrases": [
+        {
+          "phrase": "video creation software for real estate listings",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "real estate video marketing automation",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best software for real estate video tours",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy property video generation software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automated video creation for real estate agents",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "real estate listing video software pricing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "video creation software for real estate listings",
+      "top_volume": 0,
+      "pmf_score": 2.2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "online education platforms",
+      "icp": "Small to medium-sized edu-tech companies offering online courses, needing efficient content production to expand course libraries.",
+      "rationale": "These platforms require a streamlined way to create educational videos and course content rapidly to keep up with evolving curricula and maintain engagement.",
+      "phrases": [
+        {
+          "phrase": "video creation for online courses",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "automated educational video software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best tools for creating online course videos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "purchase video generation for edu-tech",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "pricing for video production in e-learning",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "education video generation software for online platforms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "video creation for online courses",
+      "top_volume": 0,
+      "pmf_score": 2.2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "corporate training and HR departments",
+      "icp": "Training and HR departments within mid-sized companies (100-500 employees) that are increasingly using video for training and internal communications.",
+      "rationale": "These departments often need to create a large volume of training videos to keep employees updated and engaged while minimizing production time.",
+      "phrases": [
+        {
+          "phrase": "video software for corporate training",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "automated video creation for hr departments",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best software for training video generation",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "corporate training video creation tool pricing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy training video generation software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "programmatic video generation for corporate use",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "video software for corporate training",
+      "top_volume": 0,
+      "pmf_score": 2.2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "event promotion companies",
+      "icp": "Boutique event promotion firms managing marketing for conferences, festivals, or trade shows, needing a variety of short, engaging teasers and recaps.",
+      "rationale": "These firms require frequent video content for promotion and recap purposes, and benefit from the ability to quickly produce consistent, branded content.",
+      "phrases": [
+        {
+          "phrase": "event video promotion tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "automated video creation for event marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best software for event recap videos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy event video generation software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "pricing for video tools in event marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "programmatic video generation for events",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "event video promotion tools",
+      "top_volume": 0,
+      "pmf_score": 2.2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

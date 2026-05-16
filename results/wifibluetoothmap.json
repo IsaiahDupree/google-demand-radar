@@ -1,0 +1,306 @@
+{
+  "source_text": "WifiBluetoothMap\n\n## README\n\n# RF Signal Mapper\n\nA system for mapping WiFi and Bluetooth signal strengths with location data. This project allows you to:\n\n1. Scan for WiFi and Bluetooth signals using a laptop or desktop computer\n2. Track signal strength over time and location\n3. Visualize signals on interactive maps\n4. Analyze signal coverage and density\n\n## Architecture\n\nThe system uses a modular architecture:\n\n- **Core Data Model**: Shared schema for observations (WiFi/Bluetooth signals)\n- **Gateway Service**: FastAPI service for data collection and retrieval\n- **Scanner**: Platform-specific signal scanners for Windows, macOS, and Linux\n- **Visualization**: Interactive maps using Folium and/or PyDeck\n\n## Getting Started\n\n### Prerequisites\n\n- Python 3.8 or higher\n- For BLE scanning: Bluetooth hardware and proper drivers\n- For WiFi scanning: WiFi adapter\n- Optional: GPS hardware or software (gpsd) for location tracking\n\n### Installation\n\n1. Clone this repository\n2. Create a virtual environment:\n\n```bash\npython -m venv .venv\n# Windows\n.venv\\Scripts\\activate\n# macOS/Linux\nsource .venv/bin/activate\n```\n\n3. Install dependencies:\n\n```bash\npip install -r requirements.txt\n```\n\n### Running the Gateway\n\nStart the FastAPI service:\n\n```bash\nuvicorn services.gateway.main:app --reload --port 8000\n```\n\nThe gateway provides:\n- REST API at http://localhost:8000\n- Live map visualization at http://localhost:8000/live/\n- WebSocket stream at ws://localhost:8000/stream\n\n### Running the Scanner\n\nRun the scanner with:\n\n```bash\npython scanners/desktop_wifi_ble.py --server http://localhost:8000 --observer laptop-001 --lat 40.741 --lon -73.989\n```\n\nOptions:\n- `--server`: Gateway URL\n- `--observer`: Unique ID for this scanner\n- `--lat` and `--lon`: Default coordinates (if no GPS)\n- `--radios wifi ble`: Which radios to scan (default: both)\n- `--interval`: Seconds between scans (default: 10)\n- `--gpsd`: Use gpsd for location\n- `--gpsd-host` and `--gpsd-port`: Configure gpsd connection\n\n### Generating Visualizations\n\nCreate a static map visualization:\n\n```bash\npython apps/desktop_py/visualize.py --server http://localhost:8000 --out rf_map.html\n```\n\nOptions:\n- `--server`: Gateway URL\n- `--out`: Output HTML file\n- `--limit`: Maximum observations to visualize\n- `--method`: Visualization library (pydeck, folium, auto)\n\n### Docker Deployment\n\nRun the complete stack:\n\n```bash\ndocker compose up\n```\n\nThis starts:\n- Gateway service on port 8000\n\n## API Reference\n\n### REST Endpoints\n\n- `GET /health`: Check service status\n- `POST /observation`: Submit a new signal observation\n- `GET /observations?limit=500`: Get recent observations\n- `GET /live/`: Interactive live map UI\n\n### WebSocket\n\n- Connect to `ws://localhost:8000/stream` for real-time observation updates\n\n## Project Structure\n\n```\n.\n├── libs/\n│   └── core/            # Core data models\n│       ├── __init__.py\n│       └── schema.py    # Pydantic schemas\n├── services/\n│   └── gateway/         # FastAPI service\n│       ├── __init__.py\n│       └── main.py      # API endpoints\n├── scanners/\n│   └── desktop_wifi_ble.py  # WiFi/BLE scanner\n├── apps/\n│   └── desktop_py/      # Desktop visualization\n│       └── visualize.py # Map generator\n├── requirements.txt     # Python dependencies\n├── Dockerfile           # Container definition\n└── docker-compose.yml   # Container orchestration\n```\n\n## Future Extensions\n\nThis Phase 0 scaffold can be extended with:\n\n1. **Backend Storage**: \n   - Postgres + PostGIS for geospatial queries\n   - TimescaleDB for time-series analysis\n\n2. **ESP32 Node Integration**:\n   - MQTT broker for lightweight communication\n   - ESP32 firmware for fixed scanners\n   - Bridge from MQTT to the gateway API\n\n3. **Advanced Location Estimation**:\n   - Signal strength to distance models\n   - Triangulation from multiple observers\n   - Clustering and centroid computation\n\n4. **Web App**:\n   - React/Next.js frontend with MapLibre\n   - Real-time WebSocket connection\n   - Advanced filtering and analysis\n\n5. **VR Visualization**:\n   - Three.j",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "WifiBluetoothMap",
+    "one_liner": "A tool to map and visualize WiFi and Bluetooth signal strengths with location data.",
+    "core_promise": "Users can visualize and analyze their RF signal environment for improved connectivity setup.",
+    "domain": "wireless networking/IoT",
+    "buyers": [
+      {
+        "persona": "small business IT specialists",
+        "awareness_level": "solution_aware",
+        "pain": "Need for efficient management and troubleshooting of wireless networks within their office or facility to ensure strong and reliable connectivity.",
+        "candidate_phrases": [
+          "wifi signal mapping tool",
+          "bluetooth signal strength analyzer",
+          "office wifi analysis software",
+          "wifi signal strength map",
+          "signal strength mapping tool"
+        ]
+      },
+      {
+        "persona": "tech enthusiasts",
+        "awareness_level": "problem_aware",
+        "pain": "Want to explore and understand wireless signal environments for gaming, projects, or personal curiosity.",
+        "candidate_phrases": [
+          "how to map wifi strength",
+          "bluetooth signal map",
+          "wifi troubleshooting tools",
+          "visualize signal strength",
+          "home wifi analysis"
+        ]
+      },
+      {
+        "persona": "internet service providers (ISP) technicians",
+        "awareness_level": "most_aware",
+        "pain": "Need for precise tools to evaluate and optimize client network installations.",
+        "candidate_phrases": [
+          "wifi and bluetooth mapping software",
+          "rf signal strength visualization",
+          "isp network optimization tool",
+          "signal mapping for technicians",
+          "wireless network assessment tool"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "Buyer urgency is moderate as networking issues are important but not usually emergencies. The MVP ease scores low due to technical complexity in scanning and mapping signals. Distribution fit is average, as these buyers can be reached through niche online communities and targeted ads. Retention potential is moderate since ongoing use can be driven by regular network assessments. There's no evident edge or advantage; the project could face competition from established solutions."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "wifi signal mapping tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business IT specialists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluetooth signal strength analyzer",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business IT specialists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "office wifi analysis software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business IT specialists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "wifi signal strength map",
+      "volume": 50,
+      "cpc": 6.62,
+      "competition": 0.14,
+      "source": "dataforseo",
+      "buyer": "small business IT specialists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "signal strength mapping tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business IT specialists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to map wifi strength",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluetooth signal map",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "wifi troubleshooting tools",
+      "volume": 40,
+      "cpc": 23.76,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "visualize signal strength",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "home wifi analysis",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "wifi and bluetooth mapping software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "internet service providers (ISP) technicians",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "rf signal strength visualization",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "internet service providers (ISP) technicians",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "isp network optimization tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "internet service providers (ISP) technicians",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "signal mapping for technicians",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "internet service providers (ISP) technicians",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "wireless network assessment tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "internet service providers (ISP) technicians",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "wifi signal strength map",
+      "volume": 50,
+      "cpc": 6.62,
+      "competition": 0.14,
+      "source": "dataforseo",
+      "buyer": "small business IT specialists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "wifi troubleshooting tools",
+      "volume": 40,
+      "cpc": 23.76,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluetooth signal strength analyzer",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business IT specialists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "wifi signal mapping tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business IT specialists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "office wifi analysis software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business IT specialists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "signal strength mapping tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business IT specialists",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to map wifi strength",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluetooth signal map",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech enthusiasts",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 2.1327202206607994,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 20.1327202206608
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "small business IT specialists",
+        "anchor_phrase": "wifi signal strength map",
+        "offer_copy": "For small business IT specialists who need efficient management and troubleshooting of wireless networks but struggle with inconsistent signal mapping tools, we provide a comprehensive 'wifi signal strength map' solution so they can ensure strong, reliable connectivity without the guesswork.",
+        "landing_page_headline": "Map Your Office WiFi for Uninterrupted Connectivity"
+      },
+      {
+        "buyer": "tech enthusiasts",
+        "anchor_phrase": "wifi troubleshooting tools",
+        "offer_copy": "For tech enthusiasts who want to explore wireless environments for gaming or projects but face challenges in understanding complex setups, we offer intuitive 'wifi troubleshooting tools' so they can optimize their signal without costly equipment.",
+        "landing_page_headline": "Explore WiFi Signals with Easy Troubleshooting Tools"
+      },
+      {
+        "buyer": "internet service providers (ISP) technicians",
+        "anchor_phrase": "bluetooth signal strength analyzer",
+        "offer_copy": "For ISP technicians who need precise tools to evaluate and optimize client network installations but find existing options unreliable, we offer a robust 'bluetooth signal strength analyzer' that ensures accurate evaluations without unnecessary downtime.",
+        "landing_page_headline": "Optimize Client Networks with Precision Signal Analyzers"
+      }
+    ],
+    "next_action": "Create a detailed educational content plan targeting \"wifi signal strength map\" and \"wifi troubleshooting tools\" phrases to boost awareness and interest.",
+    "reasoning": "The demand signals indicate a moderate level of interest and urgency among small business IT specialists and tech enthusiasts, but there is low search demand, suggesting the need for education to gain traction. Buyer willingness to pay is high, which is promising, but the MVP may be complex to build, and advantage over other tools isn't clear. By educating the market, you can increase demand and interest, gradually leading to higher adoption and purchase intent."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/WifiBluetoothMap"
+  }
+}

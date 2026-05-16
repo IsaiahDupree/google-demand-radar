@@ -1,0 +1,306 @@
+{
+  "source_text": "VideoPackaging4\n\n## README\n\n# VideoPackaging4 - Robust Video Processing Workflow\n\nA comprehensive system for optimizing, uploading, and distributing video content across multiple platforms with advanced tracking capabilities.\n\n## Features\n\n- **Video Optimization**: Efficiently reduce video file sizes while maintaining quality\n- **Google Drive Integration**: Automatic uploads with CDN propagation handling\n- **Google Sheets Tracking**: Real-time progress tracking and status updates\n- **Multi-Platform Support**: Publish content to Instagram, TikTok, Threads, Twitter, and YouTube with a single command\n- **AI Caption Generation**: Auto-generate platform-specific captions using OpenAI\n- **Robust Error Handling**: Graceful recovery and detailed error reporting\n\n## Setup Instructions\n\n### 1. Environment Configuration\n\n1. Ensure your `.env` file contains all required API keys and configuration:\n   - `OPENAI_API_KEY`: For AI caption generation\n   - `BLOTATO_API_KEY`: For video uploads to social platforms\n   - `INSTAGRAM_ACCOUNT_ID`: Account ID for Instagram uploads\n   - `DEFAULT_SPREADSHEET_ID`: Google Sheets ID for tracking\n   - `DEFAULT_SHEET_NAME`: Default sheet name within spreadsheet\n\n### 2. Authentication Files\n\n1. **Google APIs Authentication**:\n   - Place your `client_secret.json` file in the project root directory\n   - This allows authentication with Google Drive and Google Sheets APIs\n\n### 3. Directory Structure\n\nThe system automatically creates and maintains these directories:\n\n- `logs/`: Contains detailed processing logs organized by date\n- `results/`: Stores result JSONs for completed workflows\n- `temp/`: Temporary storage for optimized videos\n- `cache/`: Caches resources to improve performance\n\n## Command-Line Interface\n\nThe system can be run using the simplified `video_packager.py` script:\n\n```bash\npython video_packager.py --video \"path/to/video.mp4\" --row-id 43\n```\n\n### Common Usage Patterns\n\n#### Basic Processing\n\n```bash\npython video_packager.py --video \"path/to/video.mp4\" --output-dir \"./output\"\n```\n\n#### With Google Sheets Tracking\n\n```bash\npython video_packager.py --video \"path/to/video.mp4\" --spreadsheet-id \"YOUR_SPREADSHEET_ID\" --row-id 43 --sheet-name \"Sheet5\"\n```\n\n#### Platform-Specific Processing\n\n```bash\npython video_packager.py --video \"path/to/video.mp4\" --platform instagram --quality high\n```\n\n#### Multi-Platform Publishing\n\n```bash\npython video_packager.py --video \"path/to/video.mp4\" --post-to-all --spreadsheet-id \"YOUR_SPREADSHEET_ID\" --row-id 43\n```\n\n#### Multi-Platform with Exclusions\n\n```bash\npython video_packager.py --video \"path/to/video.mp4\" --post-to-all --blacklist \"228,571\" --spreadsheet-id \"YOUR_SPREADSHEET_ID\" --row-id 43\n```\n\n### Advanced Usage\n\nFor more advanced usage, you can use the robust_workflow.py module directly:\n\n```python\nfrom instagram_batch.robust_workflow import process_video\n\nresult = process_video(\n    video_path=\"path/to/video.mp4\",\n    output_dir=\"./output\",\n    spreadsheet_id=\"YOUR_SPREADSHEET_ID\",\n    row_id=43,\n    sheet_name=\"Sheet5\"\n)\n```\n\n## Troubleshooting\n\n### Common Issues\n\n1. **Missing client_secret.json**:\n   - Error: \"No client secrets file found. Cannot authenticate.\"\n   - Solution: Ensure `client_secret.json` is in the project root directory\n\n2. **API Key Issues**:\n   - Error: \"No Blotato API key provided\"\n   - Solution: Check your `.env` file for the correct API keys\n\n3. **Google Sheets Permission Issues**:\n   - Error: \"Unable to access spreadsheet\"\n   - Solution: Ensure you've shared the spreadsheet with the email in your Google API credentials\n\n### Log Files\n\n- Check the logs directory (`./logs/YYYY-MM/YYYYMMDD/`) for detailed logs\n- Daily summaries are stored in `./logs/YYYY-MM/YYYYMMDD/summary_YYYYMMDD.log`\n\n## Maintenance\n\n### Archiving\n\nOld logs and results can be archived by running:\n\n```bash\npython tools/archive_logs.py --days 30\n```\n\nThis moves files older than 30 days to the archive directories.\n\n### Clean Temp Files\n\nTo clean temporary files:\n\n```bash\npython tools/clean_temp.py",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "VideoPackaging4",
+    "one_liner": "A system for optimizing, uploading, and distributing videos across platforms with tracking.",
+    "core_promise": "Simplifies video content distribution by automating optimization, upload, and progress tracking.",
+    "domain": "video processing and distribution",
+    "buyers": [
+      {
+        "persona": "social media managers",
+        "awareness_level": "solution_aware",
+        "pain": "Struggling to manually upload and track videos on multiple platforms.",
+        "candidate_phrases": [
+          "video upload tool for social media",
+          "multi platform video distribution",
+          "social media video automation tool",
+          "upload video to multiple sites",
+          "track video upload progress"
+        ]
+      },
+      {
+        "persona": "small business owners",
+        "awareness_level": "problem_aware",
+        "pain": "Finding it time-consuming to edit, optimize, and distribute video content across different platforms.",
+        "candidate_phrases": [
+          "how to distribute video content",
+          "posting videos on multiple social media",
+          "optimize video for social media",
+          "how to upload video to instagram and youtube",
+          "reduce video file size for uploading"
+        ]
+      },
+      {
+        "persona": "content creators",
+        "awareness_level": "solution_aware",
+        "pain": "Need to efficiently manage video uploads and ensure they meet each platform's requirements.",
+        "candidate_phrases": [
+          "automate video uploads for youtube",
+          "optimize video for tiktok and instagram",
+          "caption generator for videos",
+          "best tool for video distribution",
+          "efficient video workflow for creators"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 3,
+      "advantage": 1,
+      "rationale": "The buyer urgency is moderate since social media managers and creators are continually seeking efficiency. MVP ease is low due to the complexity of integrating multiple APIs and developing robust error handling. Distribution fit is average; specific searches suggest social media managers and creators could find it through targeted advertising. Retention potential is fair, as users producing regular content may need it ongoing. Advantage score is low due to lack of mentioned edge or proprietary technology."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "video upload tool for social media",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "multi platform video distribution",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media video automation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "upload video to multiple sites",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "track video upload progress",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to distribute video content",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "posting videos on multiple social media",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "optimize video for social media",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to upload video to instagram and youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "reduce video file size for uploading",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate video uploads for youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "optimize video for tiktok and instagram",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "caption generator for videos",
+      "volume": 320,
+      "cpc": 4.11,
+      "competition": 0.37,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best tool for video distribution",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "efficient video workflow for creators",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "caption generator for videos",
+      "volume": 320,
+      "cpc": 4.11,
+      "competition": 0.37,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "upload video to multiple sites",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to distribute video content",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "video upload tool for social media",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "multi platform video distribution",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media video automation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "track video upload progress",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "posting videos on multiple social media",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 2.6950051766649796,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 2.055,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 1,
+    "retention_potential": 3,
+    "total": 16.750005176664978
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "social media managers",
+        "anchor_phrase": "upload video to multiple sites",
+        "offer_copy": "For social media managers who want seamless video distribution but find it inefficient to upload manually, we offer an automated tool that uploads your videos to multiple sites so you can save time without missing out on platform-specific requirements.",
+        "landing_page_headline": "Automate Video Uploads Across Platforms"
+      },
+      {
+        "buyer": "small business owners",
+        "anchor_phrase": "how to distribute video content",
+        "offer_copy": "For small business owners who see value in video marketing but find the process tedious, our platform simplifies how to distribute video content widely, allowing you to engage more viewers without sacrificing efficiency.",
+        "landing_page_headline": "Easily Distribute Videos to Engage More"
+      },
+      {
+        "buyer": "content creators",
+        "anchor_phrase": "caption generator for videos",
+        "offer_copy": "For content creators who need to make videos accessible but struggle with manual captioning, we provide a powerful caption generator so they can boost engagement without the hassle of manual editing.",
+        "landing_page_headline": "Generate Video Captions Instantly"
+      }
+    ],
+    "next_action": "Ship 3 landing pages for the top phrases and burn $50 on Google Search ads to test messaging and capture early interest and feedback.",
+    "reasoning": "The concept faces moderate search demand and buyer urgency, but willingness to pay is low and there is little unique advantage evident. Social media managers seem to have the clearest intent related to distribution automation, but overall search competition is low, suggesting limited existing demand. The risk lies in building features not directly linked to clear buying intent, hence the need to validate messaging and see if more compelling demand can be created with targeted offers."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/VideoPackaging4"
+  }
+}

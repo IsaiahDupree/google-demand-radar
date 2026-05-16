@@ -1,0 +1,324 @@
+{
+  "slug": "dupreeops",
+  "source_concept": "DupreeOps Business Site Template",
+  "generated_at": "2026-05-16T17:15:05.391Z",
+  "cross_vertical_insight": "Many verticals share a common need for compliance and credibility in their online presence to satisfy corporate partners and clients. These factors are crucial for B2B relationships across industries like law, consulting, fintech, real estate, and manufacturing. The major buying trigger is often the requirement for a compliant and professional appearance to efficiently pass partner and vendor verification.",
+  "verticals": [
+    {
+      "name": "real estate agencies focused on commercial properties",
+      "icp": "Small real estate agencies, 5-15 agents, specializing in commercial properties, needing to effectively communicate professional and compliant services online.",
+      "rationale": "These agencies need their online presence to validate their professionalism and compliance, crucial for gaining trust in the commercial real estate sector.",
+      "phrases": [
+        {
+          "phrase": "real estate agency website template",
+          "volume": 10,
+          "cpc": 19.08,
+          "competition": 1,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "compliance approved real estate website",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "commercial property website template",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to build a real estate compliance website",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best real estate website builders",
+          "volume": 260,
+          "cpc": 53.56,
+          "competition": 0.31,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 2.6055729142205895,
+      "bofu_density": 0.2,
+      "max_cpc": 53.56,
+      "top_phrase": "best real estate website builders",
+      "top_volume": 260,
+      "pmf_score": 5.163343748532354,
+      "pmf_breakdown": {
+        "demand_n": 0.5211145828441179,
+        "bofu_n": 0.2,
+        "cpc_n": 1,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "small law firms specializing in business law",
+      "icp": "Small law firms, 2-5 lawyers, specializing in business law, needing a professional and compliant online presence to gain trust from corporate clients and their partners.",
+      "rationale": "These firms need to project professionalism and meet compliance criteria to attract and serve business clients, making a ready-to-use, verifiable website template attractive.",
+      "phrases": [
+        {
+          "phrase": "business law firm website template",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "compliance website template for law firms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "law firm site template for validation",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to create a professional law firm website",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best website builder for small law firms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "law firm website compliance requirements",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "business law firm website template",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "consulting firms working with corporate clients",
+      "icp": "Boutique consulting firms with 5-20 employees serving corporate clients, needing to ensure credibility and compliance in their online presentations.",
+      "rationale": "Consulting firms rely on their online presence for credibility; a verifiable, customizable site template ensures they meet standard corporate compliance needs.",
+      "phrases": [
+        {
+          "phrase": "business consulting site template",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "consulting firm website compliance",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy consulting website template",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "professional website template for consultants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "consulting website validation checklist",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best website builder for consulting firms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "business consulting site template",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "b2b service providers in fintech industry",
+      "icp": "Small to medium-sized fintech service providers, 10-50 employees, needing a compliant online presence to satisfy vendor and partner verification processes.",
+      "rationale": "Fintech service providers must comply with strict regulations. A professional website optimized for compliance checks can help them establish necessary online credibility.",
+      "phrases": [
+        {
+          "phrase": "fintech service provider website template",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "compliance-ready fintech website design",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy fintech website template",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "fintech website compliance requirements",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "professional fintech site template",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "fintech service provider website template",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "manufacturers with b2b sales",
+      "icp": "Manufacturing companies, 20-100 employees, dealing in B2B sales, requiring a compliance-optimized online site for strengthening business partner trust.",
+      "rationale": "Manufacturers need to maintain a credible site for verifying business transactions and compliance with partner requirements.",
+      "phrases": [
+        {
+          "phrase": "manufacturer b2b website template",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "compliance certified manufacturing site",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "customizable website template for manufacturers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "manufacturing website compliance standards",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy manufacturing company website design",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "manufacturer b2b website template",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    }
+  ]
+}

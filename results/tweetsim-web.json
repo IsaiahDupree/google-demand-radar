@@ -1,0 +1,306 @@
+{
+  "source_text": "tweetsim-web\n\n## README\n\n# tweetsim-web\n\nNext.js 14 frontend for **tweetsim.app** — the paid web app on top of\n`twitter_scoring`.\n\nThis is a **v0 alpha**: landing page + `/score` demo wire end-to-end\nagainst either a local mock (`TWEETSIM_USE_MOCK=1`) or a real FastAPI\nsim backend. Other routes (`/generate`, `/history`, `/calibrate`,\n`/persona`, `/billing`) are placeholders pointing at the PRDs that\nspec them.\n\n## Quick start\n\n```bash\ncd tweetsim-web\nnpm install\ncp .env.example .env.local\nnpm run dev\n# open http://localhost:3000\n```\n\n`TWEETSIM_USE_MOCK=1` ships in `.env.example` so the demo works without\na backend. Flip to `0` and point `NEXT_PUBLIC_SIM_API_URL` at a running\nFastAPI instance (see `tweetsim-api/`) for real scoring.\n\n## Stack\n\n- Next.js 14 App Router (server + client components)\n- Tailwind 3 with CSS variable tokens (matches `PRD_TWEETSIM_UX_SPEC.md`)\n- TypeScript strict\n- Dark mode default (light supported by toggling `<html class=\"dark\">`)\n\n## File map\n\n```\napp/\n  layout.tsx                top-level shell + nav\n  page.tsx                  landing\n  api/score/route.ts        proxy to FastAPI (or mock)\n  score/                    standalone /score\n  generate/                 placeholder\n  history/                  placeholder\n  calibrate/                placeholder\n  persona/                  placeholder\n  billing/                  placeholder\ncomponents/\n  TopNav.tsx\n  LandingScoreDemo.tsx      paste-and-explain card (working)\n  ScoreResultCard.tsx       phoenix breakdown + decision pill\nlib/\n  types.ts                  ScoreResult / GenerateResult shapes\n```\n\n## Specs\n\n- `../StrategyThread/PRD_TWEET_SIM_SAAS.md` — product/business spec\n- `../StrategyThread/PRD_TWEETSIM_UX_SPEC.md` — full UX spec (this is what\n  the design should be built against)\n\n## Deploy\n\nSee `../StrategyThread/DEPLOY_TWEETSIM.md`.\n\nDescription: tweetsim.app — paid web app on top of twitter_scoring",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "TweetSim Web App",
+    "one_liner": "A web app that analyzes and scores tweets based on specific criteria.",
+    "core_promise": "Get insightful and actionable scoring of tweets to improve social media strategy.",
+    "domain": "social media analytics",
+    "buyers": [
+      {
+        "persona": "social media managers",
+        "awareness_level": "solution_aware",
+        "pain": "Struggling to assess and improve tweet performance efficiently.",
+        "candidate_phrases": [
+          "tweet scoring tool",
+          "analyze tweet engagement",
+          "social media post score",
+          "twitter analytics software",
+          "best twitter analysis tool"
+        ]
+      },
+      {
+        "persona": "content creators",
+        "awareness_level": "solution_aware",
+        "pain": "Need a reliable tool to predict tweet success and optimize content.",
+        "candidate_phrases": [
+          "tool to improve tweet performance",
+          "tweet optimization software",
+          "predict tweet engagement",
+          "twitter content analysis",
+          "optimize tweets for more likes"
+        ]
+      },
+      {
+        "persona": "digital marketing agencies",
+        "awareness_level": "solution_aware",
+        "pain": "Difficulty in evaluating and adjusting client's Twitter campaigns.",
+        "candidate_phrases": [
+          "client twitter analytics",
+          "social media scoring tools",
+          "best twitter campaign analyzer",
+          "tweet performance metrics",
+          "agency twitter tool"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 3,
+      "distribution_fit": 3,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "The buyers have moderate urgency as the tool addresses optimization and performance issues that are not immediately critical but important for strategic improvement. MVP development is moderate given the technical baseline provided by the existing framework, yet requires time for effective analytics integration. Distribution through SEO and social media ads is plausible, but not overly cheap or obvious. Retention potential is average as subscription renewals depend on perceived analytics accuracy and value. No evidence of an unfair advantage in the market is evident from the description."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "tweet scoring tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "analyze tweet engagement",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media post score",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "twitter analytics software",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best twitter analysis tool",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tool to improve tweet performance",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tweet optimization software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "predict tweet engagement",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "twitter content analysis",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "optimize tweets for more likes",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "client twitter analytics",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media scoring tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best twitter campaign analyzer",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tweet performance metrics",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "agency twitter tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "twitter analytics software",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best twitter analysis tool",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "twitter content analysis",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tweet scoring tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "analyze tweet engagement",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media post score",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tool to improve tweet performance",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tweet optimization software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 1.5868998267261993,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 3,
+    "distribution_fit": 3,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 17.0868998267262
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "social media managers",
+        "anchor_phrase": "best twitter analysis tool",
+        "offer_copy": "For social media managers who want to boost tweet performance but waste time on ineffective tactics, we offer an easy-to-use software that scores tweets based on engagement potential so they can optimize content without guesswork.",
+        "landing_page_headline": "Boost Your Tweets with the Best Analysis Tool"
+      },
+      {
+        "buyer": "content creators",
+        "anchor_phrase": "twitter content analysis",
+        "offer_copy": "For content creators needing to predict tweet success but feeling overwhelmed by analytics, we provide a simple analysis tool to score and optimize tweets, ensuring better engagement without spending hours on data.",
+        "landing_page_headline": "Enhance Twitter Engagement with Content Analysis"
+      },
+      {
+        "buyer": "digital marketing agencies",
+        "anchor_phrase": "analyze tweet engagement",
+        "offer_copy": "For digital marketing agencies struggling to evaluate client campaigns on Twitter but needing reliable data, we offer a specialized tool to analyze tweet engagement, enabling actionable insights without missing client deadlines.",
+        "landing_page_headline": "Streamline Client Campaigns with Engagement Analysis"
+      }
+    ],
+    "next_action": "Create educational content targeting each persona to nurture interest and demonstrate TweetSim Web App's unique value propositions.",
+    "reasoning": "The verdict 'Educate Later' indicates that while there is some demand and urgency, the search interest and willingness to pay are low, necessitating an educational approach. The key risk is the low search demand which can stem from lack of awareness about the utility or existence of such a tool. Starting with educational content can help build this awareness and interest, paving the way for future demand."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/tweetsim-web"
+  }
+}

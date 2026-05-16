@@ -1,0 +1,306 @@
+{
+  "source_text": "Dockerized MongoDb Atlas search\n\n## README\n\n# Dockerized MongoDB Atlas Search API\n\nA containerized search and ingest API for MongoDB Atlas with vector search capabilities, built with FastAPI and Docker.\n\n## Features\n\n- Vector search for product data using MongoDB Atlas Search with knnBeta\n- Local embeddings generation using `paraphrase-multilingual-MiniLM-L12-v2` model (optimized for Norwegian and Swedish)\n- Faceted search results for e-commerce applications\n- **Consolidated search** endpoint for unified category, brand, and product results\n- Multiple search strategies: exact matching, ngram matching, and vector search\n- Product recommendations based on purchase history\n- Simple API key authorization\n- Dockerized deployment with MongoDB and FastAPI\n\n## Prerequisites\n\n- Docker and Docker Compose\n- MongoDB Atlas account (optional, can use local MongoDB instead)\n- Python 3.9+ (for local development)\n\n## Quick Start\n\n1. Clone the repository\n2. Create a `.env` file from the example\n   ```bash\n   cp .env.example .env\n   ```\n3. Update the `.env` file with your MongoDB Atlas connection string (if using Atlas)\n4. Build and start the containers\n   ```bash\n   docker-compose up -d --build\n   ```\n5. Access the API documentation at http://localhost:8000/docs\n\n## Configuration\n\n### Environment Variables\n\n- `MONGODB_URI`: MongoDB connection string \n  - Local: `mongodb://mongodb:27017/productdb`\n  - Atlas: `mongodb+srv://<username>:<password>@<cluster>.mongodb.net/productdb?retryWrites=true&w=majority`\n- `API_KEY`: Secret API key for authorization\n\n## MongoDB Atlas Setup\n\nFor production use with MongoDB Atlas:\n\n1. Create a MongoDB Atlas cluster if you don't have one\n2. Create a vector search index on the `products` collection\n   - Index name: `product_search`\n   - Configure vector fields:\n     - `title_embedding`: 384 dimensions, cosine similarity\n     - `description_embedding`: 384 dimensions, cosine similarity\n\n## API Endpoints\n\n### Products\n\n- `POST /ingest/products`: Ingest product data with automatic embedding generation\n- `GET /doc/{product_id}`: Retrieve a specific product by ID\n- `DELETE /remove/product/{product_id}`: Remove a specific product\n- `DELETE /remove/products/all`: Remove all products\n\n### Orders\n\n- `POST /ingest/orderlines`: Ingest order line data for recommendations\n- `DELETE /remove/order/{order_id}`: Remove a specific order\n- `DELETE /remove/orders/all`: Remove all orders\n- `DELETE /remove/orders/user/{user_id}`: Remove all orders for a specific user\n\n### Recommendations\n\n- `POST /recommend/content/{product_id}`: Get content-based recommendations\n- `POST /recommend/collaborative/{user_id}`: Get collaborative filtering recommendations\n- `POST /recommend/hybrid/{user_id}`: Get hybrid recommendations combining multiple strategies\n\n### Search\n\n- `POST /search`: Main search endpoint with combined keyword and vector search\n- `POST /consolidated-search`: Unified search for categories, brands, and products in a single response\n- `POST /autosuggest`: Lightweight search for autocomplete functionality\n- `POST /query-explain`: Debug endpoint to explain search behavior\n- `POST /feedback`: Log user feedback for future improvements\n\n### Utility\n\n- `GET /health`: Health check endpoint\n\n## API Documentation\n\nDetailed API documentation is available at:\n- Swagger UI: http://localhost:8000/docs\n- ReDoc: http://localhost:8000/redoc\n\n## Local Development\n\nFor local development without Docker:\n\n1. Create a virtual environment\n   ```bash\n   python -m venv venv\n   source venv/bin/activate  # On Windows: venv\\Scripts\\activate\n   ```\n\n2. Install dependencies\n   ```bash\n   pip install -r requirements.txt\n   ```\n\n3. Run the application\n   ```bash\n   cd app\n   uvicorn main:app --reload\n   ```\n\n## Testing\n\nIncluded in the project is a comprehensive test script `test_endpoints.py` that validates all functionality:\n\n```bash\n# Run all tests\npython test_endpoints.py\n```\n\nYou can also use the Swagger UI or curl for manual testing:\n\n```bash\n# Health check\ncurl -X GET http://localhost:8000/health\n\n# I",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "MongoDB Atlas Vector Search API",
+    "one_liner": "A containerized API enabling vector search capabilities for MongoDB Atlas.",
+    "core_promise": "Easily deploy a scalable vector search API for product data using MongoDB Atlas.",
+    "domain": "developer tooling",
+    "buyers": [
+      {
+        "persona": "Data engineers at e-commerce companies",
+        "awareness_level": "problem_aware",
+        "pain": "Struggling with implementing efficient product search and recommendations systems.",
+        "candidate_phrases": [
+          "ecommerce product search api",
+          "efficient product search system",
+          "mongodb atlas search ecommerce",
+          "product recommendation engine api",
+          "vector search for ecommerce"
+        ]
+      },
+      {
+        "persona": "Technical co-founders of startups",
+        "awareness_level": "solution_aware",
+        "pain": "Need a flexible API solution to integrate advanced search capabilities without extensive development resources.",
+        "candidate_phrases": [
+          "dockerized search api",
+          "vector search api solution",
+          "mongodb vector search setup",
+          "fastapi mongodb deployment",
+          "docker build search api"
+        ]
+      },
+      {
+        "persona": "DevOps engineers at SaaS companies",
+        "awareness_level": "solution_aware",
+        "pain": "Require reliable and scalable containerized solutions for search functionalities.",
+        "candidate_phrases": [
+          "docker search api deployment",
+          "mongodb atlas devops",
+          "containerized api for search",
+          "fastapi docker setup",
+          "deploy mongodb search api"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 3,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "The buyer urgency is moderate as companies often look to improve search functionalities but may not require immediate solutions. MVP ease is moderate because although Docker and FastAPI simplify deployment, integrating with MongoDB Atlas for feature-rich search adds complexity. Distribution fit is fairly high due to the technical nature of the audience which can be targeted effectively through online channels. Retention potential is moderate since search capabilities are often integral but not daily managed solutions. Advantage is low due to the lack of a stated unique edge; many companies provide similar integrations and feature sets."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "ecommerce product search api",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Data engineers at e-commerce companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "efficient product search system",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Data engineers at e-commerce companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "mongodb atlas search ecommerce",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Data engineers at e-commerce companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "product recommendation engine api",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Data engineers at e-commerce companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "vector search for ecommerce",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Data engineers at e-commerce companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "dockerized search api",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical co-founders of startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "vector search api solution",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical co-founders of startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "mongodb vector search setup",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical co-founders of startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "fastapi mongodb deployment",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical co-founders of startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "docker build search api",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical co-founders of startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "docker search api deployment",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "DevOps engineers at SaaS companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "mongodb atlas devops",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "DevOps engineers at SaaS companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "containerized api for search",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "DevOps engineers at SaaS companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "fastapi docker setup",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "DevOps engineers at SaaS companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "deploy mongodb search api",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "DevOps engineers at SaaS companies",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "fastapi docker setup",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "DevOps engineers at SaaS companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ecommerce product search api",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Data engineers at e-commerce companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "efficient product search system",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Data engineers at e-commerce companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "mongodb atlas search ecommerce",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Data engineers at e-commerce companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "product recommendation engine api",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Data engineers at e-commerce companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "vector search for ecommerce",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Data engineers at e-commerce companies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "dockerized search api",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical co-founders of startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "vector search api solution",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical co-founders of startups",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 1.10810534993878,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 3,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 17.608105349938782
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "Data engineers at e-commerce companies",
+        "anchor_phrase": "mongodb atlas search ecommerce",
+        "offer_copy": "For e-commerce data engineers who want to improve search and recommendation systems but struggle with current solutions, we offer a MongoDB Atlas Vector Search API that easily integrates to enhance search efficiency without requiring complex changes.",
+        "landing_page_headline": "Boost MongoDB Atlas For E-commerce Searches"
+      },
+      {
+        "buyer": "Technical co-founders of startups",
+        "anchor_phrase": "dockerized search api",
+        "offer_copy": "For startup co-founders who need better search capabilities but cannot devote time to extensive development, we provide a Dockerized Vector Search API that delivers advanced search integration effortlessly so they can focus on product growth.",
+        "landing_page_headline": "Integrate Fast: Dockerized Vector Search API"
+      },
+      {
+        "buyer": "DevOps engineers at SaaS companies",
+        "anchor_phrase": "fastapi docker setup",
+        "offer_copy": "For DevOps engineers at SaaS companies who need reliable containerized solutions but face resource limitations, we deliver a seamless FastAPI Docker Setup for leveraging MongoDB Atlas Vector Search to ensure scalability without the hassle.",
+        "landing_page_headline": "Effortless FastAPI Docker for Scalable Search"
+      }
+    ],
+    "next_action": "Conduct interviews with 5-10 target users to test solution fit and refine positioning based on their feedback.",
+    "reasoning": "The verdict is 'Educate Later' due to the very low search demand across all persona target phrases, indicating that the problem is not widely recognized or top-of-mind for the buyers. Although there is moderate buyer urgency and the distribution fit is strong, these are outweighed by the lack of existing search interest and low willingness to pay. This suggests a need for substantial market education and validation through direct user engagement before further investment."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/Dockerized MongoDb Atlas search"
+  }
+}

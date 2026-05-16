@@ -1,0 +1,308 @@
+{
+  "slug": "chatwithplatformdata",
+  "source_concept": "ChatWithPlatformData",
+  "generated_at": "2026-05-16T17:12:53.215Z",
+  "cross_vertical_insight": "Across these verticals, the common thread is the necessity to analyze social media data to optimize engagement and performance. Each vertical requires a specialized understanding of their respective audiences, making tailored analytics solutions attractive. Buyers in these sectors are increasingly driven by the need for user-friendly tools that deliver insights without requiring advanced technical skills.",
+  "verticals": [
+    {
+      "name": "e-commerce brands with social media presence",
+      "icp": "Small to medium e-commerce brands selling through platforms like Instagram and Facebook, run by teams of 5-20 with a dedicated social media manager.",
+      "rationale": "These businesses rely heavily on social media analytics to optimize their marketing strategies and increase sales.",
+      "phrases": [
+        {
+          "phrase": "social media analytics tool for e-commerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "analyze instagram data for sales",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best social media tools for small e-commerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to analyze facebook ad performance",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0.22,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy social media analytics software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0.8280004035947847,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "how to analyze facebook ad performance",
+      "top_volume": 10,
+      "pmf_score": 2.2968002421568707,
+      "pmf_breakdown": {
+        "demand_n": 0.16560008071895693,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "restaurant chains with active social media campaigns",
+      "icp": "Regional restaurant chains with 5-25 locations, employing marketing teams focused on local social media content and engagement strategies.",
+      "rationale": "Restaurant chains use social media analytics to measure campaign effectiveness and customer engagement, crucial for local promotions.",
+      "phrases": [
+        {
+          "phrase": "best social media analytics for restaurants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "analyzing customer engagement on instagram",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "social media tools for restaurant marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to track facebook ad success for restaurants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "restaurant social media analytics software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "best social media analytics for restaurants",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "political campaign teams",
+      "icp": "Medium to large political organizations running campaigns with teams analyzing voter engagement through social media, data teams of 10-50 people.",
+      "rationale": "Campaign teams need effective tools to analyze voter sentiment and engagement on social media to tailor their messages and strategies.",
+      "phrases": [
+        {
+          "phrase": "political campaign social media analysis tool",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "facebook analytics for political campaigns",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "analyze voter sentiment on twitter",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best tools for political social media strategies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to track social media engagement for campaigns",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "political campaign social media analysis tool",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "real estate agencies focusing on digital marketing",
+      "icp": "Large real estate agencies with 50+ agents, heavily invested in online and social media marketing to drive lead generation and brand awareness.",
+      "rationale": "Real estate agencies analyze social media data to understand potential buyers' and sellers' interests and optimize their outreach efforts.",
+      "phrases": [
+        {
+          "phrase": "real estate social media data analysis",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "tools to track social media leads for real estate",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best social media analytics for real estate",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to analyze property trends on instagram",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy social media tools for real estate agencies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "real estate social media data analysis",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "non-profits focusing on online engagement and fundraising",
+      "icp": "Medium-sized non-profits with dedicated teams for digital outreach and fundraising, often working with consultants to maximize impact via social media.",
+      "rationale": "Non-profits use social media data to boost engagement, optimize donor outreach, and track fundraising campaign success.",
+      "phrases": [
+        {
+          "phrase": "social media analytics for non-profits",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to track online donations from social media",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "analytics tools for non-profit campaigns",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best facebook analytics for charity promotions",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy social media analysis tools for fundraising",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "social media analytics for non-profits",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "source_text": "MediaPoster-clean\n\n## README\n\n# MediaPoster - Modular macOS Social Video Automation System\n\n> Automate the journey from raw iPhone footage to viral social media content with AI-powered analysis, intelligent highlight detection, and multi-platform distribution.\n\n## 🎯 **NEW TO THIS PROJECT?** \n👉 **Start here:** [`START_HERE.md`](./START_HERE.md) - Quick 3-step setup guide  \n👉 **Understanding structure:** [`ONBOARDING_GUIDE.md`](./ONBOARDING_GUIDE.md) - Complete navigation guide  \n👉 **Project structure:** [`PROJECT_STRUCTURE.md`](./PROJECT_STRUCTURE.md) - Directory map\n\n## 📋 **SCRIPTS & TOOLS INDEX**\n👉 **[`SCRIPTS_AND_TOOLS.md`](./SCRIPTS_AND_TOOLS.md)** — Master reference for all publishing, scheduling, automation, and monitoring scripts  \n👉 **[`Backend/scripts/SCHEDULING_TOOLS.md`](./Backend/scripts/SCHEDULING_TOOLS.md)** — Detailed scheduling & planning CLI docs with examples\n\n## 🎯 Overview\n\nMediaPoster is a comprehensive automation system that transforms long-form videos from your iPhone into optimized, viral-style short clips and automatically distributes them across multiple social media platforms. Built with modularity and scalability in mind, each component can operate independently or as part of an integrated pipeline.\n\n### Key Features\n\n- 📱 **Automated iPhone Sync**: Seamless video ingestion via iCloud Photos or USB\n- 🤖 **AI-Powered Analysis**: GPT-4 Vision, Whisper transcription, and intelligent scene detection\n- ✨ **Smart Highlight Detection**: Multi-signal analysis to find the most engaging moments\n- 🎬 **Viral Clip Generation**: Automatic captions, hooks, progress bars, and visual enhancements\n- 🌐 **Multi-Platform Distribution**: Post to Instagram, TikTok, YouTube, Twitter, and Threads via Blotato\n- 📊 **Performance Analytics**: Track engagement, identify winners, auto-delete low-performers\n- 🎨 **Watermark Removal**: AI-powered detection and removal with metadata cleaning\n- 📈 **Learning Loop**: Tag-based performance optimization and content strategy insights\n\n## 🏗️ Architecture\n\n```\nvideo ingestion → AI analysis → highlight detection → clip generation \n    → cloud staging → multi-platform upload → performance monitoring → data storage\n```\n\nEach module is standalone and can be deployed locally on Mac or in the cloud. See `ARCHITECTURE_PLAN.md` for complete technical details.\n\n## 🚀 Quick Start\n\n### Prerequisites\n\n- macOS 12.0+ (Apple Silicon recommended for local AI processing)\n- Python 3.10+\n- Node.js 18+\n- FFmpeg\n- PostgreSQL (or Supabase account)\n- Redis (for job queue)\n\n### Installation\n\n1. **Clone the repository**\n```bash\ngit clone <repository-url>\ncd MediaPoster\n```\n\n2. **Backend Setup**\n```bash\ncd backend\npython -m venv venv\nsource venv/bin/activate  # On Windows: venv\\Scripts\\activate\npip install -r requirements.txt\n\n# Copy and configure environment variables\ncp .env.example .env\n# Edit .env with your API keys and settings\n```\n\n3. **Database Setup**\n```bash\n# If using Supabase, run the schema in their SQL editor\n# If using local PostgreSQL:\npsql -U postgres -d mediaposter -f database/schema.sql\n```\n\n4. **Frontend Setup**\n```bash\ncd dashboard\nnpm install\nnpm run dev\n```\n\n5. **Start Services**\n```bash\n# Terminal 1: Start Redis\nredis-server\n\n# Terminal 2: Start Celery worker\ncd backend\ncelery -A main worker --loglevel=info\n\n# Terminal 3: Start FastAPI server\nuvicorn main:app --reload --port 8000\n\n# Terminal 4: Start Next.js dashboard\ncd dashboard\nnpm run dev\n```\n\nVisit http://localhost:3000 for the dashboard and http://localhost:8000/docs for API documentation.\n\n## 📁 Project Structure\n\n```\nMediaPoster/\n├── README.md                   # This file\n├── ARCHITECTURE_PLAN.md        # Detailed system design\n├── PROGRESS.md                 # Implementation status\n├── VideoPackaging4/            # Existing Python video processor (integrated)\n├── dashboard/                  # Next.js frontend\n│   ├── src/\n│   │   ├── app/               # Next.js 15 App Router\n│   │   ├── components/        # React components\n│   │   └── lib/           \n\nStack: PLpgSQL",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "MediaPoster",
+    "one_liner": "MediaPoster automates the creation and distribution of viral social media clips from iPhone videos.",
+    "core_promise": "Effortlessly transform iPhone videos into engaging social media clips that can go viral.",
+    "domain": "social media video automation",
+    "buyers": [
+      {
+        "persona": "social media managers for small businesses",
+        "awareness_level": "solution_aware",
+        "pain": "Struggling to create and manage engaging social media video content across multiple platforms.",
+        "candidate_phrases": [
+          "social media video automation tool",
+          "how to automate instagram posting",
+          "best social media scheduler for videos",
+          "social media highlight clip maker",
+          "ai tool to create viral videos"
+        ]
+      },
+      {
+        "persona": "content creators and influencers",
+        "awareness_level": "solution_aware",
+        "pain": "Need efficient ways to edit and distribute video content to multiple platforms without spending too much time.",
+        "candidate_phrases": [
+          "ai video editing software",
+          "automate tiktok video posting",
+          "best video editing app for social media",
+          "how to make viral videos quickly",
+          "multi platform video upload tool"
+        ]
+      },
+      {
+        "persona": "digital marketers",
+        "awareness_level": "problem_aware",
+        "pain": "Struggling to keep up with engaging content that resonates across various social media platforms.",
+        "candidate_phrases": [
+          "video content strategy tool",
+          "engaging social media content ideas",
+          "increase engagement with video marketing",
+          "social media post automation",
+          "best practices for video marketing",
+          "content distribution tools"
+        ]
+      },
+      {
+        "persona": "small video production studios",
+        "awareness_level": "product_aware",
+        "pain": "Need to optimize workflow for creating short-form video content for clients efficiently.",
+        "candidate_phrases": [
+          "best video editing software for mac",
+          "automated video editing tools",
+          "post production automation software",
+          "optimize video creation workflow",
+          "video editing for social media"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 4,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 4,
+      "advantage": 3,
+      "rationale": "Buyer urgency is high as creating engaging social media content is a continuous need. The MVP ease scores lower due to the complexity of developing automated video analysis and distribution technology. Distribution fit is high as social media ads and SEO can effectively reach this audience. Retention potential is strong because users could use the tool regularly if it integrates smoothly into their workflow. The advantage score reflects a moderate level due to unspecified differentiators but assuming the founder has some AI or video processing expertise."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "social media video automation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers for small businesses",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to automate instagram posting",
+      "volume": 9900,
+      "cpc": 12.3,
+      "competition": 0.13,
+      "source": "dataforseo",
+      "buyer": "social media managers for small businesses",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best social media scheduler for videos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers for small businesses",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media highlight clip maker",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers for small businesses",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai tool to create viral videos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers for small businesses",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai video editing software",
+      "volume": 1600,
+      "cpc": 7.03,
+      "competition": 0.2,
+      "source": "dataforseo",
+      "buyer": "content creators and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate tiktok video posting",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best video editing app for social media",
+      "volume": 320,
+      "cpc": 2.27,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "content creators and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to make viral videos quickly",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "multi platform video upload tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "video content strategy tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "engaging social media content ideas",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "increase engagement with video marketing",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media post automation",
+      "volume": 50,
+      "cpc": 17.55,
+      "competition": 0.33,
+      "source": "dataforseo",
+      "buyer": "digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best practices for video marketing",
+      "volume": 70,
+      "cpc": 16.28,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content distribution tools",
+      "volume": 90,
+      "cpc": 0,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best video editing software for mac",
+      "volume": 1000,
+      "cpc": 5.5,
+      "competition": 0.58,
+      "source": "dataforseo",
+      "buyer": "small video production studios",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated video editing tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small video production studios",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "post production automation software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small video production studios",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "optimize video creation workflow",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small video production studios",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "video editing for social media",
+      "volume": 260,
+      "cpc": 8.81,
+      "competition": 0.43,
+      "source": "dataforseo",
+      "buyer": "small video production studios",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "how to automate instagram posting",
+      "volume": 9900,
+      "cpc": 12.3,
+      "competition": 0.13,
+      "source": "dataforseo",
+      "buyer": "social media managers for small businesses",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai video editing software",
+      "volume": 1600,
+      "cpc": 7.03,
+      "competition": 0.2,
+      "source": "dataforseo",
+      "buyer": "content creators and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best video editing software for mac",
+      "volume": 1000,
+      "cpc": 5.5,
+      "competition": 0.58,
+      "source": "dataforseo",
+      "buyer": "small video production studios",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best video editing app for social media",
+      "volume": 320,
+      "cpc": 2.27,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "content creators and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "video editing for social media",
+      "volume": 260,
+      "cpc": 8.81,
+      "competition": 0.43,
+      "source": "dataforseo",
+      "buyer": "small video production studios",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content distribution tools",
+      "volume": 90,
+      "cpc": 0,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best practices for video marketing",
+      "volume": 70,
+      "cpc": 16.28,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media post automation",
+      "volume": 50,
+      "cpc": 17.55,
+      "competition": 0.33,
+      "source": "dataforseo",
+      "buyer": "digital marketers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 4.380357112812882,
+    "buyer_urgency": 4,
+    "willingness_to_pay": 5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 3,
+    "retention_potential": 4,
+    "total": 26.38035711281288
+  },
+  "verdict": "Build Now",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "social media managers for small businesses",
+        "anchor_phrase": "how to automate instagram posting",
+        "offer_copy": "For social media managers at small businesses who want to boost engagement but struggle with time-consuming post schedules, MediaPoster automatically creates and distributes viral social media clips so they can maintain an active presence without manual posting.",
+        "landing_page_headline": "Automate Instagram Posting with Viral Clips"
+      },
+      {
+        "buyer": "content creators and influencers",
+        "anchor_phrase": "ai video editing software",
+        "offer_copy": "For content creators and influencers who need high-quality video edits but find the process tedious, we provide AI-driven video editing software that transforms iPhone videos into engaging content ready for all your platforms without complex editing skills.",
+        "landing_page_headline": "Effortless AI Video Editing for Influencers"
+      },
+      {
+        "buyer": "digital marketers",
+        "anchor_phrase": "social media post automation",
+        "offer_copy": "For digital marketers who need effective social media posts but find managing multiple platforms challenging, MediaPoster automates video content distribution, ensuring consistently engaging posts without a time drain.",
+        "landing_page_headline": "Simplify Your Social Media Automation"
+      },
+      {
+        "buyer": "small video production studios",
+        "anchor_phrase": "best video editing software for mac",
+        "offer_copy": "For small video production studios striving for workflow efficiency but overwhelmed by manual editing, we supply the best video editing software for Mac that streamlines the creation of short-form content for clients without compromising quality.",
+        "landing_page_headline": "Optimize Video Editing on Mac Efficiently"
+      }
+    ],
+    "next_action": "Create landing pages for each buyer persona and run $100 of Google Ads targeting their anchor phrases, measuring click-through rates and conversions.",
+    "reasoning": "The verdict to 'Test First' stems from the strong search demand and high willingness to pay signals, coupled with challenges in MVP ease due to the technical complexity of automating video editing and distribution. There's viable interest across different buyer personas, but the primary risk lies in executing the technical promise efficiently. The test phase should validate assumptions about buyer conversion and fine-tune the product-market fit."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/MediaPoster-clean"
+  }
+}

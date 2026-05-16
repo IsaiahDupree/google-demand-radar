@@ -1,0 +1,302 @@
+{
+  "source_text": "EverReach — Personal CRM for Founders, Creators, and Networkers\n\nA lightweight personal CRM that captures contacts from anywhere (screenshots, voice memos, calendar invites, LinkedIn DMs, emails) and uses AI to generate follow-up reminders with full context — what you talked about, when you last met, what to say next.\n\nTarget: solo operators who meet 20+ new people per month and lose track of who to follow up with. Founders raising rounds, creators with sponsor pipelines, salespeople managing informal contact networks.\n\nDifferentiator from existing personal CRMs (Dex, Clay, Folk, Monica): AI-drafted follow-ups grounded in your own saved notes, not generic templates. Treats screenshots and voice memos as first-class inputs, not afterthoughts.\n",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "EverReach",
+    "one_liner": "A personal CRM using AI to organize and remind users about their professional contacts.",
+    "core_promise": "Effortlessly manage and remember interactions with a growing network.",
+    "domain": "personal CRM",
+    "buyers": [
+      {
+        "persona": "founders raising seed rounds",
+        "awareness_level": "solution_aware",
+        "pain": "Constantly meeting potential investors but struggling to track follow-ups and details from each meeting.",
+        "candidate_phrases": [
+          "best crm for seed stage founders",
+          "how to track investor meetings",
+          "ai crm for founders",
+          "personal crm for startups",
+          "organize investor follow ups"
+        ]
+      },
+      {
+        "persona": "content creators managing sponsorships",
+        "awareness_level": "problem_aware",
+        "pain": "Losing potential sponsorship deals due to disorganized network and missed follow-ups.",
+        "candidate_phrases": [
+          "how to manage sponsorship contacts",
+          "crm for content creators",
+          "organizing brand deals",
+          "tools to track sponsorships",
+          "managing influencer network"
+        ]
+      },
+      {
+        "persona": "salespeople managing informal networks",
+        "awareness_level": "solution_aware",
+        "pain": "Strain of staying on top of numerous informal contacts without a system in place.",
+        "candidate_phrases": [
+          "crm for informal sales contacts",
+          "best crm for freelance sales",
+          "personal contact management app",
+          "ai powered personal crm",
+          "tool for managing sales relationships"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3.5,
+      "mvp_ease": 2.5,
+      "distribution_fit": 4,
+      "retention_potential": 4,
+      "advantage": 2.5,
+      "rationale": "The buyer urgency is moderately high because maintaining professional relationships is crucial for founders, creators, and salespeople, but it's not immediate unless they're actively losing deals. MVP ease is moderate as AI integration and various input methods increase complexity. Distribution fit is high, as Google searches and social media ads can target these personas effectively. Retention potential is strong given the recurring need for a CRM with ongoing networking, but execution is key. The advantage is average as similar products exist, and differentiation relies on execution of features like AI integration and input methods."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "best crm for seed stage founders",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "founders raising seed rounds",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to track investor meetings",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "founders raising seed rounds",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai crm for founders",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "founders raising seed rounds",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "personal crm for startups",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "founders raising seed rounds",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "organize investor follow ups",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "founders raising seed rounds",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to manage sponsorship contacts",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing sponsorships",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "crm for content creators",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.54,
+      "source": "dataforseo",
+      "buyer": "content creators managing sponsorships",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "organizing brand deals",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing sponsorships",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools to track sponsorships",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing sponsorships",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "managing influencer network",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing sponsorships",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "crm for informal sales contacts",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "salespeople managing informal networks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best crm for freelance sales",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "salespeople managing informal networks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "personal contact management app",
+      "volume": 10,
+      "cpc": 2.58,
+      "competition": 0.45,
+      "source": "dataforseo",
+      "buyer": "salespeople managing informal networks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai powered personal crm",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "salespeople managing informal networks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tool for managing sales relationships",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "salespeople managing informal networks",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "crm for content creators",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.54,
+      "source": "dataforseo",
+      "buyer": "content creators managing sponsorships",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "personal contact management app",
+      "volume": 10,
+      "cpc": 2.58,
+      "competition": 0.45,
+      "source": "dataforseo",
+      "buyer": "salespeople managing informal networks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best crm for seed stage founders",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "founders raising seed rounds",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to track investor meetings",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "founders raising seed rounds",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai crm for founders",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "founders raising seed rounds",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "personal crm for startups",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "founders raising seed rounds",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "organize investor follow ups",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "founders raising seed rounds",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to manage sponsorship contacts",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing sponsorships",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 1.406921995101518,
+    "buyer_urgency": 3.5,
+    "willingness_to_pay": 1.29,
+    "mvp_ease": 2.5,
+    "distribution_fit": 4,
+    "advantage": 2.5,
+    "retention_potential": 4,
+    "total": 19.19692199510152
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "content creators managing sponsorships",
+        "anchor_phrase": "crm for content creators",
+        "offer_copy": "For content creators who want to secure more sponsorships but struggle to keep track of contacts, we offer an AI-based CRM designed to keep all your interactions organized so you never miss an opportunity, without needing to manually update your database.",
+        "landing_page_headline": "CRM for Content Creators to Secure More Deals"
+      },
+      {
+        "buyer": "salespeople managing informal networks",
+        "anchor_phrase": "personal contact management app",
+        "offer_copy": "For salespeople who nurture informal networks but find it difficult to remember every conversation, we provide a personal contact management app that uses AI to remind you of follow-ups and keep details at your fingertips, so you can maintain relationships without feeling overwhelmed.",
+        "landing_page_headline": "Personal Contact Management for Sales Success"
+      },
+      {
+        "buyer": "founders raising seed rounds",
+        "anchor_phrase": "ai crm for founders",
+        "offer_copy": "For founders meeting potential investors but overwhelmed by follow-ups, we offer an AI-powered CRM that organizes your contact history and reminds you of key meetings, ensuring no valuable connection falls through the cracks, and eliminating the hassle of manual tracking.",
+        "landing_page_headline": "AI CRM for Seed Stage Founders"
+      }
+    ],
+    "next_action": "Ship 3 landing pages for each target persona anchored to the top performing phrases and allocate $50 each for Google Search ads to test demand.",
+    "reasoning": "The verdict 'Educate Later' arises from the very low search demand and willingness to pay scores, suggesting that while potential interest exists, it's not matched by active search behavior or purchasing intent. The buyer urgency score is higher, indicating that those who feel the pain are likely to be receptive if educated well about the solution. Given these signals, the greatest risk lies in market awareness and activation; the next step is to test these waters through targeted education and advertisement."
+  }
+}

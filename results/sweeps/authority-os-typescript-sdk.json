@@ -1,0 +1,348 @@
+{
+  "slug": "authority-os-typescript-sdk",
+  "source_concept": "Authority OS TypeScript SDK",
+  "generated_at": "2026-05-16T16:45:24.375Z",
+  "cross_vertical_insight": "Across these verticals, the shared pain point is the need for efficient management and auditing of data visibility, often driven by compliance and data protection requirements. The common buying triggers include the need to streamline integration efforts and enhance compliance capabilities, particularly in tech-heavy sectors such as security, finance, and legal.",
+  "verticals": [
+    {
+      "name": "digital marketing agencies with data privacy focus",
+      "icp": "Mid-sized digital marketing agencies ($2-10M revenue) with dedicated technical teams focused on ensuring data compliance for multiple client accounts.",
+      "rationale": "These agencies need to manage client data visibility and entity audits across various marketing platforms, making them prime candidates to benefit from easy integration of Authority OS.",
+      "phrases": [
+        {
+          "phrase": "typescript sdk for data privacy",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "integrate authority os for marketing firms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "data compliance sdk for agencies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to manage client data visibility",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best practices for entity audits in marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "authority os sdk for marketing compliance",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "typescript sdk for data privacy",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "financial compliance departments in fintech startups",
+      "icp": "Small to mid-sized fintech startups (around $1-5M revenue) with technical compliance teams responsible for managing regulatory audits and data visibility.",
+      "rationale": "These startups face strict compliance requirements and need robust solutions for managing and auditing entity visibility across their systems.",
+      "phrases": [
+        {
+          "phrase": "typescript sdk for compliance audits",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "integrate authority os in fintech",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "visibility management for fintech developers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to audit fintech data visibility",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "sdk for fintech regulatory compliance",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "typescript tools for financial compliance",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "typescript sdk for compliance audits",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "cybersecurity firms specializing in data protection",
+      "icp": "Small, specialized cybersecurity firms (10-50 employees) offering third-party data protection and auditing services, looking to streamline technical integrations.",
+      "rationale": "These firms need tools to efficiently integrate and audit client systems for data protection compliance, making robust SDKs essential for operations.",
+      "phrases": [
+        {
+          "phrase": "typescript sdk for cybersecurity audits",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "authority os integration for security firms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "data protection sdk typescript",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "real-time audit tools for cybersecurity",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "entity visibility solutions for security audits",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to manage entity visibility in security",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "typescript sdk for cybersecurity audits",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "legal tech companies dealing with data governance",
+      "icp": "Emerging legal tech firms (under 100 employees) focused on developing software to support data governance and compliance for legal firms or corporate clients.",
+      "rationale": "These companies require seamless integration with data governance solutions like Authority OS to enhance their service offerings and maintain compliance.",
+      "phrases": [
+        {
+          "phrase": "typescript sdk for data governance",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "integrate authority os for legal tech",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "data visibility management for legal compliance",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "examples of sdk for legal data audits",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best typescript sdk for data governance",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to ensure data compliance in legal tech",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "typescript sdk for data governance",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "enterprise software companies with b2b integrations",
+      "icp": "Large enterprise software companies (over $50M revenue) that need to provide comprehensive data integration solutions to their B2B clients.",
+      "rationale": "These companies are likely to invest in SDKs that enhance their integration capabilities, particularly in regard to data management and compliance.",
+      "phrases": [
+        {
+          "phrase": "typescript sdk for enterprise integrations",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "authority os for b2b data integration",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "integrating entity visibility into software platforms",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "enterprise compliance sdk typescript",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best practices for b2b data audits",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "data visibility solutions for large enterprises",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "typescript sdk for enterprise integrations",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+TheLocalGrown — Social Platform for Backyard Gardeners
+
+A community-driven app where home gardeners share their garden progress, swap seeds and plants with neighbors, find local growers, and document their seasonal yields. Includes a map view of nearby growers and a marketplace for plants, seeds, tools, and 3D-printed garden accessories.
+
+Audience: 50M+ backyard gardeners in the US. No existing dominant social platform serves them; Facebook groups and Reddit communities are fragmented and full of spam.
+
+Revenue: marketplace transaction fees, premium grower profiles, sponsored seed/tool brand placements.

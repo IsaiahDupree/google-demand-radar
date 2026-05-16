@@ -1,0 +1,306 @@
+{
+  "source_text": "wifi-ble-location-mapper\n\n## README\n\n# WiFi & Bluetooth Location Detection System\r\n\r\nA comprehensive system for detecting and mapping WiFi, Bluetooth, and other line-of-sight communications with location tracking and VR/AR visualization.\r\n\r\n## Project Structure\r\n\r\n### Phase 1: Python Prototype\r\n- `python_prototype/` - Initial Python implementation\r\n- Real-time WiFi and Bluetooth scanning\r\n- GPS/location integration\r\n- Signal strength mapping\r\n- Data logging and visualization\r\n\r\n### Phase 2: Embedded Implementation\r\n- `cpp_embedded/` - C++ version for ESP32/Raspberry Pi\r\n- Optimized for low-power operation\r\n- Real-time data transmission\r\n- Hardware-specific optimizations\r\n\r\n### Phase 3: VR/AR Visualization\r\n- `vr_app/` - Unity-based VR/AR application\r\n- 3D visualization of signal strengths\r\n- Real-time location-based AR overlays\r\n- Interactive signal analysis\r\n\r\n## Hardware Requirements\r\n\r\n### ESP32 Version\r\n- ESP32 development board\r\n- GPS module (optional)\r\n- External antenna for better range\r\n\r\n### Raspberry Pi Version\r\n- Raspberry Pi 4B+ recommended\r\n- USB WiFi adapter (for dual-band scanning)\r\n- Bluetooth 5.0+ adapter\r\n- GPS HAT or USB GPS module\r\n\r\n## Features\r\n\r\n- **WiFi Detection**: SSID, BSSID, signal strength, channel, encryption\r\n- **Bluetooth Detection**: Device names, MAC addresses, signal strength, device types\r\n- **Location Tracking**: GPS coordinates, indoor positioning\r\n- **Signal Mapping**: Real-time heatmaps and 3D visualization\r\n- **Data Export**: JSON, CSV, KML formats\r\n- **VR Integration**: Immersive signal strength visualization\r\n\r\n## Installation\r\n\r\n```bash\r\n# Python prototype\r\ncd python_prototype\r\npip install -r requirements.txt\r\npython main.py\r\n\r\n# C++ embedded (after setup)\r\ncd cpp_embedded\r\nmake flash\r\n```\r\n\r\n## Usage\r\n\r\n1. Start the detection system\r\n2. Move around the area to scan\r\n3. View real-time data in web interface\r\n4. Export data for VR visualization\r\n5. Load in VR app for immersive analysis",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "WiFi & Bluetooth Location Detection System",
+    "one_liner": "A system for detecting, mapping, and visualizing WiFi and Bluetooth signals with VR/AR integration.",
+    "core_promise": "Visualize and analyze real-time WiFi and Bluetooth signal strengths in 3D for enhanced spatial awareness.",
+    "domain": "IoT/Location Tracking",
+    "buyers": [
+      {
+        "persona": "network engineers at large facilities",
+        "awareness_level": "solution_aware",
+        "pain": "Difficulties in assessing and optimizing network coverage and signal interference.",
+        "candidate_phrases": [
+          "wifi signal mapping tool",
+          "bluetooth signal mapping software",
+          "network coverage visualization",
+          "wifi heatmap software",
+          "bluetooth signal strength locator"
+        ]
+      },
+      {
+        "persona": "VR/AR developers working on physical environment mapping",
+        "awareness_level": "problem_aware",
+        "pain": "Need for tools to integrate live communication signal data into immersive environments.",
+        "candidate_phrases": [
+          "vr signal visualization tool",
+          "ar environment mapping solutions",
+          "integrating wifi signals into vr",
+          "real-time signal analysis for ar",
+          "3d network mapping tools"
+        ]
+      },
+      {
+        "persona": "security professionals and penetration testers",
+        "awareness_level": "solution_aware",
+        "pain": "Challenges in detecting unauthorized devices and potential security vulnerabilities in networks.",
+        "candidate_phrases": [
+          "bluetooth device detection software",
+          "wifi signal security tools",
+          "unauthorized wifi detection",
+          "bluetooth tracking software",
+          "network signal scanner"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "There is a moderate demand for network visualization tools among network engineers and VR/AR developers, with clear searches for similar tools. MVP development will require complex hardware and software integration, making it less easy to develop quickly. Distribution can fit moderately via targeted search and social channels. Retention is potentially average, as such tools might be used periodically but not daily by the buyers. The advantage is low due to a lack of specific edge or unique mechanism outlined in the idea description."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "wifi signal mapping tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "network engineers at large facilities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluetooth signal mapping software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "network engineers at large facilities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "network coverage visualization",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "network engineers at large facilities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "wifi heatmap software",
+      "volume": 210,
+      "cpc": 11.49,
+      "competition": 0.29,
+      "source": "dataforseo",
+      "buyer": "network engineers at large facilities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluetooth signal strength locator",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "network engineers at large facilities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "vr signal visualization tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "VR/AR developers working on physical environment mapping",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ar environment mapping solutions",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "VR/AR developers working on physical environment mapping",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "integrating wifi signals into vr",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "VR/AR developers working on physical environment mapping",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "real-time signal analysis for ar",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "VR/AR developers working on physical environment mapping",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "3d network mapping tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "VR/AR developers working on physical environment mapping",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluetooth device detection software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "security professionals and penetration testers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "wifi signal security tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "security professionals and penetration testers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "unauthorized wifi detection",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "security professionals and penetration testers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluetooth tracking software",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "security professionals and penetration testers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "network signal scanner",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "security professionals and penetration testers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "wifi heatmap software",
+      "volume": 210,
+      "cpc": 11.49,
+      "competition": 0.29,
+      "source": "dataforseo",
+      "buyer": "network engineers at large facilities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluetooth tracking software",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "security professionals and penetration testers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "wifi signal mapping tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "network engineers at large facilities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluetooth signal mapping software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "network engineers at large facilities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "network coverage visualization",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "network engineers at large facilities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "bluetooth signal strength locator",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "network engineers at large facilities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "vr signal visualization tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "VR/AR developers working on physical environment mapping",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ar environment mapping solutions",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "VR/AR developers working on physical environment mapping",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 2.494576405086721,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 20.494576405086722
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "network engineers at large facilities",
+        "anchor_phrase": "wifi heatmap software",
+        "offer_copy": "For network engineers who need to optimize coverage but struggle with manual assessments, we provide AI-driven WiFi heatmap software so they can visualize real-time network strength without guesswork and wasted time.",
+        "landing_page_headline": "Optimize Your Network with AI-Driven WiFi Heatmap Software"
+      },
+      {
+        "buyer": "VR/AR developers working on physical environment mapping",
+        "anchor_phrase": "ar environment mapping solutions",
+        "offer_copy": "For AR developers who map physical spaces but lack live data integration, we offer AR environment mapping solutions that visualize real-time Bluetooth and WiFi signals so they can build immersive environments without missing critical data integration.",
+        "landing_page_headline": "Integrate Real-Time Signal Data into AR Environments"
+      },
+      {
+        "buyer": "security professionals and penetration testers",
+        "anchor_phrase": "bluetooth tracking software",
+        "offer_copy": "For security professionals who need to find unauthorized devices but face hidden vulnerabilities, we offer Bluetooth tracking software to pinpoint threat locations without exhaustive sweeps and security gaps.",
+        "landing_page_headline": "Pinpoint Unauthorized Devices with Bluetooth Tracking"
+      }
+    ],
+    "next_action": "Ship a landing page for the 'wifi heatmap software' phrase and run a $50 Google Ads campaign targeting network engineers.",
+    "reasoning": "The analysis shows moderate interest but high willingness to pay, especially in network engineering, where 'wifi heatmap software' has a promising interest score and CPC. Although VR/AR and security have niche interests, their specific needs could convert into high-value leads. The challenge is refining the system into a simple MVP that distinctively addresses each persona’s pain points, given the complexity of integrating VR/AR and security functionalities."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/wifi-ble-location-mapper"
+  }
+}

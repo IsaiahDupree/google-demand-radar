@@ -1,0 +1,306 @@
+{
+  "source_text": "media-vault\n\nAutonomous iPhone → MyPassport → AI analysis → Blotato publishing pipeline\n\n## README\n\n# Media Vault\n\nAutonomous media pipeline: **iPhone -> My Passport (E:) -> AI analysis -> social publishing**.\n\nDouble-click the **Media Vault** desktop shortcut to start everything. Plug in your iPhone and walk away -- old and large files download to `E:\\MediaVault\\`, get verified, then delete from the phone automatically.\n\n## Architecture\n\n```\nDesktop Shortcut (MediaVault.ps1)\n  |\n  +-- Docker Desktop (auto-started if not running)\n  +-- Supabase (auto-started if not running)\n  +-- Backend  (FastAPI, port 5563)\n  +-- Frontend (Next.js, port 5564)\n  +-- iPhone Watcher (USB + Wi-Fi auto-detect)\n  +-- Fast Pipeline (download -> verify -> delete)\n```\n\n## Startup Priority (5 Tiers)\n\n| Tier | Components | Purpose |\n|------|-----------|---------|\n| 1. Foundation | Config, DB (Supabase/SQLite), E: drive | Everything depends on these |\n| 2. Core Pipeline | iPhone watcher, ingest, fast pipeline | Download + delete old/large media |\n| 3. Verification | Checksums, ffprobe, deletion gates | Prove downloads are intact |\n| 4. Intelligence | AI vision analysis, archive management | Analyze downloaded media |\n| 5. Publishing | Social, Blotato, UGC, niche, repurpose | Publish analyzed content |\n\n## Quick Start\n\n### Prerequisites\n- Windows 11\n- Python 3.12+ (with venv at `backend/venv/`)\n- Node.js 18+ and npm\n- Docker Desktop\n- Supabase CLI (`scoop install supabase`)\n- My Passport drive (E:)\n- iPhone with \"Trust This Computer\" enabled\n\n### First-time setup\n```bash\n# Backend\ncd backend\npython -m venv venv\nvenv\\Scripts\\activate\npip install -r requirements.txt\n\n# Frontend\ncd frontend\nnpm install\n\n# Supabase\nsupabase start\n```\n\n### Running\nDouble-click **Media Vault** on the desktop, or:\n```powershell\npowershell -ExecutionPolicy Bypass -File MediaVault.ps1\n```\n\nThe launcher will:\n1. Check E: drive is connected\n2. Start Docker Desktop if needed\n3. Start Supabase if needed (sync keys to `.env`)\n4. Gracefully stop any previous instance\n5. Start backend + frontend\n6. Auto-start iPhone watcher\n7. Auto-trigger fast pipeline\n8. Open http://localhost:5564\n\n### Stopping\nPress any key in the launcher window. It gracefully stops the pipeline (waits for current file), then kills servers.\n\n## Storage\n\nAll media files are stored on the My Passport external drive:\n```\nE:\\MediaVault\\\n  photos/     iPhone photos (HEIC, JPG, PNG)\n  videos/     iPhone videos (MOV, MP4)\n  youtube/    YouTube downloads\n  tiktok/     TikTok downloads\n  platform/   Other platform content\n```\n\n## Configuration\n\nCopy `backend/.env.example` to `backend/.env` and fill in your keys:\n```\nSUPABASE_URL=http://127.0.0.1:54521\nSUPABASE_KEY=<from supabase status>\nPASSPORT_PHOTOS=E:\\MediaVault\\photos\nPASSPORT_VIDEOS=E:\\MediaVault\\videos\nIPHONE_UDID=<from: idevice_id -l>\n```\n\nSee `backend/config.py` for all available settings.\n\n## Tests\n\n```bash\ncd backend\nvenv\\Scripts\\python -m pytest tests/test_startup.py -v\n```\n\n220 startup tests across 18 gates:\n- Files, shortcuts, icon\n- E: drive structure and free space\n- Python venv and dependencies\n- Node.js and frontend deps\n- Docker and Supabase containers\n- Backend/frontend server health\n- All 48+ API endpoints reachable\n- All 12 frontend pages render\n- Startup speed\n- Auto-pipeline wiring\n- Database and migrations\n- Config completeness\n\n## API\n\n- Dashboard: http://localhost:5564\n- API Docs: http://localhost:5563/docs\n- OpenAPI: http://localhost:5563/openapi.json\n\n## Project Structure\n\n```\nbackend/\n  main.py           FastAPI app with tiered startup\n  config.py         Central config from .env\n  db.py             Supabase client + SQLite fallback\n  iphone_afc.py     iPhone USB/Wi-Fi connector\n  fast_pipeline.py  Download -> verify -> delete pipeline\n  launch.py         Uvicorn launcher\n  routers/          API route handlers (15 routers)\n  tests/            220 startup integration tests\n\nfrontend/\n  src/app/          Next.js 14 pages (12 routes)\n  src/components/   React components\n  src/lib/          API client, utilities\n  src/types/        TypeScript type\n\nStack: Python",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Media Vault",
+    "one_liner": "Automated media management and publishing from iPhone to external drive.",
+    "core_promise": "Simplifies and automates the process of transferring, verifying, and publishing media files from your iPhone.",
+    "domain": "media management",
+    "buyers": [
+      {
+        "persona": "iPhone photographers with storage issues",
+        "awareness_level": "problem_aware",
+        "pain": "Running out of storage space on their iPhones and needing a reliable way to backup and make space for new media.",
+        "candidate_phrases": [
+          "clear iphone storage automatically",
+          "backup iphone media to external drive",
+          "free up iphone space fast",
+          "auto delete old iphone photos",
+          "iphone to external drive backup"
+        ]
+      },
+      {
+        "persona": "content creators managing large media files",
+        "awareness_level": "problem_aware",
+        "pain": "Managing large volumes of media content and keeping their devices clear for new content creation.",
+        "candidate_phrases": [
+          "automatic video file management solution",
+          "best way to manage video files from iphone",
+          "large video file transfer iphone",
+          "how to manage iphone media files efficiently",
+          "device space management for content creators"
+        ]
+      },
+      {
+        "persona": "tech enthusiasts interested in media automation",
+        "awareness_level": "solution_aware",
+        "pain": "Looking for cutting-edge solutions that automate media management and publishing tasks.",
+        "candidate_phrases": [
+          "automate media tasks from iphone",
+          "media management automation tools",
+          "automated iphone media backup solution",
+          "ai media file management",
+          "streamline media transfer from iphone"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "Buyer urgency is moderate because space management and backup solutions are ongoing needs but not emergency problems. MVP ease is low due to the complexity of integrating numerous technologies and platforms. Distribution fit is average; SEO and targeted ads can attract content creators and tech enthusiasts. Retention potential is moderate, as continued use depends on persistent media management needs. There is no clear competitive advantage stated in the description, resulting in a low score for advantage."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "clear iphone storage automatically",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "iPhone photographers with storage issues",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "backup iphone media to external drive",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "iPhone photographers with storage issues",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "free up iphone space fast",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "iPhone photographers with storage issues",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "auto delete old iphone photos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "iPhone photographers with storage issues",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "iphone to external drive backup",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "iPhone photographers with storage issues",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automatic video file management solution",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing large media files",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best way to manage video files from iphone",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing large media files",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "large video file transfer iphone",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing large media files",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to manage iphone media files efficiently",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing large media files",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "device space management for content creators",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing large media files",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate media tasks from iphone",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech enthusiasts interested in media automation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "media management automation tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech enthusiasts interested in media automation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated iphone media backup solution",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech enthusiasts interested in media automation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai media file management",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech enthusiasts interested in media automation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "streamline media transfer from iphone",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech enthusiasts interested in media automation",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "clear iphone storage automatically",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "iPhone photographers with storage issues",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "backup iphone media to external drive",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "iPhone photographers with storage issues",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "free up iphone space fast",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "iPhone photographers with storage issues",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "auto delete old iphone photos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "iPhone photographers with storage issues",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "iphone to external drive backup",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "iPhone photographers with storage issues",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automatic video file management solution",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing large media files",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best way to manage video files from iphone",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing large media files",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "large video file transfer iphone",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing large media files",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 0,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 14.5
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "iPhone photographers with storage issues",
+        "anchor_phrase": "backup iphone media to external drive",
+        "offer_copy": "For iPhone photographers who often run out of storage but need a reliable backup solution, we provide Media Vault that automatically transfers your media to an external drive so you can have peace of mind without having to manually sort and delete files.",
+        "landing_page_headline": "Effortlessly Backup iPhone Media to External Drive."
+      },
+      {
+        "buyer": "content creators managing large media files",
+        "anchor_phrase": "large video file transfer iphone",
+        "offer_copy": "For content creators who juggle large video files but struggle with iPhone storage limits, we offer Media Vault to automate media transfer and free your device quickly, ensuring your workflow isn't interrupted by full storage.",
+        "landing_page_headline": "Streamline Large Video Transfers from iPhone Instantly."
+      },
+      {
+        "buyer": "tech enthusiasts interested in media automation",
+        "anchor_phrase": "automatic video file management solution",
+        "offer_copy": "For tech enthusiasts who desire the latest in media automation but find manual tasks cumbersome, our Media Vault uses intelligent automation to manage and publish your media files seamlessly, leaving you to enjoy creativity without interruption.",
+        "landing_page_headline": "Discover Cutting-edge Automatic Media Management."
+      }
+    ],
+    "next_action": "Conduct 3 in-depth interviews with target users from each persona to validate the pain points and gauge interest in automation features.",
+    "reasoning": "The overall demand signal for these specific automation features is notably low, which makes it risky to proceed without further understanding of the prioritized pain points and desired features. While keyword interest is nearly non-existent, suggesting an absence of active search demand, the specified personas might still experience significant pain that can be addressed through targeted interviews. Thus, it's crucial to refine the problem-solution fit based on qualitative insights before investing heavily in product development or marketing."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/media-vault"
+  }
+}

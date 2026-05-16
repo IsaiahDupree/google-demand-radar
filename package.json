@@ -1,0 +1,51 @@
+{
+  "name": "google-demand-radar",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Phase 0 CLI: score an idea against real Google demand signals and reverse-engineer offers from buyer language.",
+  "scripts": {
+    "analyze": "tsx src/index.ts",
+    "batch": "tsx src/batch.ts",
+    "ingest": "tsx src/ingest-cli.ts",
+    "oauth-helper": "tsx src/google-oauth-helper.ts",
+    "probe-ads": "tsx src/probe-ads.ts",
+    "probe-dataforseo": "tsx src/probe-dataforseo.ts",
+    "probe-dataforseo-kfk": "tsx src/probe-dataforseo-kfk.ts",
+    "probe-labs-ideas": "tsx src/probe-labs-ideas.ts",
+    "probe-trends": "tsx src/probe-trends.ts",
+    "probe-github": "tsx src/probe-github.ts",
+    "probe-ingest": "tsx src/probe-ingest.ts",
+    "sweep": "tsx src/sweep-cli.ts",
+    "sweep-all": "tsx src/sweep-all-cli.ts",
+    "analyze-all": "tsx src/analyze-all-cli.ts",
+    "reverdict": "tsx src/reverdict-cli.ts",
+    "discover": "tsx src/discover-cli.ts",
+    "discover-briefs": "tsx src/discover-briefs-cli.ts",
+    "adjacency": "tsx src/adjacency-cli.ts",
+    "competitor-gap": "tsx src/competitor-gap-cli.ts",
+    "export-phrases": "tsx src/export-phrases.ts",
+    "import-phrases": "tsx src/import-phrases.ts",
+    "spec": "tsx src/scoring.spec.ts && tsx src/keyword-planner-parser.spec.ts",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "google-trends-api": "^4.9.2",
+    "next": "^15.5.14",
+    "openai": "^4.73.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.14",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

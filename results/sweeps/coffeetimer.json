@@ -1,0 +1,308 @@
+{
+  "slug": "coffeetimer",
+  "source_concept": "CoffeeTimer",
+  "generated_at": "2026-05-16T17:13:39.795Z",
+  "cross_vertical_insight": "A common theme across these verticals is the emphasis on consistency and quality in coffee brewing. Whether at home, in a small shop, or a large chain, reliable timing is often a key factor in achieving desired results. Additionally, there is a noticeable trend towards leveraging technology to enhance brewing processes, especially among those with a tech interest.",
+  "verticals": [
+    {
+      "name": "small independent coffee shops",
+      "icp": "Coffee shop owners with 1-3 locations, focusing on quality coffee and unique customer experiences, often owner-operated with a direct hand in product quality.",
+      "rationale": "They need reliable tools to ensure consistency and quality in their coffee offerings, especially during busy periods.",
+      "phrases": [
+        {
+          "phrase": "app for timing espresso shots",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "coffee timer app for cafes",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best coffee timer for baristas",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "coffee brewing process consistency tool",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "espresso shot timer app",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 1.406921995101518,
+      "bofu_density": 0.2,
+      "max_cpc": 0,
+      "top_phrase": "espresso shot timer app",
+      "top_volume": 10,
+      "pmf_score": 3.144153197060911,
+      "pmf_breakdown": {
+        "demand_n": 0.2813843990203036,
+        "bofu_n": 0.2,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "home coffee brewing enthusiasts",
+      "icp": "Individuals who brew coffee at home and are passionate about achieving the perfect cup. Typically ages 25-45, upper middle class, who enjoy craft and artisanal coffee experiences.",
+      "rationale": "These individuals often seek tools and methods to enhance their coffee brewing precision and consistency, matching the core promise of CoffeeTimer.",
+      "phrases": [
+        {
+          "phrase": "coffee brewing app",
+          "volume": 50,
+          "cpc": 0,
+          "competition": 0.01,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "coffee timer app for home baristas",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best app for timing coffee brew",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "precise coffee timer for pour over",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "home coffee brewing timer app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 1.8169588422282223,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "coffee brewing app",
+      "top_volume": 50,
+      "pmf_score": 2.8901753053369332,
+      "pmf_breakdown": {
+        "demand_n": 0.36339176844564447,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "large coffee chain locations",
+      "icp": "Franchises or locations of large coffee chains where managers are accountable for maintaining quality standards across numerous employees and high volume.",
+      "rationale": "Consistency is crucial for brand reputation; solutions that standardize coffee brewing processes can be critical to operations.",
+      "phrases": [
+        {
+          "phrase": "coffee brewing consistency software for chains",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best tools for standardized coffee brewing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "timing tool for franchise coffee shops",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "espresso brewing app for multiple locations",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "reduce waste in coffee brewing with apps",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "coffee brewing consistency software for chains",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "coffee equipment stores",
+      "icp": "Retailers specializing in coffee equipment who see value in offering innovative tech products to their consumers. They have both physical and online presence.",
+      "rationale": "These retailers can integrate CoffeeTimer into their product offerings, enhancing their portfolio for tech-savvy coffee enthusiasts.",
+      "phrases": [
+        {
+          "phrase": "retail coffee timers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "sell coffee timer apps",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "tech gadgets for coffee brewing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "partner with coffee app developers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best retail coffee timing solutions",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "retail coffee timers",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "tech-savvy remote workers",
+      "icp": "Remote workers between 25-40 years old, often in tech or creative industries who enjoy personalizing their home office setups, including their coffee-making routines.",
+      "rationale": "They seek to merge their love of technology with personal routines like coffee brewing, looking for ways to optimize and experiment with their process.",
+      "phrases": [
+        {
+          "phrase": "best coffee apps for remote workers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "enhance home coffee brewing with apps",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "gadgets for better coffee at home",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "coffee timing tools for home office",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "personal brewing tools for coffee",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "best coffee apps for remote workers",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

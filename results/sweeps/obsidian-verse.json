@@ -1,0 +1,348 @@
+{
+  "slug": "obsidian-verse",
+  "source_concept": "Obsidian Verse",
+  "generated_at": "2026-05-16T17:19:09.087Z",
+  "cross_vertical_insight": "The common thread across these verticals is the need for unique and personalized astrology-themed content, driven by the desire to differentiate products or services in niches steeped in personalization and theme-driven experiences. Vertical-specific buyer phrases often reflect a purchase intent focused on personalization and thematic integration, highlighting the niche demand for such customized content.",
+  "verticals": [
+    {
+      "name": "online boutiques for unique astrology gifts",
+      "icp": "Small online boutiques that sell unique astrology-themed gifts, aiming to differentiate their product offerings with personalized items.",
+      "rationale": "These stores can benefit by adding personalized zodiac music albums to their repertoire, appealing to customers seeking unique gifts.",
+      "phrases": [
+        {
+          "phrase": "unique astrology gifts for sale",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "personalized zodiac song gift",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy astrology music album",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best taurus gifts ideas",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "customized music gifts",
+          "volume": 1000,
+          "cpc": 2.41,
+          "competition": 0.99,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "unique pisces gift ideas",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 3.5127283036675134,
+      "bofu_density": 0.16666666666666666,
+      "max_cpc": 2.41,
+      "top_phrase": "customized music gifts",
+      "top_volume": 1000,
+      "pmf_score": 4.0858036488671745,
+      "pmf_breakdown": {
+        "demand_n": 0.7025456607335027,
+        "bofu_n": 0.16666666666666666,
+        "cpc_n": 0.24100000000000002,
+        "urgency_n": 0.4,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "astrology-themed merchandise e-commerce stores",
+      "icp": "Small to medium e-commerce stores, focusing on astrology-themed merchandise, run by owner-operators who actively manage online marketing and customer experience.",
+      "rationale": "These businesses cater to astrology enthusiasts and could integrate personalized zodiac music albums as unique product offerings to attract and retain customers.",
+      "phrases": [
+        {
+          "phrase": "best astrology merchandise store",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "zodiac music album for taurus",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "libra zodiac song collections",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "astrology products online",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "unique zodiac gifts",
+          "volume": 10,
+          "cpc": 0.32,
+          "competition": 1,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy virgo music album",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 1.5868998267261993,
+      "bofu_density": 0.16666666666666666,
+      "max_cpc": 0.32,
+      "top_phrase": "unique zodiac gifts",
+      "top_volume": 10,
+      "pmf_score": 2.6168065627023864,
+      "pmf_breakdown": {
+        "demand_n": 0.3173799653452399,
+        "bofu_n": 0.16666666666666666,
+        "cpc_n": 0.032,
+        "urgency_n": 0.4,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "content creators and influencers in the astrology niche",
+      "icp": "Astrology-focused content creators and influencers on platforms like Instagram, YouTube, and TikTok, with a keen interest in personalizing and expanding their content to engage followers.",
+      "rationale": "They need fresh, niche content to continuously entertain and grow their audiences. Personal zodiac-themed music albums could be integrated into content for higher engagement.",
+      "phrases": [
+        {
+          "phrase": "personalized astrology music for instagram",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "zodiac soundtracks for content creators",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best music for astrology videos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to use zodiac music in tiktok",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy custom zodiac songs",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "unique soundtracks for astrology content",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "personalized astrology music for instagram",
+      "top_volume": 0,
+      "pmf_score": 1.2000000000000002,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.4,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "wedding planners specializing in zodiac-themed weddings",
+      "icp": "Boutique wedding planners specializing in themed weddings, particularly zodiac or astrology-themed ceremonies, that need unique elements to offer couples.",
+      "rationale": "Zodiac-themed wedding playlists can add an enchanting touch to personalized weddings, matching the theme and enhancing the guest experience.",
+      "phrases": [
+        {
+          "phrase": "zodiac wedding playlist",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "astrology themed wedding music",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "unique wedding soundtrack ideas",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to plan a zodiac wedding",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best music for astrology weddings",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "personalized music for themed weddings",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "zodiac wedding playlist",
+      "top_volume": 0,
+      "pmf_score": 1.2000000000000002,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.4,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "astrology subscription box services",
+      "icp": "Subscription box services that curate astrology-themed products for monthly delivery, targeting enthusiasts who appreciate receiving curated, themed experiences.",
+      "rationale": "Including personalized zodiac music albums in subscription boxes could enhance the perceived value and uniqueness of the overall offering.",
+      "phrases": [
+        {
+          "phrase": "best astrology subscription box",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy zodiac music subscription",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "unique astrology products subscription",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "what to include in astrology box",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "zodiac music for subscription service",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "personalized content for astrology box",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "best astrology subscription box",
+      "top_volume": 0,
+      "pmf_score": 1.2000000000000002,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.4,
+        "retention_n": 0.4
+      }
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "source_text": "MusicPromotion\n\n## README\n\n# Sheen Daily Video Generator\n\nA production-ready Flask application that generates daily \"Sheen-style\" video clips with animated follower counters, social media metrics integration, and automated music mixing.\n\n## Features\n\n- **n8n Integration**: Webhook-based communication for automated workflows\n- **Social Media Metrics**: YouTube, Instagram, TikTok, and X follower tracking\n- **Video Composition**: Automated clip assembly with MoviePy/FFmpeg\n- **Animated Counters**: Live follower count overlays with smooth animations\n- **Music Mixing**: Synchronized audio snippets with cross-fading\n- **Scheduling**: Optional daily automation via APScheduler\n\n## Tech Stack\n\n- Python 3.11+\n- Flask\n- APScheduler\n- MoviePy/FFmpeg\n- Requests\n\n## Installation\n\n1. **Install dependencies:**\n   ```bash\n   pip install -r requirements.txt\n   ```\n\n2. **Install FFmpeg:**\n   - Windows: Download from https://ffmpeg.org/download.html\n   - macOS: `brew install ffmpeg`\n   - Linux: `apt-get install ffmpeg`\n\n3. **Set up environment variables:**\n   ```bash\n   cp .env.example .env\n   # Edit .env with your configuration\n   ```\n\n## Configuration\n\nRequired environment variables:\n\n```env\n# Basic Configuration\nPORT=8080\nN8N_WEBHOOK_URL=https://your-n8n.example/webhook/sheen-plan\n\n# Assets & Storage\nASSETS_DIR=./assets\nOUTPUT_DIR=./out\nBRAND_FONT_PATH=./assets/fonts/Inter-SemiBold.ttf\n\n# Counter Settings\nCOUNTER_GOAL=100000\nCOUNTER_SUFFIX=/100k\n\n# API Keys (fill what you have)\nYT_API_KEY=your_youtube_api_key\nIG_ACCESS_TOKEN=your_instagram_token\nTIKTOK_COOKIE=your_tiktok_session\nX_BEARER=your_x_bearer_token\n```\n\n## Usage\n\n1. **Start the server:**\n   ```bash\n   python app.py\n   ```\n\n2. **Generate a video:**\n   ```bash\n   curl -X POST http://localhost:8080/api/generate \\\n        -H \"Content-Type: application/json\" \\\n        -d '{\n          \"brand\": {\n            \"day\": 149,\n            \"overlay_text_template\": \"Day {day} of posting sheen every day till 100k\",\n            \"font_size\": 68\n          },\n          \"clips\": [{\n            \"video\": \"https://your-cdn/clip.mp4\",\n            \"start_ms\": 0,\n            \"end_ms\": 8000\n          }],\n          \"music\": {\n            \"tracks\": [{\n              \"url\": \"https://your-cdn/track.m4a\",\n              \"start_ms\": 15000,\n              \"end_ms\": 27000\n            }]\n          }\n        }'\n   ```\n\n## API Endpoints\n\n- `GET /health` - Health check\n- `POST /api/generate` - Generate video (pull-based)\n- `POST /webhooks/n8n/generate` - n8n webhook (push-based)\n- `POST /api/metrics/refresh` - Refresh social metrics\n- `GET /api/debug/counter` - Test counter animation\n\n## n8n Integration\n\nYour n8n workflow should return a JSON plan with this structure:\n\n```json\n{\n  \"clips\": [\n    {\n      \"video\": \"s3|http|file path\",\n      \"start_ms\": 0,\n      \"end_ms\": 8000,\n      \"crop\": \"center\"\n    }\n  ],\n  \"music\": {\n    \"tracks\": [\n      {\n        \"url\": \"s3|http|file\",\n        \"start_ms\": 13000,\n        \"end_ms\": 25000\n      }\n    ]\n  },\n  \"brand\": {\n    \"overlay_text_template\": \"Day {day} of posting sheen every day till 100k\",\n    \"day\": 149,\n    \"font_size\": 68,\n    \"x\": \"center\",\n    \"y\": 160\n  }\n}\n```\n\n## Directory Structure\n\n```\nMusicPromotion/\n├── app.py                 # Main Flask application\n├── config.py             # Configuration management\n├── requirements.txt      # Python dependencies\n├── services/\n│   ├── n8n_client.py    # n8n webhook integration\n│   ├── metrics.py       # Social media metrics\n│   └── video.py         # Video composition\n├── tasks/\n│   └── scheduler.py     # Background scheduling\n├── assets/              # Fonts, templates\n├── out/                 # Generated videos\n└── README.md\n```\n\n## Next Steps\n\n1. **Branding**: Add your font file to `BRAND_FONT_PATH`\n2. **Metrics**: Configure your social media API credentials\n3. **n8n Workflow**: Set up your content planning workflow\n4. **Scaling**: Consider adding worker queues (RQ/Celery) for parallel rendering\n\n## Notes\n\n- Metrics scraping should respect platform ToS and ra",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Sheen Daily Video Generator",
+    "one_liner": "Automatically generate daily 'Sheen-style' video clips with animated follower counters and music mixing.",
+    "core_promise": "Effortlessly create engaging social media video content every day to boost your follower counts.",
+    "domain": "social media content creation",
+    "buyers": [
+      {
+        "persona": "social media influencers",
+        "awareness_level": "problem_aware",
+        "pain": "Struggling to consistently create high-quality, engaging video content that keeps followers interacting and attracts new ones.",
+        "candidate_phrases": [
+          "how to make daily instagram videos",
+          "easy tiktok video creator",
+          "automated social media content",
+          "video generator for youtube",
+          "daily video content ideas"
+        ]
+      },
+      {
+        "persona": "digital marketing managers",
+        "awareness_level": "solution_aware",
+        "pain": "Needing efficient solutions to automate engaging content production across multiple social platforms.",
+        "candidate_phrases": [
+          "automated video creation tools",
+          "social media video automation",
+          "best tools for content creation",
+          "youtube follower tracker with video",
+          "marketing video generator"
+        ]
+      },
+      {
+        "persona": "content creators for brands",
+        "awareness_level": "product_aware",
+        "pain": "Facing challenges in producing branded video content quickly that aligns with brand aesthetics and engages the audience.",
+        "candidate_phrases": [
+          "branded video content generator",
+          "video marketing tools for brands",
+          "brand video production automation",
+          "automated branding for videos",
+          "consistent video content creation tools"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "Buyer urgency is moderate because while social media content is important, not all creators or managers think about automation until they hit a content bottleneck. MVP ease is low given the technical challenges in integrating multiple APIs and video processing. Distribution fit is high as the audiences are clearly targetable online through digital marketing channels. Retention potential is decent as regular social media content is a repetitive need. The advantage is limited without a clear existing audience or domain expertise mentioned in the idea."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "how to make daily instagram videos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy tiktok video creator",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated social media content",
+      "volume": 20,
+      "cpc": 11.32,
+      "competition": 0.44,
+      "source": "dataforseo",
+      "buyer": "social media influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "video generator for youtube",
+      "volume": 10,
+      "cpc": 3.19,
+      "competition": 0.3,
+      "source": "dataforseo",
+      "buyer": "social media influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "daily video content ideas",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated video creation tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media video automation",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best tools for content creation",
+      "volume": 110,
+      "cpc": 9.17,
+      "competition": 0.66,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube follower tracker with video",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "marketing video generator",
+      "volume": 10,
+      "cpc": 14.39,
+      "competition": 0.75,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "branded video content generator",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators for brands",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "video marketing tools for brands",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators for brands",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "brand video production automation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators for brands",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated branding for videos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators for brands",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "consistent video content creation tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators for brands",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "best tools for content creation",
+      "volume": 110,
+      "cpc": 9.17,
+      "competition": 0.66,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated social media content",
+      "volume": 20,
+      "cpc": 11.32,
+      "competition": 0.44,
+      "source": "dataforseo",
+      "buyer": "social media influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "video generator for youtube",
+      "volume": 10,
+      "cpc": 3.19,
+      "competition": 0.3,
+      "source": "dataforseo",
+      "buyer": "social media influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "social media video automation",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "marketing video generator",
+      "volume": 10,
+      "cpc": 14.39,
+      "competition": 0.75,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to make daily instagram videos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy tiktok video creator",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "daily video content ideas",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media influencers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 2.3481973653796926,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 21.348197365379693
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "social media influencers",
+        "anchor_phrase": "automated social media content",
+        "offer_copy": "For social media influencers who want to keep producing high-quality, engaging content but are overwhelmed with the demand, we offer an automated video generator that creates 'Sheen-style' videos so they can increase follower interaction without spending hours daily creating content themselves.",
+        "landing_page_headline": "Effortless Daily Videos for Social Media Growth"
+      },
+      {
+        "buyer": "digital marketing managers",
+        "anchor_phrase": "best tools for content creation",
+        "offer_copy": "For digital marketing managers needing to automate engaging content production across social platforms, we provide the easiest tool for 'Sheen-style' video generation, saving time and increasing brand engagement without missing platform trends.",
+        "landing_page_headline": "Top Tool for Automated Social Media Videos"
+      },
+      {
+        "buyer": "content creators for brands",
+        "anchor_phrase": "marketing video generator",
+        "offer_copy": "For content creators who align brand aesthetics with engaging videos but struggle with quick turnarounds, our service provides a marketing video generator, creating daily branded content that resonates without compromising quality.",
+        "landing_page_headline": "Create Daily Branded Videos Effortlessly"
+      }
+    ],
+    "next_action": "Run a small-budget ($100) Google Ads campaign targeting 'automated social media content' and 'best tools for content creation' to gauge click-through rates and interest.",
+    "reasoning": "Search demand is relatively weak across the board, but there are indications that marketing managers and influencers are actively seeking solutions for content automation. The high CPC for related phrases suggests willingness to pay, presenting an opportunity if awareness can be increased. However, low search intent shows the need for further market education, which is why the 'Educate Later' verdict was chosen. Testing specific keywords with Google Ads will help assess real-world interest and refine target messaging."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/MusicPromotion"
+  }
+}

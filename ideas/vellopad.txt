@@ -1,0 +1,9 @@
+VelloPad — AI-Powered Printable Book Generator
+
+A tool that generates printable books, journals, and workbooks for self-publishers and POD (print-on-demand) creators. The user picks a category (puzzle books, kids activity books, branded coaching workbooks, devotional journals), provides a few inputs, and gets a print-ready PDF and cover.
+
+Target: Etsy sellers, KDP authors, course creators, and coaches who sell branded workbooks to clients.
+
+Pricing idea: $19-$49/month tiered by output volume, or pay-per-book for casual creators.
+
+Open question: should this launch broad ("AI books for any niche") or pick one profitable category and dominate it first?

@@ -1,0 +1,306 @@
+{
+  "source_text": "autonomous-coding-dashboard\n\n## README\n\n# ACD — Autonomous Coding Dashboard\n\nA harness + dashboard that drives Claude Agent SDK sessions to implement features across many target codebases, with a worker pool, model-tier routing, and a single truth source under `data/`.\n\n## How it fits together\n\n```\ndata/                     ← single truth source\n├── targets.json          [{id, name, status, priority, default_tier, test_budget, ...}]\n├── features.json         [{id, target_id, status, model_tier, acceptance_criteria, ...}]\n├── prds/<id>.md          one PRD per target (markdown + frontmatter)\n├── queue.json            ordered work queue (runtime, not committed)\n├── workers.json          live worker heartbeats (runtime, not committed)\n└── worker-logs/          per-worker terminal output (runtime, not committed)\n        │\n        ├──► apps/backend (Express + Prisma + WS, port 3434)\n        │       └── /api/data/* CRUD over targets/features/prds/queue/workers\n        │\n        ├──► apps/dashboard (Vite + React, port 3535)\n        │       └── Targets page → live queue, worker panels, PRD editor,\n        │           clickable workers → /workers/<id> live terminal stream\n        │\n        └──► harness/\n                ├── run-harness.js   (single Claude Code session, target-aware)\n                └── worker-pool.js   (N=2 default, file-rename queue lock)\n```\n\nThe same `data/` files are read and written by all three layers — dashboard edits flow straight to the agent loop. No ORM, no migrations, no schema duplication.\n\n## Quick start\n\n```bash\nnpm install                 # one-time, seeds workspaces\nnpm run dev                 # starts backend (3434) + dashboard (3535) via init.sh\nnpm run mine                # scan ~/.claude/projects + ~/Documents/Coding to populate targets\nnpm run workers:start       # 2 workers (configurable: workers:start:4)\nnpm test                    # validate schemas + backend vitest + e2e playwright\n```\n\nRequirements:\n- Node ≥ 18\n- Claude Code CLI on PATH (`claude --version` should work)\n- Postgres + Redis only if you boot the full Express backend; the lighter `node scripts/data-server.js` serves the same `/api/data/*` endpoints from JSON files alone.\n\n## Model tiers\n\nEach target has a `default_tier`; each feature can override with `model_tier`.\n\n| Tier | Model ID | When |\n|---|---|---|\n| **haiku** | `claude-haiku-4-5-20251001` | docs, lint, formatting, simple CRUD, tests |\n| **sonnet** | `claude-sonnet-4-6` | most feature implementation, integration, refactors |\n| **opus** | `claude-opus-4-7` | architecture, security, migration, ambiguous PRDs, ≥5 acceptance criteria |\n\nWorker pool spawns `claude --print --model <id>` per session, scoped to one target via env (`ACD_TARGET`, `ACD_MODEL`, `ACD_BUDGET`, `ACD_WORKER_ID`).\n\n## Adding new targets\n\n```bash\n# Option A — POST to backend\ncurl -X POST http://localhost:3434/api/data/targets \\\n  -H 'Content-Type: application/json' \\\n  -d '{\"id\":\"my-target\",\"name\":\"My Target\",\"priority\":3}'\n\n# Option B — edit data/targets.json + write data/prds/my-target.md, then:\nnpm run validate:data\nnpm run queue:rebuild\n```\n\nA discovery feature is auto-inserted for any target without one. The first session reads the repo and writes 10–20 real features into `data/features.json` with acceptance criteria — only then does implementation work begin.\n\n## Worker pool semantics\n\n- **Single-pool guard**: `data/.worker-pool.pid` blocks accidental dual-starts (which used to cause workers.json races).\n- **Heartbeats** every 10s; UI marks workers stale if `>60s` old.\n- **Atomic claim** via `data/queue.lock` rename.\n- **Re-queue, don't complete**: a worker session releases the queue entry as `queued` again unless `pending_features === 0` (target done) or `claims_count ≥ ACD_MAX_CLAIMS` (capped, defaults 25). This prevents a 1000-test budget from being burned in 3 shallow sessions.\n- **Failed sessions** decrement `priority_final` by 0.5 so other work gets a turn.\n\n## Dashboard\n\n`http://localhost:3535` (Targets page is the default landing).\n\n-\n\nStack: TypeScript",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Autonomous Coding Dashboard",
+    "one_liner": "A dashboard that autonomously manages and implements features across multiple codebases using the Claude Agent SDK.",
+    "core_promise": "Streamlined, automated feature development and management across target codebases, reducing manual coding effort.",
+    "domain": "developer tools",
+    "buyers": [
+      {
+        "persona": "software development team leads",
+        "awareness_level": "problem_aware",
+        "pain": "Struggling to manage feature implementation across multiple projects efficiently, leading to delays and high developer workload.",
+        "candidate_phrases": [
+          "manage feature development better",
+          "automate coding tasks",
+          "improve development process efficiency",
+          "reduce workload on developers",
+          "manage multiple codebases"
+        ]
+      },
+      {
+        "persona": "devops engineers",
+        "awareness_level": "solution_aware",
+        "pain": "Need tools that can help automate and manage coding tasks to maintain system efficiency without frequent manual interventions.",
+        "candidate_phrases": [
+          "automated coding tools",
+          "coding automation systems",
+          "dashboard for code management",
+          "manage coding workflows",
+          "tools to automate coding tasks"
+        ]
+      },
+      {
+        "persona": "startup CTOs",
+        "awareness_level": "problem_aware",
+        "pain": "Facing challenges in scaling development operations while ensuring consistent quality across various projects and codebases.",
+        "candidate_phrases": [
+          "scale software development",
+          "manage coding at scale",
+          "improve software development efficiency",
+          "tools for scaling development",
+          "manage multiple projects efficiently"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 4,
+      "advantage": 2,
+      "rationale": "The idea addresses a moderate urgency problem for teams facing inefficiencies in managing feature development across codebases, marked by problem-aware search terms. However, building an MVP of this complexity requires significant time to connect various components. Distribution through SEO and targeted ads is feasible given the technical nature. Retention could be high due to ongoing feature management needs, but without a clear domain-specific edge presented, competitive advantage may be limited."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "manage feature development better",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "software development team leads",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate coding tasks",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "software development team leads",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "improve development process efficiency",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "software development team leads",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "reduce workload on developers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "software development team leads",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "manage multiple codebases",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "software development team leads",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated coding tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "coding automation systems",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "dashboard for code management",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "manage coding workflows",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools to automate coding tasks",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "scale software development",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "startup CTOs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "manage coding at scale",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "startup CTOs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "improve software development efficiency",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "startup CTOs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools for scaling development",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "startup CTOs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "manage multiple projects efficiently",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "startup CTOs",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "scale software development",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "startup CTOs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "manage feature development better",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "software development team leads",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate coding tasks",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "software development team leads",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "improve development process efficiency",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "software development team leads",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "reduce workload on developers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "software development team leads",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "manage multiple codebases",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "software development team leads",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated coding tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "coding automation systems",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "devops engineers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 1.10810534993878,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 2,
+    "retention_potential": 4,
+    "total": 16.608105349938782
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "software development team leads",
+        "anchor_phrase": "manage multiple codebases",
+        "offer_copy": "For software development team leads who want better feature management but are overwhelmed by handling multiple projects, we offer an autonomous coding dashboard that streamlines feature implementation so they can reduce workload on developers without sacrificing project timelines.",
+        "landing_page_headline": "Streamline Multiple Codebases with Autonomous Coding"
+      },
+      {
+        "buyer": "devops engineers",
+        "anchor_phrase": "automated coding tools",
+        "offer_copy": "For devops engineers who seek efficiency in managing coding tasks but face frequent manual interventions, we provide a dashboard that automates feature implementations to maintain system efficiency without constant manual oversight.",
+        "landing_page_headline": "Boost Efficiency with Automated Coding Tools"
+      },
+      {
+        "buyer": "startup CTOs",
+        "anchor_phrase": "scale software development",
+        "offer_copy": "For startup CTOs who need to scale operations but struggle to maintain consistent quality, we offer an autonomous coding dashboard that optimizes feature management across projects so they can scale confidently without overextending development resources.",
+        "landing_page_headline": "Effortless Scaling for Software Development"
+      }
+    ],
+    "next_action": "Create educational content that introduces the concept of autonomous coding dashboards, demonstrating real-world use cases and benefits to increase awareness. Run a pilot program with select small development teams to gather testimonials and case studies.",
+    "reasoning": "The current market signals indicate very low search demand and awareness for autonomous coding solutions. Most buyers aren't actively seeking this type of tool, highlighting the need for education to generate interest. The primary risk is in adoption reluctance due to lack of awareness and perceived complexity. Starting with education and practical demonstrations can build demand and showcase the practical benefits to these personas."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/autonomous-coding-dashboard"
+  }
+}

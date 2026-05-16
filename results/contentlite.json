@@ -1,0 +1,567 @@
+{
+  "source_text": "contentlite\n\n## README\n\n# ContentLite\n\nBlueprint-driven AI content generation engine for the ACTP (Autonomous Content-to-Performance) pipeline. Generates video scripts, email newsletters, blog posts, tweets, platform descriptions, and content quality reviews — all powered by Claude.\n\n## Architecture\n\n- **Framework**: Next.js 16 (App Router) on Node 22\n- **AI**: Anthropic Claude (via @anthropic-ai/sdk)\n- **Database**: Supabase PostgreSQL\n- **Testing**: Vitest\n- **Deployment**: Vercel with cron jobs\n\n## API Endpoints\n\n| Endpoint | Method | Auth | Description |\n|---|---|---|---|\n| `/api/health` | GET | None | Service health check |\n| `/api/generate/from-blueprint` | POST | Bearer | Generate video content from a creative blueprint |\n| `/api/generate/email` | POST | Bearer | Generate email newsletter from a winning creative |\n| `/api/generate/blog` | POST | Bearer | Generate SEO blog post from a winning creative |\n| `/api/generate/tweets` | POST | Bearer | Generate tweets for a niche+strategy |\n| `/api/generate/tweet-analysis` | POST | Bearer | Analyze tweet patterns for hooks, tone, topics |\n| `/api/generate/twitter-playbook` | POST | Bearer | Generate a full Twitter growth strategy playbook |\n| `/api/generate/platform-descriptions` | POST | Bearer | Generate platform-specific captions (TikTok, YouTube, etc.) |\n| `/api/review` | POST | Bearer | 7-dimension rubric content quality review |\n| `/api/cron/generate-variants` | POST | Cron | Auto-generate content variants (every 4h) |\n| `/api/cron/generate-content` | POST | Cron | Process generation queue (every 2h) |\n\n## Setup\n\n```bash\n# Install dependencies\nnpm install\n\n# Copy environment variables\ncp .env.local.example .env.local\n# Edit .env.local with your actual keys\n\n# Run development server\nnpm run dev\n\n# Run tests\nnpm test\n\n# Build for production\nnpm run build\n```\n\n## Environment Variables\n\n| Variable | Required | Description |\n|---|---|---|\n| `NEXT_PUBLIC_SUPABASE_URL` | Yes | Supabase project URL |\n| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Yes | Supabase anonymous key |\n| `SUPABASE_SERVICE_ROLE_KEY` | Yes | Supabase service role key |\n| `CONTENTLITE_MASTER_KEY` | Yes | Master API key for auth |\n| `CRON_SECRET` | Yes | Secret for cron endpoint auth |\n| `ANTHROPIC_API_KEY` | Yes | Anthropic API key for Claude |\n| `REVIEW_MODEL` | No | Override review model (default: claude-haiku-4-5-20251001) |\n\n## Project Structure\n\n```\napp/\n  api/\n    health/           — Health check\n    generate/\n      from-blueprint/ — Video content from blueprints\n      email/          — Email newsletters\n      blog/           — SEO blog posts\n      tweets/         — Tweet generation\n      tweet-analysis/ — Tweet pattern analysis\n      twitter-playbook/ — Growth strategy playbook\n      platform-descriptions/ — Platform-specific captions\n    review/           — Content quality review\n    cron/             — Scheduled jobs\nlib/\n  anthropic.ts        — Shared Anthropic client\n  api-helpers.ts      — Response helpers & auth middleware\n  auth.ts             — API key management\n  supabase.ts         — Database client\n  review-engine.ts    — Content review logic\n  generators/\n    video-generator.ts           — Blueprint → video content\n    email-generator.ts           — Creative → email\n    blog-generator.ts            — Creative → blog\n    tweet-generator.ts           — Niche → tweets\n    tweet-analysis-generator.ts  — Tweets → pattern analysis\n    twitter-playbook-generator.ts — Niche → growth playbook\n    description-generator.ts     — Content → platform descriptions\ntests/                — Vitest unit tests\n```\n\n\nStack: TypeScript",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "ContentLite",
+    "one_liner": "AI-driven content generation tool for automating content-to-performance workflows.",
+    "core_promise": "Automate the creation of high-quality, performance-driven content across various platforms.",
+    "domain": "content marketing",
+    "buyers": [
+      {
+        "persona": "digital marketing managers at SMBs",
+        "awareness_level": "solution_aware",
+        "pain": "Need to produce a high volume of marketing content efficiently without sacrificing quality.",
+        "candidate_phrases": [
+          "ai content generation tool",
+          "automated blog writing software",
+          "video script ai generator",
+          "content generation software",
+          "email newsletter generator"
+        ]
+      },
+      {
+        "persona": "social media consultants",
+        "awareness_level": "problem_aware",
+        "pain": "Struggle to keep up with the demand for tailored content strategies across multiple social media platforms.",
+        "candidate_phrases": [
+          "how to create more content faster",
+          "tools to automate social media content",
+          "easy content creation for social media",
+          "best tools for social media content",
+          "generate tweets automatically"
+        ]
+      },
+      {
+        "persona": "content strategists at marketing agencies",
+        "awareness_level": "solution_aware",
+        "pain": "Need reliable content creation systems to support comprehensive digital campaigns for clients.",
+        "candidate_phrases": [
+          "content automation tools for marketing",
+          "ai tools for content strategists",
+          "digital marketing content generator",
+          "automated content strategy tools",
+          "platform-specific content creation"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 4,
+      "advantage": 2,
+      "rationale": "Buyer urgency is moderate as the demand for automated content solutions is rising, although not critical for all yet. MVP ease is relatively low due to the need for integration with multiple APIs and platforms like Supabase and Anthropic. Distribution fit is higher because this audience can effectively be reached through digital marketing channels. Retention potential is strong given the recurring need for content production. However, the idea description lacks evidence of an existing advantage such as proprietary access to specific data or a pre-existing large audience, resulting in a lower advantage score."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "ai content generation tool",
+      "volume": 480,
+      "cpc": 17.38,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated blog writing software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "video script ai generator",
+      "volume": 10,
+      "cpc": 1.88,
+      "competition": 0.36,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content generation software",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "email newsletter generator",
+      "volume": 50,
+      "cpc": 35.07,
+      "competition": 0.41,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to create more content faster",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media consultants",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools to automate social media content",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media consultants",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy content creation for social media",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media consultants",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best tools for social media content",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media consultants",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "generate tweets automatically",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.86,
+      "source": "dataforseo",
+      "buyer": "social media consultants",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content automation tools for marketing",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai tools for content strategists",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "digital marketing content generator",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated content strategy tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "platform-specific content creation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai video generation platform",
+      "volume": 14800,
+      "cpc": 6.21,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai tools for content creation",
+      "volume": 1900,
+      "cpc": 16.6,
+      "competition": 0.08,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai content creation tools",
+      "volume": 1600,
+      "cpc": 10.44,
+      "competition": 0.07,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai content creator tools",
+      "volume": 1600,
+      "cpc": 10.44,
+      "competition": 0.07,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "jasper ai writing tool",
+      "volume": 590,
+      "cpc": 6.18,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai seo content generator",
+      "volume": 390,
+      "cpc": 16.75,
+      "competition": 0.09,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "jasper ai content generator",
+      "volume": 390,
+      "cpc": 4.16,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "jasper ai paragraph generator",
+      "volume": 390,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "free ai tools for content creation",
+      "volume": 320,
+      "cpc": 12.01,
+      "competition": 0.34,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "jasper ai text generator",
+      "volume": 320,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "free ai tool for content creation",
+      "volume": 320,
+      "cpc": 12.01,
+      "competition": 0.34,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai content creation software",
+      "volume": 260,
+      "cpc": 7.59,
+      "competition": 0.05,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "jasper ai writing",
+      "volume": 170,
+      "cpc": 4.02,
+      "competition": 0.44,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated content generation",
+      "volume": 170,
+      "cpc": 11.33,
+      "competition": 0.2,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content automation platforms",
+      "volume": 590,
+      "cpc": 0,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content marketing automation",
+      "volume": 260,
+      "cpc": 18.49,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "marketing automation content marketing",
+      "volume": 260,
+      "cpc": 18.49,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content automation software",
+      "volume": 70,
+      "cpc": 37,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content marketing automation software",
+      "volume": 50,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "harnessing marketing automation for b2b content marketing",
+      "volume": 20,
+      "cpc": 0,
+      "competition": 0.09,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "marketing automation dynamic content",
+      "volume": 20,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated copywriting software free",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated copywriting software",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "crawlq ai content automation",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "activecampaign predictive content",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.07,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated content marketing software",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content audit hubspot",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.05,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content marketing marketing automation",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "predictive content activecampaign",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "ai video generation platform",
+      "volume": 14800,
+      "cpc": 6.21,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai tools for content creation",
+      "volume": 1900,
+      "cpc": 16.6,
+      "competition": 0.08,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai content creation tools",
+      "volume": 1600,
+      "cpc": 10.44,
+      "competition": 0.07,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai content creator tools",
+      "volume": 1600,
+      "cpc": 10.44,
+      "competition": 0.07,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "jasper ai writing tool",
+      "volume": 590,
+      "cpc": 6.18,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content automation platforms",
+      "volume": 590,
+      "cpc": 0,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "content strategists at marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai content generation tool",
+      "volume": 480,
+      "cpc": 17.38,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai seo content generator",
+      "volume": 390,
+      "cpc": 16.75,
+      "competition": 0.09,
+      "source": "dataforseo",
+      "buyer": "digital marketing managers at SMBs",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 4.587766233509518,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 4,
+    "total": 24.58776623350952
+  },
+  "verdict": "Build Now",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "digital marketing managers at SMBs",
+        "anchor_phrase": "ai content generation tool",
+        "offer_copy": "For digital marketing managers at SMBs who need efficient content production but can't compromise quality, we provide an AI content generation tool so they can create high-volume, quality marketing materials without spending countless hours. ",
+        "landing_page_headline": "Effortless Quality with AI Content Generation"
+      },
+      {
+        "buyer": "social media consultants",
+        "anchor_phrase": "generate tweets automatically",
+        "offer_copy": "For social media consultants who juggle multiple platforms but struggle to tailor content strategies, we offer a tool that generates tweets automatically, so they can maintain engagement consistently without manual overload.",
+        "landing_page_headline": "Automate Your Tweet Generation Effortlessly"
+      },
+      {
+        "buyer": "content strategists at marketing agencies",
+        "anchor_phrase": "content generation software",
+        "offer_copy": "For content strategists at marketing agencies needing reliable systems for digital campaigns, we provide advanced content generation software to support comprehensive strategies without repetitive manual effort.",
+        "landing_page_headline": "Streamline Strategies with Content Generation Software"
+      }
+    ],
+    "next_action": "Ship three tailored landing pages aligned with each buyer persona and run targeted Google ad campaigns with a $100 budget each for validation.",
+    "reasoning": "This verdict is based on a moderate but specific search demand centered on solutions like AI content tools, with high willingness to pay as evidenced by CPC values. However, the challenge lies in execution and differentiation, given competition and MVP development complexity. Testing will gauge interest and conversion potential, identifying which buyer segments resonate most strongly with ContentLite."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/contentlite"
+  }
+}

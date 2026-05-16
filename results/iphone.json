@@ -1,0 +1,306 @@
+{
+  "source_text": "Iphone\n\n## README\n\n# Media Vault\n\n**Media Vault** is a Windows desktop app that automatically moves old and large media off your iPhone, stores it safely on an external drive, runs AI analysis on each file, and optionally publishes content to social platforms — all with zero manual steps. Plug in your iPhone, double-click the desktop shortcut, and walk away: files download to `E:\\MediaVault\\`, pass 11 verification gates (SHA-256 checksum, ffprobe codec check, age, etc.), then delete from the phone automatically.\n\n## Architecture\n\n```\nDesktop Shortcut (MediaVault.ps1)\n  |\n  +-- Docker Desktop (auto-started if not running)\n  +-- Supabase (auto-started if not running)\n  +-- Backend  (FastAPI, port 5563)\n  +-- Frontend (Next.js, port 5564)\n  +-- iPhone Watcher (USB + Wi-Fi auto-detect)\n  +-- Fast Pipeline (download -> verify -> delete)\n```\n\n## Startup Priority (5 Tiers)\n\n| Tier | Components | Purpose |\n|------|-----------|---------|\n| 1. Foundation | Config, DB (Supabase/SQLite), E: drive | Everything depends on these |\n| 2. Core Pipeline | iPhone watcher, ingest, fast pipeline | Download + delete old/large media |\n| 3. Verification | Checksums, ffprobe, deletion gates | Prove downloads are intact |\n| 4. Intelligence | AI vision analysis, archive management | Analyze downloaded media |\n| 5. Publishing | Social, Blotato, UGC, niche, repurpose | Publish analyzed content |\n\n## Quick Start\n\n### Prerequisites\n- Windows 11\n- Python 3.12+ (with venv at `backend/venv/`)\n- Node.js 18+ and npm\n- Docker Desktop\n- Supabase CLI (`scoop install supabase`)\n- My Passport drive (E:)\n- iPhone with \"Trust This Computer\" enabled\n\n### First-time setup\n```bash\n# Backend\ncd backend\npython -m venv venv\nvenv\\Scripts\\activate\npip install -r requirements.txt\n\n# Frontend\ncd frontend\nnpm install\n\n# Supabase\nsupabase start\n```\n\n### Running\nDouble-click **Media Vault** on the desktop, or:\n```powershell\npowershell -ExecutionPolicy Bypass -File MediaVault.ps1\n```\n\nThe launcher will:\n1. Check E: drive is connected\n2. Start Docker Desktop if needed\n3. Start Supabase if needed (sync keys to `.env`)\n4. Gracefully stop any previous instance\n5. Start backend + frontend\n6. Auto-start iPhone watcher\n7. Auto-trigger fast pipeline\n8. Open http://localhost:5564\n\n### Stopping\nPress any key in the launcher window. It gracefully stops the pipeline (waits for current file), then kills servers.\n\n## Storage\n\nAll media files are stored on the My Passport external drive:\n```\nE:\\MediaVault\\\n  photos/     iPhone photos (HEIC, JPG, PNG)\n  videos/     iPhone videos (MOV, MP4)\n  youtube/    YouTube downloads\n  tiktok/     TikTok downloads\n  platform/   Other platform content\n```\n\n## Configuration\n\nCopy `backend/.env.example` to `backend/.env` and fill in your keys:\n```\n# Required\nSUPABASE_URL=http://127.0.0.1:54521   # or your cloud Supabase URL\nSUPABASE_KEY=<from: supabase status>\nPASSPORT_PHOTOS=E:\\MediaVault\\photos  # where photos land on the external drive\nPASSPORT_VIDEOS=E:\\MediaVault\\videos  # where videos land on the external drive\nIPHONE_UDID=<from: idevice_id -l>    # your iPhone's device ID\n\n# Optional — needed for AI analysis and social publishing\nANTHROPIC_API_KEY=sk-ant-...\nOPENAI_API_KEY=sk-...\nBLOTATO_API_KEY=...                   # social publishing via Blotato\n```\n\nSee `backend/config.py` for all available settings.\n\n## Tests\n\n```bash\ncd backend\n\n# Quick smoke test (no external services needed — runs in ~1 second)\nvenv\\Scripts\\python -m pytest tests/test_smoke.py -v\n\n# Full startup integration tests (requires running servers + E: drive)\nvenv\\Scripts\\python -m pytest tests/test_startup.py -v\n```\n\n220 startup tests across 18 gates:\n- Files, shortcuts, icon\n- E: drive structure and free space\n- Python venv and dependencies\n- Node.js and frontend deps\n- Docker and Supabase containers\n- Backend/frontend server health\n- All 48+ API endpoints reachable\n- All 12 frontend pages render\n- Startup speed\n- Auto-pipeline wiring\n- Database and migrations\n- Config completeness\n\n## API\n\n- Dashboard: http:",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Media Vault",
+    "one_liner": "A desktop app for automating media management from iPhones to external drives.",
+    "core_promise": "Effortless and automatic transfer, verification, and optional social media publishing of large and old media files from your iPhone.",
+    "domain": "media management",
+    "buyers": [
+      {
+        "persona": "tech-savvy iPhone users running out of storage",
+        "awareness_level": "problem_aware",
+        "pain": "Constant lack of storage space on their iPhone due to large and old media files.",
+        "candidate_phrases": [
+          "free up iphone storage",
+          "transfer iphone photos to external drive",
+          "automatically delete old iphone videos",
+          "move iphone files to hard drive",
+          "make iphone storage free"
+        ]
+      },
+      {
+        "persona": "content creators managing large volumes of media",
+        "awareness_level": "solution_aware",
+        "pain": "The cumbersome process of managing large amounts of media files efficiently across devices.",
+        "candidate_phrases": [
+          "automate iphone media management",
+          "external storage for iphone videos",
+          "publish iphone photos to social media",
+          "cloud storage for iphone",
+          "organize iphone media files"
+        ]
+      },
+      {
+        "persona": "high-volume iPhone photographers",
+        "awareness_level": "problem_aware",
+        "pain": "A clutter of numerous media files on their devices, leading to difficulty in file management and organization.",
+        "candidate_phrases": [
+          "manage iphone photography storage",
+          "backup iphone photos automatically",
+          "iphone photo storage solutions",
+          "handle large media files iphone",
+          "external drive for iphone photography"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "The urgency for iPhone media management solutions is moderately high among users who frequently face storage issues or handle large files. The MVP development is moderately complex due to required integrations and verifications. Distribution can be effective through digital advertising and search engine optimization targeting specific pain points. Retention depends on recurring storage needs. The concept lacks proprietary technology or an existing audience for an advantage."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "free up iphone storage",
+      "volume": 1900,
+      "cpc": 2.09,
+      "competition": 0.51,
+      "source": "dataforseo",
+      "buyer": "tech-savvy iPhone users running out of storage",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "transfer iphone photos to external drive",
+      "volume": 50,
+      "cpc": 1.13,
+      "competition": 0.27,
+      "source": "dataforseo",
+      "buyer": "tech-savvy iPhone users running out of storage",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automatically delete old iphone videos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy iPhone users running out of storage",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "move iphone files to hard drive",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy iPhone users running out of storage",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "make iphone storage free",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy iPhone users running out of storage",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate iphone media management",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing large volumes of media",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "external storage for iphone videos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing large volumes of media",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "publish iphone photos to social media",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing large volumes of media",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "cloud storage for iphone",
+      "volume": 22200,
+      "cpc": 3.07,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "content creators managing large volumes of media",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "organize iphone media files",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing large volumes of media",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "manage iphone photography storage",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "high-volume iPhone photographers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "backup iphone photos automatically",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "high-volume iPhone photographers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "iphone photo storage solutions",
+      "volume": 10,
+      "cpc": 1.9,
+      "competition": 1,
+      "source": "dataforseo",
+      "buyer": "high-volume iPhone photographers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "handle large media files iphone",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "high-volume iPhone photographers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "external drive for iphone photography",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "high-volume iPhone photographers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "cloud storage for iphone",
+      "volume": 22200,
+      "cpc": 3.07,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "content creators managing large volumes of media",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "free up iphone storage",
+      "volume": 1900,
+      "cpc": 2.09,
+      "competition": 0.51,
+      "source": "dataforseo",
+      "buyer": "tech-savvy iPhone users running out of storage",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "transfer iphone photos to external drive",
+      "volume": 50,
+      "cpc": 1.13,
+      "competition": 0.27,
+      "source": "dataforseo",
+      "buyer": "tech-savvy iPhone users running out of storage",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "iphone photo storage solutions",
+      "volume": 10,
+      "cpc": 1.9,
+      "competition": 1,
+      "source": "dataforseo",
+      "buyer": "high-volume iPhone photographers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automatically delete old iphone videos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy iPhone users running out of storage",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "move iphone files to hard drive",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy iPhone users running out of storage",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "make iphone storage free",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy iPhone users running out of storage",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate iphone media management",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators managing large volumes of media",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 4.663901662866022,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.535,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 20.19890166286602
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "tech-savvy iPhone users running out of storage",
+        "anchor_phrase": "free up iphone storage",
+        "offer_copy": "For tech-savvy iPhone users who need more space but struggle with deleting precious memories, we offer automatic transfer and storage to external drives so they can enjoy more storage space without losing their photos and videos.",
+        "landing_page_headline": "Effortlessly Free Up iPhone Storage Today"
+      },
+      {
+        "buyer": "content creators managing large volumes of media",
+        "anchor_phrase": "cloud storage for iphone",
+        "offer_copy": "For content creators who manage large media volumes but face file chaos, we automate transfer and backup to external drives so they can keep their files organized without constant manual management.",
+        "landing_page_headline": "Simplify Your iPhone Media with Cloud Efficiency"
+      },
+      {
+        "buyer": "high-volume iPhone photographers",
+        "anchor_phrase": "iphone photo storage solutions",
+        "offer_copy": "For iPhone photographers overwhelmed by file clutter but needing organized access, we automatically transfer photos to external drives, keeping your collection orderly without constant oversight.",
+        "landing_page_headline": "Organize iPhone Photos Without Hassle"
+      }
+    ],
+    "next_action": "Ship 3 landing pages for the top phrases and burn $50 on Google Search ads.",
+    "reasoning": "There is clear search demand for storage management solutions, particularly among iPhone users. However, buyer urgency and willingness to pay are moderate, implying users may not actively seek paid solutions despite recognizing the problem. The automated nature of Media Vault gives some advantage, but the challenge will be convincing users of the value beyond existing free alternatives. Test these landing pages to validate interest and conversion potential."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/Iphone"
+  }
+}

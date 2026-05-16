@@ -1,0 +1,387 @@
+{
+  "source_text": "DupreeOps\n\n## README\n\n# Dupree Ops, LLC - Official Business Website\n\nOfficial business website for Dupree Ops, LLC. This site serves as a central reference for partners, vendors, and compliance reviewers (Stripe, Twilio, app stores, etc.).\n\n## Features\n\n- Terminal/ASCII art style design\n- Business-facing content optimized for verification\n- Legal pages (Terms, Privacy, Billing)\n- Product listings\n- Contact information\n- Responsive design\n\n## Tech Stack\n\n- Next.js 14\n- TypeScript\n- Tailwind CSS\n\n## Getting Started\n\n1. Install dependencies:\n```bash\nnpm install\n```\n\n2. Run the development server:\n```bash\nnpm run dev\n```\n\n3. Open [http://localhost:3000](http://localhost:3000) in your browser.\n\n## Customization\n\nUpdate the following files to customize for your business:\n\n- `pages/index.tsx` - Main page content, products list, contact info\n- `pages/terms.tsx` - Terms of Service\n- `pages/privacy.tsx` - Privacy Policy\n- `pages/billing.tsx` - Billing & Messaging Policy\n\n## Deployment\n\nThis site can be deployed to:\n- Vercel (recommended for Next.js)\n- Netlify\n- Any static hosting service (after `npm run build`)\n\n## License\n\n© {new Date().getFullYear()} Dupree Ops, LLC\n\n\n\nStack: TypeScript",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "DupreeOps Business Site Template",
+    "one_liner": "A customizable business website template optimized for partner verifications and compliance.",
+    "core_promise": "Businesses get a professional, verifiable online presence easily customized and compliant with vendor requirements.",
+    "domain": "business website templates",
+    "buyers": [
+      {
+        "persona": "tech startups needing a business site",
+        "awareness_level": "problem_aware",
+        "pain": "They need an official site that communicates professionalism and meets compliance criteria for partners and vendors.",
+        "candidate_phrases": [
+          "how to create a business website",
+          "official business website template",
+          "business site for partners and vendors",
+          "compliance ready website template",
+          "next.js business website"
+        ]
+      },
+      {
+        "persona": "freelance developers creating sites for clients",
+        "awareness_level": "solution_aware",
+        "pain": "They want a robust, customizable template for client work that saves time on common business website requirements.",
+        "candidate_phrases": [
+          "business website template next.js",
+          "tailwind css site template",
+          "customizable business site template",
+          "freelance dev website starter",
+          "prebuilt business websites"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 4,
+      "distribution_fit": 3,
+      "retention_potential": 2,
+      "advantage": 1,
+      "rationale": "The urgency for an official business website is moderate, particularly for startups and freelancers. Building a site template with popular tools like Next.js and Tailwind CSS is relatively quick (MVP ease is high). Distribution could be effective through SEO and marketplaces targeting web developers, but it's not extremely low-cost. Retention potential is low since once a website is set up, ongoing usage or updates may not be frequent. There's no evident unique advantage listed; the market for website templates is competitive."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "how to create a business website",
+      "volume": 2400,
+      "cpc": 25.54,
+      "competition": 0.63,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "official business website template",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "business site for partners and vendors",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "compliance ready website template",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "next.js business website",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "business website template next.js",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance developers creating sites for clients",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tailwind css site template",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance developers creating sites for clients",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "customizable business site template",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance developers creating sites for clients",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "freelance dev website starter",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance developers creating sites for clients",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "prebuilt business websites",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance developers creating sites for clients",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to build a website free",
+      "volume": 14800,
+      "cpc": 15.01,
+      "competition": 0.56,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to make a your own website",
+      "volume": 5400,
+      "cpc": 14.64,
+      "competition": 0.46,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to create a website for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to make a website for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how do i make a website for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how do i create a website for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how can i create a website for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how can i make a website for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to set up a website for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to create a web page for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to make a web page for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how do i make website for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to start a website for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how can i make my business website",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to start a web page for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "business website template next js",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance developers creating sites for clients",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "how to build a website free",
+      "volume": 14800,
+      "cpc": 15.01,
+      "competition": 0.56,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to make a your own website",
+      "volume": 5400,
+      "cpc": 14.64,
+      "competition": 0.46,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to create a website for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to make a website for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how do i make a website for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how do i create a website for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how can i create a website for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how can i make a website for my business",
+      "volume": 4400,
+      "cpc": 30.31,
+      "competition": 0.71,
+      "source": "dataforseo",
+      "buyer": "tech startups needing a business site",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 4.81355605946799,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 4,
+    "distribution_fit": 3,
+    "advantage": 1,
+    "retention_potential": 2,
+    "total": 22.81355605946799
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "tech startups needing a business site",
+        "anchor_phrase": "how to create a business website",
+        "offer_copy": "For tech startups who need a professional business site but struggle with partner compliance, we offer a ready-made template so they can quickly establish a compliant online presence without complex customizations.",
+        "landing_page_headline": "Effortless Compliance: Business Website Templates for Startups"
+      },
+      {
+        "buyer": "freelance developers creating sites for clients",
+        "anchor_phrase": "customizable business site template",
+        "offer_copy": "For freelance developers who need flexible templates for client projects but want to expedite meeting business requirements, we provide a customizable site template so they save time without sacrificing quality.",
+        "landing_page_headline": "Fast, Customizable Site Templates for Freelance Developers"
+      }
+    ],
+    "next_action": "Ship 2 landing pages targeting 'how to create a business website' and 'customizable business site template'; run $50 Google Search ads on each targeting these phrases.",
+    "reasoning": "The demand signals indicate moderate interest in learning how to create a business website, but there's less evidence of direct purchase intent linked to specific templates for compliance or specific technologies like Next.js. The low current competition and cost per click suggest there's space to carve a niche. However, the risk is in differentiation—current phrases do not show strong demand for templates with specific compliance features. Educating the market may be needed to stimulate interest, which impacts urgency and retention potential."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/DupreeOps"
+  }
+}

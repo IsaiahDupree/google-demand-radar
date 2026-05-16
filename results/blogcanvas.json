@@ -1,0 +1,306 @@
+{
+  "source_text": "BlogCanvas\n\n## README\n\n# BlogCanvas\n\nA Next.js application for AI-powered blog content creation and management, built with Supabase.\n\n## Features\n\n- 🤖 AI-powered blog post generation pipeline\n- 📝 Multi-agent content creation (research, outline, draft, SEO)\n- 🔍 Quality gates and review workflows\n- 💬 Collaborative commenting and review system\n- 🎨 Modern UI with Tailwind CSS and Radix UI\n- 🔒 Secure database with Row Level Security (RLS)\n\n## Tech Stack\n\n- **Framework**: Next.js 16 (App Router)\n- **Database**: Supabase (PostgreSQL)\n- **Styling**: Tailwind CSS 4\n- **UI Components**: Radix UI\n- **Type Safety**: TypeScript\n- **Testing**: Jest + React Testing Library\n\n## Prerequisites\n\n- Node.js 18+\n- npm, yarn, pnpm, or bun\n- Supabase account (for cloud) OR Docker (for local development)\n\n## Quick Start\n\n### 1. Clone and Install\n\n```bash\ngit clone <your-repo-url>\ncd BlogCanvas\nnpm install\n```\n\n### 2. Set Up Supabase\n\n**Option A: Supabase Cloud (Recommended for Quick Start)**\n\n1. Create a project at [supabase.com](https://supabase.com)\n2. Get your project URL and anon key from Settings → API\n3. Copy `env.example` to `.env.local`:\n   ```bash\n   cp env.example .env.local\n   ```\n4. Fill in your Supabase credentials in `.env.local`\n\n**Option B: Local Development**\n\n1. Install Supabase CLI: `npm install -g supabase`\n2. Install and start Docker Desktop\n3. Initialize and start Supabase:\n   ```bash\n   supabase init\n   supabase start\n   ```\n4. Copy the local credentials to `.env.local`\n\n📖 **Detailed Setup**: See [docs/SUPABASE_SETUP.md](./docs/SUPABASE_SETUP.md) for complete instructions.\n\n### 3. Verify Connection\n\nTest your Supabase connection:\n\n```bash\nnpm run test:supabase\n```\n\n### 4. Run Development Server\n\n```bash\nnpm run dev\n```\n\nOpen [http://localhost:3000](http://localhost:3000) to see the app.\n\n## Project Structure\n\n```\nBlogCanvas/\n├── docs/                    # Documentation\n│   └── SUPABASE_SETUP.md   # Supabase setup guide\n├── lib/                     # Core libraries\n│   ├── agents/             # AI agent implementations\n│   ├── pipeline/           # Content pipeline orchestration\n│   └── supabase/           # Supabase client utilities\n├── src/\n│   ├── app/                # Next.js app router pages\n│   │   ├── api/            # API routes\n│   │   └── posts/          # Blog post pages\n│   └── components/         # React components\n├── supabase/\n│   └── migrations/         # Database migrations\n├── types/\n│   └── database.ts         # Generated TypeScript types\n└── scripts/                # Utility scripts\n```\n\n## Available Scripts\n\n- `npm run dev` - Start development server\n- `npm run build` - Build for production\n- `npm run start` - Start production server\n- `npm run lint` - Run ESLint\n- `npm run test` - Run tests\n- `npm run test:watch` - Run tests in watch mode\n- `npm run test:coverage` - Run tests with coverage\n- `npm run test:supabase` - Test Supabase connection\n\n## Database Schema\n\nThe application uses the following main tables:\n\n- **clients** - Client/organization information\n- **client_profiles** - Detailed brand and marketing info\n- **blog_posts** - Blog post metadata and content\n- **blog_post_sections** - Individual sections of blog posts\n- **agent_runs** - Logging for AI agent executions\n- **review_tasks** - Tasks for human review\n- **comments** - Comments on posts and sections\n- **cms_connections** - CMS integration settings\n\nSee `supabase/migrations/` for the complete schema.\n\n## Environment Variables\n\nRequired:\n- `NEXT_PUBLIC_SUPABASE_URL` - Your Supabase project URL\n- `NEXT_PUBLIC_SUPABASE_ANON_KEY` - Your Supabase anon key\n\nSee `env.example` for all available variables.\n\n## Deployment\n\n### Deploy to Vercel\n\nThe easiest way to deploy BlogCanvas is using [Vercel](https://vercel.com):\n\n1. **Push your code to GitHub**\n   ```bash\n   git push origin main\n   ```\n\n2. **Import to Vercel**\n   - Go to [vercel.com/new](https://vercel.com/new)\n   - Import your repository\n   - Add environment variables:\n     - `NEXT_PUBLIC_SUPABASE_URL`\n     - `NE",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "BlogCanvas",
+    "one_liner": "AI-powered platform for creating and managing blog content efficiently.",
+    "core_promise": "Effortlessly generate and manage high-quality blog content using AI, reducing time spent on content creation and management.",
+    "domain": "blogging and content management",
+    "buyers": [
+      {
+        "persona": "small business owners seeking efficient content creation",
+        "awareness_level": "problem_aware",
+        "pain": "Struggling to consistently produce high-quality blog posts that engage and convert audience.",
+        "candidate_phrases": [
+          "how to write blog posts faster",
+          "tools to automate blog writing",
+          "content creation software for blogs",
+          "best blog writing tools 2023",
+          "how to improve blog writing process"
+        ]
+      },
+      {
+        "persona": "content managers in digital marketing agencies",
+        "awareness_level": "solution_aware",
+        "pain": "Need to enhance content production efficiency and maintain quality control over large volumes of content.",
+        "candidate_phrases": [
+          "ai tools for blog writing",
+          "content management software with ai",
+          "multi-agent content creation tools",
+          "blog content production software",
+          "ai blog content creators"
+        ]
+      },
+      {
+        "persona": "freelance bloggers",
+        "awareness_level": "problem_aware",
+        "pain": "Finding it hard to juggle content quality and quantity while managing multiple clients or personal projects.",
+        "candidate_phrases": [
+          "app to help write blogs",
+          "ai content creation for bloggers",
+          "ways to streamline blog posting",
+          "best writing tools for bloggers",
+          "how to scale blog writing"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "BlogCanvas addresses real pain points for bloggers and content managers, which offers moderate urgency. Building an AI-powered content platform involves more complexity than a simple MVP. With suitable targeting, it could reach potential buyers fairly effectively through platforms like SEO and social media ads. The concept allows for retention due to the ongoing need for content generation. However, given the fierce competition in AI writing tools, there's no clear indication of an existing advantage or niche edge to leverage."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "how to write blog posts faster",
+      "volume": 30,
+      "cpc": 0,
+      "competition": 0.05,
+      "source": "dataforseo",
+      "buyer": "small business owners seeking efficient content creation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools to automate blog writing",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners seeking efficient content creation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content creation software for blogs",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners seeking efficient content creation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best blog writing tools 2023",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners seeking efficient content creation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to improve blog writing process",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners seeking efficient content creation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai tools for blog writing",
+      "volume": 30,
+      "cpc": 0,
+      "competition": 0.09,
+      "source": "dataforseo",
+      "buyer": "content managers in digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content management software with ai",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content managers in digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "multi-agent content creation tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content managers in digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "blog content production software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content managers in digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai blog content creators",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content managers in digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "app to help write blogs",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance bloggers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai content creation for bloggers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance bloggers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ways to streamline blog posting",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance bloggers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best writing tools for bloggers",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance bloggers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to scale blog writing",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance bloggers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "how to write blog posts faster",
+      "volume": 30,
+      "cpc": 0,
+      "competition": 0.05,
+      "source": "dataforseo",
+      "buyer": "small business owners seeking efficient content creation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai tools for blog writing",
+      "volume": 30,
+      "cpc": 0,
+      "competition": 0.09,
+      "source": "dataforseo",
+      "buyer": "content managers in digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best writing tools for bloggers",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance bloggers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools to automate blog writing",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners seeking efficient content creation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content creation software for blogs",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners seeking efficient content creation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best blog writing tools 2023",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners seeking efficient content creation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to improve blog writing process",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners seeking efficient content creation",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content management software with ai",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content managers in digital marketing agencies",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 1.969851823976236,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 17.469851823976235
+  },
+  "verdict": "Educate Later",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "small business owners seeking efficient content creation",
+        "anchor_phrase": "how to write blog posts faster",
+        "offer_copy": "For small business owners who need consistent content but struggle with time, we provide AI-driven blog creation so they can publish quality posts faster without sacrificing engagement.",
+        "landing_page_headline": "Effortlessly Speed Up Your Blog Writing"
+      },
+      {
+        "buyer": "content managers in digital marketing agencies",
+        "anchor_phrase": "ai tools for blog writing",
+        "offer_copy": "For content managers needing to boost efficiency but maintain quality, we offer AI tools that streamline blog writing tasks so they deliver more content at scale while ensuring creative control.",
+        "landing_page_headline": "AI-Powered Efficiency for Agency Content Managers"
+      },
+      {
+        "buyer": "freelance bloggers",
+        "anchor_phrase": "best writing tools for bloggers",
+        "offer_copy": "For freelance bloggers juggling multiple projects who want quality and quantity, our AI tools optimize the writing process so they can deliver exceptional content consistently without burnout.",
+        "landing_page_headline": "Essential Tools for Modern Bloggers"
+      }
+    ],
+    "next_action": "Create engaging educational content targeting 'how to write blog posts faster' and 'ai tools for blog writing', then distribute via social and content marketing to attract small business owners and agencies.",
+    "reasoning": "The demand signals suggest a moderate interest in AI tools for writing but highlight a need for greater education and awareness. With relatively low willingness to pay and no established urgency, the demand isn't strong enough for immediate aggressive scaling. Building educational content around the most searched terms will help in establishing trust and showcasing the platform's value, thus generating interest over time. The key risk lies in the potential lack of differentiation and compelling value that resonates directly with urgent buyer needs."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/BlogCanvas"
+  }
+}

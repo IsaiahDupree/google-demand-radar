@@ -1,0 +1,308 @@
+{
+  "slug": "youtubecomments",
+  "source_concept": "YouTube Comment Automation",
+  "generated_at": "2026-05-16T17:27:44.990Z",
+  "cross_vertical_insight": "Across these verticals, a common pain point is the need for consistent engagement on YouTube without expanding manpower, making automation an attractive solution. Industries vary from creative to commercial, but all share a reliance on social media for growth, highlighting a universal demand for scalable engagement tools.",
+  "verticals": [
+    {
+      "name": "independent video production companies",
+      "icp": "Small independent video production companies, 5-10 employees, producing content for corporate or creative clients and seeking to increase organic YouTube visibility for their projects.",
+      "rationale": "These companies often struggle to engage with potential audiences without dedicating significant resources to social media interaction, making automated, human-approved comments appealing.",
+      "phrases": [
+        {
+          "phrase": "automated youtube comments for video production",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "youtube engagement tools for filmmakers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best ai tools for youtube interactions",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "youtube comment automation for production studios",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "buy ai youtube comment software for film studios",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "automated youtube comments for video production",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "e-commerce brands focusing on video content",
+      "icp": "Mid-sized e-commerce brands, $1-10M revenue, with dedicated digital marketing teams aiming to leverage YouTube for brand recognition and consumer engagement.",
+      "rationale": "These brands look to maximize their YouTube channel's reach and engagement without additional manpower, aligning with the need for a scalable comment automation solution.",
+      "phrases": [
+        {
+          "phrase": "youtube comment automation for e-commerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "youtube engagement tools for online stores",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best youtube marketing software for ecommerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "ai youtube comments for online retail brands",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "youtube interaction tools for ecommerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "youtube comment automation for e-commerce",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "nonprofit organizations focusing on advocacy content",
+      "icp": "Nonprofits with 5-50 employees that use YouTube to spread awareness about causes and drive viewer engagement and support.",
+      "rationale": "Nonprofits seek efficient ways to engage audiences and spread messages without extensive resources, making YouTube comment automation suitable.",
+      "phrases": [
+        {
+          "phrase": "youtube automation tools for nonprofits",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "improve youtube engagement for charity videos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best tools for youtube advocacy engagement",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy ai comment software for nonprofit youtube channels",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "youtube interaction tools for nonprofits",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "youtube automation tools for nonprofits",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "real estate agencies using video marketing",
+      "icp": "Real estate agencies with 10-50 agents who produce property and market-related content to generate leads and require consistent online engagement.",
+      "rationale": "Real estate agencies use YouTube videos to showcase properties and need to maintain high levels of interaction to generate leads, fitting well with automated comment solutions.",
+      "phrases": [
+        {
+          "phrase": "youtube comment tools for real estate",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "real estate youtube engagement software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "ai tools for real estate video marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best youtube marketing tools for realtors",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy comment automation for real estate youtube",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "youtube comment tools for real estate",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    },
+    {
+      "name": "fitness influencers and coaches",
+      "icp": "Individual fitness trainers and brands with 5-15 employees using YouTube videos to reach and maintain their client base and require strong audience interaction.",
+      "rationale": "Fitness professionals rely heavily on social media for business growth, and efficient management of engagement through comments would appeal to them for sustaining interaction levels.",
+      "phrases": [
+        {
+          "phrase": "youtube comment automation for fitness influencers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best youtube tools for fitness channels",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "ai youtube comments for personal trainers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "engage youtube audience for fitness trainers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy automated youtube commenting for fitness industry",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "youtube comment automation for fitness influencers",
+      "top_volume": 0,
+      "pmf_score": 2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.8
+      }
+    }
+  ]
+}

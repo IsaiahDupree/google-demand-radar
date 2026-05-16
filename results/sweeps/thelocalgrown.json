@@ -1,0 +1,308 @@
+{
+  "slug": "thelocalgrown",
+  "source_concept": "TheLocalGrown",
+  "generated_at": "2026-05-16T17:25:22.174Z",
+  "cross_vertical_insight": "Common across these verticals is the desire for community and resource sharing in the gardening context. Search behavior indicates that connection and locality are crucial dimensions, driving purchase decisions beyond mere product features.",
+  "verticals": [
+    {
+      "name": "urban gardening hobbyists",
+      "icp": "Urban residents with small-space gardens (e.g., rooftop, balcony) aged 25-45, interested in sustainable living and community engagement.",
+      "rationale": "Urban gardeners often struggle to find local resources and like-minded individuals due to space and network limitations.",
+      "phrases": [
+        {
+          "phrase": "urban gardening community app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "connect with local urban gardeners",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "apps for trading plants in the city",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best platforms for rooftop gardeners",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "buy rare seeds in urban areas",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "urban gardening community app",
+      "top_volume": 0,
+      "pmf_score": 1.9,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.7
+      }
+    },
+    {
+      "name": "suburban neighborhood gardening groups",
+      "icp": "Suburban residents ages 30-60, partaking in community gardening or local neighborhood groups, interested in gardening as a social and recreational activity.",
+      "rationale": "Suburban gardeners often want to engage more deeply with their neighbors and share resources more efficiently.",
+      "phrases": [
+        {
+          "phrase": "garden sharing platform for suburbs",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "community garden networking app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "top apps for local plant exchange",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to start a neighborhood gardening club",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "trade seeds with suburban gardeners",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "garden sharing platform for suburbs",
+      "top_volume": 0,
+      "pmf_score": 1.9,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.7
+      }
+    },
+    {
+      "name": "eco-conscious families",
+      "icp": "Families focused on sustainable living, educating children through gardening, and eco-friendly lifestyles, typically in suburban or rural settings.",
+      "rationale": "These families are motivated by sustainability and education, seeking ways to integrate gardening into family activities and education.",
+      "phrases": [
+        {
+          "phrase": "family gardening social network",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "apps for educational gardening for kids",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "platforms for trading seeds sustainably",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best family-friendly gardening tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "connect with local green families",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "family gardening social network",
+      "top_volume": 0,
+      "pmf_score": 1.9,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.7
+      }
+    },
+    {
+      "name": "small-scale organic farmers",
+      "icp": "Small-scale farmers operating on 1-5 acres, interested in organic and sustainable farming methods and community engagement.",
+      "rationale": "These farmers have the dual need of expanding reach and increasing resource-sharing within a niche community.",
+      "phrases": [
+        {
+          "phrase": "organic farming community app",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "find local seed exchange farmers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best platforms for trading organic plants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "join local organic farming forums",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "network with other organic farmers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "organic farming community app",
+      "top_volume": 0,
+      "pmf_score": 1.9,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.7
+      }
+    },
+    {
+      "name": "retirement community garden coordinators",
+      "icp": "Coordinators or volunteers managing gardening activities in retirement communities, aiming to enhance resident engagement and wellness.",
+      "rationale": "With an emphasis on recreational and therapeutic activities, they need tools to facilitate and enrich gardening programs for seniors.",
+      "phrases": [
+        {
+          "phrase": "garden sharing program for seniors",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "community gardening platform for retirees",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "apps to enhance senior gardening activities",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "setting up a communal garden for retirement homes",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "swap plants in retirement communities",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "garden sharing program for seniors",
+      "top_volume": 0,
+      "pmf_score": 1.9,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.7
+      }
+    }
+  ]
+}

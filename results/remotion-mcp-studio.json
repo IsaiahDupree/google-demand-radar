@@ -1,0 +1,306 @@
+{
+  "source_text": "remotion-mcp-studio\n\nUnified Remotion MCP Studio — 25 MCP tools, 59 compositions, AI content pipeline, TikTok automation, template marketplace\n\n## README\n\n# Video Studio\n\nA standalone, brief-driven video generation studio built with Remotion. Create professional videos programmatically by defining content in JSON briefs.\n\n## Features\n\n- **Brief-Driven**: Define videos using JSON content briefs\n- **Multiple Formats**: Explainer, Listicle, Comparison, Shorts templates\n- **Themed Styling**: Dark, Light, Neon themes with full customization\n- **Animation Library**: Fade, Slide, Zoom, Bounce, Typewriter effects\n- **Scene Templates**: Intro, Topic, List Item, Outro, Transition scenes\n- **CLI Rendering**: Render videos from command line\n- **Backend Integration Ready**: Designed for programmatic video generation\n\n## Quick Start\n\n### 1. Install Dependencies\n\n```bash\nnpm install\n```\n\n### 2. Preview in Studio\n\n```bash\nnpm run dev\n```\n\nOpens Remotion Studio at http://localhost:3000\n\n### 3. Render from Brief\n\n```bash\nnpm run render:brief data/briefs/example_explainer.json\n```\n\n## Project Structure\n\n```\nVideoStudio/\n├── src/\n│   ├── scenes/              # Scene templates\n│   │   ├── IntroScene.tsx\n│   │   ├── TopicScene.tsx\n│   │   ├── OutroScene.tsx\n│   │   ├── TransitionScene.tsx\n│   │   └── ListItemScene.tsx\n│   ├── components/          # Reusable visual components\n│   │   ├── TextBlock.tsx\n│   │   ├── ImageContainer.tsx\n│   │   ├── ProgressBar.tsx\n│   │   ├── BackgroundGradient.tsx\n│   │   └── IconBadge.tsx\n│   ├── animations/          # Animation presets\n│   │   ├── fadeIn.ts\n│   │   ├── slideIn.ts\n│   │   ├── typewriter.ts\n│   │   ├── bounce.ts\n│   │   └── zoom.ts\n│   ├── styles/              # Style configurations\n│   │   ├── themes/\n│   │   ├── fonts.ts\n│   │   └── colors.ts\n│   ├── utils/               # Utility functions\n│   │   ├── timing.ts\n│   │   ├── easing.ts\n│   │   └── layout.ts\n│   ├── types/               # TypeScript types\n│   │   └── ContentBrief.ts\n│   └── compositions/        # Remotion compositions\n│       └── BriefComposition.tsx\n├── formats/                 # Video format definitions\n│   ├── explainer_v1.ts\n│   ├── listicle_v1.ts\n│   ├── comparison_v1.ts\n│   └── shorts_v1.ts\n├── data/\n│   ├── briefs/              # Content brief JSON files\n│   │   ├── example_explainer.json\n│   │   ├── example_listicle.json\n│   │   └── schema.json\n│   └── assets/              # Static assets\n├── scripts/\n│   ├── render.ts            # CLI render script\n│   ├── preview.ts           # Dev preview server\n│   └── validate-brief.ts    # Brief validation\n└── output/                  # Rendered videos\n```\n\n## Content Brief Schema\n\nVideos are defined using JSON content briefs:\n\n```json\n{\n  \"id\": \"my_video_001\",\n  \"format\": \"explainer_v1\",\n  \"version\": \"1.0\",\n  \"settings\": {\n    \"resolution\": { \"width\": 1080, \"height\": 1920 },\n    \"fps\": 30,\n    \"duration_sec\": 60,\n    \"aspect_ratio\": \"9:16\"\n  },\n  \"style\": {\n    \"theme\": \"dark\",\n    \"primary_color\": \"#ffffff\",\n    \"secondary_color\": \"#a1a1aa\",\n    \"accent_color\": \"#3b82f6\",\n    \"font_heading\": \"Inter\",\n    \"font_body\": \"Inter\",\n    \"background_type\": \"gradient\",\n    \"background_value\": \"linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%)\"\n  },\n  \"sections\": [\n    {\n      \"id\": \"intro_001\",\n      \"type\": \"intro\",\n      \"duration_sec\": 9,\n      \"start_time_sec\": 0,\n      \"content\": {\n        \"type\": \"intro\",\n        \"title\": \"Your Title\",\n        \"subtitle\": \"Your Subtitle\",\n        \"hook_text\": \"Your hook text\"\n      }\n    }\n  ]\n}\n```\n\n## Available Formats\n\n| Format | Description | Aspect Ratio | Default Duration |\n|--------|-------------|--------------|------------------|\n| `explainer_v1` | Educational content | 9:16 | 60s |\n| `listicle_v1` | Top N lists | 9:16 | 45s |\n| `comparison_v1` | X vs Y format | 16:9 | 60s |\n| `shorts_v1` | Fast-paced shorts | 9:16 | 30s |\n\n## Section Types\n\n- **intro**: Opening with title, subtitle, hook\n- **topic**: Main content with heading, body, bullets, image\n- **list_item**: Numbered item with title and description\n- **comparison**: Side-by-side comparison\n- **outro**: Closing with CTA and social handles\n- **tra\n\nStack: TypeScript",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Remotion MCP Studio",
+    "one_liner": "Programmatic video generation studio using JSON content briefs.",
+    "core_promise": "Efficiently create professional-quality videos using automated templates and JSON briefs.",
+    "domain": "video production software",
+    "buyers": [
+      {
+        "persona": "small business marketers",
+        "awareness_level": "problem_aware",
+        "pain": "Need to create engaging marketing videos but lack time or in-house expertise.",
+        "candidate_phrases": [
+          "how to make marketing videos quickly",
+          "video production software for small business",
+          "automated video creation tools",
+          "easy video editing software for marketing",
+          "best video tools for small businesses"
+        ]
+      },
+      {
+        "persona": "content creators on social media platforms",
+        "awareness_level": "solution_aware",
+        "pain": "Require a consistent flow of content to keep followers engaged but have limited time for manual editing.",
+        "candidate_phrases": [
+          "tools for automating social media videos",
+          "create tiktok videos automatically",
+          "content creation tools for instagram",
+          "best video automation tools for youtube",
+          "how to automate video creation for social media"
+        ]
+      },
+      {
+        "persona": "video production agencies",
+        "awareness_level": "product_aware",
+        "pain": "Need scalable video production solutions that maintain quality across multiple projects.",
+        "candidate_phrases": [
+          "remotion software",
+          "programmatic video creation tools",
+          "json based video production",
+          "scalable video production software",
+          "remotion studio tutorials"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 4,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 3,
+      "advantage": 1,
+      "rationale": "Buyer urgency is high for marketers and content creators seeking efficient video solutions. The MVP ease is low, given the technical complexity involving JSON and video rendering. Distribution fit is moderate; SEO and targeted ads can reach marketers and small businesses. Retention potential exists due to recurring need for video content creation. There is no clear advantage mentioned, such as proprietary technology or an existing audience, which results in a low score for advantage."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "how to make marketing videos quickly",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "video production software for small business",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated video creation tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy video editing software for marketing",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best video tools for small businesses",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools for automating social media videos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on social media platforms",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "create tiktok videos automatically",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on social media platforms",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content creation tools for instagram",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on social media platforms",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best video automation tools for youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on social media platforms",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to automate video creation for social media",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on social media platforms",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "remotion software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "video production agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "programmatic video creation tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "video production agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "json based video production",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "video production agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "scalable video production software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "video production agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "remotion studio tutorials",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "video production agencies",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "content creation tools for instagram",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on social media platforms",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to make marketing videos quickly",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "video production software for small business",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated video creation tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy video editing software for marketing",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best video tools for small businesses",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools for automating social media videos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on social media platforms",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "create tiktok videos automatically",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on social media platforms",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 1.10810534993878,
+    "buyer_urgency": 4,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 1,
+    "retention_potential": 3,
+    "total": 15.60810534993878
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "small business marketers",
+        "anchor_phrase": "automated video creation tools",
+        "offer_copy": "For small business marketers who need engaging marketing videos but lack time and in-house expertise, we provide automated video creation tools that generate professional-quality content without manual editing.",
+        "landing_page_headline": "Automate Your Marketing Videos with Ease"
+      },
+      {
+        "buyer": "content creators on social media platforms",
+        "anchor_phrase": "tools for automating social media videos",
+        "offer_copy": "For social media content creators who require consistent engagement but have limited time, we offer tools for automating social media videos, ensuring a steady flow of content without hours spent on editing each clip.",
+        "landing_page_headline": "Effortlessly Automate Your Social Media Video Content"
+      },
+      {
+        "buyer": "video production agencies",
+        "anchor_phrase": "video production software for small business",
+        "offer_copy": "For video production agencies needing scalable solutions, we offer video production software for small businesses enabling efficient management of multiple projects while maintaining high-quality standards without overextending resources.",
+        "landing_page_headline": "Scale Video Production with Our Professional Tools"
+      }
+    ],
+    "next_action": "Craft and test ad copy targeting 'automated video creation tools' to gauge interest and refine messaging based on CTRs and feedback.",
+    "reasoning": "The overall search demand is low, which indicates a limited immediate market interest. While there's a strong buyer urgency, implying pain points are real and current, the willingness to pay is low. This suggests the audience isn't yet prioritizing spending for this solution. Testing 'automated video creation tools' can give early signals if there's potential to unlock demand with tweaked messaging or positioning."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/remotion-mcp-studio"
+  }
+}

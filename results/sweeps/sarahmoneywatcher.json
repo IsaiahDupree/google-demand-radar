@@ -1,0 +1,308 @@
+{
+  "slug": "sarahmoneywatcher",
+  "source_concept": "SarahMoneyWatcher",
+  "generated_at": "2026-05-16T17:22:56.379Z",
+  "cross_vertical_insight": "Across the verticals, there's a consistent demand for enhanced data analysis and reporting capabilities beyond what HoneyBook offers. Buyers are often small-scale or freelance professionals who rely heavily on client data to optimize services and need custom analytics for growth and efficiency. Anti-pattern: generic CRM integrations without a specific need for deeper insights will not attract these niche buyers.",
+  "verticals": [
+    {
+      "name": "wedding planners using honeybook",
+      "icp": "Individual or small team wedding planners, handling 20-50 events per year, using HoneyBook for client management and payment processing.",
+      "rationale": "Wedding planners using HoneyBook need better reporting to analyze payment cycles, client preferences, and venue partnerships, all of which align with the solution's analytics strengths.",
+      "phrases": [
+        {
+          "phrase": "custom analytics for honeybook",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "reporting tools for wedding planners",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "integrate honeybook with database",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "supabase for event management analytics",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "wedding planner payment tracking software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "custom analytics for honeybook",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "photographers specialized in events",
+      "icp": "Freelance event photographers, managing client bookings and payments via HoneyBook, wanting to track financial and client engagement data.",
+      "rationale": "Photographers want detailed insights into revenue patterns, popular services, and client demographics, demanding capabilities beyond HoneyBook's standard reports.",
+      "phrases": [
+        {
+          "phrase": "analytics for honeybook photographers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best tools to sync honeybook data",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "custom reporting for event photography",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "postgresql integration with honeybook",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "photographer business analytics tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "analytics for honeybook photographers",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "small creative agencies with client contracts",
+      "icp": "Agencies with 5-15 staff members, managing multiple creative projects, seeking better analytics on project costs, client payments, and timelines.",
+      "rationale": "These agencies handle complex projects and require precise financial and timeline reporting to optimize their operations, which HoneyBook's native capabilities might not suffice.",
+      "phrases": [
+        {
+          "phrase": "honeybook data integration",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "agency analytics tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "custom honeybook reporting solutions",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "sync honeybook to database",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "creative agency project analytics",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "honeybook data integration",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "virtual assistants managing multiple clients",
+      "icp": "Freelance virtual assistants handling client communications, scheduling, and billing through HoneyBook, needing enhanced workflow insights.",
+      "rationale": "Virtual assistants managing client relationships and finances want comprehensive tools for client engagement metrics linking their billing and scheduling data.",
+      "phrases": [
+        {
+          "phrase": "virtual assistant honeybook analytics",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "tools to track honeybook activities",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "supabase sync with honeybook for assistants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "custom reports for virtual assistants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "freelancer crm alternatives for reporting",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "virtual assistant honeybook analytics",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "consultants in business and finance sectors",
+      "icp": "Independent consultants using HoneyBook for invoicing and scheduling, requiring in-depth analysis of client engagement and revenue streams.",
+      "rationale": "Consultants aim for robust data analytics to evaluate market trends, optimize service offerings, and enhance client interactions, which basic HoneyBook reporting cannot provide.",
+      "phrases": [
+        {
+          "phrase": "honeybook reporting for consultants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "integrate honeybook with supabase",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "business consultant data analytics tools",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best crm data syncing solutions",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "client engagement tracking for consultants",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "honeybook reporting for consultants",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

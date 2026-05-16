@@ -1,0 +1,243 @@
+{
+  "source_text": "PremierPrompt\n\n## README\n\n# Video Insight Report Generator\n\nA UXP panel for Adobe Premiere Pro that generates insightful reports from video sequences by:\n\n- Exporting frame stills at specified intervals\n- Collecting transcripts from captions or via speech-to-text\n- Using vision AI to analyze each frame\n- Compiling everything into a markdown report\n\n## Requirements\n\n- Adobe Premiere Pro (v25.2 or higher)\n- UXP Developer Tool (for development and loading)\n- API key for OpenAI (or other compatible vision and speech API)\n\n## Installation\n\n### For Development\n\n1. Clone or download this repository\n2. Open the UXP Developer Tool\n3. Click \"Add Plugin\" and select the folder containing this plugin\n4. Click \"Load\" to load the plugin into Premiere Pro\n\n### For End Users\n\n1. Build the plugin using UXP Developer Tool\n2. Distribute the resulting `.ccx` file to end users\n3. Users can install via the Creative Cloud Desktop application\n\n## Usage\n\n1. Open Adobe Premiere Pro with your video project\n2. Open the Video Insight Report panel from Window > Extensions > Video Insight Report\n3. Configure the settings:\n   - **Frame Interval**: Time between frames in seconds (default: 120s)\n   - **Image Resolution**: Width and height for exported frames\n   - **Use Existing Captions**: Toggle to use sequence captions when available\n   - **Output Folder**: Location to save the report and assets\n   - **API URLs**: Endpoints for vision and speech services\n   - **API Key**: Your authentication key for the services\n\n4. Click \"Generate Report\" and wait for the process to complete\n5. Use the provided buttons to copy the report to clipboard or open it in your file explorer\n\n## API Configuration\n\n### OpenAI Configuration\n\nFor Vision API:\n- URL: `https://api.openai.com/v1/chat/completions`\n- Model: gpt-4-vision-preview (automatically used)\n\nFor Speech API:\n- URL: `https://api.openai.com/v1/audio/transcriptions`\n- Model: whisper-1 (automatically used)\n\n### Custom API Configuration\n\nIf using your own API:\n- Vision API should accept an image and return text analysis as bullet points\n- Speech API should accept an audio file and return a text transcript\n\n## Report Format\n\nThe generated markdown report includes:\n\n1. **Header** with project info and interval setting\n2. **Timeline** section with frame timestamps and bullet-point analysis\n3. **Transcript** section with the full raw transcript\n\nExample:\n\n```markdown\n# Video Insight Report\n\n- **Project:** My Documentary\n- **Sequence:** Final Edit\n- **Frame interval:** 120s\n\n## Timeline (frame analyses)\n\n### [00:00]\n\n- A person is speaking directly to the camera\n- The background shows a cityscape at dusk\n- Lower third graphics display the speaker's name and title\n\n### [02:00]\n\n- Aerial view of a crowded street\n- Multiple people are walking in different directions\n- Weather appears to be overcast with light rain\n\n## Transcript (raw)\n\nWelcome to our documentary about urban life. As you can see behind me...\n```\n\n## Development Notes\n\nThis plugin uses the UXP API to access Premiere Pro sequences and export frames. Key technical aspects:\n\n- Frame export uses `app.exporter.exportSequenceFrame()`\n- Caption extraction via sequence caption tracks\n- Audio export for transcription via `app.encoder.getManager().exportSequence()`\n- Local storage for saving user preferences\n\n## Troubleshooting\n\n- **No active sequence**: Make sure you have a sequence open and active\n- **Export errors**: Check that output folder permissions are correct\n- **API errors**: Verify your API key and URLs are correct\n- **Audio export fails**: Check that you have appropriate audio in your sequence\n\n## License\n\n[MIT License](LICENSE)\n\n## Acknowledgements\n\n- Adobe UXP Team for the UXP API\n- OpenAI for vision and speech API services\n\nDescription: AI-powered Premiere Pro automation panel",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "PremierPrompt",
+    "one_liner": "A Premiere Pro plugin for generating markdown reports with visual insights from video sequences.",
+    "core_promise": "Generate detailed markdown reports analyzing video content for easier review and documentation.",
+    "domain": "video editing plugins",
+    "buyers": [
+      {
+        "persona": "video editors working on documentaries or research projects",
+        "awareness_level": "problem_aware",
+        "pain": "Spending excessive time manually analyzing video footage and creating detailed reports for projects.",
+        "candidate_phrases": [
+          "how to analyze video frames in premiere",
+          "generate report from premiere pro sequence",
+          "visualize video data premiere plugin",
+          "automate video analysis adobe premiere",
+          "documentation tools for video projects"
+        ]
+      },
+      {
+        "persona": "content creators needing efficient content review",
+        "awareness_level": "solution_aware",
+        "pain": "Needing a quick and efficient way to review and document long video content.",
+        "candidate_phrases": [
+          "premiere pro plugin for video review",
+          "video analysis tool for content creators",
+          "generate markdown from video",
+          "content review tools premiere pro",
+          "frame interval analysis software"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "The urgency is moderate as the target buyers have ongoing needs for video documentation, but it is not life-critical. Building MVP is complex due to integrations with Adobe and potentially OpenAI APIs. Distribution can leverage established video editing communities and Adobe marketplaces, which is a good fit. Retention is moderate since the value proposition is ongoing for frequent video work. The advantage score is low as there is no clear differentiation or unique capability stated beyond existing general AI tools."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "how to analyze video frames in premiere",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "video editors working on documentaries or research projects",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "generate report from premiere pro sequence",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "video editors working on documentaries or research projects",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "visualize video data premiere plugin",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "video editors working on documentaries or research projects",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate video analysis adobe premiere",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "video editors working on documentaries or research projects",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "documentation tools for video projects",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "video editors working on documentaries or research projects",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "premiere pro plugin for video review",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators needing efficient content review",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "video analysis tool for content creators",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators needing efficient content review",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "generate markdown from video",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators needing efficient content review",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content review tools premiere pro",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators needing efficient content review",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "frame interval analysis software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators needing efficient content review",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "how to analyze video frames in premiere",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "video editors working on documentaries or research projects",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "generate report from premiere pro sequence",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "video editors working on documentaries or research projects",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "visualize video data premiere plugin",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "video editors working on documentaries or research projects",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate video analysis adobe premiere",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "video editors working on documentaries or research projects",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "documentation tools for video projects",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "video editors working on documentaries or research projects",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "premiere pro plugin for video review",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators needing efficient content review",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "video analysis tool for content creators",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators needing efficient content review",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "generate markdown from video",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators needing efficient content review",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 0,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 15.5
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "video editors working on documentaries or research projects",
+        "anchor_phrase": "automate video analysis adobe premiere",
+        "offer_copy": "For documentary video editors who need to generate detailed reports but are bogged down by manual analysis, we provide a Premiere Pro plugin that automates video analysis and report generation so they can save time without missing critical insights.",
+        "landing_page_headline": "Automate Your Video Analysis In Premiere Pro"
+      },
+      {
+        "buyer": "content creators needing efficient content review",
+        "anchor_phrase": "premiere pro plugin for video review",
+        "offer_copy": "For content creators who need efficient content review processes but struggle with time-consuming manual documentation, we offer a Premiere Pro plugin that generates markdown reports so they can easily review and document content without extra work.",
+        "landing_page_headline": "Streamline Video Review With Our Premiere Pro Plugin"
+      }
+    ],
+    "next_action": "Create educational content and run webinars showcasing how to use the plugin, as search demand is low, focusing on building awareness and covering the manual work pain point.",
+    "reasoning": "The demand signals are weak; there is zero search interest across all key phrases, suggesting this is a nascent or niche market segment. The urgency around the time-savings pain is moderate, but buyers aren't actively searching for a solution, indicating they may not be aware solutions exist or prioritize solving this problem. Without current search demand, market education is essential to validate interest, and educational marketing can help test appeal while building an audience for the product."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/PremierPrompt"
+  }
+}

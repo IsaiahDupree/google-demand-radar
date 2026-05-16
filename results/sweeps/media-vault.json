@@ -1,0 +1,308 @@
+{
+  "slug": "media-vault",
+  "source_concept": "Media Vault",
+  "generated_at": "2026-05-16T17:18:26.552Z",
+  "cross_vertical_insight": "Across all verticals, the shared pain is managing large volumes of media generated on iPhones and the urgent need for reliable, automated backup and storage solutions. There is a consistent requirement for solutions that ensure media integrity and provide quick access while freeing up device space.",
+  "verticals": [
+    {
+      "name": "small video production companies",
+      "icp": "Small video production companies, typically with 2-5 employees, who rely on iPhones for B-roll or on-the-go shooting and need efficient media handling solutions.",
+      "rationale": "They require efficient ways to manage and store large video files so they never lose footage and can free up space for continued shoots.",
+      "phrases": [
+        {
+          "phrase": "iphone media management for video production",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best way to transfer video from iphone",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0.29,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "external hard drive for video storage",
+          "volume": 260,
+          "cpc": 0.79,
+          "competition": 0.88,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automated iphone video file transfer",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "video file management for small production companies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 2.899666822069558,
+      "bofu_density": 0.2,
+      "max_cpc": 0.79,
+      "top_phrase": "external hard drive for video storage",
+      "top_volume": 260,
+      "pmf_score": 4.158300093241735,
+      "pmf_breakdown": {
+        "demand_n": 0.5799333644139116,
+        "bofu_n": 0.2,
+        "cpc_n": 0.079,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "freelance photographers",
+      "icp": "Freelance photographers who work on location, often with large media files and a need to quickly back up and clear space on their iPhones to keep shooting.",
+      "rationale": "These users often deal with large volumes of photos and videos that need to be transferred and stored often to avoid running out of space during shoots.",
+      "phrases": [
+        {
+          "phrase": "how to free up space on iphone for photos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "iphone photo backup to external drive",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best way to store photos from iphone",
+          "volume": 720,
+          "cpc": 1.05,
+          "competition": 0.89,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "automated iphone photo transfer",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "external drive for iphone photographers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 3.041017477603214,
+      "bofu_density": 0,
+      "max_cpc": 1.05,
+      "top_phrase": "best way to store photos from iphone",
+      "top_volume": 720,
+      "pmf_score": 3.782110486561928,
+      "pmf_breakdown": {
+        "demand_n": 0.6082034955206428,
+        "bofu_n": 0,
+        "cpc_n": 0.10500000000000001,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "social media managers",
+      "icp": "Social media managers working for small to medium businesses who handle vast quantities of media content on their iPhones for regular posting schedules.",
+      "rationale": "Social media managers need to manage large volumes of content daily and must ensure their primary devices are constantly clear for new media.",
+      "phrases": [
+        {
+          "phrase": "iphone media management for social media",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automate social media content from iphone",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best media storage for social media managers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "iphone to external storage for social media",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "store social media photos externally",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "iphone media management for social media",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "wedding videographers",
+      "icp": "Independent or small team wedding videographers dealing primarily with large video files on high-pressure deadlines.",
+      "rationale": "They often need to offload large video files quickly to clear camera memory and ensure data integrity for their critical footage.",
+      "phrases": [
+        {
+          "phrase": "best external drives for wedding videos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "iphone video backup solutions",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automated video transfer from iphone",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to store large video files from iphone",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "iphone video management for videographers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "best external drives for wedding videos",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "content influencers",
+      "icp": "Digital influencers who generate extensive media content on iPhones for platforms like Instagram, TikTok, and YouTube, typically self-managed.",
+      "rationale": "They need to continuously manage large quantities of media on their personal devices to maintain content publishing frequency.",
+      "phrases": [
+        {
+          "phrase": "best iphone photo backup for influencers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automate influencer photo management",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "external media storage for iphone influencer",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "iphone media storage solutions",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "publish iphone media automatically",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "best iphone photo backup for influencers",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

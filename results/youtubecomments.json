@@ -1,0 +1,243 @@
+{
+  "source_text": "YoutubeComments\n\n## README\n\n# YouTube Comment Automation Platform\n\nAn AI-powered platform that automatically finds fresh YouTube videos, generates contextual comments using ChatGPT, and requires human approval before posting. Built with Next.js, Supabase, and the YouTube Data API.\n\n## 🚀 Features\n\n- **Smart Video Discovery**: Automatically find fresh videos by keywords while avoiding duplicates\n- **AI Comment Generation**: Generate 3 different comment styles using OpenAI's GPT models\n- **Human-in-the-Loop**: Review and approve every comment before posting\n- **Campaign Management**: Create multiple campaigns with different keywords and settings\n- **Real-time Notifications**: Get notified via email, SMS, or WhatsApp for new drafts\n- **Analytics Dashboard**: Track campaign performance and comment history\n- **Scheduled Execution**: Set custom schedules for video discovery and comment generation\n\n## 🏗️ Architecture\n\n- **Frontend**: Next.js 14 with App Router, TypeScript, Tailwind CSS\n- **Backend**: Supabase (PostgreSQL + Auth + Edge Functions + Real-time)\n- **AI Integration**: OpenAI GPT-4o-mini for comment generation\n- **YouTube Integration**: YouTube Data API v3 for video discovery and comment posting\n- **Notifications**: Twilio (SMS/WhatsApp), Email (SMTP)\n\n## 📋 Prerequisites\n\n- Node.js 18+ and npm\n- [Supabase CLI](https://supabase.com/docs/guides/cli)\n- Docker (for local Supabase)\n- Google Cloud Console account (for YouTube API)\n- OpenAI API account\n\n## 🛠️ Setup Instructions\n\nThere are two ways to run this project during development:\n\n1) Local Postgres + NextAuth (no Supabase) — recommended for dev right now\n2) Supabase local stack (original approach)\n\nBoth paths are documented below. For production, we will migrate to Supabase and optionally move backend jobs to Edge Functions. We are preserving the existing Edge Function code and documenting it for an easy migration.\n\n> Quick Start: See the step-by-step Windows PowerShell commands in [docs/quick-start.md](docs/quick-start.md).\n\n### 1. Clone and Install Dependencies\n\n```bash\ngit clone <repository-url>\ncd YoutubeComments\nnpm install\n```\n\n### 2. Setup Google Cloud Console\n\n1. Go to [Google Cloud Console](https://console.cloud.google.com/)\n2. Create a new project or select existing one\n3. Enable the YouTube Data API v3\n4. Create credentials:\n   - **API Key**: For YouTube Data API calls\n   - **OAuth 2.0 Client IDs**: For user authentication and comment posting\n5. Configure OAuth consent screen\n6. Add authorized redirect URIs:\n   - `http://localhost:54321/auth/v1/callback` (for Supabase Auth)\n\n### 3A. Local Development (Postgres + NextAuth — no Supabase)\n\n1. Start Postgres (password = `password`). Docker example:\n\n```bash\ndocker run --name yc-postgres -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres:15\ndocker exec -i yc-postgres psql -U postgres -c \"CREATE DATABASE youtube_comments;\"\ndocker exec -i yc-postgres psql -U postgres -d youtube_comments < db/init.sql\n```\n\n2. Create `.env.local` from the example and fill values:\n\n```bash\ncp .env.local.example .env.local\n```\n\nSet at minimum:\n\n```\nDATABASE_URL=postgres://postgres:password@localhost:5432/youtube_comments\nNEXTAUTH_URL=http://localhost:3000\nNEXTAUTH_SECRET=...some-random-string...\nGOOGLE_CLIENT_ID=...from Google Cloud Console...\nGOOGLE_CLIENT_SECRET=...from Google Cloud Console...\n```\n\n3. Install and start the app:\n\n```bash\nnpm install\nnpm run dev\n```\n\n4. Connect YouTube in dev:\n\n- Visit http://localhost:3000/youtube and click \"Connect Google\".\n- This uses NextAuth with YouTube scope (`youtube.force-ssl`) and stores tokens in local Postgres (`provider_tokens` table).\n\n5. Notes\n\n- Existing Supabase-backed features (campaigns/drafts/runs) still require Supabase; they are not active in this dev mode. We will migrate them to Postgres in a later step.\n- Edge Function code is kept under `supabase/functions/*` and will be reused when deploying to Supabase.\n\n### 3B. Start Local Supabase\n\n```bash\n# Initialize Supabase (if not already done)\nsupabase init",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "YouTube Comment Automation",
+    "one_liner": "An AI-powered platform for generating and managing YouTube comments on fresh videos.",
+    "core_promise": "Effortlessly generate engaging comments on the latest YouTube videos to boost channel interaction and growth.",
+    "domain": "social media automation",
+    "buyers": [
+      {
+        "persona": "YouTube marketers and influencers",
+        "awareness_level": "solution_aware",
+        "pain": "Struggling to maintain high engagement levels on YouTube without spending hours commenting manually.",
+        "candidate_phrases": [
+          "youtube comment automation tool",
+          "auto comment generator for youtube",
+          "ai youtube comment tool",
+          "youtube engagement software",
+          "how to automate youtube comments"
+        ]
+      },
+      {
+        "persona": "Small business social media managers",
+        "awareness_level": "problem_aware",
+        "pain": "Finding it hard to consistently comment and engage on YouTube to keep the brand visible.",
+        "candidate_phrases": [
+          "how to engage more on youtube",
+          "tools to manage youtube engagement",
+          "automating social media comments",
+          "get more youtube interactions",
+          "youtube marketing tools"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 3,
+      "distribution_fit": 4,
+      "retention_potential": 4,
+      "advantage": 2,
+      "rationale": "YouTube marketers and social media managers have moderate urgency as boosting engagement is important but not always urgent. Building an MVP is moderate effort due to integrations with YouTube API and AI comment generation. Distribution can be effective via targeted ads and SEO, as keywords are specific and people actively search for automation tools. Retention potential is higher if the tool regularly boosts engagement metrics, making it a useful ongoing service. Advantage is low as there is no mention of unique data, partnerships, or a large existing user base."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "youtube comment automation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube marketers and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "auto comment generator for youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube marketers and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai youtube comment tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube marketers and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube engagement software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube marketers and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to automate youtube comments",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube marketers and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to engage more on youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Small business social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools to manage youtube engagement",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Small business social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automating social media comments",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Small business social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "get more youtube interactions",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Small business social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube marketing tools",
+      "volume": 390,
+      "cpc": 9.92,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "Small business social media managers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "youtube marketing tools",
+      "volume": 390,
+      "cpc": 9.92,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "Small business social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube comment automation tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube marketers and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "auto comment generator for youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube marketers and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai youtube comment tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube marketers and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube engagement software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube marketers and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to automate youtube comments",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube marketers and influencers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to engage more on youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Small business social media managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools to manage youtube engagement",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Small business social media managers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 2.758234212506397,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 4.96,
+    "mvp_ease": 3,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 4,
+    "total": 23.718234212506395
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "Small business social media managers",
+        "anchor_phrase": "youtube marketing tools",
+        "offer_copy": "For small business social media managers who want to boost brand visibility but find it hard to consistently comment and engage on YouTube, we offer an AI-driven YouTube comment automation tool so they can maintain a strong YouTube presence without the grind of manual commenting.",
+        "landing_page_headline": "Effortless YouTube Marketing Tools for Busy Managers"
+      },
+      {
+        "buyer": "YouTube marketers and influencers",
+        "anchor_phrase": "youtube comment automation tool",
+        "offer_copy": "For YouTube marketers and influencers who aim to keep high engagement levels but struggle with the time-consuming task of manual commenting, we provide an AI-powered YouTube comment automation tool to increase interaction on their channel without spending hours each day.",
+        "landing_page_headline": "Automate Your YouTube Comments, Boost Engagement"
+      }
+    ],
+    "next_action": "Ship 2 landing pages for the top phrases and run targeted Google Ads with a $50 budget to test demand.",
+    "reasoning": "The 'YouTube marketing tools' phrase shows clear interest from small business managers, indicating a demand for YouTube engagement solutions. However, while the 'youtube comment automation tool' phrase aligns perfectly with marketers' needs, it lacks significant search interest, suggesting there's limited awareness or interest in this specific solution yet. Testing will confirm if these personas respond to tailored offers and adapt the strategy accordingly. The significant risk is the mismatch between a niche problem and an unproven specific solution demand."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/YoutubeComments"
+  }
+}

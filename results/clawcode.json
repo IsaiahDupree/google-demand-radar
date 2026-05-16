@@ -1,0 +1,243 @@
+{
+  "source_text": "clawcode\n\n## README\n\n# ClawCode\n\nAgentic Discord bot — multi-channel AI assistant with autonomous tool execution.\n\n## Requirements\n\n- Node.js >= 22\n- A Discord bot token + client ID\n- An Anthropic (or OpenAI) API key\n\n## Install\n\n```bash\nnpm install\n```\n\n## Configure\n\nCopy `.env.example` to `.env` and fill in your credentials:\n\n```bash\ncp .env.example .env\n```\n\nRequired:\n\n- `DISCORD_BOT_TOKEN`\n- `DISCORD_CLIENT_ID`\n- `ANTHROPIC_API_KEY` (or `OPENAI_API_KEY`)\n\nOptional (see `.env.example`): `DISCORD_GUILD_ID`, `CLAWCODE_STATE_DIR`,\n`CLAWCODE_LOG_LEVEL`, `CLAWCODE_MAX_ITERATIONS`, `CLAWCODE_ALLOWED_GUILDS`,\n`CLAWCODE_ALLOWED_USERS`.\n\n## Run\n\nDevelopment (TypeScript via `tsx`):\n\n```bash\nnpm run dev -- start\n```\n\nProduction build + start:\n\n```bash\nnpm run build\nnpm start\n```\n\nOther commands:\n\n```bash\nnpx tsx src/entry.ts --version       # print version\nnpx tsx src/entry.ts --help          # list commands\nnpx tsx src/entry.ts status          # show resolved config\nnpm run deploy-commands              # register Discord slash commands\n```\n\n## Test\n\n```bash\nnpm test\n```\n\n## Lint\n\n```bash\nnpm run lint\n```\n\nDescription: Agentic Discord bot — multi-channel AI assistant with autonomous tool execution",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "ClawCode",
+    "one_liner": "A Discord bot acting as a multi-channel AI assistant with autonomous tool execution capabilities.",
+    "core_promise": "Automatically execute tasks across multiple channels within Discord using AI.",
+    "domain": "AI-powered chatbots",
+    "buyers": [
+      {
+        "persona": "Discord server administrators looking to automate tasks",
+        "awareness_level": "solution_aware",
+        "pain": "Managing a Discord server manually can be time-consuming and inefficient, especially when dealing with routine tasks.",
+        "candidate_phrases": [
+          "discord bot for automatic tasks",
+          "ai bot for discord server",
+          "best discord bots for automation",
+          "discord bot task automation",
+          "how to automate discord tasks"
+        ]
+      },
+      {
+        "persona": "Tech-savvy gaming communities wanting smarter bots",
+        "awareness_level": "problem_aware",
+        "pain": "Gaming communities on Discord want a better way to manage interactions and enhance user engagement without manual intervention.",
+        "candidate_phrases": [
+          "improve discord server engagement",
+          "better discord bot for gamers",
+          "upgrade discord chatbots",
+          "discord gaming community bot",
+          "enhance discord server with ai"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 4,
+      "advantage": 1,
+      "rationale": "Buyer urgency is moderate as Discord communities often seek automation but not urgently enough across the board. The MVP ease is low due to technical complexities in integrating AI and multi-channel functionalities. Distribution can be done via existing tech and gaming channels, but there is competition. Retention potential is high due to ongoing use in active communities. However, the advantage is low because there's no evident unique edge or following mentioned in the description."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "discord bot for automatic tasks",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Discord server administrators looking to automate tasks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai bot for discord server",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.05,
+      "source": "dataforseo",
+      "buyer": "Discord server administrators looking to automate tasks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best discord bots for automation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Discord server administrators looking to automate tasks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "discord bot task automation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Discord server administrators looking to automate tasks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to automate discord tasks",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Discord server administrators looking to automate tasks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "improve discord server engagement",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Tech-savvy gaming communities wanting smarter bots",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "better discord bot for gamers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Tech-savvy gaming communities wanting smarter bots",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "upgrade discord chatbots",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Tech-savvy gaming communities wanting smarter bots",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "discord gaming community bot",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Tech-savvy gaming communities wanting smarter bots",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "enhance discord server with ai",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Tech-savvy gaming communities wanting smarter bots",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "ai bot for discord server",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.05,
+      "source": "dataforseo",
+      "buyer": "Discord server administrators looking to automate tasks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "discord bot for automatic tasks",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Discord server administrators looking to automate tasks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best discord bots for automation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Discord server administrators looking to automate tasks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "discord bot task automation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Discord server administrators looking to automate tasks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to automate discord tasks",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Discord server administrators looking to automate tasks",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "improve discord server engagement",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Tech-savvy gaming communities wanting smarter bots",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "better discord bot for gamers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Tech-savvy gaming communities wanting smarter bots",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "upgrade discord chatbots",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Tech-savvy gaming communities wanting smarter bots",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 1.10810534993878,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 1,
+    "retention_potential": 4,
+    "total": 15.60810534993878
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "Discord server administrators looking to automate tasks",
+        "anchor_phrase": "ai bot for discord server",
+        "offer_copy": "For Discord server administrators who want to automate tasks but find manual management time-consuming, we offer an AI bot that executes multiple channel tasks autonomously so they save time and enhance efficiency without complexity.",
+        "landing_page_headline": "Automate Your Discord Server with AI Bot Simplicity"
+      },
+      {
+        "buyer": "Tech-savvy gaming communities wanting smarter bots",
+        "anchor_phrase": "better discord bot for gamers",
+        "offer_copy": "For tech-savvy gaming communities looking to enhance engagement but frustrated by manual interactions, we provide a better Discord bot that intelligently manages interactions and boosts community activity without the dull management overhead.",
+        "landing_page_headline": "Level Up Your Discord: Smarter Bot for Gamers"
+      }
+    ],
+    "next_action": "Run a small-scale Google Ads campaign targeting the phrase 'ai bot for discord server' to gauge interest and collect preliminary data on clicks and conversions.",
+    "reasoning": "The demand signals show almost no search interest, indicating that the current phrasing or concept may be too niche or unknown. Although retention potential is good, suggesting satisfied users could stay for long, the real issue lies in the low initial awareness and willingness to pay. Immediate steps should focus on testing interest through targeted ads, refining the offer based on feedback, and exploring alternative phrasing that might resonate more with potential searchers."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/clawcode"
+  }
+}

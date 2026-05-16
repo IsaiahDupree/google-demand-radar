@@ -1,0 +1,306 @@
+{
+  "source_text": "SarahCopyWriterAgent\n\n## README\n\n# sarah-email-triage-bot\n\nEmail triage bot for Sarah's Brand OS — monitors Gmail, classifies inbound emails with GPT-4o, applies labels, and saves AI-drafted replies. Built for a creator/copywriter who runs courses, a Skool community, premium services, and a Flowdesk newsletter.\n\n## How it works\n\n1. Gmail pushes new-message notifications to Google Cloud Pub/Sub\n2. Bot fetches each new email via Gmail History API\n3. GPT-4o classifies intent, urgency, sentiment, and business value\n4. Bot applies Gmail labels (e.g. `Triage/Sales Lead`) and saves a draft reply\n5. All data (contacts, threads, classifications, drafts, events) is stored in Supabase\n\n## Quick start (60 seconds)\n\n```bash\n# 1. Install deps\nnpm install\n\n# 2. Copy and fill in credentials\ncp .env.example .env\n\n# 3. One-time OAuth2 setup (opens browser)\nnpm run auth\n\n# 4. Sync Gmail label registry to Supabase\nnpm run sync-labels\n\n# 5. Start in development mode (hot reload)\nnpm run dev\n\n# OR build and run for production\nnpm run build && npm start\n```\n\n## Required environment variables\n\n| Variable | Description |\n|----------|-------------|\n| `GOOGLE_CLIENT_ID` | Google OAuth2 client ID |\n| `GOOGLE_CLIENT_SECRET` | Google OAuth2 client secret |\n| `GOOGLE_REDIRECT_URI` | OAuth callback URL (default: `http://localhost:3000/api/auth/callback/google`) |\n| `GCP_PROJECT_ID` | Google Cloud project ID for Pub/Sub |\n| `PUBSUB_TOPIC` | Pub/Sub topic name (e.g. `gmail-notifications`) |\n| `PUBSUB_SUBSCRIPTION` | Pub/Sub subscription name (e.g. `gmail-notifications-sub`) |\n| `SUPABASE_URL` | Supabase project URL |\n| `SUPABASE_SERVICE_ROLE_KEY` | Supabase service role key |\n| `OPENAI_API_KEY` | OpenAI API key (uses GPT-4o) |\n\n## Scripts\n\n| Command | Purpose |\n|---------|---------|\n| `npm run dev` | Run with hot reload (tsx watch) |\n| `npm start` | Run compiled build |\n| `npm run build` | Compile TypeScript to `dist/` |\n| `npm run auth` | OAuth2 authorization flow (generates `token.json`) |\n| `npm run sync-labels` | Fetch Gmail labels and sync to Supabase |\n| `npm test` | Run vitest suite |\n\n## Email classification\n\nGPT-4o classifies each email into one of 12 intents: `sales_inquiry`, `premium_lead`, `support_request`, `billing_issue`, `partnership`, `skool_member_question`, `flowdesk_reply`, `internal_ops`, `spam`, `newsletter_reply`, `general`, `unknown`.\n\nEach classification also includes urgency, sentiment, business value, confidence score, key entities, extracted questions, action items, and a draft reply.\n\n## GCP Pub/Sub setup\n\nGmail watches expire every 7 days. The bot auto-renews every 6 days while running. For initial setup:\n\n```bash\n# Create topic and subscription (run once)\nbash scripts/gcp-setup.sh\n```\n\n## Known limitations\n\n- Requires live GCP Pub/Sub + Gmail credentials — cannot run offline\n- `route_to` integrations (Honeybook, ClickUp, Flowdesk) classify intent but do not yet make outbound API calls\n- `auto_sendable` flag is computed but replies always require human approval before sending\n- Gmail watch requires the process to stay alive for auto-renewal; deploy as a persistent service\n\nDescription: Email triage bot for Sarah's Brand OS — classifies, routes, and drafts replies from Gmail",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "SarahCopyWriterAgent",
+    "one_liner": "An email triage bot that classifies and drafts replies for busy creators.",
+    "core_promise": "Streamlined email management with AI-powered classification and draft replies, saving creators time and effort.",
+    "domain": "email management",
+    "buyers": [
+      {
+        "persona": "busy creators managing multiple income streams",
+        "awareness_level": "solution_aware",
+        "pain": "Feeling overwhelmed by the volume of emails and lacking time to manage them effectively.",
+        "candidate_phrases": [
+          "email management tool for creators",
+          "automated email reply tool",
+          "email classification software",
+          "triage emails with ai",
+          "organize email inbox"
+        ]
+      },
+      {
+        "persona": "freelance copywriters handling client communication",
+        "awareness_level": "problem_aware",
+        "pain": "Struggling to keep up with client emails and prioritize urgent messages.",
+        "candidate_phrases": [
+          "how to manage client emails better",
+          "best email tools for freelancers",
+          "email triage tips",
+          "organize client emails",
+          "prioritize important emails"
+        ]
+      },
+      {
+        "persona": "online course creators with active communities",
+        "awareness_level": "solution_aware",
+        "pain": "Difficulty in managing community and course-related emails efficiently.",
+        "candidate_phrases": [
+          "email assistant for online course creators",
+          "best email tools for community managers",
+          "automate email sorting for courses",
+          "handle course inquiries efficiently",
+          "organize emails for online business"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 4,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 4,
+      "advantage": 1,
+      "rationale": "The idea addresses the genuine pain point of email overload in niche creator markets, suggesting moderate urgency. MVP may be complex due to integrations with Gmail and GPT-4o classification. Distribution fit is moderate—some niche markets are accessible online but may require targeted outreach. Retention potential is high due to recurring email management needs. Advantage score is low as no unique edge or existing audience is detailed for the founder."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "email management tool for creators",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy creators managing multiple income streams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated email reply tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy creators managing multiple income streams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "email classification software",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.12,
+      "source": "dataforseo",
+      "buyer": "busy creators managing multiple income streams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "triage emails with ai",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy creators managing multiple income streams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "organize email inbox",
+      "volume": 170,
+      "cpc": 39.65,
+      "competition": 0.19,
+      "source": "dataforseo",
+      "buyer": "busy creators managing multiple income streams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to manage client emails better",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance copywriters handling client communication",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best email tools for freelancers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance copywriters handling client communication",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "email triage tips",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance copywriters handling client communication",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "organize client emails",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance copywriters handling client communication",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "prioritize important emails",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance copywriters handling client communication",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "email assistant for online course creators",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "online course creators with active communities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best email tools for community managers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "online course creators with active communities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automate email sorting for courses",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "online course creators with active communities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "handle course inquiries efficiently",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "online course creators with active communities",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "organize emails for online business",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "online course creators with active communities",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "organize email inbox",
+      "volume": 170,
+      "cpc": 39.65,
+      "competition": 0.19,
+      "source": "dataforseo",
+      "buyer": "busy creators managing multiple income streams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "email classification software",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.12,
+      "source": "dataforseo",
+      "buyer": "busy creators managing multiple income streams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "email triage tips",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance copywriters handling client communication",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "email management tool for creators",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy creators managing multiple income streams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated email reply tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy creators managing multiple income streams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "triage emails with ai",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy creators managing multiple income streams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to manage client emails better",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance copywriters handling client communication",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best email tools for freelancers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance copywriters handling client communication",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 2.4271586632587496,
+    "buyer_urgency": 4,
+    "willingness_to_pay": 5,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 1,
+    "retention_potential": 4,
+    "total": 21.42715866325875
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "busy creators managing multiple income streams",
+        "anchor_phrase": "organize email inbox",
+        "offer_copy": "For busy creators who need to organize their email inbox but feel overwhelmed by incoming messages, we offer an AI-driven email management solution that categorizes emails and drafts replies, so they save time without missing important communications.",
+        "landing_page_headline": "Organize Your Email Inbox Effortlessly with AI"
+      },
+      {
+        "buyer": "freelance copywriters handling client communication",
+        "anchor_phrase": "best email tools for freelancers",
+        "offer_copy": "For freelance copywriters who need to manage client communications but can't prioritize effectively, we provide an AI email tool that triages and drafts replies, so they stay on top of client needs without feeling stressed.",
+        "landing_page_headline": "Top Email Tool for Freelance Success"
+      },
+      {
+        "buyer": "online course creators with active communities",
+        "anchor_phrase": "email management tool for creators",
+        "offer_copy": "For online course creators with active communities who struggle with email overload, we deliver a specialized management tool that uses AI to streamline inboxes and craft initial responses, so they focus on growth without getting bogged down in emails.",
+        "landing_page_headline": "Efficient Email Management for Course Creators"
+      }
+    ],
+    "next_action": "Run a small-scale survey targeting busy creators and freelance copywriters through Facebook or LinkedIn groups to validate pain points and gather feedback on solution ideas within a $100 budget.",
+    "reasoning": "Demand signals for specific solution-aware searches are weak, with low competition potentially due to low awareness of email triage as a solution among creators. However, urgency and willingness to pay scores indicate strong desire and market readiness once educated on benefits. Educating the market by validating pain and understanding buyer language better will inform whether the developed MVP aligns with unaddressed needs, ensuring value without feature misalignment."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/SarahCopyWriterAgent"
+  }
+}

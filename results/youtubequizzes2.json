@@ -1,0 +1,243 @@
+{
+  "source_text": "YoutubeQuizzes2\n\n## README\n\n# Welcome to your Rork app\r\n\r\n## Project info\r\n\r\nThis is a native cross-platform mobile app created with [Rork](https://rork.com)\r\n\r\n**Platform**: Native iOS & Android app, exportable to web\r\n**Framework**: Expo Router + React Native\r\n\r\n## How can I edit this code?\r\n\r\nThere are several ways of editing your native mobile application.\r\n\r\n### **Use Rork**\r\n\r\nSimply visit [rork.com](https://rork.com) and prompt to build your app with AI.\r\n\r\nChanges made via Rork will be committed automatically to this GitHub repo.\r\n\r\nWhenever you make a change in your local code editor and push it to GitHub, it will be also reflected in Rork.\r\n\r\n### **Use your preferred code editor**\r\n\r\nIf you want to work locally using your own code editor, you can clone this repo and push changes. Pushed changes will also be reflected in Rork.\r\n\r\nIf you are new to coding and unsure which editor to use, we recommend Cursor. If you're familiar with terminals, try Claude Code.\r\n\r\nThe only requirement is having Node.js & Bun installed - [install Node.js with nvm](https://github.com/nvm-sh/nvm) and [install Bun](https://bun.sh/docs/installation)\r\n\r\nFollow these steps:\r\n\r\n```bash\r\n# Step 1: Clone the repository using the project's Git URL.\r\ngit clone <YOUR_GIT_URL>\r\n\r\n# Step 2: Navigate to the project directory.\r\ncd <YOUR_PROJECT_NAME>\r\n\r\n# Step 3: Install the necessary dependencies.\r\nbun i\r\n\r\n# Step 4: Start the instant web preview of your Rork app in your browser, with auto-reloading of your changes\r\nbun run start-web\r\n\r\n# Step 5: Start iOS preview\r\n# Option A (recommended):\r\nbun run start  # then press \"i\" in the terminal to open iOS Simulator\r\n# Option B (if supported by your environment):\r\nbun run start -- --ios\r\n```\r\n\r\n### **Edit a file directly in GitHub**\r\n\r\n- Navigate to the desired file(s).\r\n- Click the \"Edit\" button (pencil icon) at the top right of the file view.\r\n- Make your changes and commit the changes.\r\n\r\n## What technologies are used for this project?\r\n\r\nThis project is built with the most popular native mobile cross-platform technical stack:\r\n\r\n- **React Native** - Cross-platform native mobile development framework created by Meta and used for Instagram, Airbnb, and lots of top apps in the App Store\r\n- **Expo** - Extension of React Native + platform used by Discord, Shopify, Coinbase, Telsa, Starlink, Eightsleep, and more\r\n- **Expo Router** - File-based routing system for React Native with support for web, server functions and SSR\r\n- **TypeScript** - Type-safe JavaScript\r\n- **React Query** - Server state management\r\n- **Lucide React Native** - Beautiful icons\r\n\r\n## How can I test my app?\r\n\r\n### **On your phone (Recommended)**\r\n\r\n1. **iOS**: Download the [Rork app from the App Store](https://apps.apple.com/app/rork) or [Expo Go](https://apps.apple.com/app/expo-go/id982107779)\r\n2. **Android**: Download the [Expo Go app from Google Play](https://play.google.com/store/apps/details?id=host.exp.exponent)\r\n3. Run `bun run start` and scan the QR code from your development server\r\n\r\n### **In your browser**\r\n\r\nRun `bun start-web` to test in a web browser. Note: The browser preview is great for quick testing, but some native features may not be available.\r\n\r\n### **iOS Simulator / Android Emulator**\r\n\r\nYou can test Rork apps in Expo Go or Rork iOS app. You don't need XCode or Android Studio for most features.\r\n\r\n**When do you need Custom Development Builds?**\r\n\r\n- Native authentication (Face ID, Touch ID, Apple Sign In)\r\n- In-app purchases and subscriptions\r\n- Push notifications\r\n- Custom native modules\r\n\r\nLearn more: [Expo Custom Development Builds Guide](https://docs.expo.dev/develop/development-builds/introduction/)\r\n\r\nIf you have XCode (iOS) or Android Studio installed:\r\n\r\n```bash\r\n# iOS Simulator\r\nbun run start -- --ios\r\n\r\n# Android Emulator\r\nbun run start -- --android\r\n```\r\n\r\n## How can I deploy this project?\r\n\r\n### **Publish to App Store (iOS)**\r\n\r\n1. **Install EAS CLI**:\r\n\r\n   ```bash\r\n   bun i -g @expo/eas-cli\r\n   ```\r\n\r\n2. **Configure your project**:",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "YoutubeQuizzes2",
+    "one_liner": "An app enabling YouTube content creators to add interactive quizzes to their videos.",
+    "core_promise": "Engage viewers more deeply by integrating interactive quizzes into YouTube videos.",
+    "domain": "YouTube content creation",
+    "buyers": [
+      {
+        "persona": "YouTube content creators",
+        "awareness_level": "solution_aware",
+        "pain": "They want to engage their audience more effectively but struggle to keep them interacting with the content.",
+        "candidate_phrases": [
+          "add quiz to youtube video",
+          "interactive youtube video tools",
+          "how to make youtube video interactive",
+          "youtube video engagement tools",
+          "interactive features for youtube"
+        ]
+      },
+      {
+        "persona": "Educators using YouTube for teaching",
+        "awareness_level": "problem_aware",
+        "pain": "They need a way to ensure students are actively engaging with video content and retaining information.",
+        "candidate_phrases": [
+          "make educational videos engaging",
+          "student engagement youtube",
+          "interactive teaching tools youtube",
+          "quiz tools for youtube",
+          "student retention video tools"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 1,
+      "rationale": "The need for engaging video content is moderate, especially with educators and content creators seeking to boost interaction. Building this would require significant development work due to integration with YouTube, which is complex. Google and social media channels could effectively reach educators and creators. There's potential for recurring use as quizzes would support ongoing content. The founder's advantage is unclear from the provided information, leading to a low score in that category."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "add quiz to youtube video",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "YouTube content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "interactive youtube video tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to make youtube video interactive",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube video engagement tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "interactive features for youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "make educational videos engaging",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Educators using YouTube for teaching",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "student engagement youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Educators using YouTube for teaching",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "interactive teaching tools youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Educators using YouTube for teaching",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "quiz tools for youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Educators using YouTube for teaching",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "student retention video tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Educators using YouTube for teaching",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "add quiz to youtube video",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "YouTube content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "interactive youtube video tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to make youtube video interactive",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube video engagement tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "interactive features for youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube content creators",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "make educational videos engaging",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Educators using YouTube for teaching",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "student engagement youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Educators using YouTube for teaching",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "interactive teaching tools youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Educators using YouTube for teaching",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 1.10810534993878,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 1,
+    "retention_potential": 3,
+    "total": 15.60810534993878
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "YouTube content creators",
+        "anchor_phrase": "add quiz to youtube video",
+        "offer_copy": "For YouTube content creators who want to engage their audience but struggle to keep them interacting, we provide an easy tool to add quizzes to your videos so your viewers stay active without leaving your channel.",
+        "landing_page_headline": "Add Quizzes to Your YouTube Videos Effortlessly"
+      },
+      {
+        "buyer": "Educators using YouTube for teaching",
+        "anchor_phrase": "student engagement youtube",
+        "offer_copy": "For educators using YouTube who need a way to ensure students engage with content but lack interactive features, we offer tools that integrate quizzes into videos so students retain information more effectively without extra complexity.",
+        "landing_page_headline": "Boost Student Engagement with YouTube Quizzes"
+      }
+    ],
+    "next_action": "Conduct interviews with at least 5 educators and 5 YouTube creators to better understand their engagement challenges and test their interest in interactive video features beyond quizzes.",
+    "reasoning": "The 'Educate Later' verdict is due to the low search demand and willingness to pay, which suggests the market isn't actively looking for this solution. The idea has a moderately low score in search demand (1.1/5), meaning few people are searching for terms related to this solution. Buyer urgency is slightly higher because creators and educators do have engagement problems, but the willingness to pay is still low. There's also a high risk in investing time to build out features without clearer validation of interest from key audiences."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/YoutubeQuizzes2"
+  }
+}

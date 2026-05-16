@@ -1,0 +1,316 @@
+{
+  "slug": "can-3rd-brake",
+  "source_concept": "CAN 3rd Brake",
+  "generated_at": "2026-05-16T17:12:40.113Z",
+  "cross_vertical_insight": "The common theme across verticals is the need for integration of modern, remote control solutions into existing vehicle systems. This is driven by a desire to enhance vehicle functionality, safety, and customization, while reducing installation complexity and maintaining aesthetic or operational standards. Buyers typically seek solutions that allow for seamless integration without requiring extensive technical intervention.",
+  "verticals": [
+    {
+      "name": "fleet management companies",
+      "icp": "Fleet managers overseeing 50-200 vehicles, responsible for maintaining and upgrading vehicle electronics across diverse vehicle types.",
+      "rationale": "Fleet managers need efficient ways to manage and customize vehicle functionalities to enhance operations and safety, making remote control solutions particularly appealing.",
+      "phrases": [
+        {
+          "phrase": "fleet vehicle can bus controller",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "remote control fleet lights",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best wireless can signal controller for fleets",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "wifi brake light controller",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to control fleet vehicle signals remotely",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "customizable can bus controller for fleet",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "fleet vehicle can bus controller",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "emergency vehicle upfitter companies",
+      "icp": "Companies specializing in outfitting emergency vehicles (ambulances, police cars, fire trucks) with electronics, typically managing 10-100 vehicles annually.",
+      "rationale": "They require specialized control over vehicle lighting and signalling systems for emergency situations, making wireless CAN bus solutions attractive.",
+      "phrases": [
+        {
+          "phrase": "wireless control for emergency vehicle lights",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "can bus signal controller for ambulances",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "wifi can interface for police cars",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "remote brake light control for fire trucks",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best can bus controller for emergency vehicles",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "wireless control for emergency vehicle lights",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "auto accessory retailers",
+      "icp": "Retailers who sell car accessories and electronics, focusing on DIY enthusiasts and hobbyists looking for new technology integrations.",
+      "rationale": "These retailers are positioned to meet demand from DIY hobbyists and car customizers seeking straightforward integrations for car modifications.",
+      "phrases": [
+        {
+          "phrase": "buy can bus signal controller",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "custom car light controller",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "remote signal controller for car",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "wireless can controller for dummies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "car light control via wifi",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "buy can bus signal controller",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "small automotive repair shops",
+      "icp": "Independent garages with 5-10 employees that perform custom modifications and repairs, often integrating new electronics into older vehicles.",
+      "rationale": "These shops need flexible solutions to modernize vehicles with new technology to meet customer demands for customization without heavy investment in new tech.",
+      "phrases": [
+        {
+          "phrase": "wifi can bus control module",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automotive repair shop can bus solution",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best can bus controller for auto shops",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to install wifi vehicle light control",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "buy car light controller for repair shops",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "wifi can bus control module",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    },
+    {
+      "name": "luxury vehicle restoration companies",
+      "icp": "Boutique companies restoring luxury and vintage cars, with high attention to modern integrations without compromising classical aesthetics.",
+      "rationale": "These companies need discreet, advanced technology solutions to upgrade classic cars with modern features such as remote light controls.",
+      "phrases": [
+        {
+          "phrase": "can bus integration for vintage cars",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "luxury car light control system",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "wireless can bus module for restorations",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to modernize classic car electronics",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "best can controller for vintage luxury cars",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "can bus integration for vintage cars",
+      "top_volume": 0,
+      "pmf_score": 1.6,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.4
+      }
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "source_text": "CAN 3rd Brake\n\n## README\n\n# CAN Signal Controller with Wi-Fi Interface\n\nThis project implements a CAN bus signal controller with Wi-Fi control capabilities, designed for automotive applications. It can monitor and control brake lights, turn signals, and hazard lights based on CAN bus messages while providing a web interface for remote control.\n\n## Hardware Requirements\n\n- ESP32 Development Board\n- MCP2515 CAN Bus Module\n- Relay Module (4 channels minimum)\n- Power supply appropriate for your vehicle's electrical system\n- Appropriate wiring and connectors\n\n## Pin Connections\n\n### CAN Module (MCP2515)\n- CS Pin: GPIO 10\n- INT Pin: GPIO 2\n- SCK: SCK pin of ESP32\n- MOSI: MOSI pin of ESP32\n- MISO: MISO pin of ESP32\n\n### Relay Pins\n- Brake Light: GPIO 5\n- Left Turn Signal: GPIO 16\n- Right Turn Signal: GPIO 17\n- Hazard Lights: GPIO 18\n\n## Required Libraries\n\n1. SPI.h (Built into Arduino IDE)\n2. mcp_can.h (Install via Arduino Library Manager)\n3. WiFi.h (Built into ESP32 core)\n\n## Installation\n\n1. Install the Arduino IDE\n2. Install the ESP32 board support package\n3. Install the required libraries\n4. Upload the code to your ESP32\n\n## Wi-Fi Configuration\n\nThe device creates a Wi-Fi Access Point with:\n- SSID: \"MyCarSignalAP\"\n- Password: \"12345678\"\n\nOnce connected, access the control interface at http://192.168.4.1\n\n## Safety Notes\n\n1. **Vehicle Integration**\n   - Ensure proper isolation between vehicle systems\n   - Use appropriate fuses and protection circuits\n   - Verify CAN bus message IDs for your specific vehicle\n\n2. **Security**\n   - Change the default Wi-Fi password before deployment\n   - Consider implementing additional security measures\n\n3. **Legal Compliance**\n   - Check local regulations regarding vehicle modifications\n   - Ensure modifications comply with vehicle safety standards\n\n## Customization\n\n### CAN Message IDs\nCurrent example uses placeholder IDs:\n- Brake: 0x100\n- Left Turn: 0x101\n- Right Turn: 0x102\n- Hazard: 0x103\n\nUpdate these in the code to match your vehicle's actual CAN IDs.\n\n### Pin Assignments\nModify the pin definitions in the code if using different GPIO pins.\n\n## Troubleshooting\n\n1. **CAN Bus Issues**\n   - Verify CAN bus speed matches your vehicle\n   - Check physical connections and termination resistors\n   - Use Serial Monitor for debugging CAN messages\n\n2. **Wi-Fi Connection**\n   - Ensure proper power supply to ESP32\n   - Check serial output for IP address assignment\n   - Verify Wi-Fi credentials\n\n## License\n\nThis project is provided as-is for educational purposes. Use at your own risk.",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "CAN 3rd Brake",
+    "one_liner": "A Wi-Fi enabled CAN bus signal controller for automotive applications.",
+    "core_promise": "Remote and customizable control of vehicle lights via a web interface.",
+    "domain": "automotive electronics",
+    "buyers": [
+      {
+        "persona": "hobbyist car customizers",
+        "awareness_level": "solution_aware",
+        "pain": "Want to customize car electronics but need an easy-to-use solution to integrate with existing vehicle systems.",
+        "candidate_phrases": [
+          "wifi car signal controller",
+          "diy car electronics kit",
+          "can bus controller for cars",
+          "esp32 car projects",
+          "remote control vehicle lights"
+        ]
+      },
+      {
+        "persona": "advanced DIY mechanics",
+        "awareness_level": "problem_aware",
+        "pain": "Find it challenging to interface with the vehicle's CAN bus without technical solutions that simplify the process.",
+        "candidate_phrases": [
+          "interfacing with can bus",
+          "how to control car lights with can bus",
+          "can bus relay control",
+          "diy can bus projects",
+          "can bus electronics for cars"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 2,
+      "advantage": 1,
+      "rationale": "Buyer urgency is moderate due to the specific niche of hobbyist and advanced DIY mechanics who are actively seeking to modify their vehicles. MVP ease is relatively low because the technical requirements and integration with vehicle systems are complex. Distribution fit is moderate; targeted ads can effectively reach car hobbyists online. Retention potential is low as the product is likely to be a one-time purchase. There is no clear advantage mentioned in the idea, making it difficult to see a competitive edge."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "wifi car signal controller",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "hobbyist car customizers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "diy car electronics kit",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "hobbyist car customizers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "can bus controller for cars",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "hobbyist car customizers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "esp32 car projects",
+      "volume": 30,
+      "cpc": 0,
+      "competition": 0.07,
+      "source": "dataforseo",
+      "buyer": "hobbyist car customizers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "remote control vehicle lights",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "hobbyist car customizers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "interfacing with can bus",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "advanced DIY mechanics",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to control car lights with can bus",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "advanced DIY mechanics",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "can bus relay control",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "advanced DIY mechanics",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "diy can bus projects",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "advanced DIY mechanics",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "can bus electronics for cars",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "advanced DIY mechanics",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "esp32 car projects",
+      "volume": 30,
+      "cpc": 0,
+      "competition": 0.07,
+      "source": "dataforseo",
+      "buyer": "hobbyist car customizers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "wifi car signal controller",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "hobbyist car customizers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "diy car electronics kit",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "hobbyist car customizers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "can bus controller for cars",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "hobbyist car customizers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "remote control vehicle lights",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "hobbyist car customizers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "interfacing with can bus",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "advanced DIY mechanics",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to control car lights with can bus",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "advanced DIY mechanics",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "can bus relay control",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "advanced DIY mechanics",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 1.5868998267261993,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 1,
+    "retention_potential": 2,
+    "total": 14.0868998267262
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "hobbyist car customizers",
+        "anchor_phrase": "esp32 car projects",
+        "offer_copy": "For hobbyists who want to integrate custom electronics into their cars but struggle with vehicle system compatibility, we provide a Wi-Fi enabled CAN bus signal controller so they can customize their car's lights remotely without complex installations.",
+        "landing_page_headline": "Easily Control Car Lights with Our CAN Bus Controller"
+      },
+      {
+        "buyer": "advanced DIY mechanics",
+        "anchor_phrase": "how to control car lights with can bus",
+        "offer_copy": "For advanced DIY mechanics who need to interface with vehicle electronics but find it challenging to access and control the CAN bus system, we offer a simple-to-use signal controller that allows seamless vehicle light customization without technical bottlenecks.",
+        "landing_page_headline": "Simplify CAN Bus Control for Custom Car Lights"
+      }
+    ],
+    "next_action": "Launch a small test ad campaign targeting 'esp32 car projects' and 'how to control car lights with can bus' to assess engagement and gather data on buyer interest and willingness to pay.",
+    "reasoning": "The verdict to pause stems from a low overall search demand and willingness to pay, coupled with limited competitive interest in the space. Despite some buyer urgency, there's not enough market signal to confidently proceed with full-scale development or marketing. Testing targeted ads will help determine if niche interest could drive adoption, assisting in validating any assumptions about latent demand in these specific personas before investing more resources."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/CAN 3rd Brake"
+  }
+}

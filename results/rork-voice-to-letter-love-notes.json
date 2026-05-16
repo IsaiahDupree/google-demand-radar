@@ -1,0 +1,243 @@
+{
+  "source_text": "rork-voice-to-letter-love-notes\n\nCreated by Rork\n\nStack: TypeScript",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Rork Voice-to-Letter Love Notes",
+    "one_liner": "A service that converts voice messages into personalized handwritten love letters.",
+    "core_promise": "Your heartfelt messages are transformed into beautiful, handwritten letters, conveying sincerity and love.",
+    "domain": "personalized gifting",
+    "buyers": [
+      {
+        "persona": "romantic partners in long-distance relationships",
+        "awareness_level": "problem_aware",
+        "pain": "Difficulty expressing emotions through digital means, lacks the personal touch of handwritten notes.",
+        "candidate_phrases": [
+          "send love letter online",
+          "handwritten letter service",
+          "personalized love letters",
+          "voice to handwritten letter",
+          "how to send letters to my partner"
+        ]
+      },
+      {
+        "persona": "busy professionals looking for unique gifts",
+        "awareness_level": "problem_aware",
+        "pain": "Struggling to find time and unique ideas for personalized gifts.",
+        "candidate_phrases": [
+          "unique gift ideas for partner",
+          "personalized gift service",
+          "voice to text letter service",
+          "send love notes online",
+          "gift ideas busy professionals"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 4,
+      "distribution_fit": 3,
+      "retention_potential": 2,
+      "advantage": 1,
+      "rationale": "Buyer urgency is moderate as people occasionally look for unique gifting solutions, especially in long-distance relationships. MVP is relatively easy to build, leveraging existing tech for voice-to-text and handwriting services. Distribution is decent due to SEO potential but would require targeted outreach. The retention potential is low because once a letter is sent, the same service might not be required frequently. Without specific existing edge like a unique handwriting technology or a large pre-existing customer base, the advantage score is low."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "send love letter online",
+      "volume": 40,
+      "cpc": 1.83,
+      "competition": 0.65,
+      "source": "dataforseo",
+      "buyer": "romantic partners in long-distance relationships",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "handwritten letter service",
+      "volume": 260,
+      "cpc": 11.86,
+      "competition": 0.47,
+      "source": "dataforseo",
+      "buyer": "romantic partners in long-distance relationships",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "personalized love letters",
+      "volume": 210,
+      "cpc": 2.04,
+      "competition": 0.98,
+      "source": "dataforseo",
+      "buyer": "romantic partners in long-distance relationships",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "voice to handwritten letter",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "romantic partners in long-distance relationships",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to send letters to my partner",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "romantic partners in long-distance relationships",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "unique gift ideas for partner",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy professionals looking for unique gifts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "personalized gift service",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy professionals looking for unique gifts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "voice to text letter service",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy professionals looking for unique gifts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "send love notes online",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy professionals looking for unique gifts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "gift ideas busy professionals",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy professionals looking for unique gifts",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "handwritten letter service",
+      "volume": 260,
+      "cpc": 11.86,
+      "competition": 0.47,
+      "source": "dataforseo",
+      "buyer": "romantic partners in long-distance relationships",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "personalized love letters",
+      "volume": 210,
+      "cpc": 2.04,
+      "competition": 0.98,
+      "source": "dataforseo",
+      "buyer": "romantic partners in long-distance relationships",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "send love letter online",
+      "volume": 40,
+      "cpc": 1.83,
+      "competition": 0.65,
+      "source": "dataforseo",
+      "buyer": "romantic partners in long-distance relationships",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "send love notes online",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy professionals looking for unique gifts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "voice to handwritten letter",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "romantic partners in long-distance relationships",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to send letters to my partner",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "romantic partners in long-distance relationships",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "unique gift ideas for partner",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy professionals looking for unique gifts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "personalized gift service",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "busy professionals looking for unique gifts",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 2.890881085501661,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 4,
+    "distribution_fit": 3,
+    "advantage": 1,
+    "retention_potential": 2,
+    "total": 20.89088108550166
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "romantic partners in long-distance relationships",
+        "anchor_phrase": "handwritten letter service",
+        "offer_copy": "For romantic partners who want to express deep emotions but struggle with impersonal digital messages, we transform your voice messages into exquisite handwritten letters so they can convey love authentically without losing the personal touch.",
+        "landing_page_headline": "Transform Your Voice into Handwritten Love"
+      },
+      {
+        "buyer": "busy professionals looking for unique gifts",
+        "anchor_phrase": "personalized gift service",
+        "offer_copy": "For busy professionals looking to impress loved ones with a unique gift but lacking time, we offer a personalized handwritten letter service that turns spoken words into heartfelt notes, ensuring a meaningful impact without the stress of innovation.",
+        "landing_page_headline": "Effortlessly Create Unique Gifts with Personal Touch"
+      }
+    ],
+    "next_action": "Create a test landing page for the 'handwritten letter service' targeting romantic partners, then run a $100 Google Ads campaign focusing on keyword data insights to gauge conversion rates.",
+    "reasoning": "The verdict 'Educate Later' suggests there is some interest, but not strong enough to dive all-in. The data reveals moderate search demand and buyer urgency with willingness to pay being relatively high, indicating a niche but potentially lucrative market. The primary risk is the low competition advantage and retention potential due to the novelty and specificity of the concept. More precise targeting of phrases that already show interest is needed to validate initial interest from these buyers."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/rork-voice-to-letter-love-notes"
+  }
+}

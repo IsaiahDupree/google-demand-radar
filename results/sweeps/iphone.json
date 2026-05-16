@@ -1,0 +1,308 @@
+{
+  "slug": "iphone",
+  "source_concept": "Media Vault",
+  "generated_at": "2026-05-16T17:17:10.532Z",
+  "cross_vertical_insight": "Across these verticals, the common pain point is the overwhelming accumulation of media on iPhones and the desire for reliable, automated solutions to transfer and manage these files efficiently. Each vertical, while utilizing media for different purposes, ultimately shares a need for streamlined processes to alleviate storage constraints.",
+  "verticals": [
+    {
+      "name": "amateur photographers using iphones",
+      "icp": "Individuals who frequently take photos with their iPhones, typically logging hundreds of images monthly, and are not professional photographers but take photography as a serious hobby.",
+      "rationale": "This group struggles with managing a vast number of photos that accumulate quickly, leading to storage issues and disorganization.",
+      "phrases": [
+        {
+          "phrase": "transfer iphone photos to external hard drive",
+          "volume": 1300,
+          "cpc": 0.99,
+          "competition": 0.26,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "external drive storage for iphone photographers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "organize iphone photos easily",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "best way to manage large photo libraries",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to free up iphone photo storage",
+          "volume": 20,
+          "cpc": 0.03,
+          "competition": 0.48,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 3.6356909630101115,
+      "bofu_density": 0.2,
+      "max_cpc": 0.99,
+      "top_phrase": "transfer iphone photos to external hard drive",
+      "top_volume": 1300,
+      "pmf_score": 4.629914577806066,
+      "pmf_breakdown": {
+        "demand_n": 0.7271381926020223,
+        "bofu_n": 0.2,
+        "cpc_n": 0.099,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "family memory archivists",
+      "icp": "Family members, often the designated 'memory keeper,' looking to manage years of family photos and videos on personal iPhones by transferring them to more permanent storage solutions.",
+      "rationale": "Such archivists are overwhelmed with managing and backing up extensive media over the years, desiring straightforward ways to store and organize these precious memories.",
+      "phrases": [
+        {
+          "phrase": "best way to archive iphone family photos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "iphone to external drive transfer",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automatically backup iphone photos",
+          "volume": 10,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to organize family videos on iphone",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "simple iphone media management tool",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 1.10810534993878,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "automatically backup iphone photos",
+      "top_volume": 10,
+      "pmf_score": 2.464863209963268,
+      "pmf_breakdown": {
+        "demand_n": 0.22162106998775602,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "influencers and social media creators",
+      "icp": "Content creators who regularly use their iPhones to produce visual content for platforms like Instagram, YouTube, and TikTok, often dealing with high-resolution files and large video libraries.",
+      "rationale": "This vertical involves handling large media files frequently for production and publication, needing efficient media transfer and management solutions.",
+      "phrases": [
+        {
+          "phrase": "effortless media management for content creators",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "iphone video management tool",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best external drive for iphone video storage",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to manage and backup iphone videos for social media",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "automate iphone media transfer",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "effortless media management for content creators",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "digital nomads",
+      "icp": "Remote workers and freelancers who use iPhones as a primary media capture device, often moving between locations and needing a reliable system for media backup and storage.",
+      "rationale": "Digital nomads need seamless solutions to avoid data loss during travels, ensuring their media files are securely transferred from mobile to more stable storage solutions.",
+      "phrases": [
+        {
+          "phrase": "cloud independent iphone media storage solution",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "portable storage solution for iphone users",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "secure media backup for iphone",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "how to backup iphone photos while traveling",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "iphone data management for travelers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "cloud independent iphone media storage solution",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "small business marketers using iphone for content",
+      "icp": "Small business owners and marketers using iPhones extensively for capturing product photos and marketing videos for online and social media promotion, often needing effective content organization and storage.",
+      "rationale": "These users face challenges in managing large volumes of media collected for their marketing efforts, requiring an efficient management tool to optimize storage and content accessibility.",
+      "phrases": [
+        {
+          "phrase": "media management tool for small business",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "iphone storage solution for marketing content",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best way to organize iphone marketing photos",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "automate iphone media backup for business",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to manage media for small business marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "media management tool for small business",
+      "top_volume": 0,
+      "pmf_score": 1.7999999999999998,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.6,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "slug": "seo-pipeline",
+  "source_concept": "SEO Analysis Pipeline",
+  "generated_at": "2026-05-16T17:23:09.606Z",
+  "cross_vertical_insight": "Across these verticals, the common pain point is the need for efficient, automated SEO processes to compete in digital environments where larger entities often dominate. Effective integration and handling of SEO data are critical challenges, making streamlined tools that provide clear insights without the need for heavy manual intervention highly sought after.",
+  "verticals": [
+    {
+      "name": "solo boutique e-commerce brands",
+      "icp": "Owner-operators of boutique e-commerce stores, generating $100k-$500k annually, who manage their own SEO to drive traffic.",
+      "rationale": "These owners lack resources for full-time SEO expertise and need efficient, automated tools to manage their SEO efforts and compete with larger brands.",
+      "phrases": [
+        {
+          "phrase": "seo automation tools for small ecommerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best seo tools for boutique online stores",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "ecommerce seo analysis software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "how to automate seo for small ecommerce",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        },
+        {
+          "phrase": "seo data integration for online stores",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "seo automation tools for small ecommerce",
+      "top_volume": 0,
+      "pmf_score": 2.2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "real estate brokerage firms",
+      "icp": "Mid-sized real estate brokerage firms with $1-5M revenue, where brokers or marketing managers handle SEO to attract online leads.",
+      "rationale": "They need robust SEO strategies to increase visibility in competitive property markets but often lack dedicated SEO teams.",
+      "phrases": [
+        {
+          "phrase": "seo analysis tools for real estate",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "real estate seo optimization software",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automated seo pipelines for property listings",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best seo tools for realtors",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "streamline seo process real estate",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "seo analysis tools for real estate",
+      "top_volume": 0,
+      "pmf_score": 2.2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "mid-sized SaaS companies with insourced marketing",
+      "icp": "SaaS companies generating $1-10M annually, with in-house marketing teams responsible for driving organic growth through SEO.",
+      "rationale": "These companies rely on SEO to capture demand but face challenges integrating and automating data from various marketing channels.",
+      "phrases": [
+        {
+          "phrase": "seo data automation for saas",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best seo analytics tools for saas",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "seo feature extraction for software companies",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "integrate seo tools for saas marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "effective seo insights for saas",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "seo data automation for saas",
+      "top_volume": 0,
+      "pmf_score": 2.2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "local tourism boards",
+      "icp": "Small to mid-sized local tourism boards, often with budgets between $200k-$1M, looking to boost regional tourism through digital channels.",
+      "rationale": "SEO is crucial for these boards to promote their regions effectively and compete against larger, more resource-rich destinations.",
+      "phrases": [
+        {
+          "phrase": "seo tools for tourism boards",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "best local seo software for travel promotion",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automated seo insights for tourism industry",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "enhance tourism website seo",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "local seo strategies for tourism marketing",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "seo tools for tourism boards",
+      "top_volume": 0,
+      "pmf_score": 2.2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.6
+      }
+    },
+    {
+      "name": "regional healthcare organizations",
+      "icp": "Small to medium regional healthcare organizations, typically with $1-10M in revenue, focused on patient recruitment via digital marketing.",
+      "rationale": "SEO helps these organizations attract patients online, but their teams often struggle with data-rich but fragmented SEO processes.",
+      "phrases": [
+        {
+          "phrase": "seo software for healthcare providers",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "automated seo analysis for medical clinics",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "regional healthcare seo solutions",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "bofu"
+        },
+        {
+          "phrase": "seo tools comparison for healthcare industry",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "mofu"
+        },
+        {
+          "phrase": "optimize healthcare website seo",
+          "volume": 0,
+          "cpc": 0,
+          "competition": 0,
+          "source": "dataforseo",
+          "funnel_stage": "tofu"
+        }
+      ],
+      "demand_score": 0,
+      "bofu_density": 0,
+      "max_cpc": 0,
+      "top_phrase": "seo software for healthcare providers",
+      "top_volume": 0,
+      "pmf_score": 2.2,
+      "pmf_breakdown": {
+        "demand_n": 0,
+        "bofu_n": 0,
+        "cpc_n": 0,
+        "urgency_n": 0.8,
+        "retention_n": 0.6
+      }
+    }
+  ]
+}

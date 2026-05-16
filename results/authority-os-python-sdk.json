@@ -1,0 +1,243 @@
+{
+  "source_text": "authority-os-python-sdk\n\nAuthority OS Python SDK — entity visibility API client\n\n## README\n\n# Authority OS Python SDK\n\nPython SDK for Authority OS - Multi-tenant entity visibility operating system combining SEO, GEO (Generative Engine Optimization), AEO (Answer Engine Optimization), and social platform optimization.\n\n## Installation\n\n```bash\npip install authority-os-sdk\n```\n\nWith optional dependencies:\n\n```bash\n# For async support\npip install authority-os-sdk[async]\n\n# For CLI tool\npip install authority-os-sdk[cli]\n\n# For streaming support\npip install authority-os-sdk[streaming]\n\n# Install everything\npip install authority-os-sdk[all]\n```\n\n## Quick Start\n\n```python\nfrom authority_os import AuthorityOS\n\n# Initialize client\nclient = AuthorityOS(api_key=\"your-api-key\")\n\n# Create an entity\nentity = client.entities.create({\n    \"name\": \"Acme Corp\",\n    \"website\": \"https://acme.com\",\n    \"industry\": \"SaaS\"\n})\n\n# Run an audit\naudit = client.audits.trigger(entity.id)\n\n# Wait for completion\ncompleted_audit = client.audits.wait(audit.id)\nprint(f\"Overall score: {completed_audit.overall_score}\")\n\n# Get recommendations\nrecommendations = client.recommendations.list(entity.id)\nfor rec in recommendations.data:\n    print(f\"[{rec.priority}] {rec.title}\")\n```\n\n## Async Usage\n\n```python\nfrom authority_os import AsyncAuthorityOS\nimport asyncio\n\nasync def main():\n    async with AsyncAuthorityOS(api_key=\"your-api-key\") as client:\n        entities = await client.entities.list()\n        for entity in entities.data:\n            print(entity.name)\n\nasyncio.run(main())\n```\n\n## CLI Usage\n\n```bash\n# Set API key\nexport AOS_API_KEY=\"your-api-key\"\n\n# List entities\naos entity list\n\n# Create entity\naos entity create --name \"Acme Corp\" --website \"https://acme.com\"\n\n# Run audit\naos audit run <entity-id>\n\n# View audit results\naos audit results <audit-id>\n\n# Generate report\naos report generate <entity-id>\n```\n\n## Features\n\n- **Sync and async clients** - Use blocking or async/await patterns\n- **Automatic retry with exponential backoff** - Handles transient failures\n- **Pagination helpers** - Auto-paginate through large result sets\n- **SSE streaming** - Real-time audit and generation streams\n- **Rich CLI** - Beautiful terminal UI with tables and progress bars\n- **Type-safe** - Full Pydantic models with validation\n- **Context managers** - Automatic resource cleanup\n\n## Resources\n\n### Entities\n\n```python\n# List entities\nentities = client.entities.list(page=1, per_page=20, search=\"acme\")\n\n# Get entity\nentity = client.entities.get(entity_id)\n\n# Create entity\nentity = client.entities.create({\n    \"name\": \"Acme Corp\",\n    \"website\": \"https://acme.com\"\n})\n\n# Update entity\nentity = client.entities.update(entity_id, {\"industry\": \"Technology\"})\n\n# Delete entity\nclient.entities.delete(entity_id)\n\n# Auto-paginate all entities\nfor entity in client.entities.list_all():\n    print(entity.name)\n```\n\n### Audits\n\n```python\n# Trigger audit\naudit = client.audits.trigger(entity_id, audit_type=\"full\")\n\n# Get audit status\naudit = client.audits.get(audit_id)\n\n# Wait for completion\naudit = client.audits.wait(audit_id, timeout=300.0)\n\n# List audits\naudits = client.audits.list(entity_id)\n```\n\n### Recommendations\n\n```python\n# List recommendations\nrecs = client.recommendations.list(entity_id, status=\"pending\", priority=\"high\")\n\n# Complete recommendation\nrec = client.recommendations.complete(recommendation_id)\n\n# Dismiss recommendation\nrec = client.recommendations.dismiss(recommendation_id)\n```\n\n### Reports\n\n```python\n# Generate report\nreport = client.reports.generate(entity_id, report_type=\"monthly\")\n\n# Get report\nreport = client.reports.get(report_id)\n\n# List reports\nreports = client.reports.list(entity_id)\n```\n\n### Content\n\n```python\n# Create draft\ncontent = client.content.create_draft(\n    entity_id=entity_id,\n    content_type=\"faq\",\n    title=\"Common Questions\",\n    brief=\"Answer the top 10 customer questions\"\n)\n\n# Publish content\ncontent = client.content.publish(content_id)\n\n# List content\npages = client.content.list(entity_id, status=\"published\")\n```\n\n### Agent Workflows\n\n```python\n\nStack: Python",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Authority OS Python SDK",
+    "one_liner": "A Python SDK for interacting with the Authority OS entity visibility system.",
+    "core_promise": "Developers can easily integrate Authority OS features into their applications for enhanced online entity visibility and optimization audits.",
+    "domain": "developer tools / SEO optimization",
+    "buyers": [
+      {
+        "persona": "SEO-focused software developers",
+        "awareness_level": "solution_aware",
+        "pain": "Need a reliable way to integrate SEO audit capabilities into their own applications without building from scratch.",
+        "candidate_phrases": [
+          "seo python sdk",
+          "seo api client python",
+          "python sdk for seo tools",
+          "integrate seo audit in python",
+          "entity visibility python sdk"
+        ]
+      },
+      {
+        "persona": "Technical leads at digital marketing agencies",
+        "awareness_level": "problem_aware",
+        "pain": "Their clients demand better online visibility and they need to automate and optimize these processes to scale their services.",
+        "candidate_phrases": [
+          "digital marketing automation tools",
+          "marketing automation python sdk",
+          "optimize online presence tools",
+          "improve client online visibility api",
+          "python tool for digital growth"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 3,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "The buyer urgency is moderate as SEO and optimization are important, but not always immediately urgent needs. MVP ease is average since creating a robust SDK requires moderate effort. Distribution via SEO and tech platforms like GitHub is feasible, especially to developer audiences. Retention could be decent if integrated into client workflows, but it's not inherently sticky without continuous need for visibility updates. Advantage is low, as the idea description doesn't indicate any clear, existing edge over competitors."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "seo python sdk",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO-focused software developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo api client python",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO-focused software developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "python sdk for seo tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO-focused software developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "integrate seo audit in python",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO-focused software developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "entity visibility python sdk",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO-focused software developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "digital marketing automation tools",
+      "volume": 70,
+      "cpc": 24.61,
+      "competition": 0.04,
+      "source": "dataforseo",
+      "buyer": "Technical leads at digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "marketing automation python sdk",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical leads at digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "optimize online presence tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical leads at digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "improve client online visibility api",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical leads at digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "python tool for digital growth",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical leads at digital marketing agencies",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "digital marketing automation tools",
+      "volume": 70,
+      "cpc": 24.61,
+      "competition": 0.04,
+      "source": "dataforseo",
+      "buyer": "Technical leads at digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo python sdk",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO-focused software developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo api client python",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO-focused software developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "python sdk for seo tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO-focused software developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "integrate seo audit in python",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO-focused software developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "entity visibility python sdk",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO-focused software developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "marketing automation python sdk",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical leads at digital marketing agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "optimize online presence tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical leads at digital marketing agencies",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 1.969851823976236,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 3,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 21.969851823976235
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "SEO-focused software developers",
+        "anchor_phrase": "integrate seo audit in python",
+        "offer_copy": "For SEO-focused developers who want to integrate robust SEO audit capabilities into their applications but lack the time or resources to build from scratch, we provide a comprehensive Python SDK that connects seamlessly with Authority OS, so they can enhance their applications’ SEO functions without heavy lifting.",
+        "landing_page_headline": "Integrate SEO Audits Effortlessly with Python SDK"
+      },
+      {
+        "buyer": "Technical leads at digital marketing agencies",
+        "anchor_phrase": "digital marketing automation tools",
+        "offer_copy": "For digital marketing agency leads who need to deliver enhanced online visibility to clients but struggle with manual processes, we offer a Python SDK that enables automating and scaling optimizations using Authority OS capabilities, so they can serve more clients effectively and efficiently.",
+        "landing_page_headline": "Automate Your Marketing with Python SDK"
+      }
+    ],
+    "next_action": "Develop educational content targeting SEO developers that demonstrates how to 'integrate SEO audit in Python' using Authority OS, and distribute this content across developer forums and technical newsletters.",
+    "reasoning": "The concept shows potential with high willingness to pay, but lacks search demand for specific phrases like 'seo python sdk', indicating a low existing market need. The risk lies in the idea's assumed appeal without clear evidence of a strong market pull, requiring an educational approach to build awareness and urgency. By crafting content that's relevant and valuable, the founder can bridge the knowledge gap, potentially catalyzing demand for the SDK."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/authority-os-python-sdk"
+  }
+}

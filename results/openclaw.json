@@ -1,0 +1,243 @@
+{
+  "source_text": "openclaw\n\n## README\n\n# 🦞 OpenClaw — Personal AI Assistant\n\n<p align=\"center\">\n    <picture>\n        <source media=\"(prefers-color-scheme: light)\" srcset=\"https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/openclaw-logo-text-dark.svg\">\n        <img src=\"https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/openclaw-logo-text.svg\" alt=\"OpenClaw\" width=\"500\">\n    </picture>\n</p>\n\n<p align=\"center\">\n  <strong>EXFOLIATE! EXFOLIATE!</strong>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/openclaw/openclaw/actions/workflows/ci.yml?branch=main\"><img src=\"https://img.shields.io/github/actions/workflow/status/openclaw/openclaw/ci.yml?branch=main&style=for-the-badge\" alt=\"CI status\"></a>\n  <a href=\"https://github.com/openclaw/openclaw/releases\"><img src=\"https://img.shields.io/github/v/release/openclaw/openclaw?include_prereleases&style=for-the-badge\" alt=\"GitHub release\"></a>\n  <a href=\"https://discord.gg/clawd\"><img src=\"https://img.shields.io/discord/1456350064065904867?label=Discord&logo=discord&logoColor=white&color=5865F2&style=for-the-badge\" alt=\"Discord\"></a>\n  <a href=\"LICENSE\"><img src=\"https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge\" alt=\"MIT License\"></a>\n</p>\n\n**OpenClaw** is a _personal AI assistant_ you run on your own devices.\nIt answers you on the channels you already use (WhatsApp, Telegram, Slack, Discord, Google Chat, Signal, iMessage, BlueBubbles, IRC, Microsoft Teams, Matrix, Feishu, LINE, Mattermost, Nextcloud Talk, Nostr, Synology Chat, Tlon, Twitch, Zalo, Zalo Personal, WebChat). It can speak and listen on macOS/iOS/Android, and can render a live Canvas you control. The Gateway is just the control plane — the product is the assistant.\n\nIf you want a personal, single-user assistant that feels local, fast, and always-on, this is it.\n\n[Website](https://openclaw.ai) · [Docs](https://docs.openclaw.ai) · [Vision](VISION.md) · [DeepWiki](https://deepwiki.com/openclaw/openclaw) · [Getting Started](https://docs.openclaw.ai/start/getting-started) · [Updating](https://docs.openclaw.ai/install/updating) · [Showcase](https://docs.openclaw.ai/start/showcase) · [FAQ](https://docs.openclaw.ai/help/faq) · [Onboarding](https://docs.openclaw.ai/start/wizard) · [Nix](https://github.com/openclaw/nix-openclaw) · [Docker](https://docs.openclaw.ai/install/docker) · [Discord](https://discord.gg/clawd)\n\nPreferred setup: run `openclaw onboard` in your terminal.\nOpenClaw Onboard guides you step by step through setting up the gateway, workspace, channels, and skills. It is the recommended CLI setup path and works on **macOS, Linux, and Windows (via WSL2; strongly recommended)**.\nWorks with npm, pnpm, or bun.\nNew install? Start here: [Getting started](https://docs.openclaw.ai/start/getting-started)\n\n## Sponsors\n\n| OpenAI                                                            | Vercel                                                            | Blacksmith                                                                   | Convex                                                                |\n| ----------------------------------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------- | --------------------------------------------------------------------- |\n| [![OpenAI](docs/assets/sponsors/openai.svg)](https://openai.com/) | [![Vercel](docs/assets/sponsors/vercel.svg)](https://vercel.com/) | [![Blacksmith](docs/assets/sponsors/blacksmith.svg)](https://blacksmith.sh/) | [![Convex](docs/assets/sponsors/convex.svg)](https://www.convex.dev/) |\n\n**Subscriptions (OAuth):**\n\n- **[OpenAI](https://openai.com/)** (ChatGPT/Codex)\n\nModel note: while many providers/models are supported, for the best experience and lower prompt-injection risk use the strongest latest-generation model available to you. See [Onboarding](https://docs.openclaw.ai/start/onboarding).\n\n## Models (selection + auth)\n\nDescription: Multi-channel AI gateway with extensible messaging integrations\n\n## CLAUDE.md\n\nAGENTS.md\n\n## AGENTS.md\n\n# Repository Guidelines\n\n- Repo: https://github.com/openclaw/openclaw\n- In chat replies, file references must be repo-root relative only (example: `extensions/bluebubbles/src/channel.ts:80`); never absolute paths or `~/...`.\n- GitHub issues/comments/PR comments: use literal multiline strings or `-F - <<'EOF'` (or $'...') for real newlines; never embed \"\\\\n\".\n- GitHub comment footgun: never use `gh issue/pr comment -b \"...\"` when body contains backticks or shell chars. Always use single-quoted heredoc (`-F - <<'EOF'`) so no command substitution/escaping corruption.\n- GitHub linking footgun: don’t wrap issue/PR refs like `#24643` in backticks when you want auto-linking. Use plain `#24643` (optionally add full URL).\n- PR landing comments: always make commit SHAs clickable with full commit links (both landed SHA + source SHA when present).\n- PR review conversations: if a bot leaves review conversations on your PR, address them and resolve those conversations yourself once fixed. Leave a conversation unresolved only when reviewer or maintainer judgment is still needed; do not leave bot-conversation cleanup to maintainers.\n- GitHub searching footgun: don't limit yourself to the first 500 issues or PRs when wanting to search all. Unless you're supposed to look at the most recent, keep going until you've reached the last page in the search\n- Security advisory analysis: before triage/severity decisions, read `SECURITY.md` to align with OpenClaw's trust model and design boundaries.\n- Do not edit files covered by security-focused `CODEOWNERS` rules unless a listed owner explicitly asked for the change or is already reviewing it with you. Treat those paths as restricted surfaces, not drive-by cleanup.\n\n## Auto-close labels (issues and PRs)\n\n- If an issue/PR matches one of the reasons below, apply the label and let `.github/workflows/auto-response.yml` handle comment/close/lock.\n- Do not manually close + manually comment for these reasons.\n- Why: keeps wording consistent, preser\n\n## VISION.md\n\n## OpenClaw Vision\n\nOpenClaw is the AI that actually does things.\nIt runs on your devices, in your channels, with your rules.\n\nThis document explains the current state and direction of the project.\nWe are still early, so iteration is fast.\nProject overview and developer docs: [`README.md`](README.md)\nContribution guide: [`CONTRIBUTING.md`](CONTRIBUTING.md)\n\nOpenClaw started as a personal playground to learn AI and build something genuinely useful:\nan assistant that can run real tasks on a real computer.\nIt evolved through several names and shells: Warelay -> Clawdbot -> Moltbot -> OpenClaw.\n\nThe goal: a personal assistant that is easy to use, supports a wide range of platforms, and respects privacy and security.\n\nThe current focus is:\n\nPriority:\n\n- Security and safe defaults\n- Bug fixes and stability\n- Setup reliability and first-run UX\n\nNext priorities:\n\n- Supporting all major model providers\n- Improving support for major messaging channels (and adding a few high-demand ones)\n- Performance and test infrastructure\n- Better computer-use and agent harness capabilities\n- Ergonomics across CLI and web frontend\n- Companion apps on macOS, iOS, Android, Windows, and Linux\n\nContribution rules:\n\n- One PR = one issue/topic. Do not bundle multiple unrelated fixes/features.\n- PRs over ~5,000 changed lines are reviewed only in exceptional circumstances.\n- Do not open large batches of tiny PRs at once; each PR has review cost.\n- For very small related fixes, grouping into one focused PR is encouraged.\n\n## Security\n\nSecurity in OpenClaw is a deliberate tradeoff: strong defaults without killing capability.\nThe goal is to stay powerful for real work while making risky paths explicit and operator-controlled.\n\nCanonical security policy and reporting:\n\n- [`SECURITY.md`](SECURITY.md)\n\nWe prioritize secure defaults, but also expose clear knobs for trusted high-power workflows.\n\n## Plugins & Memory\n\nOpenClaw has an extensive plugin API.\nCore stays lean; optional capability should usually",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "OpenClaw",
+    "one_liner": "A personal AI assistant that integrates into multiple messaging platforms and runs on local devices.",
+    "core_promise": "Have a personal AI assistant that operates across your favorite messaging platforms while maintaining your privacy and control.",
+    "domain": "personal AI assistant",
+    "buyers": [
+      {
+        "persona": "tech-savvy individuals who value privacy",
+        "awareness_level": "solution_aware",
+        "pain": "They want an AI assistant but are concerned about privacy and data security with typical online AI platforms.",
+        "candidate_phrases": [
+          "private ai assistant",
+          "local ai assistant",
+          "open source personal assistant",
+          "self-hosted ai assistant",
+          "ai assistant privacy"
+        ]
+      },
+      {
+        "persona": "developers and tech enthusiasts",
+        "awareness_level": "product_aware",
+        "pain": "They want to customize their AI tools and integrate them with various tech stacks and platforms.",
+        "candidate_phrases": [
+          "integrate ai with slack or discord",
+          "open source ai assistant github",
+          "ai assistant for developers",
+          "customizable ai assistant",
+          "self-host ai assistant setup"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 3,
+      "rationale": "The product addresses moderate urgency as buyers are likely concerned with privacy and integration, but it’s not an immediate need. MVP ease is low due to the complex integration and multi-platform support required. Distribution fit is good as tech-savvy individuals often search online for privacy-focused tools. Retention potential is medium because once users set it up and integrate it, they are likely to continue using it. The advantage score reflects a slight edge if the founder has a technical background or open-source community involvement."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "private ai assistant",
+      "volume": 590,
+      "cpc": 14.37,
+      "competition": 0.42,
+      "source": "dataforseo",
+      "buyer": "tech-savvy individuals who value privacy",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "local ai assistant",
+      "volume": 140,
+      "cpc": 8.39,
+      "competition": 0.19,
+      "source": "dataforseo",
+      "buyer": "tech-savvy individuals who value privacy",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "open source personal assistant",
+      "volume": 20,
+      "cpc": 0,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "tech-savvy individuals who value privacy",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "self-hosted ai assistant",
+      "volume": 110,
+      "cpc": 1.76,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "tech-savvy individuals who value privacy",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai assistant privacy",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy individuals who value privacy",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "integrate ai with slack or discord",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "developers and tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "open source ai assistant github",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "developers and tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai assistant for developers",
+      "volume": 90,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "developers and tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "customizable ai assistant",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "developers and tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "self-host ai assistant setup",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "developers and tech enthusiasts",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "private ai assistant",
+      "volume": 590,
+      "cpc": 14.37,
+      "competition": 0.42,
+      "source": "dataforseo",
+      "buyer": "tech-savvy individuals who value privacy",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "local ai assistant",
+      "volume": 140,
+      "cpc": 8.39,
+      "competition": 0.19,
+      "source": "dataforseo",
+      "buyer": "tech-savvy individuals who value privacy",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "self-hosted ai assistant",
+      "volume": 110,
+      "cpc": 1.76,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "tech-savvy individuals who value privacy",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai assistant for developers",
+      "volume": 90,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "developers and tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "open source personal assistant",
+      "volume": 20,
+      "cpc": 0,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "tech-savvy individuals who value privacy",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai assistant privacy",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech-savvy individuals who value privacy",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "integrate ai with slack or discord",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "developers and tech enthusiasts",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "open source ai assistant github",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "developers and tech enthusiasts",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 3.168965761844564,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 3,
+    "retention_potential": 3,
+    "total": 23.168965761844564
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "tech-savvy individuals who value privacy",
+        "anchor_phrase": "private ai assistant",
+        "offer_copy": "For tech-savvy individuals who want a dependable AI assistant but are concerned about privacy and data security, we provide a private AI assistant that runs on your local devices so they maintain full control without compromising on convenience.",
+        "landing_page_headline": "Secure Your Conversations with a Private AI Assistant"
+      },
+      {
+        "buyer": "developers and tech enthusiasts",
+        "anchor_phrase": "ai assistant for developers",
+        "offer_copy": "For developers who need a customizable AI assistant but find typical tools too rigid, we offer an AI assistant designed for integration and customization, enabling seamless integration with your tech stacks and platforms without excessive configuration hassles.",
+        "landing_page_headline": "Customizable AI Assistant for Developers"
+      }
+    ],
+    "next_action": "Ship 2 landing pages for the top phrases and allocate $100 on Google Search ads to test demand and click-through rates over the next week.",
+    "reasoning": "The decision to 'Test First' is based on medium search demand and strong willingness to pay signals, indicating a targeted market interested in these offerings. The highest-interest phrase for each persona provides a strong focal point for marketing initiatives. However, there is still moderate risk due to average urgency and retention potential scores, suggesting uncertainty in how quickly and consistently users will adopt and stick with the product. Testing landing pages and search ads will help validate interest and buyer intent."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/openclaw"
+  }
+}

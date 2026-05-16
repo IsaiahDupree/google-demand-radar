@@ -1,0 +1,495 @@
+{
+  "source_text": "SEO\n\n## README\n\nThis is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).\r\n\r\n## Getting Started\r\n\r\nFirst, run the development server:\r\n\r\n```bash\r\nnpm run dev\r\n# or\r\nyarn dev\r\n# or\r\npnpm dev\r\n# or\r\nbun dev\r\n```\r\n\r\nOpen [http://localhost:3000](http://localhost:3000) with your browser to see the result.\r\n\r\nYou can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.\r\n\r\nThis project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.\r\n\r\n## Learn More\r\n\r\nTo learn more about Next.js, take a look at the following resources:\r\n\r\n- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.\r\n- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.\r\n\r\nYou can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!\r\n\r\n## Deploy on Vercel\r\n\r\nThe easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.\r\n\r\nCheck out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.\n\n## CLAUDE.md\n\n# Authority OS — Project Context\r\n\r\n## What This Is\r\nMulti-tenant entity visibility operating system for agencies. Combines SEO, GEO (Generative Engine Optimization), AEO (Answer Engine Optimization), and social platform optimization into one app.\r\n\r\n## PRD\r\nFull product requirements document: `../PRD.md` (26 sections, complete data model, build phases, platform methods)\r\n\r\n## Tech Stack\r\n- Next.js 16 (App Router, no src/ directory)\r\n- Supabase Postgres (shared project: ivhfuhxorppptyuofbgq)\r\n- Supabase Auth + RLS for multi-tenancy (implemented)\r\n- Tailwind CSS v4\r\n- Vercel deployment\r\n- All tables prefixed with `aos_`\r\n\r\n## Database Tables (Phase 1)\r\n- aos_workspaces, aos_workspace_members\r\n- aos_entities, aos_entity_aliases, aos_entity_socials, aos_entity_topics, aos_entity_competitors, aos_entity_offers, aos_entity_proof, aos_entity_locations\r\n- aos_audits, aos_audit_findings, aos_recommendations, aos_crawled_pages\r\n\r\n## Multi-Tenancy (PRD-002)\r\n- RLS enabled on all 14 aos_* tables (except aos_workspace_members used in policy subqueries)\r\n- WorkspaceContext provider in dashboard layout with localStorage persistence\r\n- WorkspaceSwitcher dropdown in sidebar\r\n- Invite flow: POST /api/workspaces/[id]/invite → /invite/[token] acceptance page\r\n- Role-based permissions: owner > admin > member > viewer (lib/permissions.ts)\r\n- All API routes verify auth via createSupabaseServer() + workspace membership\r\n- Team management at /settings/team\r\n- Workspace settings at /settings (name, slug, delete)\r\n\r\n## Default Workspace\r\nID: `00000000-0000-0000-0000-000000000001` (slug: \"default\")\r\nFallback when no workspaces are found for the user.\r\n\r\n## Key Commands\r\n```bash\r\nnpm run dev          # Start dev server (port 3000)\r\nnpm run build        # Production build\r\nnpx vercel --yes --prod  # Deploy\r\n```\r\n\r\n## Audit Engine\r\nThe audit engine crawls a website and scores 6 categories:\r\n- Entity Clarity (20%) — name consistency, about page, OG tags\r\n- Schema Markup (20%) — JSON-LD presence,\n\n## AGENTS.md\n\n<!-- BEGIN:nextjs-agent-rules -->\r\n# This is NOT the Next.js you know\r\n\r\nThis version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.\r\n<!-- END:nextjs-agent-rules -->",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Authority OS",
+    "one_liner": "A unified platform for SEO, GEO, AEO, and social optimization for agencies.",
+    "core_promise": "Agencies will enhance client visibility and engagement across search engines and social platforms.",
+    "domain": "digital marketing",
+    "buyers": [
+      {
+        "persona": "digital marketing agencies managing multiple clients",
+        "awareness_level": "problem_aware",
+        "pain": "Struggling to manage and optimize online visibility for multiple clients across various platforms.",
+        "candidate_phrases": [
+          "how to manage seo for multiple clients",
+          "tools for digital marketing agencies",
+          "best seo tools for agencies",
+          "multi-client seo management",
+          "optimize client seo and social presence"
+        ]
+      },
+      {
+        "persona": "SEO specialists at agencies seeking integrated tools",
+        "awareness_level": "solution_aware",
+        "pain": "Using disparate tools and manual processes to manage SEO tasks across different platforms.",
+        "candidate_phrases": [
+          "integrated seo tools",
+          "seo and social media management software",
+          "cross-platform seo optimization tool",
+          "best tools for seo agencies",
+          "all-in-one seo software"
+        ]
+      },
+      {
+        "persona": "small business digital marketers",
+        "awareness_level": "problem_aware",
+        "pain": "Limited resources to effectively optimize online presence and compete with larger entities.",
+        "candidate_phrases": [
+          "small business seo tools",
+          "how to improve local seo",
+          "budget-friendly seo solutions",
+          "seo tools for beginners",
+          "increase online visibility for small business"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 4,
+      "advantage": 2,
+      "rationale": "Buyer urgency is moderate as agencies and specialists need constant improvement in tools for managing multiple clients. Building the MVP may take substantial time because it's a complex platform with multiple features needed. Distribution can be moderately efficient through SEO agencies and partnerships. Retention is high since agencies require ongoing tools for optimization. No specific advantage given, so a low score for competitiveness."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "how to manage seo for multiple clients",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies managing multiple clients",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools for digital marketing agencies",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies managing multiple clients",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best seo tools for agencies",
+      "volume": 1000,
+      "cpc": 28.84,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies managing multiple clients",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "multi-client seo management",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies managing multiple clients",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "optimize client seo and social presence",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies managing multiple clients",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "integrated seo tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo and social media management software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "cross-platform seo optimization tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best tools for seo agencies",
+      "volume": 480,
+      "cpc": 0,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "all-in-one seo software",
+      "volume": 590,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "small business seo tools",
+      "volume": 880,
+      "cpc": 22.15,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to improve local seo",
+      "volume": 90,
+      "cpc": 4.91,
+      "competition": 0.13,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "budget-friendly seo solutions",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo tools for beginners",
+      "volume": 880,
+      "cpc": 29.24,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "increase online visibility for small business",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "conductor seo platform",
+      "volume": 110,
+      "cpc": 4.13,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "brightedge api",
+      "volume": 40,
+      "cpc": 0,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "hubspot seo marketing software",
+      "volume": 10,
+      "cpc": 10.93,
+      "competition": 0.43,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "freshdesk seo",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "google search console hubspot",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "hubspot meta description",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "hubspot seo template",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "off page seo hubspot",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo slack",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "slack seo",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "zendesk help center seo",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "small businesses seo",
+      "volume": 5400,
+      "cpc": 35.21,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo for small local business",
+      "volume": 1900,
+      "cpc": 26.55,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best seo tools for small businesses",
+      "volume": 590,
+      "cpc": 22.68,
+      "competition": 0.19,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo software for small business",
+      "volume": 480,
+      "cpc": 12.49,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best seo software for small business",
+      "volume": 320,
+      "cpc": 58.92,
+      "competition": 0.09,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "small business search engine marketing",
+      "volume": 170,
+      "cpc": 0,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo guide for small business",
+      "volume": 90,
+      "cpc": 0,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "local business seo software",
+      "volume": 30,
+      "cpc": 0,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best small business seo tools",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "local business seo guide",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "small businesses seo",
+      "volume": 5400,
+      "cpc": 35.21,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo for small local business",
+      "volume": 1900,
+      "cpc": 26.55,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best seo tools for agencies",
+      "volume": 1000,
+      "cpc": 28.84,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "digital marketing agencies managing multiple clients",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "small business seo tools",
+      "volume": 880,
+      "cpc": 22.15,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo tools for beginners",
+      "volume": 880,
+      "cpc": 29.24,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "all-in-one seo software",
+      "volume": 590,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best seo tools for small businesses",
+      "volume": 590,
+      "cpc": 22.68,
+      "competition": 0.19,
+      "source": "dataforseo",
+      "buyer": "small business digital marketers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best tools for seo agencies",
+      "volume": 480,
+      "cpc": 0,
+      "competition": 0.03,
+      "source": "dataforseo",
+      "buyer": "SEO specialists at agencies seeking integrated tools",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 4.259054374304695,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 2,
+    "retention_potential": 4,
+    "total": 23.259054374304696
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "digital marketing agencies managing multiple clients",
+        "anchor_phrase": "best seo tools for agencies",
+        "offer_copy": "For digital marketing agencies managing multiple clients who want to enhance client visibility but struggle with platform management, we provide an all-in-one SEO and social optimization platform so they can streamline processes without juggling disparate tools.",
+        "landing_page_headline": "Streamline Client SEO with Unified Tools"
+      },
+      {
+        "buyer": "SEO specialists at agencies seeking integrated tools",
+        "anchor_phrase": "all-in-one seo software",
+        "offer_copy": "For SEO specialists at agencies who seek integrated tools but find themselves using disparate software, we offer an all-in-one platform combining SEO, GEO, AEO, and social optimization so they can achieve seamless operations without inefficiencies.",
+        "landing_page_headline": "Discover the All-in-One SEO Solution"
+      },
+      {
+        "buyer": "small business digital marketers",
+        "anchor_phrase": "small business seo tools",
+        "offer_copy": "For small business digital marketers who need effective online optimization but face limited resources, we provide cost-effective SEO and social tools so they can compete with larger entities without stretching budgets.",
+        "landing_page_headline": "Affordable SEO Tools for Small Businesses"
+      }
+    ],
+    "next_action": "Ship 3 landing pages for the top anchor phrases and allocate $75 each for Google Search ads to validate interest and fine-tune messaging.",
+    "reasoning": "The search demand indicates that there is tangible interest in SEO tools, but specifically for roles that manage multiple clients or operate in niche contexts like small businesses. Buyer urgency isn’t very high, suggesting a need for strong initial offers to capture interest more decisively. Although buyers seem willing to pay, there is a risk around standing out within a crowded market of SEO tools. MVP feasibility presents challenges but validating concept interest will signal better product-market fit scenarios and guide further development."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/SEO"
+  }
+}

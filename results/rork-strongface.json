@@ -1,0 +1,306 @@
+{
+  "source_text": "rork-strongface\n\nCreated by Rork\n\n## README\n\n# Welcome to your Rork app\n\n## Project info\n\nThis is a native cross-platform mobile app created with [Rork](https://rork.com)\n\n**Platform**: Native iOS & Android app, exportable to web\n**Framework**: Expo Router + React Native\n\n## How can I edit this code?\n\nThere are several ways of editing your native mobile application.\n\n### **Use Rork**\n\nSimply visit [rork.com](https://rork.com) and prompt to build your app with AI.\n\nChanges made via Rork will be committed automatically to this GitHub repo.\n\nWhenever you make a change in your local code editor and push it to GitHub, it will be also reflected in Rork.\n\n### **Use your preferred code editor**\n\nIf you want to work locally using your own code editor, you can clone this repo and push changes. Pushed changes will also be reflected in Rork.\n\nIf you are new to coding and unsure which editor to use, we recommend Cursor. If you're familiar with terminals, try Claude Code.\n\nThe only requirement is having Node.js & Bun installed - [install Node.js with nvm](https://github.com/nvm-sh/nvm) and [install Bun](https://bun.sh/docs/installation)\n\nFollow these steps:\n\n```bash\n# Step 1: Clone the repository using the project's Git URL.\ngit clone <YOUR_GIT_URL>\n\n# Step 2: Navigate to the project directory.\ncd <YOUR_PROJECT_NAME>\n\n# Step 3: Install the necessary dependencies.\nbun i\n\n# Step 4: Start the instant web preview of your Rork app in your browser, with auto-reloading of your changes\nbun run start-web\n\n# Step 5: Start iOS preview\n# Option A (recommended):\nbun run start  # then press \"i\" in the terminal to open iOS Simulator\n# Option B (if supported by your environment):\nbun run start -- --ios\n```\n\n### **Edit a file directly in GitHub**\n\n- Navigate to the desired file(s).\n- Click the \"Edit\" button (pencil icon) at the top right of the file view.\n- Make your changes and commit the changes.\n\n## What technologies are used for this project?\n\nThis project is built with the most popular native mobile cross-platform technical stack:\n\n- **React Native** - Cross-platform native mobile development framework created by Meta and used for Instagram, Airbnb, and lots of top apps in the App Store\n- **Expo** - Extension of React Native + platform used by Discord, Shopify, Coinbase, Telsa, Starlink, Eightsleep, and more\n- **Expo Router** - File-based routing system for React Native with support for web, server functions and SSR\n- **TypeScript** - Type-safe JavaScript\n- **React Query** - Server state management\n- **Lucide React Native** - Beautiful icons\n\n## How can I test my app?\n\n### **On your phone (Recommended)**\n\n1. **iOS**: Download the [Rork app from the App Store](https://apps.apple.com/app/rork) or [Expo Go](https://apps.apple.com/app/expo-go/id982107779)\n2. **Android**: Download the [Expo Go app from Google Play](https://play.google.com/store/apps/details?id=host.exp.exponent)\n3. Run `bun run start` and scan the QR code from your development server\n\n### **In your browser**\n\nRun `bun start-web` to test in a web browser. Note: The browser preview is great for quick testing, but some native features may not be available.\n\n### **iOS Simulator / Android Emulator**\n\nYou can test Rork apps in Expo Go or Rork iOS app. You don't need XCode or Android Studio for most features.\n\n**When do you need Custom Development Builds?**\n\n- Native authentication (Face ID, Touch ID, Apple Sign In)\n- In-app purchases and subscriptions\n- Push notifications\n- Custom native modules\n\nLearn more: [Expo Custom Development Builds Guide](https://docs.expo.dev/develop/development-builds/introduction/)\n\nIf you have XCode (iOS) or Android Studio installed:\n\n```bash\n# iOS Simulator\nbun run start -- --ios\n\n# Android Emulator\nbun run start -- --android\n```\n\n## How can I deploy this project?\n\n### **Publish to App Store (iOS)**\n\n1. **Install EAS CLI**:\n\n   ```bash\n   bun i -g @expo/eas-cli\n   ```\n\n2. **Configure your project**:\n\n   ```bash\n   eas build:configure\n   ```\n\n3. **Build for iOS**:\n\n   ```bash\n   eas build --platform ios\n   ```\n\n\n\nStack: TypeScript",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Rork App Builder",
+    "one_liner": "A cross-platform app builder for creating native iOS, Android, and web apps with ease.",
+    "core_promise": "Create and manage native mobile apps across platforms effortlessly using AI-driven development tools.",
+    "domain": "low-code/no-code platform",
+    "buyers": [
+      {
+        "persona": "freelance mobile app developers",
+        "awareness_level": "solution_aware",
+        "pain": "Spending excessive time building apps for multiple platforms separately.",
+        "candidate_phrases": [
+          "cross platform mobile app development",
+          "native app builder for ios and android",
+          "expo react native builder",
+          "ai app development tool",
+          "react native expo tutorial"
+        ]
+      },
+      {
+        "persona": "small business owners wanting custom apps",
+        "awareness_level": "problem_aware",
+        "pain": "Needing a mobile app but lacking the skills or budget to develop separate apps for iOS and Android.",
+        "candidate_phrases": [
+          "how to build an app for my business",
+          "easy app development for small businesses",
+          "make my own business app",
+          "native app builder without coding",
+          "simple mobile app builder"
+        ]
+      },
+      {
+        "persona": "technical founders of startups",
+        "awareness_level": "solution_aware",
+        "pain": "Wanting to quickly prototype and deploy mobile apps without extensive coding.",
+        "candidate_phrases": [
+          "rapid app prototyping tools",
+          "build mobile app with react native",
+          "app builder for startups",
+          "deploy mobile app fast",
+          "create react native app tutorial"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "Buyer urgency is moderate as app development is critical but often planned ahead. MVP ease is low because building a robust platform requires extensive development and integration. Distribution fit is high due to clear search phrases and digital reach. Retention potential is moderate as users may stay for ongoing app development. Advantage is low without clear unique edge or existing competitor analysis."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "cross platform mobile app development",
+      "volume": 2400,
+      "cpc": 15.98,
+      "competition": 0.04,
+      "source": "dataforseo",
+      "buyer": "freelance mobile app developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "native app builder for ios and android",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance mobile app developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "expo react native builder",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance mobile app developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai app development tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance mobile app developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "react native expo tutorial",
+      "volume": 90,
+      "cpc": 0,
+      "competition": 0.11,
+      "source": "dataforseo",
+      "buyer": "freelance mobile app developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to build an app for my business",
+      "volume": 390,
+      "cpc": 24.5,
+      "competition": 0.73,
+      "source": "dataforseo",
+      "buyer": "small business owners wanting custom apps",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy app development for small businesses",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners wanting custom apps",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "make my own business app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners wanting custom apps",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "native app builder without coding",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners wanting custom apps",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "simple mobile app builder",
+      "volume": 140,
+      "cpc": 29.41,
+      "competition": 0.32,
+      "source": "dataforseo",
+      "buyer": "small business owners wanting custom apps",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "rapid app prototyping tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "technical founders of startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "build mobile app with react native",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "technical founders of startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "app builder for startups",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "technical founders of startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "deploy mobile app fast",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "technical founders of startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "create react native app tutorial",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "technical founders of startups",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "cross platform mobile app development",
+      "volume": 2400,
+      "cpc": 15.98,
+      "competition": 0.04,
+      "source": "dataforseo",
+      "buyer": "freelance mobile app developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to build an app for my business",
+      "volume": 390,
+      "cpc": 24.5,
+      "competition": 0.73,
+      "source": "dataforseo",
+      "buyer": "small business owners wanting custom apps",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "simple mobile app builder",
+      "volume": 140,
+      "cpc": 29.41,
+      "competition": 0.32,
+      "source": "dataforseo",
+      "buyer": "small business owners wanting custom apps",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "react native expo tutorial",
+      "volume": 90,
+      "cpc": 0,
+      "competition": 0.11,
+      "source": "dataforseo",
+      "buyer": "freelance mobile app developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "build mobile app with react native",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "technical founders of startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "create react native app tutorial",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "technical founders of startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "native app builder for ios and android",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance mobile app developers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "expo react native builder",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "freelance mobile app developers",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 3.704619839704767,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 22.70461983970477
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "freelance mobile app developers",
+        "anchor_phrase": "cross platform mobile app development",
+        "offer_copy": "For freelance mobile app developers who want to maximize efficiency but spend too much time building separate apps for different platforms, we provide an intuitive app builder that streamlines cross platform mobile app development so they can deliver high-quality apps faster without juggling multiple codebases.",
+        "landing_page_headline": "Efficient Cross Platform Mobile App Development"
+      },
+      {
+        "buyer": "small business owners wanting custom apps",
+        "anchor_phrase": "how to build an app for my business",
+        "offer_copy": "For small business owners who need a custom mobile app but lack the technical skills or budget to develop separate apps, we offer a simple platform that teaches you how to build an app for your business so you can engage customers effectively without hiring expensive developers.",
+        "landing_page_headline": "Learn to Build an App for Your Business"
+      },
+      {
+        "buyer": "technical founders of startups",
+        "anchor_phrase": "build mobile app with react native",
+        "offer_copy": "For technical startup founders who want to prototype and deploy quickly but dread complex coding, we offer a no-code platform that accelerates the process to build mobile apps with react native, enabling fast launches without sacrificing quality.",
+        "landing_page_headline": "Speedy App Prototyping with React Native"
+      }
+    ],
+    "next_action": "Develop and launch landing pages targeting each top phrase and run $100 worth of Google Ads to test conversion rates for each buyer persona.",
+    "reasoning": "The verdict to 'Test First' is based on the moderate search demand and relatively high willingness to pay. Buyer urgency is average, indicating that while there is interest, it might not be converted quickly into sales without compelling pitches. The main risk is the low MVP ease, implying that developing a competitive platform could be complex and time-consuming. Testing will help ensure market fit and identify which buyer persona has the highest conversion potential before further development."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/rork-strongface"
+  }
+}

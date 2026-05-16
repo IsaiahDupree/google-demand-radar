@@ -1,0 +1,306 @@
+{
+  "source_text": "content-intelligence\n\n## README\n\n# Content Intelligence\n\nTwo systems in one repo:\n\n1. **AI Services** (Python/Flask, port 6006) — content analysis, generation, FATE scoring, awareness classification\n2. **Content Intelligence System** (Node.js CLI) — audits MPLite DB, syncs Blotato accounts, indexes local files, deduplicates, cross-platform analysis, uploads to Supabase\n\n## Content Intelligence CLI\n\n### Setup\n\n```bash\ncp .env.example .env   # fill in SUPABASE_SERVICE_KEY, BLOTATO_API_KEY, LOCAL_VIDEO_DIRS\nnpm install\n```\n\n### Commands\n\n```bash\nnode index.js migrate       # Create Supabase tables (ci_posts, ci_local_files, ci_analysis_snapshots)\nnode index.js audit          # MPLite DB audit → ci_posts\nnode index.js sync           # Blotato account sync → ci_posts\nnode index.js scan           # Local file scanner → ci_local_files (SHA256 + post matching)\nnode index.js delete         # Safe-delete dry-run report\nnode index.js delete --confirm-delete  # Actually delete matched files\nnode index.js analyze        # Cross-platform analysis → ci_analysis_snapshots\nnode index.js graph          # Content association graph → ci_analysis_snapshots\nnode index.js status         # Dashboard: posts by platform, files, recommendations\n```\n\n### Tests\n\n```bash\nnode --test tests/test_content_intelligence.js\n```\n\n### Structure\n\n```\nlib/\n├── supabase.js    # Supabase client (shared project ivhfuhxorppptyuofbgq)\n├── migrate.js     # Schema migration\n├── mplite.js      # MPLite DB audit\n├── blotato.js     # Blotato account sync\n├── scanner.js     # Local file scanner + SHA256 hashing\n├── deleter.js     # Safe-delete engine\n├── analyzer.js    # Cross-platform analyzer\n├── graph.js       # Content association graph\n└── dashboard.js   # CLI status dashboard\n```\n\n## AI Services (Python)\n\n### Setup\n\n```bash\npython3 -m venv venv && source venv/bin/activate\npip install -r requirements.txt\npython app.py  # starts on port 6006\n```\n\n### Key Endpoints\n\n- `POST /api/score/fate` — FATE framework scoring\n- `POST /api/classify/awareness` — Awareness level classification\n- `POST /api/analyze/sentiment` — Sentiment analysis\n- `POST /api/generate/title` — AI title generation (Groq/OpenAI)\n- `POST /api/generate/caption` — AI caption generation\n- `GET /health` — Health check\n\n## Environment Variables\n\nSee `.env.example` for all configuration options.\n\n## CIOS (Content Intelligence Operating System)\n\nCIOS is the orchestration layer being built on top of this content-intelligence service. See **CAPABILITIES.md** for full details.\n\n### Quick Start for CIOS Development\n\n```bash\n# 1. Start content-intelligence AI services (this repo)\npython app.py  # port 6006\n\n# 2. Set up CIOS backend in media-vault\ncd /Users/isaiahdupree/Documents/Software/media-vault/backend\nsource venv/bin/activate\n# Agents will implement features CIOS-01 onwards\n\n# 3. CIOS dashboard will run on port 5571\n# Agents will build this as a Next.js app\n```\n\n### CIOS Implementation Order\n\n**Phase 1 (Critical)** — Required for basic operation:\n1. CIOS-01: Supabase schema (4 tables)\n2. CIOS-02: FastAPI scaffold on port 5570\n3. CIOS-03: Parallel context retrieval\n4. CIOS-04: GPT-4o brief generation\n\n**Phase 2 (High Priority)** — Completes core pipelines:\n- CIOS-05 to CIOS-18: Additional pipelines, event bus, launch script\n\n**Phase 3 (Medium)** — Dashboard and autonomous cycles:\n- CIOS-12 to CIOS-17, CIOS-21-24: UI, analytics, autonomous operations\n\n**Phase 4 (Polish)** — Integration and extras:\n- CIOS-20, CIOS-25: History/replay, ACD integration\n\nSee `feature_list.json` for full feature specifications with acceptance criteria.\n\n## Related Repos\n\n- MediaPoster — Scheduling, publishing\n- Safari Automation — Browser-based social automation\n- MPLite — Organic publish queue (Vercel)\n- Media Vault — CIOS target path\n- CRMLite — Contact management and enrichment\n\n\nStack: Python",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Content Intelligence System",
+    "one_liner": "A dual-system platform for advanced content analysis and management.",
+    "core_promise": "Efficiently analyze, manage, and execute content strategies across multiple platforms.",
+    "domain": "content management",
+    "buyers": [
+      {
+        "persona": "content managers at digital agencies",
+        "awareness_level": "solution_aware",
+        "pain": "Difficulty in auditing and managing vast amounts of content across platforms.",
+        "candidate_phrases": [
+          "content auditing tools",
+          "cross-platform content analysis",
+          "best tools for content management",
+          "content management system for agencies",
+          "content intelligence software"
+        ]
+      },
+      {
+        "persona": "small business owners managing their own marketing",
+        "awareness_level": "problem_aware",
+        "pain": "Overwhelmed by the volume of content to manage and analyze for marketing purposes.",
+        "candidate_phrases": [
+          "how to manage content marketing",
+          "tools to analyze marketing content",
+          "best content management tools",
+          "content strategy tools",
+          "organize content for social media"
+        ]
+      },
+      {
+        "persona": "content strategists at tech startups",
+        "awareness_level": "solution_aware",
+        "pain": "Needing to streamline content generation and analysis to improve engagement.",
+        "candidate_phrases": [
+          "ai tools for content strategy",
+          "content analysis software",
+          "automated content generation tools",
+          "tools for optimizing content strategies",
+          "best ai content tools"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 4,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 4,
+      "advantage": 1,
+      "rationale": "Buyer urgency is moderately high given the demand for efficient content management in digital spaces. MVP ease is low due to the complexity of integrating multiple systems and platforms as detailed in the idea. Distribution fit scores moderately since digital marketing for such tools can be effectively targeted but is competitive. Retention potential is high due to ongoing content needs. The advantage score is low as the provided details do not indicate a unique edge or existing asset like proprietary data or a built-in audience."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "content auditing tools",
+      "volume": 320,
+      "cpc": 0,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "content managers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "cross-platform content analysis",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content managers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best tools for content management",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content managers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content management system for agencies",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content managers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content intelligence software",
+      "volume": 20,
+      "cpc": 0,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "content managers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to manage content marketing",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners managing their own marketing",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools to analyze marketing content",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners managing their own marketing",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best content management tools",
+      "volume": 10,
+      "cpc": 16.99,
+      "competition": 0.14,
+      "source": "dataforseo",
+      "buyer": "small business owners managing their own marketing",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content strategy tools",
+      "volume": 110,
+      "cpc": 7.63,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "small business owners managing their own marketing",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "organize content for social media",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "small business owners managing their own marketing",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "ai tools for content strategy",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content strategists at tech startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content analysis software",
+      "volume": 210,
+      "cpc": 5.89,
+      "competition": 0.11,
+      "source": "dataforseo",
+      "buyer": "content strategists at tech startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "automated content generation tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content strategists at tech startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tools for optimizing content strategies",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content strategists at tech startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best ai content tools",
+      "volume": 20,
+      "cpc": 33.05,
+      "competition": 0.56,
+      "source": "dataforseo",
+      "buyer": "content strategists at tech startups",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "content auditing tools",
+      "volume": 320,
+      "cpc": 0,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "content managers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content analysis software",
+      "volume": 210,
+      "cpc": 5.89,
+      "competition": 0.11,
+      "source": "dataforseo",
+      "buyer": "content strategists at tech startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content strategy tools",
+      "volume": 110,
+      "cpc": 7.63,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "small business owners managing their own marketing",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content intelligence software",
+      "volume": 20,
+      "cpc": 0,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "content managers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best ai content tools",
+      "volume": 20,
+      "cpc": 33.05,
+      "competition": 0.56,
+      "source": "dataforseo",
+      "buyer": "content strategists at tech startups",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content management system for agencies",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content managers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best content management tools",
+      "volume": 10,
+      "cpc": 16.99,
+      "competition": 0.14,
+      "source": "dataforseo",
+      "buyer": "small business owners managing their own marketing",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "cross-platform content analysis",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content managers at digital agencies",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 3.0146413707497564,
+    "buyer_urgency": 4,
+    "willingness_to_pay": 5,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 1,
+    "retention_potential": 4,
+    "total": 22.014641370749757
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "content managers at digital agencies",
+        "anchor_phrase": "content auditing tools",
+        "offer_copy": "For content managers at digital agencies who need to efficiently audit and manage vast content across multiple platforms but struggle with complexity, we offer a streamlined content auditing tool that simplifies analysis and management so they can execute strategies efficiently without getting overwhelmed by data silos.",
+        "landing_page_headline": "Simplify Content Audits Across Platforms Today"
+      },
+      {
+        "buyer": "small business owners managing their own marketing",
+        "anchor_phrase": "content strategy tools",
+        "offer_copy": "For small business owners managing their own marketing who want effective content strategies but feel overwhelmed by volume, we provide a user-friendly content strategy tool that reveals actionable insights so they can drive engagement without hiring a full team.",
+        "landing_page_headline": "Effective Content Strategy Tools for Small Business"
+      },
+      {
+        "buyer": "content strategists at tech startups",
+        "anchor_phrase": "content analysis software",
+        "offer_copy": "For content strategists at tech startups who aim to boost engagement through streamlined content generation and analysis but face integration issues, we deliver comprehensive content analysis software that automates insights and strategy alignment so they can enhance performance without tedious data handling.",
+        "landing_page_headline": "Automate Content Insights with Our Analysis Software"
+      }
+    ],
+    "next_action": "Ship 3 landing pages for the top phrases and spend $50 on Google Search ads to validate interest and conversion rates.",
+    "reasoning": "This concept shows moderate search demand but high buyer urgency and willingness to pay, indicating a strong market need. However, the competitive advantage is low due to the existence of other tools in the space, and the ease of building a comprehensive MVP is challenging. Testing demand through tailored landing pages targeting top buyer phrases allows initial validation while understanding conversion dynamics, further guiding development priorities to mitigate risk."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/content-intelligence"
+  }
+}

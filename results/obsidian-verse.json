@@ -1,0 +1,306 @@
+{
+  "source_text": "obsidian-verse\n\nAI music factory: 500+ zodiac love songs × 12 signs × 7 modes → Suno.com + DistroKid automation\n\n## README\n\n# Obsidian Verse — AI Music Factory\n\n**Suno × Astrology × Distribution automation pipeline.**\nAI-generated zodiac love albums → Suno.com → DistroKid → streaming platforms.\n\n---\n\n## What It Does\n\nGenerates complete 12-26 track love albums for every zodiac sign pairing, optimized for Suno.com's AI music generation engine. Each album is written from the perspective of a **Scorpio narrator** falling for a specific zodiac muse — covering all 12 signs across 7 emotional modes.\n\n**Target:** 500+ tracks across 12 signs × 7 album modes = full market coverage for the astrology × love song niche.\n\n### Current Status\n- **741 tracks** across **41 albums** generated\n- **12 zodiac signs** covered (Scorpio, Cancer, Gemini, Libra, Aquarius, Pisces, Taurus, Virgo, Capricorn, Sagittarius, Leo, Aries)\n- **7 emotional modes** per sign (see below)\n- DistroKid upload automation ready\n\n---\n\n## Album Modes\n\n| Mode | Description | Best For |\n|------|-------------|----------|\n| `sweet_romance` | Tender, warm, genuinely sweet love | TikTok feel-good content |\n| `toxic_magnetic` | Obsessive, can't-escape-it romance | High-stream dark pop |\n| `soulmate_healing` | Two wounded souls healing through love | Emotional playlists |\n| `unspoken_longing` | Love that lives only in the silence | Lo-fi / study streams |\n| `epic_cinematic` | Sweeping, destiny-level love story | Sync licensing |\n| `late_night_sensual` | Intimate, slow, deeply physical | Late-night playlists |\n| `breakup_reunion` | Full arc of breaking and coming back | Trending narrative content |\n\n---\n\n## Genre-Per-Muse Strategy\n\nEach zodiac sign gets a signature genre that matches their astrological archetype:\n\n| Sign | Primary Genre | Mode Focus | Search Demand |\n|------|--------------|------------|---------------|\n| **Libra** | Dream pop / Chill R&B | Sweet romance, Unspoken longing | 76.7 |\n| **Aquarius** | Synth pop / Indie electronic | Epic cinematic, Unspoken longing | 69.9 |\n| **Scorpio** | Dark pop / Alt R&B | Toxic magnetic, Soulmate healing | 64.5 |\n| **Pisces** | Ambient pop / Ethereal | Soulmate healing, Late night sensual | 61.1 |\n| **Cancer** | Indie folk / Bedroom pop | Soulmate healing, Sweet romance | 11.0 |\n| **Virgo** | Singer-songwriter / Indie pop | Unspoken longing, Breakup reunion | 45.4 |\n| **Capricorn** | Dark folk / Neo-soul | Unspoken longing, Late night sensual | 30.7 |\n| **Gemini** | Electropop / Alt pop | Toxic magnetic, Breakup reunion | 26.1 |\n| **Sagittarius** | Folk pop / Indie rock | Breakup reunion, Sweet romance | 22.6 |\n| **Leo** | Glam pop / Anthemic R&B | Epic cinematic, Toxic magnetic | 3.4 |\n| **Taurus** | Neo-soul / Slow jam R&B | Late night sensual, Sweet romance | 1.0 |\n| **Aries** | Hard pop / Aggressive R&B | Toxic magnetic, Epic cinematic | 1.0 |\n\n---\n\n## Quick Start\n\n```bash\ncd /Users/isaiahdupree/Documents/Software/Suno\nsource venv/bin/activate\n\n# Check credits\npython main.py check-login\n\n# Generate one album\npython main.py generate \\\n  --artist profiles/artist.json \\\n  --muse profiles/loves/libra_muse.json \\\n  --mode unspoken_longing \\\n  --output-dir obsidian-verse-libra-longing\n\n# Batch generate all remaining albums (uses claude-opus-cli by default)\nAI_MODEL=claude-opus-cli python scripts/generate_all_albums.py --skip-existing\n\n# Compare AI models before committing to full generation\npython scripts/compare_models.py --sign pisces --mode soulmate_healing\n\n# Submit album to Suno\npython main.py automate output/albums/obsidian-verse-libra/suno_prompts.json\n\n# Download WAVs from Suno workspace\npython scripts/agentic_wav_download.py --skip-existing\n\n# Upload to DistroKid\npython main.py dk-upload song.wav --title \"Song Title\" --genre \"Pop\" --art cover.jpg\n```\n\n---\n\n## Architecture\n\n```\nengine/\n  astrology_data.py      Pure data: 12 signs × elements/genres/aesthetics/numerology\n  compatibility.py       Derives emotional narrative from two profiles (no LLM)\n  album_builder.py       Claude generates album concept + tracklist (JSON)\n  lyric_generator.py     Cla\n\nStack: Python",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Obsidian Verse",
+    "one_liner": "AI-generated zodiac-themed music albums automated for streaming distribution.",
+    "core_promise": "Personalized zodiac music albums available for streaming, generated and distributed automatically.",
+    "domain": "AI music production and distribution",
+    "buyers": [
+      {
+        "persona": "astrology enthusiasts seeking personalized content",
+        "awareness_level": "problem_aware",
+        "pain": "Desiring personalized zodiac content that integrates music and astrology but struggling to find it.",
+        "candidate_phrases": [
+          "zodiac love songs",
+          "personalized zodiac playlist",
+          "astrology music",
+          "music for scorpio lovers",
+          "zodiac sign music"
+        ]
+      },
+      {
+        "persona": "music lovers interested in unique new songs",
+        "awareness_level": "problem_aware",
+        "pain": "Bored with mainstream music and searching for unique, personalized music experiences.",
+        "candidate_phrases": [
+          "unique love songs",
+          "music for each zodiac",
+          "creative music playlists",
+          "new astrology music",
+          "find new zodiac music"
+        ]
+      },
+      {
+        "persona": "social media creators needing fresh content",
+        "awareness_level": "solution_aware",
+        "pain": "Needing fresh, unique music for TikTok or Instagram content that stands out and attracts viewers.",
+        "candidate_phrases": [
+          "zodiac music for TikTok",
+          "background music for social media",
+          "unique music for posts",
+          "personalized music for videos",
+          "astrology songs for instagram"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 2,
+      "mvp_ease": 1,
+      "distribution_fit": 3,
+      "retention_potential": 2,
+      "advantage": 2,
+      "rationale": "The buyer urgency is relatively low since personalized music is more of a novelty than a necessity. MVP development ease is low due to the complexity of building an AI music generation and distribution pipeline. Distribution fit is moderate as astrology and music have broad interest but niche interest limits easy targeting; SEO and social media could help. Retention potential is low without repeated personalized updates or community elements. The advantage score is low because there's no clear indication of a unique lever or asset that would differentiate significantly from other music generators."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "zodiac love songs",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "astrology enthusiasts seeking personalized content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "personalized zodiac playlist",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "astrology enthusiasts seeking personalized content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "astrology music",
+      "volume": 50,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "astrology enthusiasts seeking personalized content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "music for scorpio lovers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "astrology enthusiasts seeking personalized content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "zodiac sign music",
+      "volume": 30,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "astrology enthusiasts seeking personalized content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "unique love songs",
+      "volume": 140,
+      "cpc": 0.59,
+      "competition": 0.23,
+      "source": "dataforseo",
+      "buyer": "music lovers interested in unique new songs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "music for each zodiac",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "music lovers interested in unique new songs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "creative music playlists",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "music lovers interested in unique new songs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "new astrology music",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "music lovers interested in unique new songs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "find new zodiac music",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "music lovers interested in unique new songs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "zodiac music for tiktok",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media creators needing fresh content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "background music for social media",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 1,
+      "source": "dataforseo",
+      "buyer": "social media creators needing fresh content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "unique music for posts",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media creators needing fresh content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "personalized music for videos",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media creators needing fresh content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "astrology songs for instagram",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media creators needing fresh content",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "unique love songs",
+      "volume": 140,
+      "cpc": 0.59,
+      "competition": 0.23,
+      "source": "dataforseo",
+      "buyer": "music lovers interested in unique new songs",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "astrology music",
+      "volume": 50,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "astrology enthusiasts seeking personalized content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "zodiac sign music",
+      "volume": 30,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "astrology enthusiasts seeking personalized content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "background music for social media",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 1,
+      "source": "dataforseo",
+      "buyer": "social media creators needing fresh content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "zodiac love songs",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "astrology enthusiasts seeking personalized content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "personalized zodiac playlist",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "astrology enthusiasts seeking personalized content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "music for scorpio lovers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "astrology enthusiasts seeking personalized content",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "music for each zodiac",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "music lovers interested in unique new songs",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 2.5150273450402985,
+    "buyer_urgency": 2,
+    "willingness_to_pay": 0.295,
+    "mvp_ease": 1,
+    "distribution_fit": 3,
+    "advantage": 2,
+    "retention_potential": 2,
+    "total": 12.810027345040298
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "astrology enthusiasts seeking personalized content",
+        "anchor_phrase": "astrology music",
+        "offer_copy": "For astrology enthusiasts who want to connect deeply with their zodiac sign through music but can't find tailored experiences, we create AI-generated albums that integrate unique astrology themes so they can enjoy a cosmic journey without generic playlists.",
+        "landing_page_headline": "Discover Your Zodiac's Music Journey"
+      },
+      {
+        "buyer": "music lovers interested in unique new songs",
+        "anchor_phrase": "unique love songs",
+        "offer_copy": "For music lovers who crave fresh and unique songs but tire of mainstream hits, we provide personalized AI-crafted zodiac-themed music albums so they can experience innovative soundscapes without repeating the same tunes.",
+        "landing_page_headline": "Experience Love Songs with a Zodiac Twist"
+      },
+      {
+        "buyer": "social media creators needing fresh content",
+        "anchor_phrase": "background music for social media",
+        "offer_copy": "For social media creators who need standout content but find generic tracks uninspiring, we offer unique, AI-generated zodiac music perfectly tailored as engaging background music for your posts, ensuring your content resonates without sounding repetitive.",
+        "landing_page_headline": "Elevate Your Content with Zodiac Beats"
+      }
+    ],
+    "next_action": "Conduct interviews with 10 potential users from each persona to validate interest and pain points, and iterate offers based on feedback.",
+    "reasoning": "The demand signals suggest mild interest across personas, but low urgency and willingness to pay indicate that while people might be intrigued by the concept, it doesn't solve an immediate problem they're eager to pay for. The competition is low, implying limited market exploration, but that may also reflect tepid demand. Clarifying real user interest through direct conversations will inform whether building full-scale or iterative experiments is warranted."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/obsidian-verse"
+  }
+}

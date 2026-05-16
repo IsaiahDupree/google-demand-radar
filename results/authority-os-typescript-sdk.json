@@ -1,0 +1,243 @@
+{
+  "source_text": "authority-os-typescript-sdk\n\nAuthority OS TypeScript SDK — entity visibility API client\n\n## README\n\n# @authority-os/sdk\n\nTypeScript SDK for [Authority OS](https://github.com/IsaiahDupree/authority-os) - Multi-tenant entity visibility operating system for agencies.\n\n## Features\n\n- ✅ **Full TypeScript support** with type inference from Zod schemas\n- ✅ **Async/await interface** for all API operations\n- ✅ **Auto-pagination** with AsyncGenerator support\n- ✅ **Streaming** support for real-time audit progress and content generation\n- ✅ **Retry logic** with exponential backoff for network errors and rate limits\n- ✅ **Comprehensive error handling** with typed error classes\n- ✅ **MCP integration** for AI agents (Model Context Protocol)\n- ✅ **Browser and Node.js** compatible\n- ✅ **Tree-shakeable** ESM and CJS builds\n- ✅ **80%+ test coverage** with Vitest\n\n## Installation\n\n```bash\nnpm install @authority-os/sdk\n```\n\n## Quick Start\n\n```typescript\nimport { AuthorityOS } from '@authority-os/sdk';\n\nconst client = new AuthorityOS({\n  apiKey: process.env.AOS_API_KEY!,\n  baseUrl: 'http://localhost:3000', // or your production URL\n});\n\n// List entities\nconst entities = await client.entities.list({ page: 1, perPage: 10 });\n\n// Create an entity\nconst entity = await client.entities.create({\n  name: 'Example Company',\n  website: 'https://example.com',\n  industry: 'Technology',\n});\n\n// Trigger an audit\nconst audit = await client.audits.trigger(entity.id);\n\n// Wait for completion\nconst result = await client.audits.wait(audit.id);\nconsole.log('Audit score:', result.overall_score);\n\n// Get recommendations\nconst recs = await client.recommendations.list(entity.id, {\n  priority: 'high',\n});\n\n// Clean up\nclient.close();\n```\n\n## API Reference\n\n### Client Initialization\n\n```typescript\nconst client = new AuthorityOS({\n  apiKey: string;           // Required: Your API key\n  baseUrl?: string;         // Optional: API base URL (default: http://localhost:3000)\n  timeout?: number;         // Optional: Request timeout in ms (default: 30000)\n  fetch?: typeof fetch;     // Optional: Custom fetch implementation\n  requestInterceptors?: RequestInterceptor[];  // Optional: Request middleware\n  responseInterceptors?: ResponseInterceptor[]; // Optional: Response middleware\n});\n```\n\n### Resources\n\n#### Entities\n\n```typescript\n// List entities with pagination\nawait client.entities.list({ page: 1, perPage: 10, search: 'query' });\n\n// Auto-paginate through all entities\nfor await (const entity of client.entities.listAll({ search: 'query' })) {\n  console.log(entity.name);\n}\n\n// Get a specific entity\nawait client.entities.get(entityId);\n\n// Create an entity\nawait client.entities.create({ name, website, industry, description });\n\n// Update an entity\nawait client.entities.update(entityId, { name, industry });\n\n// Delete an entity\nawait client.entities.delete(entityId);\n```\n\n#### Audits\n\n```typescript\n// Trigger an audit\nawait client.audits.trigger(entityId, 'full');\n\n// Get audit status\nawait client.audits.get(auditId);\n\n// Wait for audit to complete\nawait client.audits.wait(auditId, {\n  timeoutMs: 60000,\n  pollIntervalMs: 2000,\n});\n\n// List audits for an entity\nawait client.audits.list(entityId, { page: 1, perPage: 10 });\n```\n\n#### Recommendations\n\n```typescript\n// List recommendations\nawait client.recommendations.list(entityId, {\n  status: 'pending',\n  priority: 'high',\n});\n\n// Mark as complete\nawait client.recommendations.complete(recommendationId);\n\n// Dismiss a recommendation\nawait client.recommendations.dismiss(recommendationId);\n```\n\n#### Agent (AI Features)\n\n```typescript\n// Get agent context for an entity\nconst context = await client.agent.getContext(entityId);\n\n// Search across entities, recommendations, and content\nconst results = await client.agent.search('query', ['entities', 'content']);\n\n// Stream audit progress\nfor await (const event of client.agent.streamAudit(auditId)) {\n  console.log(event.type, event.data);\n}\n\n// Batch context retrieval\nconst contexts = await client.agent.batchContext([id1, id2, id3]);\n```\n\n#### Workflows\n\n```typescript\n// Run audit-and-fix workf\n\nStack: TypeScript",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Authority OS TypeScript SDK",
+    "one_liner": "TypeScript SDK for integrating with Authority OS's entity visibility API.",
+    "core_promise": "Easily integrate with Authority OS to manage and audit entity visibility for agencies.",
+    "domain": "developer tools",
+    "buyers": [
+      {
+        "persona": "TypeScript developers at digital agencies",
+        "awareness_level": "solution_aware",
+        "pain": "Need an efficient way to integrate Authority OS into existing agency workflows using TypeScript.",
+        "candidate_phrases": [
+          "typescript sdk for entity visibility",
+          "authority os typescript integration",
+          "typescript client for authority os",
+          "authority os api client",
+          "how to integrate authority os with typescript"
+        ]
+      },
+      {
+        "persona": "Technical leads at software companies focusing on compliance",
+        "awareness_level": "problem_aware",
+        "pain": "Struggling with entity audits and visibility management across various systems and need to streamline it.",
+        "candidate_phrases": [
+          "entity visibility management software",
+          "compliance audit sdk",
+          "software for managing entity visibility",
+          "api for entity audits",
+          "compliance tools for developers"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 3,
+      "distribution_fit": 3,
+      "retention_potential": 2,
+      "advantage": 2,
+      "rationale": "The target audience, primarily developers, has a moderate urgency since it's tied to improving efficiency rather than a critical pain point. The MVP can be built using current TypeScript norms, though it requires specialized knowledge. Distribution can moderately rely on developer-focused channels like GitHub and forums. Retention is low without new features or ongoing updates, and the competitive advantage is limited without current user base or established reputation in this niche."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "typescript sdk for entity visibility",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "TypeScript developers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "authority os typescript integration",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "TypeScript developers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "typescript client for authority os",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "TypeScript developers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "authority os api client",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "TypeScript developers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to integrate authority os with typescript",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "TypeScript developers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "entity visibility management software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical leads at software companies focusing on compliance",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "compliance audit sdk",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical leads at software companies focusing on compliance",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "software for managing entity visibility",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical leads at software companies focusing on compliance",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "api for entity audits",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical leads at software companies focusing on compliance",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "compliance tools for developers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical leads at software companies focusing on compliance",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "typescript sdk for entity visibility",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "TypeScript developers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "authority os typescript integration",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "TypeScript developers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "typescript client for authority os",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "TypeScript developers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "authority os api client",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "TypeScript developers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to integrate authority os with typescript",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "TypeScript developers at digital agencies",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "entity visibility management software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical leads at software companies focusing on compliance",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "compliance audit sdk",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical leads at software companies focusing on compliance",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "software for managing entity visibility",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Technical leads at software companies focusing on compliance",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 0,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 3,
+    "distribution_fit": 3,
+    "advantage": 2,
+    "retention_potential": 2,
+    "total": 14.5
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "TypeScript developers at digital agencies",
+        "anchor_phrase": "authority os api client",
+        "offer_copy": "For TypeScript developers at digital agencies who want to smoothly integrate Authority OS API into their current workflows but find the process tedious, we offer a dedicated TypeScript SDK so they can manage and audit entity visibility with ease without struggling with complex integrations.",
+        "landing_page_headline": "Seamlessly Integrate Authority OS with Our TypeScript SDK"
+      },
+      {
+        "buyer": "Technical leads at software companies focusing on compliance",
+        "anchor_phrase": "compliance audit sdk",
+        "offer_copy": "For technical leads at software companies focusing on compliance who need a streamlined solution for entity audits but find existing tools cumbersome, we provide a powerful SDK designed for managing entity visibility so they achieve compliance easily without disrupting current systems.",
+        "landing_page_headline": "Simplify Compliance with Our Audit-Ready SDK"
+      }
+    ],
+    "next_action": "Conduct user interviews with at least 10 potential users from digital agencies and compliance-focused software companies to understand their specific integration challenges and refine messaging.",
+    "reasoning": "The demand signals indicate very low search traffic, suggesting that the concept of an 'Authority OS TypeScript SDK' lacks search interest and awareness in the market. This presents a significant risk in demand generation and validation. Buyer urgency is somewhat present, indicating a pain point, but willingness to pay and advantage scores are low, pointing to potential issues with value perception or differentiation. Conducting interviews will help validate real needs and refine propositions before investing further."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/authority-os-typescript-sdk"
+  }
+}

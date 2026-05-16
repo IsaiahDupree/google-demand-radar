@@ -1,0 +1,306 @@
+{
+  "source_text": "SEOworkspace\n\n## README\n\n# SEO Workspace\n\nA **pnpm + Turborepo monorepo** housing three production Next.js SEO/GEO/AEO SaaS apps and shared packages. Authority OS audits entity-based SEO for content teams; ChannelPulse provides YouTube channel analytics and affiliate management; the Pipeline ingests YouTube transcripts into Authority OS via GPT-4o analysis.\n\n## Apps\n\n| App | Port | Purpose |\n|-----|------|---------|\n| authority-os | 3200 | Enterprise SEO audit, entity analysis, topical authority, Google integrations, Stripe billing |\n| channelpulse | 3201 | YouTube channel intelligence: analytics, affiliate links, brand safety, Discord bot, email campaigns |\n| seo-workspace | 3000 | Blog mesh control plane: content publishing, SEO analysis, mesh topology dashboard |\n| pipeline | — | Python ETL: YouTube download → Whisper transcription → GPT-4o analysis → Authority OS ingest |\n\n## Packages\n\n| Package | Purpose |\n|---------|---------|\n| next-seo-kit | Drop-in SEO/AEO/GEO module for Next.js 14+: metadata builders, JSON-LD schema, sitemap, robots, IndexNow |\n| authority-os-typescript-sdk | TypeScript client SDK for Authority OS API (**submodule — not yet initialized**) |\n| authority-os-python-sdk | Python client SDK for Authority OS API (**submodule — not yet initialized**) |\n\n## Quick Start (60 seconds)\n\n```bash\n# 1. Clone with all submodules\ngit clone --recurse-submodules https://github.com/IsaiahDupree/seo-workspace\ncd seo-workspace\n\n# 2. Install dependencies\npnpm install\n\n# 3. Copy and fill env vars for each app\ncp apps/authority-os/.env.example apps/authority-os/.env.local\ncp apps/channelpulse/.env.example apps/channelpulse/.env.local\ncp apps/seo-workspace/.env.example apps/seo-workspace/.env.local\ncp apps/pipeline/.env.example apps/pipeline/.env\n\n# 4. Start everything\nbash dev.sh\n# or:\npnpm dev\n```\n\nApps will be available at:\n- Authority OS → http://localhost:3200\n- ChannelPulse → http://localhost:3201\n- SEO Workspace → http://localhost:3000\n\n## Environment Variables\n\nEach app has a `.env.example` file listing all required keys:\n\n- `apps/authority-os/.env.example` — Supabase, Google, Anthropic, OpenAI, Stripe, Upstash Redis\n- `apps/channelpulse/.env.example` — Supabase, Google, Stripe, RapidAPI, Resend\n- `apps/seo-workspace/.env.example` — Supabase\n- `apps/pipeline/.env.example` — OpenAI, Authority OS ingest URL (optional)\n\n## Individual App Commands\n\n```bash\n# Authority OS\ncd apps/authority-os && npm run dev     # dev server\nnpm run test                            # vitest unit tests\nnpm run build                           # production build\n\n# ChannelPulse\ncd apps/channelpulse && npm run dev\nnpm run test\n\n# SEO Workspace\ncd apps/seo-workspace && npm run dev\nnpm test                                # jest\n\n# Pipeline\ncd apps/pipeline\npython3 run_pipeline.py                 # run all phases\npython3 run_pipeline.py --phase 1       # phase 1 only (ingest)\npython3 run_pipeline.py --max 10        # test mode (10 videos)\npython3 run_pipeline.py --status        # show progress\n\n# next-seo-kit package\ncd packages/next-seo-kit && pnpm build\n```\n\n## Turborepo (build all)\n\n```bash\npnpm build    # build all apps and packages\npnpm lint     # lint all\npnpm dev      # start all dev servers\npnpm dev --filter=authority-os   # start one app\n```\n\n## Submodule Operations\n\n```bash\n# Pull latest from all submodules\ngit submodule update --remote --merge\n\n# Push changes to an individual app\ncd apps/channelpulse\ngit add -A && git commit -m \"your message\"\ngit push   # → github.com/IsaiahDupree/channelpulse\n\n# Initialize uninitialized SDK submodules\ngit submodule update --init packages/authority-os-typescript-sdk\ngit submodule update --init packages/authority-os-python-sdk\n```\n\n## Known Limitations\n\n- SDK submodules (`authority-os-typescript-sdk`, `authority-os-python-sdk`) are not yet initialized — run the commands above to initialize them\n- All env vars must be set per-app; there is no shared root `.env`\n- Pipeline has no automated tests\n- All Next.js apps deploy to Vercel",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "SEO Workspace",
+    "one_liner": "A monorepo of Next.js apps for advanced SEO, YouTube channel analytics, and content management.",
+    "core_promise": "Streamline and enhance SEO strategy, YouTube channel performance, and content distribution via specialized analytics and automation.",
+    "domain": "SEO and digital marketing",
+    "buyers": [
+      {
+        "persona": "SEO managers at medium to large enterprises",
+        "awareness_level": "solution_aware",
+        "pain": "Need a cohesive platform for comprehensive entity-based SEO, content publishing, and analytics.",
+        "candidate_phrases": [
+          "enterprise seo tools",
+          "seo content management system",
+          "entity seo software",
+          "seo audit tools",
+          "seo analytics platform"
+        ]
+      },
+      {
+        "persona": "YouTube creators and channel managers",
+        "awareness_level": "problem_aware",
+        "pain": "Struggling to efficiently analyze channel data and manage affiliate links to increase monetization.",
+        "candidate_phrases": [
+          "youtube channel analytics tool",
+          "affiliate management for youtube",
+          "youtube seo tools",
+          "how to improve youtube analytics",
+          "best youtube analysis software"
+        ]
+      },
+      {
+        "persona": "Content marketing teams",
+        "awareness_level": "solution_aware",
+        "pain": "Require tools to publish and optimize blog content across multiple channels while maintaining SEO integrity.",
+        "candidate_phrases": [
+          "content marketing tools",
+          "seo content publishing platform",
+          "blog publishing software",
+          "how to optimize blog for seo",
+          "multi-channel content management"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "The SEO Workspace targets specific, credible pain points in SEO and digital marketing but requires considerable setup and integration, reducing MVP ease. Distribution is well-aligned with digital marketing and SEO channels, though the niche focus may limit broader applicability. Retention is possible due to the ongoing nature of SEO and content management, while the lack of a clear, unique advantage points to moderate competition."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "enterprise seo tools",
+      "volume": 590,
+      "cpc": 67.61,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "SEO managers at medium to large enterprises",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo content management system",
+      "volume": 50,
+      "cpc": 0,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "SEO managers at medium to large enterprises",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "entity seo software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO managers at medium to large enterprises",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo audit tools",
+      "volume": 3600,
+      "cpc": 19.41,
+      "competition": 0.08,
+      "source": "dataforseo",
+      "buyer": "SEO managers at medium to large enterprises",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo analytics platform",
+      "volume": 90,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO managers at medium to large enterprises",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube channel analytics tool",
+      "volume": 30,
+      "cpc": 0,
+      "competition": 0.07,
+      "source": "dataforseo",
+      "buyer": "YouTube creators and channel managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "affiliate management for youtube",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube creators and channel managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "youtube seo tools",
+      "volume": 4400,
+      "cpc": 7.64,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "YouTube creators and channel managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to improve youtube analytics",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube creators and channel managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "best youtube analysis software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "YouTube creators and channel managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content marketing tools",
+      "volume": 880,
+      "cpc": 23.26,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "Content marketing teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo content publishing platform",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Content marketing teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "blog publishing software",
+      "volume": 10,
+      "cpc": 0,
+      "competition": 0.57,
+      "source": "dataforseo",
+      "buyer": "Content marketing teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to optimize blog for seo",
+      "volume": 70,
+      "cpc": 1.71,
+      "competition": 0.19,
+      "source": "dataforseo",
+      "buyer": "Content marketing teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "multi-channel content management",
+      "volume": 40,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Content marketing teams",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "youtube seo tools",
+      "volume": 4400,
+      "cpc": 7.64,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "YouTube creators and channel managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo audit tools",
+      "volume": 3600,
+      "cpc": 19.41,
+      "competition": 0.08,
+      "source": "dataforseo",
+      "buyer": "SEO managers at medium to large enterprises",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "content marketing tools",
+      "volume": 880,
+      "cpc": 23.26,
+      "competition": 0.02,
+      "source": "dataforseo",
+      "buyer": "Content marketing teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "enterprise seo tools",
+      "volume": 590,
+      "cpc": 67.61,
+      "competition": 0.01,
+      "source": "dataforseo",
+      "buyer": "SEO managers at medium to large enterprises",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo analytics platform",
+      "volume": 90,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "SEO managers at medium to large enterprises",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to optimize blog for seo",
+      "volume": 70,
+      "cpc": 1.71,
+      "competition": 0.19,
+      "source": "dataforseo",
+      "buyer": "Content marketing teams",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "seo content management system",
+      "volume": 50,
+      "cpc": 0,
+      "competition": 0.06,
+      "source": "dataforseo",
+      "buyer": "SEO managers at medium to large enterprises",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "multi-channel content management",
+      "volume": 40,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "Content marketing teams",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 4.2354983717491805,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 23.23549837174918
+  },
+  "verdict": "Test First",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "SEO managers at medium to large enterprises",
+        "anchor_phrase": "seo audit tools",
+        "offer_copy": "For SEO managers who want a streamlined way to conduct in-depth audits but struggle with integrating disparate tools, we provide a comprehensive SEO Workspace monorepo that combines advanced audit capabilities, entity-based analysis, and content management, so they can improve strategy cohesively without juggling multiple platforms.",
+        "landing_page_headline": "Transform Your Enterprise SEO with Powerful Audit Tools"
+      },
+      {
+        "buyer": "YouTube creators and channel managers",
+        "anchor_phrase": "youtube seo tools",
+        "offer_copy": "For YouTube creators who seek to boost their channel performance but find analyzing data cumbersome, we offer a Next.js SEO app suite that automates YouTube analytics and affiliate link management, so they can enhance monetization seamlessly without drowning in complexity.",
+        "landing_page_headline": "Maximize Your Channel Success with Automated SEO Tools"
+      },
+      {
+        "buyer": "Content marketing teams",
+        "anchor_phrase": "content marketing tools",
+        "offer_copy": "For content marketing teams aiming to publish and optimize across platforms but struggle with maintaining SEO integrity, we offer a monorepo of content management and publishing tools that ensures consistent quality and integrity, enabling them to scale effortlessly without losing SEO value.",
+        "landing_page_headline": "Streamline Your Multi-channel Content Marketing"
+      }
+    ],
+    "next_action": "Ship 3 landing pages for each buyer persona's top phrase and spend $100 on Google Search ads to test engagement and conversion.",
+    "reasoning": "The demand signals suggest there's a solid interest across different buyer personas, with notable willingness to invest in high-performing SEO and content tools. However, the MVP's complexity and the moderate buyer urgency pose potential risks to swift adoption. Testing distinct offers through paid ads will help validate these assumptions and refine messaging based on real buyer behavior, allowing the founder to focus resources on the most promising market segment."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/SEOworkspace"
+  }
+}

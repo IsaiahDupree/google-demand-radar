@@ -1,0 +1,243 @@
+{
+  "source_text": "claude-usage-guardian\n\nMonitor Claude desktop app usage via screenshot + OCR. Enforce budget limits for autonomous agents.\n\n## README\n\n# Claude Usage Guardian\n\nMonitor your Claude desktop app's usage via screenshot + OCR, and enforce budget limits for autonomous coding agents (like ACD harness).\n\n## How it works\n\n1. **Scrape**: AppleScript navigates to Claude Settings → Usage, takes a screenshot\n2. **OCR**: macOS Vision framework extracts text from the screenshot\n3. **Parse**: Python extracts usage percentages, reset times, spend data\n4. **Guard**: Node.js module checks thresholds and signals pause/stop to the caller\n\n## Requirements\n\n- **macOS** (uses AppleScript, Vision framework, screencapture)\n- **Claude desktop app** installed and logged in\n- **cliclick** (`brew install cliclick`)\n- **Python 3** (for OCR text parsing)\n- **Node.js 18+** (for the guardian module)\n\n## Quick start\n\n```bash\n# Scrape current usage\nnpm run scrape\n# → writes data/claude-usage.json\n\n# Check thresholds\nnpm run check\n# → exits 0 (ok), 1 (pause), 2 (stop)\n```\n\n## Integration with ACD harness\n\n```js\nimport { checkUsage, scrapeUsage } from 'claude-usage-guardian';\n\nconst usage = await scrapeUsage();\n// { session_percent: 6, weekly_all_percent: 14, weekly_sonnet_percent: 48, ... }\n\nconst decision = checkUsage(usage, { pauseAt: 75, stopAt: 90 });\n// { action: 'continue' | 'pause' | 'stop', percent: 48, message: '...' }\n```\n\n## Configuration\n\n| Env var | Default | Description |\n|---------|---------|-------------|\n| `USAGE_PAUSE_AT` | `75` | Pause when weekly usage ≥ this % |\n| `USAGE_STOP_AT` | `90` | Stop when weekly usage ≥ this % |\n| `USAGE_DATA_DIR` | `./data` | Where to write claude-usage.json |\n\n## Data output\n\n`data/claude-usage.json`:\n```json\n{\n  \"scraped_at\": \"2026-04-03T21:34:24.506957\",\n  \"plan\": \"Max (20x)\",\n  \"session_percent\": 6,\n  \"session_resets_in\": \"4 hr 28 min\",\n  \"weekly_all_percent\": 14,\n  \"weekly_all_resets\": \"Fri 4:00 PM\",\n  \"weekly_sonnet_percent\": 48,\n  \"weekly_sonnet_resets_in\": \"7 hr 28 min\",\n  \"extra_spent_usd\": 5.9,\n  \"extra_limit_usd\": 20,\n  \"extra_percent\": 30,\n  \"credit_balance_usd\": 202.47,\n  \"max_weekly_percent\": 48\n}\n```\n\n## License\n\nMIT\n\n\nStack: JavaScript",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Claude Usage Guardian",
+    "one_liner": "Monitor Claude desktop app usage and enforce budget limits for autonomous coding agents.",
+    "core_promise": "Keep AI tool usage within preset budget limits to avoid unexpected overcharges.",
+    "domain": "AI tool management",
+    "buyers": [
+      {
+        "persona": "tech companies using Claude for coding automations",
+        "awareness_level": "solution_aware",
+        "pain": "Constantly worried about overage charges from extensive Claude usage.",
+        "candidate_phrases": [
+          "claude usage monitoring tool",
+          "limit budget on ai tools",
+          "prevent overage charges for claude",
+          "usage tracking for claude desktop",
+          "manage ai tool spending"
+        ]
+      },
+      {
+        "persona": "IT managers in startups employing AI-driven tools",
+        "awareness_level": "problem_aware",
+        "pain": "Lack of control over budget spent on AI agents, leading to unpredictable monthly costs.",
+        "candidate_phrases": [
+          "control spending on ai software",
+          "how to track ai tool usage",
+          "budget management for ai platforms",
+          "spending cap for coding tools",
+          "avoid costly ai tool overuse"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 3,
+      "retention_potential": 3,
+      "advantage": 2,
+      "rationale": "The urgency of managing budget limits for AI usage is moderate as companies seek to avoid unexpected charges. Building an MVP requires integration with specific macOS features and IT setup, making it relatively complex. Distribution through digital channels is feasible given the specific buyer niche. Retention could be moderate if the solution integrates well into existing workflows. However, without a unique advantage or clear current edge mentioned, gaining a foothold may be challenging."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "claude usage monitoring tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech companies using Claude for coding automations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "limit budget on ai tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech companies using Claude for coding automations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "prevent overage charges for claude",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech companies using Claude for coding automations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "usage tracking for claude desktop",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech companies using Claude for coding automations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "manage ai tool spending",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech companies using Claude for coding automations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "control spending on ai software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "IT managers in startups employing AI-driven tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to track ai tool usage",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "IT managers in startups employing AI-driven tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "budget management for ai platforms",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "IT managers in startups employing AI-driven tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "spending cap for coding tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "IT managers in startups employing AI-driven tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "avoid costly ai tool overuse",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "IT managers in startups employing AI-driven tools",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "claude usage monitoring tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech companies using Claude for coding automations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "limit budget on ai tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech companies using Claude for coding automations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "prevent overage charges for claude",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech companies using Claude for coding automations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "usage tracking for claude desktop",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech companies using Claude for coding automations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "manage ai tool spending",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "tech companies using Claude for coding automations",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "control spending on ai software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "IT managers in startups employing AI-driven tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to track ai tool usage",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "IT managers in startups employing AI-driven tools",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "budget management for ai platforms",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "IT managers in startups employing AI-driven tools",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 0,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 1.5,
+    "mvp_ease": 2,
+    "distribution_fit": 3,
+    "advantage": 2,
+    "retention_potential": 3,
+    "total": 14.5
+  },
+  "verdict": "Pause",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "tech companies using Claude for coding automations",
+        "anchor_phrase": "prevent overage charges for claude",
+        "offer_copy": "For tech companies using Claude for coding automations who want to avoid unexpected costs but are constantly worried about overage charges, we provide an easy-to-use monitoring tool that controls Claude desktop app usage and enforces budget limits so they stay within their budget without financial surprises.",
+        "landing_page_headline": "Prevent Overcharges on Claude Usage with Budget Control"
+      },
+      {
+        "buyer": "IT managers in startups employing AI-driven tools",
+        "anchor_phrase": "control spending on ai software",
+        "offer_copy": "For IT managers in startups using AI-driven tools who need to manage finances but lack control over AI spending, we offer a solution that tracks and controls AI software spending, ensuring predictable monthly expenses without overspending.",
+        "landing_page_headline": "Take Control of AI Software Spending Today"
+      }
+    ],
+    "next_action": "Conduct 5 in-depth interviews with IT managers and tech leaders in startups to deeply understand their pain points about AI tool spending and refine the product idea based on real insights.",
+    "reasoning": "The demand signals are very weak with virtually no search volume for related keywords, indicating low awareness and interest in a solution like Claude Usage Guardian. There's a moderate risk that the actual pain, while present, is not acute enough for buyers to actively seek solutions or allocate budget towards resolving it. The current approach should shift towards qualitative research to determine if the assumed pain points align with actual market needs, prior to product development."
+  },
+  "meta": {
+    "source": "github",
+    "sourceUrl": "https://github.com/IsaiahDupree/claude-usage-guardian"
+  }
+}

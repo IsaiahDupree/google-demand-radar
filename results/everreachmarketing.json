@@ -1,0 +1,243 @@
+{
+  "source_text": "EverReachMarketing\n\n## README\n\n# EverReach Content Engine\n\nA messaging-driven content operating system that ships **one Instagram carousel per day** to `@everreachapp` (Blotato account `41045`). On Mondays it also runs weekly strategy; on the 1st of each month, a monthly retro. Engagement metrics are scraped back via Blotato + RapidAPI's IG scraper, and the learning engine uses them to pick what runs next.\n\n## What / Why / How\n\n- **What.** A single Vercel cron invokes `/api/cron/daily`, which dispatches to `autonomous-agent.ts` in the right cadence (`daily` / `weekly` / `monthly`). The daily flow generates a script + slide images + caption, renders the carousel, and either publishes via Blotato (`AGENT_LIVE_MODE=true`) or logs a dry-run decision.\n- **Why.** Manual carousel production is the bottleneck for organic growth on the EverReach IG account. The whole repo's job is to keep one validated, on-brand carousel landing every day — and to learn what works from real metrics.\n- **How.** No framework — plain TypeScript driven via `tsx` and serverless functions on Vercel. Content state lives in a dedicated Supabase schema (`content_engine`, isolated from the app's `public` schema). 25 angles + 10 carousel scripts seed the system; the learning engine ranks angles from real metrics and feeds the next pick.\n\n## Quickstart\n\n```bash\nnpm install\nnpm run preflight    # typecheck + 113 tests + agent dry-run\n```\n\nIf those pass, you're set up. To do an end-to-end dry run with real keys:\n\n```bash\ncp .env.example .env.local\n# fill in OPENAI_API_KEY, BLOTATO_API_KEY, BLOTATO_INSTAGRAM_ACCOUNT_ID,\n# SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, RAPIDAPI_KEY\nnpm run agent:daily              # dry — generates script, no publish\nnpm run agent:live               # publishes — only after dry looks good\n```\n\n## Scripts\n\n| Command | What it does |\n|---------|--------------|\n| `npm run typecheck` | `tsc --noEmit` strict typecheck. |\n| `npm test` | 113-test full-suite (`tests/full-suite.cjs`) — file structure, JSON shape, npm-script wiring. No network. |\n| `npm run preflight` | `typecheck` + `test` + `agent:daily` dry-run. Run this before every deploy. |\n| `npm run pipeline` | Full end-to-end pipeline (dry-run by default). |\n| `npm run render` | Render an existing carousel script. |\n| `npm run generate:angles` | Refresh / regenerate the 25-angle pool. |\n| `npm run generate:carousel` | Draft a carousel script for a chosen angle. |\n| `npm run generate:images` | Generate slide images. |\n| `npm run generate:captions` | Draft caption + hashtags. |\n| `npm run blog:carousel` | One-off helper: blog post → carousel. |\n| `npm run discover` | Phase 2 — crawl niche_seeds and upsert trending_posts. |\n| `npm run discover:transcribe` | Whisper top reels into reel_transcripts. |\n| `npm run discover:fingerprint` | gpt-4o-mini vision into visual_fingerprints. |\n| `npm run discover:compact` | Roll up signals into trend_signals (feeds the angle generator). |\n| `npm run agent:hourly` / `:daily` / `:weekly` / `:monthly` | Run autonomous agent in the corresponding cadence (dry). The weekly path now runs the full discovery pipeline first. |\n| `npm run agent:live` | Daily cadence with publishing on. |\n\n## Environment variables\n\n`.env.example` is the canonical list. Required for production:\n\n| Var | Required? | Purpose |\n|-----|-----------|---------|\n| `CRON_SECRET` | yes | Gates `/api/cron/daily`. Vercel auto-injects `Authorization: Bearer $CRON_SECRET`. |\n| `AGENT_LIVE_MODE` | yes | `true` to publish; otherwise dry-run. Start `false` for ~3 days. |\n| `OPENAI_API_KEY` | yes | Script + caption + image generation. |\n| `BLOTATO_API_KEY` | yes | Publishing API. |\n| `BLOTATO_INSTAGRAM_ACCOUNT_ID` | yes | `41045` (EverReach IG). |\n| `SUPABASE_URL` | yes | Learning loop. |\n| `SUPABASE_SERVICE_ROLE_KEY` | yes | Learning loop. |\n| `SUPABASE_SCHEMA` | optional | Defaults to `content_engine`. |\n| `RAPIDAPI_KEY` | yes | Own-post IG metrics scraper (checkback). |\n| `IGSOCIAL_RAPIDAPI_KEY` | optional | Phase 2 cross-account di\n\nDescription: EverReach Content Engine — messaging-driven content operating system for carousel generation at scale",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "EverReach Content Engine",
+    "one_liner": "An automated system for generating and publishing Instagram carousels daily.",
+    "core_promise": "Consistent, automated delivery of engaging Instagram carousels to enhance organic growth.",
+    "domain": "social media marketing automation",
+    "buyers": [
+      {
+        "persona": "social media managers at small to medium businesses",
+        "awareness_level": "problem_aware",
+        "pain": "Manually creating Instagram carousels is time-consuming and hampers consistent posting.",
+        "candidate_phrases": [
+          "automate instagram posts",
+          "schedule instagram carousels",
+          "instagram carousel maker",
+          "time-saving instagram tools",
+          "boost instagram engagement software"
+        ]
+      },
+      {
+        "persona": "entrepreneurs looking to grow their personal brand on Instagram",
+        "awareness_level": "problem_aware",
+        "pain": "Struggling to consistently create engaging content for Instagram to grow their personal brand.",
+        "candidate_phrases": [
+          "grow personal brand instagram",
+          "instagram content automation",
+          "create instagram content fast",
+          "increase instagram followers tools",
+          "easy instagram posting tool"
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 2,
+      "distribution_fit": 4,
+      "retention_potential": 4,
+      "advantage": 2,
+      "rationale": "The urgency is moderate as businesses are constantly looking to streamline social media workflows but may not prioritize it over other tasks. MVP ease is low due to the technical complexities of implementing seamless automation and learning engines. Distribution fit is high as social media managers and entrepreneurs actively seek tools online. Retention potential is good given the ongoing need for consistent content creation. Advantage is rated low because the concept doesn't mention any unique leverage points or expertise beyond common marketing automation tools."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "automate instagram posts",
+      "volume": 8100,
+      "cpc": 17.11,
+      "competition": 0.26,
+      "source": "dataforseo",
+      "buyer": "social media managers at small to medium businesses",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "schedule instagram carousels",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers at small to medium businesses",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "instagram carousel maker",
+      "volume": 480,
+      "cpc": 2.76,
+      "competition": 0.25,
+      "source": "dataforseo",
+      "buyer": "social media managers at small to medium businesses",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "time-saving instagram tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers at small to medium businesses",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "boost instagram engagement software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers at small to medium businesses",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "grow personal brand instagram",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "entrepreneurs looking to grow their personal brand on Instagram",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "instagram content automation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "entrepreneurs looking to grow their personal brand on Instagram",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "create instagram content fast",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "entrepreneurs looking to grow their personal brand on Instagram",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "increase instagram followers tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "entrepreneurs looking to grow their personal brand on Instagram",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "easy instagram posting tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "entrepreneurs looking to grow their personal brand on Instagram",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "automate instagram posts",
+      "volume": 8100,
+      "cpc": 17.11,
+      "competition": 0.26,
+      "source": "dataforseo",
+      "buyer": "social media managers at small to medium businesses",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "instagram carousel maker",
+      "volume": 480,
+      "cpc": 2.76,
+      "competition": 0.25,
+      "source": "dataforseo",
+      "buyer": "social media managers at small to medium businesses",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "schedule instagram carousels",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers at small to medium businesses",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "time-saving instagram tools",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers at small to medium businesses",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "boost instagram engagement software",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "social media managers at small to medium businesses",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "grow personal brand instagram",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "entrepreneurs looking to grow their personal brand on Instagram",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "instagram content automation",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "entrepreneurs looking to grow their personal brand on Instagram",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "create instagram content fast",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "entrepreneurs looking to grow their personal brand on Instagram",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 4.185524303639176,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 2,
+    "distribution_fit": 4,
+    "advantage": 2,
+    "retention_potential": 4,
+    "total": 24.185524303639177
+  },
+  "verdict": "Build Now",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "social media managers at small to medium businesses",
+        "anchor_phrase": "automate instagram posts",
+        "offer_copy": "For social media managers at small to medium businesses who want consistent Instagram engagement but find manual posting too time-consuming, we automate your Instagram post scheduling so they maintain regular content output without burning out.",
+        "landing_page_headline": "Automate Instagram Posts to Save Time and Boost Engagement"
+      },
+      {
+        "buyer": "entrepreneurs looking to grow their personal brand on Instagram",
+        "anchor_phrase": "grow personal brand instagram",
+        "offer_copy": "For entrepreneurs aiming to grow their personal brand on Instagram but struggling with consistent content creation, we deliver automated, daily Instagram carousels so they can increase their influence without the constant content grind.",
+        "landing_page_headline": "Grow Your Personal Brand on Instagram Daily"
+      }
+    ],
+    "next_action": "Ship 2 landing pages targeting 'automate instagram posts' and 'grow personal brand instagram'. Spend $50 each on Google Ads to test engagement levels.",
+    "reasoning": "The demand signals indicate a strong interest in automation tools for Instagram, particularly among social media managers, evidenced by substantial search interest and willingness to pay for solutions. However, there's risk in the MVP since search competition and readiness to switch may be limited. Testing through targeted landing pages and ads will help validate if the high search demand converts into real interest and support further development decisions."
+  },
+  "meta": {
+    "source": "local",
+    "sourceUrl": "file:///C:/Users/Isaia/Documents/Coding/EverReachMarketing"
+  }
+}
