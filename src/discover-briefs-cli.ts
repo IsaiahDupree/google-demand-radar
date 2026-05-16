@@ -11,6 +11,7 @@ const SOURCE_FILES = {
   pattern: path.join(RESULTS_DIR, "_discoveries.json"),
   adjacency: path.join(RESULTS_DIR, "_adjacencies.json"),
   gap: path.join(RESULTS_DIR, "_competitor-gaps.json"),
+  mobile: path.join(RESULTS_DIR, "_mobile-discoveries.json"),
 } as const;
 
 type Source = keyof typeof SOURCE_FILES;
@@ -80,6 +81,9 @@ function rowContext(source: Source, row: AnyRow): string {
   }
   if (source === "adjacency") {
     return `Surfaced from seed: "${row.seed}" (semantically adjacent niche, not a direct variation)`;
+  }
+  if (source === "mobile") {
+    return `Type: consumer mobile app (iOS/Android). Buyer is an end-user, not a business.`;
   }
   return `Cluster: ${row.cluster}\nCompetitor ranking for it: ${row.competitor}`;
 }

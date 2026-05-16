@@ -1,0 +1,749 @@
+{
+  "generated_at": "2026-05-16T22:08:49.348Z",
+  "phrases_total": 76,
+  "phrases_with_signal": 70,
+  "rows": [
+    {
+      "phrase": "tiktok scheduler",
+      "volume": 1300,
+      "cpc": 31.06,
+      "competition": 0.09,
+      "score": 88.0238020763946,
+      "brief": {
+        "product_in_plain_language": "I need an app that helps me schedule and automate my posts on TikTok.",
+        "mvp_in_2_weeks": "A mobile app that allows users to create a post (video + caption) and set a specific date and time for it to be published on TikTok, along with a simple reminder notification feature.",
+        "distribution": "Reach users through targeted Google Ads for 'tiktok scheduler', TikTok influencer partnerships, promotions on TikTok-related forums or subreddits like /r/TikTok, and ads on social media platforms where TikTok users engage.",
+        "pricing_anchor": "Users expect to pay around $10-$15/month for this convenience, similar to other social media management tools like Buffer which charges ~$15/mo.",
+        "biggest_risk": "The biggest risk is TikTok's API restrictions which could limit automation features, increasing customer dissatisfaction and churn."
+      }
+    },
+    {
+      "phrase": "task manager app",
+      "volume": 880,
+      "cpc": 28.6,
+      "competition": 0.31,
+      "score": 58.11615457660336,
+      "brief": {
+        "product_in_plain_language": "I want a task manager app that helps me organize and track my daily tasks easily.",
+        "mvp_in_2_weeks": "A simple mobile app with features for adding tasks, setting deadlines, and checking off completed tasks, with a basic user interface and local notifications.",
+        "distribution": "Reach buyers through Google ads targeting 'task manager app' and related phrases, promote on TikTok showcasing app usage, utilize App Store Optimization with relevant keywords, and engage on productivity-focused subreddits like /r/getdisciplined or /r/productivity.",
+        "pricing_anchor": "Users would expect something around $5/month for premium features or a one-time purchase of approximately $10.",
+        "biggest_risk": "The biggest risk is the potential for high user churn; task manager apps are often driven by trends, and users may abandon the app quickly if it doesn’t offer unique features or lasting engagement."
+      }
+    },
+    {
+      "phrase": "personal finance app",
+      "volume": 135000,
+      "cpc": 9.84,
+      "competition": 0,
+      "score": 50.482515937115856,
+      "brief": {
+        "product_in_plain_language": "I want a personal finance app that helps me manage my budget and track my spending easily.",
+        "mvp_in_2_weeks": "Mobile app with a simple budget tracking feature, user authentication, and expense input form; integrate with Plaid for bank account syncing; and use Firebase for user data storage.",
+        "distribution": "Target social media ads on Instagram and Facebook through personal finance groups; run Google Ads targeting 'personal finance app' keyword; participate in relevant discussions on /r/personalfinance and finance-related Discord servers.",
+        "pricing_anchor": "Users would expect to pay around $5-$15/month, similar to competitors like Mint Premium ($4.99/month) or YNAB ($14.99/month).",
+        "biggest_risk": "The biggest risk is that users may not stick with the app long-term and churn due to the abundance of free alternatives, leading to high customer acquisition costs that exceed LTV."
+      }
+    },
+    {
+      "phrase": "contacts manager app",
+      "volume": 480,
+      "cpc": 19.38,
+      "competition": 0.18,
+      "score": 42.62357669570239,
+      "brief": {
+        "product_in_plain_language": "I want an app that helps me organize and manage my personal contacts easily.",
+        "mvp_in_2_weeks": "A mobile app that allows users to input contact information through a simple form, categorize contacts by tags, and sync with the user's phone contacts.",
+        "distribution": "Utilize Google Ads targeting keywords related to 'contacts manager app', post in relevant subreddits like /r/Productivity, and promote in mobile app forums or niche Facebook groups centered around organization and personal productivity.",
+        "pricing_anchor": "Buyers would expect to pay around $5-$10 for a simple contacts manager app, similar to the pricing of other consumer productivity apps.",
+        "biggest_risk": "The biggest risk comes from user churn; if the app doesn’t differentiate itself enough from existing free options like Google Contacts or Apple's built-in contact features, users may not stick around."
+      }
+    },
+    {
+      "phrase": "budgeting app",
+      "volume": 135000,
+      "cpc": 9.28,
+      "competition": 0.13,
+      "score": 41.420288685965296,
+      "brief": {
+        "product_in_plain_language": "A mobile app to help users track their expenses and manage their budget effectively.",
+        "mvp_in_2_weeks": "A simple mobile app with features including expense tracking, budget setup, and alerts for budget limits, using cloud storage to sync data across devices.",
+        "distribution": "Reach buyers through targeted Google ads using the phrase 'budgeting app', social media platforms like TikTok or Instagram with finance influencers, and budget-related subreddits (/r/personalfinance, /r/frugal) to engage potential users.",
+        "pricing_anchor": "Buyers would expect to pay around $5 to $10 per month for a premium version, as many competitors like Mint offer free basic services with paid upgrades.",
+        "biggest_risk": "The biggest risk is high user churn due to competition; many free budgeting apps exist, and users may switch frequently or only use the app temporarily."
+      }
+    },
+    {
+      "phrase": "mental health app",
+      "volume": 12100,
+      "cpc": 10.64,
+      "competition": 0.14,
+      "score": 37.35944766609924,
+      "brief": {
+        "product_in_plain_language": "I want a mobile app that helps me manage my mental health and well-being.",
+        "mvp_in_2_weeks": "Simple daily mood tracking form + guided meditation audio + basic journaling feature + Google Play/Apple Store deployment.",
+        "distribution": "Reach buyers through targeted Google Ads using 'mental health app', post in mental health forums or groups on Reddit (e.g. /r/mentalhealth) and Facebook groups focused on self-care, wellness, and mental health.",
+        "pricing_anchor": "Users expect to pay around $10-$15 per month, similar to Calm ($14.99/mo) and Headspace ($12.99/mo).",
+        "biggest_risk": "The biggest risk is that the market is crowded with established players, leading to high user acquisition costs and potential churn if the app does not offer unique value or integration with existing platforms."
+      }
+    },
+    {
+      "phrase": "expense tracker app",
+      "volume": 3600,
+      "cpc": 13.46,
+      "competition": 0.28,
+      "score": 34.4660077538334,
+      "brief": {
+        "product_in_plain_language": "I want a simple app to help me track my personal expenses and manage my budget.",
+        "mvp_in_2_weeks": "A mobile app with a basic user interface that allows users to input expenses manually, categorize them, and view a summary of their spending; integrate with Stripe Checkout for a premium version offering additional features.",
+        "distribution": "Run targeted Google Ads on 'expense tracker app' and related keywords, post in personal finance subreddits like /r/personalfinance, share in personal finance Facebook groups, and collaborate with influencers who focus on budgeting and saving.",
+        "pricing_anchor": "Buyers expect to pay around $5-10 for a premium version of the app, similar to competitors like PocketGuard or Fudget.",
+        "biggest_risk": "The biggest risk is that users may prefer free alternatives or those with more advanced features like automatic bank integration, leading to high churn rates if the app doesn't stand out with unique value."
+      }
+    },
+    {
+      "phrase": "parental control app",
+      "volume": 33100,
+      "cpc": 8.23,
+      "competition": 0.12,
+      "score": 32.734497285893,
+      "brief": {
+        "product_in_plain_language": "I'm looking for a mobile app that helps me control and monitor my children's online activities.",
+        "mvp_in_2_weeks": "A mobile app with features for blocking websites, setting screen time limits, and monitoring app usage, with a simple user interface. No complex features like location tracking or social media monitoring initially.",
+        "distribution": "Target parents using Google ads on search phrases like 'parental control app', participate in parenting forums, and engage with community groups on Facebook or Reddit that focus on parenting and child safety.",
+        "pricing_anchor": "$10/month like competitors such as Qustodio and Norton Family.",
+        "biggest_risk": "The biggest risk is the challenge of building trust with parents for monitoring their children; if initial marketing fails to address privacy concerns, it could lead to high churn or failure to acquire users."
+      }
+    },
+    {
+      "phrase": "subscription tracker app",
+      "volume": 1000,
+      "cpc": 13.21,
+      "competition": 0.2,
+      "score": 31.708587330801443,
+      "brief": {
+        "product_in_plain_language": "An app that helps me track my subscriptions and expenses so I don't overspend on services.",
+        "mvp_in_2_weeks": "Basic app that allows users to add, edit, and delete subscription entries; a dashboard displaying total monthly spending; alerts for upcoming subscription charges; and basic analytics on spending habits.",
+        "distribution": "Reach buyers through social media ads targeted at personal finance interests, content on platforms like TikTok or Instagram showing tips for managing subscriptions, or forums such as /r/personalfinance.",
+        "pricing_anchor": "Users expect to pay around $5/month for this type of app based on similar offerings like Truebill ($3/month) and Bobby ($4.99/month).",
+        "biggest_risk": "The biggest risk is high user churn if users only see short-term value, as many may download the app to track expenses for a month and cancel once they feel in control of their finances."
+      }
+    },
+    {
+      "phrase": "ai assistant app",
+      "volume": 6600,
+      "cpc": 8.44,
+      "competition": 0.04,
+      "score": 30.948005898646443,
+      "brief": {
+        "product_in_plain_language": "I want an AI assistant app that helps me manage my daily tasks and reminders effectively.",
+        "mvp_in_2_weeks": "A simple mobile app with a task input form, reminder notifications, and integration with basic calendar apps (Google Calendar, Apple Calendar), with a ChatGPT-powered chat interface for task management.",
+        "distribution": "Target ads on Google for the search phrase 'AI assistant app', promote the app through social media channels like TikTok and Instagram focusing on productivity hacks, and leverage user reviews on platforms like Product Hunt and community-driven recommendations on Reddit.",
+        "pricing_anchor": "Users might expect to pay around $5-$10/month for a subscription, similar to existing productivity apps like Todoist or Any.do.",
+        "biggest_risk": "The biggest risk is the reliance on existing calendar and task management integrations — if these are not seamless or if the AI does not deliver a significantly better experience, user retention could be very low."
+      }
+    },
+    {
+      "phrase": "to do list app",
+      "volume": 12100,
+      "cpc": 9.63,
+      "competition": 0.27,
+      "score": 28.701825182277396,
+      "brief": {
+        "product_in_plain_language": "A simple and effective to-do list app that helps users organize their tasks and improve productivity.",
+        "mvp_in_2_weeks": "Build a mobile app with basic features: task creation, due dates, reminders, and a simple user interface. Use Firebase for backend storage and authentication, and integrate In-App Purchases for monetization.",
+        "distribution": "Reach users through targeted Google Ads on related phrases like 'best to do list app' and 'free to do list app'. Promote on productivity-focused subreddits (like /r/productivity), and partner with productivity influencers on social media for organic reach.",
+        "pricing_anchor": "Users would expect to see similar pricing to existing apps like Todoist ($3/mo for the Premium version) or Any.do (also around $3/mo), with the potential for a free basic tier that encourages upgrades.",
+        "biggest_risk": "The biggest risk is user acquisition due to strong competitors like Todoist, Microsoft To Do, and Notion, which have established user bases and extensive features that may lead to high churn if your app doesn't offer a unique value proposition."
+      }
+    },
+    {
+      "phrase": "crypto tracker app",
+      "volume": 170,
+      "cpc": 14.92,
+      "competition": 0.21,
+      "score": 26.319878553970245,
+      "brief": {
+        "product_in_plain_language": "A simple mobile app to help users track their cryptocurrency investments and portfolio performance.",
+        "mvp_in_2_weeks": "Build a mobile app that allows users to input their crypto holdings manually, displays current prices using an API, and shows gains/losses in real time, with a basic user authentication feature and ad support for revenue.",
+        "distribution": "Reach potential users through targeted Google Ads on crypto-related keywords, engage with communities on Reddit (like /r/CryptoCurrency), and promote in crypto-focused Facebook groups or forums.",
+        "pricing_anchor": "Users might expect to pay around $5/month for premium features like advanced analytics or tracking multiple wallets, while $0 for a basic ad-supported version.",
+        "biggest_risk": "The biggest risk comes from crypto market volatility resulting in high churn rates as users' interests may wane during market downturns or when new better apps are introduced."
+      }
+    },
+    {
+      "phrase": "social media scheduler app",
+      "volume": 590,
+      "cpc": 14.19,
+      "competition": 0.36,
+      "score": 25.170448866371206,
+      "brief": {
+        "product_in_plain_language": "I want an easy-to-use app that helps me schedule and automate my social media posts.",
+        "mvp_in_2_weeks": "A basic mobile app that allows users to connect their social media accounts, create posts in a simple text editor, and schedule those posts for future dates, with notifications for reminders.",
+        "distribution": "Target potential users through Google ads on 'social media scheduler app', join relevant Facebook groups and communities focused on social media marketing, and promote on platforms like Reddit in subreddits such as /r/socialmedia or /r/entrepreneur.",
+        "pricing_anchor": "Users might expect to pay around $10/month, similar to popular services like Buffer which charges $15 for a similar offering.",
+        "biggest_risk": "The biggest risk is user acquisition and retention; many users may only need scheduling occasionally or not see enough value in an ongoing subscription, leading to high churn rates."
+      }
+    },
+    {
+      "phrase": "period tracker app",
+      "volume": 74000,
+      "cpc": 5.52,
+      "competition": 0.09,
+      "score": 24.45915425473239,
+      "brief": {
+        "product_in_plain_language": "I want a simple app that tracks my menstrual cycle and predicts my next period.",
+        "mvp_in_2_weeks": "A basic mobile app with features to log menstrual dates, provide period predictions, and send reminders via push notifications.",
+        "distribution": "Targeted Google ads on keywords like 'period tracker app', 'menstrual cycle tracker', and promote in relevant Reddit communities like /r/TwoXChromosomes and /r/FemaleEntrepreneur. Utilize social media platforms like Instagram and TikTok to reach potential users through engaging content.",
+        "pricing_anchor": "Users would likely expect a freemium model: free to download with basic features, and $9.99/year for premium features like health insights and personalized cycle predictions.",
+        "biggest_risk": "The biggest risk is high churn due to users finding the app inadequate compared to established competitors (like Clue or Flo), or users uninstalling after a short period if they don't perceive ongoing value."
+      }
+    },
+    {
+      "phrase": "language learning app",
+      "volume": 27100,
+      "cpc": 5.57,
+      "competition": 0.02,
+      "score": 24.19789364703867,
+      "brief": {
+        "product_in_plain_language": "I want a simple app that helps me learn a new language effectively.",
+        "mvp_in_2_weeks": "Basic mobile app with flashcards for vocabulary, audio pronunciation, and a progress tracker; includes a web form for users to submit language requests and a Stripe checkout for in-app purchases.",
+        "distribution": "Reach potential users through social media ads targeting language learning interests, Google ads on related phrases, language learning forums, and Reddit communities like /r/languagelearning.",
+        "pricing_anchor": "Users would expect to pay around $10/month for premium features, similar to other apps like Duolingo or Babbel.",
+        "biggest_risk": "The biggest risk is user retention; many users might download the app but not continue using it long-term, resulting in high churn rates."
+      }
+    },
+    {
+      "phrase": "relationship app",
+      "volume": 2900,
+      "cpc": 7.11,
+      "competition": 0.06,
+      "score": 23.141591490679726,
+      "brief": {
+        "product_in_plain_language": "I want an app that helps me improve my romantic relationships.",
+        "mvp_in_2_weeks": "A simple mobile app that includes a daily check-in feature with prompts for self-reflection, a mood tracker, and a messaging system for partners to share thoughts and feelings with reminders.",
+        "distribution": "Target potential users through Facebook ads in relationship-focused groups, Instagram sponsored posts, and TikTok ads using relationship advice influencers.",
+        "pricing_anchor": "Users typically expect to pay around $5-$10 per month, similar to apps like Lasting or Couple, which offer personal insights and guided exercises.",
+        "biggest_risk": "The biggest risk is failure to clearly differentiate the app in a crowded space; users may have loyalty to established brands or struggle to see the specific benefits of a new app, leading to high churn."
+      }
+    },
+    {
+      "phrase": "personal crm app",
+      "volume": 140,
+      "cpc": 15.03,
+      "competition": 0.31,
+      "score": 22.28890665161514,
+      "brief": {
+        "product_in_plain_language": "I need an easy way to keep track of my personal relationships and stay in touch with people.",
+        "mvp_in_2_weeks": "A mobile app with a contact list feature, reminders for follow-ups, and simple note-taking for each contact.",
+        "distribution": "Targeted Google ads on the keyword 'personal crm app', posts in relevant subreddits like /r/GetMotivated or /r/productivity, and sharing in personal development Facebook groups.",
+        "pricing_anchor": "Users would expect to pay around $5-$10 per month, similar to cheaper personal productivity apps like Notion but more focused on relationship management.",
+        "biggest_risk": "The biggest risk lies in feature saturation and user retention; many users may try the app once for organization but not see ongoing value, leading to high churn rates."
+      }
+    },
+    {
+      "phrase": "password manager app",
+      "volume": 14800,
+      "cpc": 6.64,
+      "competition": 0.2,
+      "score": 22.152586103418088,
+      "brief": {
+        "product_in_plain_language": "I want a simple app that helps me store and manage my passwords securely.",
+        "mvp_in_2_weeks": "Basic mobile app (iOS/Android) with features: encrypted password storage, password generator, and a secure login screen with biometric authentication.",
+        "distribution": "Target Google Ads using keywords related to 'password manager app', engage users in relevant online forums such as /r/privacy or /r/apple, and promote in tech-focused Facebook groups.",
+        "pricing_anchor": "Users typically pay around $30/year for password manager apps like Dashlane or LastPass, with some expecting a free tier with premium features at $5/month.",
+        "biggest_risk": "User trust and data security are paramount; a single security breach or negative review can lead to rapid churn and loss of reputation, making retention challenging."
+      }
+    },
+    {
+      "phrase": "receipt scanner app",
+      "volume": 6600,
+      "cpc": 8.47,
+      "competition": 0.48,
+      "score": 16.823089106931086,
+      "brief": {
+        "product_in_plain_language": "I want an app that lets me scan and organize my receipts easily.",
+        "mvp_in_2_weeks": "Build a mobile app that includes a receipt scanning feature using the phone's camera, a basic digital filing system for organizing receipts by date or category, and an export function to email receipts as PDF files.",
+        "distribution": "Target consumers via Google Ads with keywords like 'receipt scanner app', use organic social media posts in personal finance groups and apps like /r/personalfinance on Reddit, and collaborate with finance influencers on platforms like Instagram or TikTok.",
+        "pricing_anchor": "Consumers typically expect to pay around $5-$10 for a premium receipt scanner app, with in-app purchases or subscription offers around $2-$5/month for additional features or cloud storage options.",
+        "biggest_risk": "The biggest risk is user retention; many users may download the app for a one-off need (like tax season) but not engage long-term, leading to high churn rates."
+      }
+    },
+    {
+      "phrase": "second brain app",
+      "volume": 260,
+      "cpc": 7.47,
+      "competition": 0.08,
+      "score": 16.6081202226316,
+      "brief": {
+        "product_in_plain_language": "I want an app that helps me organize my thoughts and information like a second brain.",
+        "mvp_in_2_weeks": "A simple mobile app with a note-taking feature, tagging system, and a search function, allowing users to save and categorize their notes easily.",
+        "distribution": "Reach users through Google ads targeting 'second brain app', participate in relevant threads on /r/productivity and /r/GetMotivated, and collaborate with influencers on TikTok or Instagram who focus on productivity tips.",
+        "pricing_anchor": "Users would expect to pay around $5/month or a one-time fee of $30 to $50, much like apps like Notion or Evernote.",
+        "biggest_risk": "The biggest risk is the feature overload; if the app doesn't deliver a streamlined experience, users may instead prefer established alternatives that offer comprehensive tools and integrations."
+      }
+    },
+    {
+      "phrase": "ai homework helper",
+      "volume": 60500,
+      "cpc": 2.82,
+      "competition": 0.01,
+      "score": 13.349724695505412,
+      "brief": {
+        "product_in_plain_language": "I want a mobile app that helps me with my homework using AI.",
+        "mvp_in_2_weeks": "Build a simple mobile app with a text input field for homework questions, connect it to an AI API (like OpenAI) for generating answers, and integrate a payment option like Stripe for in-app purchases.",
+        "distribution": "Reach buyers through Google Ads on 'ai homework helper', sponsor posts in student-focused Facebook groups, and promote on forums like Reddit (/r/HomeworkHelp or /r/Student) to target students directly.",
+        "pricing_anchor": "Buyers would expect to pay around $10/month for a subscription, similar to other homework help apps like Photomath ($9.99/mo).",
+        "biggest_risk": "The biggest risk is rapid churn due to seasonal use (e.g., only during school semesters), requiring a strong retention strategy and constant value to keep users engaged outside of peak homework times."
+      }
+    },
+    {
+      "phrase": "ai chat app",
+      "volume": 40500,
+      "cpc": 2.98,
+      "competition": 0.04,
+      "score": 13.181038007309203,
+      "brief": {
+        "product_in_plain_language": "I want a simple app that lets me have conversations with an AI to get information, advice, or casual chats.",
+        "mvp_in_2_weeks": "A mobile app with a chat interface that connects to a GPT-like API to handle user queries, along with user authentication and basic logging to track conversation topics.",
+        "distribution": "Reach potential users through social media ads targeting interests like technology, science fiction, and productivity, as well as App Store optimization for keywords related to 'AI chat', and engaging with communities on platforms like Reddit's r/ChatGPT or relevant mobile app forums.",
+        "pricing_anchor": "Users expect to pay around $4.99/month or a one-time payment of about $9.99 for an ad-free experience, similar to models seen in popular chat and productivity apps.",
+        "biggest_risk": "The biggest risk is user retention; many consumers may try the app for novelty but not remain engaged long-term, leading to high churn and low lifetime value."
+      }
+    },
+    {
+      "phrase": "focus app",
+      "volume": 5400,
+      "cpc": 3.88,
+      "competition": 0.12,
+      "score": 12.744159830908908,
+      "brief": {
+        "product_in_plain_language": "I want an app that helps me improve my focus and productivity.",
+        "mvp_in_2_weeks": "A simple mobile app with a timer for focus sessions, predefined work/break intervals, and a simple task checklist feature.",
+        "distribution": "Reach this buyer through targeted Facebook ads focusing on productivity groups, forums on Reddit like /r/getdisciplined, and collaborations with productivity influencers on platforms like Instagram and TikTok.",
+        "pricing_anchor": "Buyers might expect to pay around $5-$10 for an app, or offer a subscription model around $2.99/month like competitors such as Focus@Will or Forest.",
+        "biggest_risk": "The main risk is that the market is filled with free apps that serve similar purposes, potentially leading to low user acquisition and high churn rates as users may not see enough value in a paid app."
+      }
+    },
+    {
+      "phrase": "ai personal trainer app",
+      "volume": 140,
+      "cpc": 7.09,
+      "competition": 0.26,
+      "score": 11.276092996457715,
+      "brief": {
+        "product_in_plain_language": "I want an AI-powered app that acts like a personal trainer for my workouts and nutrition.",
+        "mvp_in_2_weeks": "Simple mobile app with workout recommendations + meal suggestions based on user profile + integration with fitness tracking apps (e.g., Fitbit, Apple Health).",
+        "distribution": "Reach users through social media ads targeting fitness enthusiasts, influencer collaborations on platforms like TikTok or Instagram, and engagement in health and fitness groups on Facebook.",
+        "pricing_anchor": "Users would likely expect to pay around $10/month based on similar apps like MyFitnessPal or Fitbit Premium ($10/mo).",
+        "biggest_risk": "The biggest risk is user retention; many users might download the app for a short-term challenge but not engage long-term, leading to high churn rates."
+      }
+    },
+    {
+      "phrase": "calorie counter app",
+      "volume": 27100,
+      "cpc": 3.8,
+      "competition": 0.34,
+      "score": 11.11792717304308,
+      "brief": {
+        "product_in_plain_language": "I want an easy-to-use app that helps me track my calorie intake throughout the day.",
+        "mvp_in_2_weeks": "Simple mobile app that allows users to log food items manually, view calorie counts, and track daily intake. Features would include a searchable food database and a log of daily consumption.",
+        "distribution": "Promote through Google Ads targeting the phrase 'calorie counter app', leverage fitness and health-related social media groups, create content for Instagram and TikTok showcasing weight loss success stories using the app, and consider partnerships with fitness influencers.",
+        "pricing_anchor": "Users would expect to pay around $4.99/month, similar to apps like MyFitnessPal and Lose It!, which offer in-app purchases or subscriptions for premium features.",
+        "biggest_risk": "The biggest risk is high user churn due to the abundance of free alternatives that offer similar tracking features, making it difficult to maintain a subscriber base without significant differentiation or value."
+      }
+    },
+    {
+      "phrase": "mood tracker app",
+      "volume": 3600,
+      "cpc": 3.33,
+      "competition": 0.07,
+      "score": 11.013886764574732,
+      "brief": {
+        "product_in_plain_language": "I want a simple app that helps me track my mood and understand my emotional patterns over time.",
+        "mvp_in_2_weeks": "A mobile app that includes a mood logging feature, customizable mood tags, and a daily reminder notification. Users can log their mood with a button tap and view stats on their mood over time.",
+        "distribution": "Targeted Google Ads using the keyword 'mood tracker app', social media ads on Instagram and TikTok, and posts in mental health Facebook groups or subreddits like /r/selfimprovement or /r/mentalhealth.",
+        "pricing_anchor": "Users would expect to pay around $5-$10 for a premium version with additional features or ad-free experience; similar apps like Moodfit charge around $9.99/month for pro features.",
+        "biggest_risk": "The biggest risk is user retention; many users might try the app for a short period and churn out if they do not see immediate benefits or if they don't build a habit of using it regularly."
+      }
+    },
+    {
+      "phrase": "transcription app",
+      "volume": 3600,
+      "cpc": 7.74,
+      "competition": 0.6,
+      "score": 11.0106859837655,
+      "brief": {
+        "product_in_plain_language": "I want a mobile app that quickly converts my speech to text so I can save notes or transcribe conversations.",
+        "mvp_in_2_weeks": "Build a mobile app with a simple interface allowing users to record audio and convert it to text, with features for exporting the text via email or saving it in a note-taking app. Use a speech-to-text API like Google Speech-to-Text for accuracy, and integrate a basic payment system for premium features.",
+        "distribution": "Reach potential users through targeted Google ads on 'transcription app' and related phrases, and engage in relevant communities on Reddit, like /r/technology and /r/productivity. Join Facebook groups focused on productivity or study tools, and collaborate with influencers in the tech or education space.",
+        "pricing_anchor": "Users would expect to pay around $10/month for a transcription app with basic features, following models like Rev.com at $1.25 per audio minute for professional services, or $5-$15/month for premium app subscriptions like Otter.ai.",
+        "biggest_risk": "The biggest risk is that the market for transcription apps is highly competitive, with well-established players offering advanced features. Users may hesitate to switch to a new app due to the integration burden with existing tools, and high churn is likely if the app fails to meet their expectations for accuracy or ease of use."
+      }
+    },
+    {
+      "phrase": "meal planner app",
+      "volume": 2400,
+      "cpc": 4.63,
+      "competition": 0.31,
+      "score": 10.799338833734184,
+      "brief": {
+        "product_in_plain_language": "I want a simple app that helps me plan my meals for the week based on my dietary preferences and what I have in my fridge.",
+        "mvp_in_2_weeks": "A mobile app with a web form to input dietary preferences, a built-in meal planner that generates weekly meal ideas, and a grocery list feature that extracts ingredients needed for the planned meals.",
+        "distribution": "Reach users through targeted Facebook ads focusing on meal planning and healthy eating groups, Google ads for search phrases related to 'meal planner app,' and engaging in lifestyle content on platforms like Instagram or TikTok.",
+        "pricing_anchor": "Users would likely expect to pay around $5/month based on similar apps like Mealime and Plan to Eat, which are approximately $4.99/month.",
+        "biggest_risk": "The biggest risk is user retention; if the app does not provide ongoing value or personalization beyond the initial setup, users may not continue their subscription or frequently use the app."
+      }
+    },
+    {
+      "phrase": "workout planner app",
+      "volume": 2400,
+      "cpc": 4.62,
+      "competition": 0.36,
+      "score": 9.995143538856619,
+      "brief": {
+        "product_in_plain_language": "I want a mobile app that helps me plan and track my workouts effectively.",
+        "mvp_in_2_weeks": "A simple mobile app with features to create and customize workout plans, a calendar for scheduling workouts, and a tracking interface to log completed exercises, using Firebase for backend and Google Play/App Store for distribution.",
+        "distribution": "Social media ads targeting fitness enthusiasts on Instagram and Facebook, as well as community engagement on Reddit in fitness subreddits like /r/Fitness or /r/workout.",
+        "pricing_anchor": "Buyers might expect to pay around $5/month for app subscriptions, similar to other fitness planning apps.",
+        "biggest_risk": "The biggest risk is that users might download the app for short-term use but not stick with it, leading to high churn rates; creating long-term user engagement and habit formation is crucial."
+      }
+    },
+    {
+      "phrase": "study app",
+      "volume": 6600,
+      "cpc": 3.87,
+      "competition": 0.33,
+      "score": 9.903866076051585,
+      "brief": {
+        "product_in_plain_language": "I want an app that helps me study more effectively, with features that make learning easier and more organized.",
+        "mvp_in_2_weeks": "A mobile app with a simple flashcard system, a pomodoro timer, and a calendar for scheduling study sessions. Users can create flashcards, set study timers, and schedule their study time on a calendar.",
+        "distribution": "Reach buyers through social media channels like TikTok and Instagram, particularly targeting study influencers and educational content creators. Additionally, consider Google Ads targeting the specific phrase 'study app' and related educational keywords.",
+        "pricing_anchor": "Users would expect to pay around $5-$10 for a premium version, similar to apps like Quizlet ($4.99/mo) and Forest ($1.99 one-time purchase), which are popular in the study aid space.",
+        "biggest_risk": "The biggest risk is the challenge of user retention and competition with established apps that already have loyal user bases and extensive feature sets. Making an app that stands out without a unique selling proposition could lead to high churn rates."
+      }
+    },
+    {
+      "phrase": "sleep tracker app",
+      "volume": 12100,
+      "cpc": 2.71,
+      "competition": 0.11,
+      "score": 9.84735659925957
+    },
+    {
+      "phrase": "ai email assistant app",
+      "volume": 10,
+      "cpc": 18.26,
+      "competition": 0.49,
+      "score": 9.698073519804487
+    },
+    {
+      "phrase": "ai writing app",
+      "volume": 590,
+      "cpc": 5.9,
+      "competition": 0.43,
+      "score": 9.320848698203664
+    },
+    {
+      "phrase": "pregnancy app",
+      "volume": 4400,
+      "cpc": 3.54,
+      "competition": 0.28,
+      "score": 9.286683728193234
+    },
+    {
+      "phrase": "ai art generator app",
+      "volume": 1000,
+      "cpc": 3.15,
+      "competition": 0.05,
+      "score": 8.978798976856861
+    },
+    {
+      "phrase": "net worth tracker app",
+      "volume": 170,
+      "cpc": 5.37,
+      "competition": 0.28,
+      "score": 8.633656161220225
+    },
+    {
+      "phrase": "ai journaling app",
+      "volume": 720,
+      "cpc": 4.41,
+      "competition": 0.32,
+      "score": 8.570376271840624
+    },
+    {
+      "phrase": "ai journal app",
+      "volume": 720,
+      "cpc": 4.41,
+      "competition": 0.32,
+      "score": 8.570376271840624
+    },
+    {
+      "phrase": "macro tracker app",
+      "volume": 1000,
+      "cpc": 4.06,
+      "competition": 0.3,
+      "score": 8.527233648196223
+    },
+    {
+      "phrase": "ai video editor app",
+      "volume": 1000,
+      "cpc": 4.24,
+      "competition": 0.33,
+      "score": 8.523633127303247
+    },
+    {
+      "phrase": "screen time app",
+      "volume": 2900,
+      "cpc": 2.99,
+      "competition": 0.18,
+      "score": 8.489474521478375
+    },
+    {
+      "phrase": "barcode scanner app",
+      "volume": 12100,
+      "cpc": 3.04,
+      "competition": 0.32,
+      "score": 8.440008110613782
+    },
+    {
+      "phrase": "speech to text app",
+      "volume": 2900,
+      "cpc": 4.79,
+      "competition": 0.51,
+      "score": 8.126945774272732
+    },
+    {
+      "phrase": "duolingo alternative",
+      "volume": 2400,
+      "cpc": 3.39,
+      "competition": 0.3,
+      "score": 8.021670595815324
+    },
+    {
+      "phrase": "ai meditation app",
+      "volume": 40,
+      "cpc": 7.76,
+      "competition": 0.38,
+      "score": 7.759425691449991
+    },
+    {
+      "phrase": "ai fitness coach",
+      "volume": 480,
+      "cpc": 4.73,
+      "competition": 0.39,
+      "score": 7.738793188861417
+    },
+    {
+      "phrase": "ai language tutor",
+      "volume": 590,
+      "cpc": 5.28,
+      "competition": 0.49,
+      "score": 7.463330768517046
+    },
+    {
+      "phrase": "ai tutor app",
+      "volume": 210,
+      "cpc": 3.76,
+      "competition": 0.15,
+      "score": 7.428406727131425
+    },
+    {
+      "phrase": "couples app",
+      "volume": 3600,
+      "cpc": 2.23,
+      "competition": 0.07,
+      "score": 7.375665911411907
+    },
+    {
+      "phrase": "youtube shorts editor",
+      "volume": 480,
+      "cpc": 4.22,
+      "competition": 0.35,
+      "score": 7.357123944493421
+    },
+    {
+      "phrase": "scanner app",
+      "volume": 33100,
+      "cpc": 3.64,
+      "competition": 0.56,
+      "score": 7.238977528593589
+    },
+    {
+      "phrase": "ai recipe generator",
+      "volume": 1600,
+      "cpc": 2.39,
+      "competition": 0.1,
+      "score": 6.892645754958415
+    },
+    {
+      "phrase": "pomodoro timer app",
+      "volume": 5400,
+      "cpc": 1.79,
+      "competition": 0.02,
+      "score": 6.547506201786669
+    },
+    {
+      "phrase": "ai therapy app",
+      "volume": 1000,
+      "cpc": 5.18,
+      "competition": 0.58,
+      "score": 6.527744378964006
+    },
+    {
+      "phrase": "ai photo editor",
+      "volume": 165000,
+      "cpc": 2.08,
+      "competition": 0.41,
+      "score": 6.402899526427628
+    },
+    {
+      "phrase": "ai nutritionist app",
+      "volume": 210,
+      "cpc": 5.38,
+      "competition": 0.49,
+      "score": 6.377366200845809
+    },
+    {
+      "phrase": "stock tracker app",
+      "volume": 590,
+      "cpc": 5.66,
+      "competition": 0.6,
+      "score": 6.274874056715163
+    },
+    {
+      "phrase": "ai background remover",
+      "volume": 18100,
+      "cpc": 1.53,
+      "competition": 0.12,
+      "score": 5.732570738062333
+    },
+    {
+      "phrase": "habit tracker app",
+      "volume": 6600,
+      "cpc": 1.69,
+      "competition": 0.15,
+      "score": 5.4868693810976525
+    },
+    {
+      "phrase": "running tracker app",
+      "volume": 1600,
+      "cpc": 2.94,
+      "competition": 0.44,
+      "score": 5.275709888871936
+    },
+    {
+      "phrase": "grocery list app",
+      "volume": 8100,
+      "cpc": 1.87,
+      "competition": 0.3,
+      "score": 5.116277069513095
+    },
+    {
+      "phrase": "flashcard app",
+      "volume": 4400,
+      "cpc": 1.83,
+      "competition": 0.25,
+      "score": 5.000774253352642
+    },
+    {
+      "phrase": "investment tracker app",
+      "volume": 40,
+      "cpc": 5.68,
+      "competition": 0.48,
+      "score": 4.763518399207411
+    },
+    {
+      "phrase": "anxiety tracker app",
+      "volume": 70,
+      "cpc": 3.23,
+      "competition": 0.27,
+      "score": 4.365082060444708
+    },
+    {
+      "phrase": "voice changer app",
+      "volume": 6600,
+      "cpc": 1.76,
+      "competition": 0.36,
+      "score": 4.302408402971386
+    },
+    {
+      "phrase": "ai note taker",
+      "volume": 27100,
+      "cpc": 9.26,
+      "competition": 0.95,
+      "score": 4.104944402806178
+    },
+    {
+      "phrase": "fertility tracker",
+      "volume": 8100,
+      "cpc": 10.44,
+      "competition": 1,
+      "score": 4.0805143319875254
+    },
+    {
+      "phrase": "watermark remover app",
+      "volume": 1000,
+      "cpc": 3.03,
+      "competition": 0.59,
+      "score": 3.7274392544525576
+    },
+    {
+      "phrase": "ai sleep coach",
+      "volume": 10,
+      "cpc": 2.47,
+      "competition": 0.32,
+      "score": 1.7491231539917547
+    },
+    {
+      "phrase": "best habit tracker",
+      "volume": 390,
+      "cpc": 0.94,
+      "competition": 0.78,
+      "score": 0.5360621534294652
+    },
+    {
+      "phrase": "ai accountant app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "score": 0
+    },
+    {
+      "phrase": "kids learning app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "score": 0
+    },
+    {
+      "phrase": "screen time app for kids",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "score": 0
+    },
+    {
+      "phrase": "baby tracker app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "score": 0
+    },
+    {
+      "phrase": "instagram scheduler app",
+      "volume": 20,
+      "cpc": 0,
+      "competition": 0.44,
+      "score": 0
+    },
+    {
+      "phrase": "vpn app",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "score": 0
+    }
+  ]
+}

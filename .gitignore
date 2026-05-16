@@ -28,9 +28,9 @@ cache/
 # Matches results/_pre-* AND results/sweeps/_pre-* etc.
 **/_pre-*/
 
-# Generated Word reports — regeneratable via `npm run portfolio-report`.
-# Large binary, churns on every regen; not worth committing.
-results/portfolio-report*.docx
+# Generated Word reports — regeneratable on demand. Large binary, churns
+# on every regen; not worth committing.
+results/*.docx
 
 # Logs + OS noise
 *.log
