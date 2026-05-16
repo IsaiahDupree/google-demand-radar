@@ -1,0 +1,299 @@
+{
+  "source_text": "I want a reliable answering service that understands my plumbing business and can handle my customer calls.\n\nBuyers search Google for \"answering service for plumbers\" — currently ~880 monthly searches at $142.85 CPC, competition_index 0.10 (DataForSEO). That CPC means advertisers are spending real money to win these buyers.\n\nMVP scope (2 weeks): Build a simple web form for onboarding plumbers, integrate a cloud-based phone system (like Twilio), and set up an email notification system for missed calls.\n\nDistribution: Reach plumbers through Google Ads targeting the phrase 'answering service for plumbers', partner with plumbing supply stores for co-marketing, and participate in plumber forums like /r/plumbing or industry-specific Facebook groups.\n\nPricing anchor: Plumbers would expect to pay around $150/month based on similar services like RubyReceptionists or AnswerConnect, which charge between $125 and $200.\n\nBiggest risk: The biggest risk is the reliance on integrating with existing tools and workflows specific to plumbing businesses, which can be time-consuming and may lead to churn if their expectations are not met.\n\nCategory: answering service. Target vertical: plumbers.",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "Plumber-Specific Answering Service",
+    "one_liner": "An answering service tailored for plumbing businesses to manage customer calls efficiently.",
+    "core_promise": "Reduce missed calls and client frustrations for plumbing businesses by providing a reliable, industry-informed answering service.",
+    "domain": "answering service",
+    "buyers": [
+      {
+        "persona": "independent plumbers",
+        "awareness_level": "most_aware",
+        "pain": "Missing customer calls, leading to lost business and customer dissatisfaction.",
+        "candidate_phrases": [
+          {
+            "phrase": "answering service for plumbers",
+            "funnel_stage": "bofu"
+          },
+          {
+            "phrase": "plumbing business call answering",
+            "funnel_stage": "bofu"
+          },
+          {
+            "phrase": "phone answering service for plumbing companies",
+            "funnel_stage": "bofu"
+          },
+          {
+            "phrase": "best answering service for plumbers",
+            "funnel_stage": "mofu"
+          },
+          {
+            "phrase": "how to handle missed plumbing calls",
+            "funnel_stage": "tofu"
+          },
+          {
+            "phrase": "phone system for plumbing business",
+            "funnel_stage": "bofu"
+          },
+          {
+            "phrase": "live answering service for plumbers",
+            "funnel_stage": "bofu"
+          }
+        ]
+      },
+      {
+        "persona": "plumbing company office managers",
+        "awareness_level": "solution_aware",
+        "pain": "Overwhelmed by managing customer calls during peak hours or when office is closed.",
+        "candidate_phrases": [
+          {
+            "phrase": "plumbing office call management",
+            "funnel_stage": "tofu"
+          },
+          {
+            "phrase": "affordable answering service for plumbing companies",
+            "funnel_stage": "bofu"
+          },
+          {
+            "phrase": "reviews of plumbing answering services",
+            "funnel_stage": "mofu"
+          },
+          {
+            "phrase": "set up call center for plumbing business",
+            "funnel_stage": "mofu"
+          },
+          {
+            "phrase": "24/7 answering service for plumbers",
+            "funnel_stage": "bofu"
+          }
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 4,
+      "mvp_ease": 4,
+      "distribution_fit": 5,
+      "retention_potential": 4,
+      "advantage": 3,
+      "rationale": "The buyer urgency is high as plumbing businesses deal with time-sensitive client needs and missed calls mean lost income (score: 4). The technical setup for an MVP is relatively simple, leveraging existing tools like Twilio for a basic service (score: 4). Distribution is strong given established CPC insights and targeted channels like Google Ads and plumping forums (score: 5). Retention is likely due to the ongoing need for reliable call handling (score: 4). However, the advantage score is moderate as there is no clear pre-existing audience or unique edge besides focusing on a niche service specialization (score: 3)."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "answering service for plumbers",
+      "volume": 880,
+      "cpc": 142.85,
+      "competition": 0.1,
+      "source": "dataforseo",
+      "buyer": "independent plumbers",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "plumbing business call answering",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent plumbers",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "phone answering service for plumbing companies",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent plumbers",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "best answering service for plumbers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent plumbers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to handle missed plumbing calls",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent plumbers",
+      "funnel_stage": "tofu"
+    },
+    {
+      "phrase": "phone system for plumbing business",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent plumbers",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "live answering service for plumbers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent plumbers",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "plumbing office call management",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "plumbing company office managers",
+      "funnel_stage": "tofu"
+    },
+    {
+      "phrase": "affordable answering service for plumbing companies",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "plumbing company office managers",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "reviews of plumbing answering services",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "plumbing company office managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "set up call center for plumbing business",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "plumbing company office managers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "24/7 answering service for plumbers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "plumbing company office managers",
+      "funnel_stage": "bofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "answering service for plumbers",
+      "volume": 880,
+      "cpc": 142.85,
+      "competition": 0.1,
+      "source": "dataforseo",
+      "buyer": "independent plumbers",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "plumbing business call answering",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent plumbers",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "phone answering service for plumbing companies",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent plumbers",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "best answering service for plumbers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent plumbers",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to handle missed plumbing calls",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent plumbers",
+      "funnel_stage": "tofu"
+    },
+    {
+      "phrase": "phone system for plumbing business",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent plumbers",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "live answering service for plumbers",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "independent plumbers",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "plumbing office call management",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "plumbing company office managers",
+      "funnel_stage": "tofu"
+    }
+  ],
+  "score": {
+    "search_demand": 3.4536859709310614,
+    "buyer_urgency": 4,
+    "willingness_to_pay": 5,
+    "mvp_ease": 4,
+    "distribution_fit": 5,
+    "advantage": 3,
+    "retention_potential": 4,
+    "total": 28.453685970931062
+  },
+  "verdict": "Build Now",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "independent plumbers",
+        "anchor_phrase": "answering service for plumbers",
+        "offer_copy": "For independent plumbers who need to reduce missed customer calls and lost business, we provide an answering service tailored specifically for plumbers, ensuring you capture every opportunity without the hassle of managing calls yourself.",
+        "landing_page_headline": "Stop Missing Customer Calls with Our Plumber Answering Service"
+      },
+      {
+        "buyer": "plumbing company office managers",
+        "anchor_phrase": "plumbing office call management",
+        "offer_copy": "For plumbing company office managers overwhelmed by peak hour call volumes, we offer an efficient call management solution, so you maintain excellent customer service even during the busiest times without the stress of handling it alone.",
+        "landing_page_headline": "Streamline Your Plumbing Office Call Management Today"
+      }
+    ],
+    "next_action": "Launch targeted Google Ads for 'answering service for plumbers' and 'plumbing office call management' and spend $100 to gauge interest and conversion.",
+    "reasoning": "The concept has solid demand signals, especially anchored around 'answering service for plumbers', indicating a clear pain point and willingness to pay among potential users. The Buyer Urgency and Willingness to Pay scores are high, suggesting immediate interest and potential for monetization. The primary risk lies in lower competition, which could imply a niche market or emerging issue, requiring validation through direct conversion testing."
+  },
+  "meta": {
+    "source": "discovery",
+    "sourceUrl": "discovery://pattern/answering-service-for-plumbers"
+  }
+}

@@ -27,6 +27,7 @@
     "discover-briefs": "tsx src/discover-briefs-cli.ts",
     "adjacency": "tsx src/adjacency-cli.ts",
     "competitor-gap": "tsx src/competitor-gap-cli.ts",
+    "adopt-niche": "tsx src/adopt-niche-cli.ts",
     "export-phrases": "tsx src/export-phrases.ts",
     "import-phrases": "tsx src/import-phrases.ts",
     "spec": "tsx src/scoring.spec.ts && tsx src/keyword-planner-parser.spec.ts",

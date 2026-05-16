@@ -1,0 +1,234 @@
+{
+  "source_text": "I need an app that helps me schedule and automate my posts on TikTok.\n\nBuyers search Google for \"tiktok scheduler\" — currently ~1,300 monthly searches at $31.06 CPC, competition_index 0.09 (DataForSEO). That CPC means advertisers are spending real money to win these buyers.\n\nMVP scope (2 weeks): A mobile app that allows users to create a post (video + caption) and set a specific date and time for it to be published on TikTok, along with a simple reminder notification feature.\n\nDistribution: Reach users through targeted Google Ads for 'tiktok scheduler', TikTok influencer partnerships, promotions on TikTok-related forums or subreddits like /r/TikTok, and ads on social media platforms where TikTok users engage.\n\nPricing anchor: Users expect to pay around $10-$15/month for this convenience, similar to other social media management tools like Buffer which charges ~$15/mo.\n\nBiggest risk: The biggest risk is TikTok's API restrictions which could limit automation features, increasing customer dissatisfaction and churn.",
+  "provider": "dataforseo",
+  "concept": {
+    "name": "TikTok Scheduling App",
+    "one_liner": "An app for scheduling and automating TikTok posts.",
+    "core_promise": "Users can easily schedule and automate their TikTok posts, saving time and ensuring regular content output.",
+    "domain": "social media management",
+    "buyers": [
+      {
+        "persona": "content creators on TikTok",
+        "awareness_level": "product_aware",
+        "pain": "Struggling to post consistently due to manual scheduling and time zone differences.",
+        "candidate_phrases": [
+          {
+            "phrase": "tiktok scheduler app",
+            "funnel_stage": "bofu"
+          },
+          {
+            "phrase": "automate tiktok posts",
+            "funnel_stage": "bofu"
+          },
+          {
+            "phrase": "schedule tiktok videos",
+            "funnel_stage": "bofu"
+          },
+          {
+            "phrase": "best tiktok scheduling apps",
+            "funnel_stage": "mofu"
+          },
+          {
+            "phrase": "how to schedule tiktok posts",
+            "funnel_stage": "tofu"
+          },
+          {
+            "phrase": "tiktok posting tool",
+            "funnel_stage": "mofu"
+          },
+          {
+            "phrase": "tiktok automation tool",
+            "funnel_stage": "bofu"
+          },
+          {
+            "phrase": "tiktok scheduler review",
+            "funnel_stage": "mofu"
+          }
+        ]
+      }
+    ],
+    "judged": {
+      "buyer_urgency": 3,
+      "mvp_ease": 4,
+      "distribution_fit": 4,
+      "retention_potential": 3,
+      "advantage": 3,
+      "rationale": "There is moderate urgency among TikTok content creators seeking automation for consistent posting, reflected by existing search volume and CPC. The MVP can be developed in a short time frame, given it seems straightforward to build a basic scheduler. Distribution can use affordable channels like targeted ads and influencer partnerships, leveraging existing interest in TikTok tools. Retention depends on the app's ability to navigate TikTok's API policies successfully; users would stay if it works reliably. The project has an edge through its focus on a specific platform, but TikTok's API limits and competitive risk are concerns."
+    }
+  },
+  "keyword_data": [
+    {
+      "phrase": "tiktok scheduler app",
+      "volume": 90,
+      "cpc": 11.67,
+      "competition": 0.32,
+      "source": "dataforseo",
+      "buyer": "content creators on TikTok",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "automate tiktok posts",
+      "volume": 30,
+      "cpc": 12.23,
+      "competition": 0.6,
+      "source": "dataforseo",
+      "buyer": "content creators on TikTok",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "schedule tiktok videos",
+      "volume": 40,
+      "cpc": 15.93,
+      "competition": 0.19,
+      "source": "dataforseo",
+      "buyer": "content creators on TikTok",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "best tiktok scheduling apps",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on TikTok",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "how to schedule tiktok posts",
+      "volume": 1000,
+      "cpc": 0.86,
+      "competition": 0.09,
+      "source": "dataforseo",
+      "buyer": "content creators on TikTok",
+      "funnel_stage": "tofu"
+    },
+    {
+      "phrase": "tiktok posting tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on TikTok",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tiktok automation tool",
+      "volume": 50,
+      "cpc": 16.95,
+      "competition": 0.14,
+      "source": "dataforseo",
+      "buyer": "content creators on TikTok",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "tiktok scheduler review",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on TikTok",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "top_phrases": [
+    {
+      "phrase": "how to schedule tiktok posts",
+      "volume": 1000,
+      "cpc": 0.86,
+      "competition": 0.09,
+      "source": "dataforseo",
+      "buyer": "content creators on TikTok",
+      "funnel_stage": "tofu"
+    },
+    {
+      "phrase": "tiktok scheduler app",
+      "volume": 90,
+      "cpc": 11.67,
+      "competition": 0.32,
+      "source": "dataforseo",
+      "buyer": "content creators on TikTok",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "tiktok automation tool",
+      "volume": 50,
+      "cpc": 16.95,
+      "competition": 0.14,
+      "source": "dataforseo",
+      "buyer": "content creators on TikTok",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "schedule tiktok videos",
+      "volume": 40,
+      "cpc": 15.93,
+      "competition": 0.19,
+      "source": "dataforseo",
+      "buyer": "content creators on TikTok",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "automate tiktok posts",
+      "volume": 30,
+      "cpc": 12.23,
+      "competition": 0.6,
+      "source": "dataforseo",
+      "buyer": "content creators on TikTok",
+      "funnel_stage": "bofu"
+    },
+    {
+      "phrase": "best tiktok scheduling apps",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on TikTok",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tiktok posting tool",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on TikTok",
+      "funnel_stage": "mofu"
+    },
+    {
+      "phrase": "tiktok scheduler review",
+      "volume": 0,
+      "cpc": 0,
+      "competition": 0,
+      "source": "dataforseo",
+      "buyer": "content creators on TikTok",
+      "funnel_stage": "mofu"
+    }
+  ],
+  "score": {
+    "search_demand": 3.154153089071883,
+    "buyer_urgency": 3,
+    "willingness_to_pay": 5,
+    "mvp_ease": 4,
+    "distribution_fit": 4,
+    "advantage": 3,
+    "retention_potential": 3,
+    "total": 25.154153089071883
+  },
+  "verdict": "Build Now",
+  "offers_and_verdict": {
+    "offers": [
+      {
+        "buyer": "content creators on TikTok",
+        "anchor_phrase": "tiktok scheduler app",
+        "offer_copy": "For content creators on TikTok who want to consistently post and grow their audience but struggle with manual scheduling, we offer an intuitive TikTok scheduler app that automates posting so they can focus on creating without worrying about time zone differences and posting times.",
+        "landing_page_headline": "Automate Your TikTok Posts with Ease"
+      }
+    ],
+    "next_action": "Create a landing page targeting the 'tiktok scheduler app' keyword and seed initial traffic through targeted Google Ads to test conversion rates and gather user feedback.",
+    "reasoning": "The verdict 'Build Now' is supported by moderate to high search demand and a strong willingness to pay, indicating that content creators are actively seeking solutions for automating their TikTok posting. The MVP appears relatively easy to construct and aligns well with existing social media management distribution channels. However, the main risk lies in moderate buyer urgency and retention potential, suggesting that while there is interest, other responsibilities or lack of habitual use may impact long-term engagement."
+  },
+  "meta": {
+    "source": "discovery",
+    "sourceUrl": "discovery://mobile/tiktok-scheduler"
+  }
+}

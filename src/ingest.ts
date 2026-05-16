@@ -33,7 +33,7 @@ export interface IngestResult {
 }
 
 export interface ResultMeta {
-  source: "github" | "vercel" | "local" | "manual";
+  source: "github" | "vercel" | "local" | "manual" | "discovery";
   sourceUrl: string;
 }
 

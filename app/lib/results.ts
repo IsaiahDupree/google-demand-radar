@@ -5,7 +5,7 @@ import type { PipelineResult } from "../../src/pipeline.js";
 const RESULTS_DIR = path.resolve(process.cwd(), "results");
 
 export interface ResultMeta {
-  source: "github" | "vercel" | "local" | "manual";
+  source: "github" | "vercel" | "local" | "manual" | "discovery";
   sourceUrl: string;
 }
 
